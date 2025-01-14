@@ -3,7 +3,7 @@
 
 # Relative path conversion top directories.
 set(CMAKE_RELATIVE_PATH_TOP_SOURCE "/home/uzygncr/pico/pico-sdk")
-set(CMAKE_RELATIVE_PATH_TOP_BINARY "/home/uzygncr/pico/pico-projects/w_blink/build")
+set(CMAKE_RELATIVE_PATH_TOP_BINARY "/home/uzygncr/pico/pico-projects/Raspberrypi_PicoW_Blink/build")
 
 # Force unix paths in dependencies.
 set(CMAKE_FORCE_UNIX_PATHS 1)

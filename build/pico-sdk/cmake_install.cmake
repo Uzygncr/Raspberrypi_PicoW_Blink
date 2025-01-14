@@ -39,16 +39,16 @@ endif()
 
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for the subdirectory.
-  include("/home/uzygncr/pico/pico-projects/w_blink/build/pico-sdk/tools/cmake_install.cmake")
+  include("/home/uzygncr/pico/pico-projects/Raspberrypi_PicoW_Blink/build/pico-sdk/tools/cmake_install.cmake")
 endif()
 
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for the subdirectory.
-  include("/home/uzygncr/pico/pico-projects/w_blink/build/pico-sdk/src/cmake_install.cmake")
+  include("/home/uzygncr/pico/pico-projects/Raspberrypi_PicoW_Blink/build/pico-sdk/src/cmake_install.cmake")
 endif()
 
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for the subdirectory.
-  include("/home/uzygncr/pico/pico-projects/w_blink/build/pico-sdk/docs/cmake_install.cmake")
+  include("/home/uzygncr/pico/pico-projects/Raspberrypi_PicoW_Blink/build/pico-sdk/docs/cmake_install.cmake")
 endif()
 

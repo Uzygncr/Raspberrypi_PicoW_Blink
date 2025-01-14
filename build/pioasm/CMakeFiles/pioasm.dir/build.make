@@ -56,7 +56,7 @@ EQUALS = =
 CMAKE_SOURCE_DIR = /home/uzygncr/pico/pico-sdk/tools/pioasm
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/uzygncr/pico/pico-projects/w_blink/build/pioasm
+CMAKE_BINARY_DIR = /home/uzygncr/pico/pico-projects/Raspberrypi_PicoW_Blink/build/pioasm
 
 # Include any dependencies generated for this target.
 include CMakeFiles/pioasm.dir/depend.make
@@ -250,6 +250,6 @@ CMakeFiles/pioasm.dir/clean:
 .PHONY : CMakeFiles/pioasm.dir/clean
 
 CMakeFiles/pioasm.dir/depend:
-	cd /home/uzygncr/pico/pico-projects/w_blink/build/pioasm && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/uzygncr/pico/pico-sdk/tools/pioasm /home/uzygncr/pico/pico-sdk/tools/pioasm /home/uzygncr/pico/pico-projects/w_blink/build/pioasm /home/uzygncr/pico/pico-projects/w_blink/build/pioasm /home/uzygncr/pico/pico-projects/w_blink/build/pioasm/CMakeFiles/pioasm.dir/DependInfo.cmake --color=$(COLOR)
+	cd /home/uzygncr/pico/pico-projects/Raspberrypi_PicoW_Blink/build/pioasm && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/uzygncr/pico/pico-sdk/tools/pioasm /home/uzygncr/pico/pico-sdk/tools/pioasm /home/uzygncr/pico/pico-projects/Raspberrypi_PicoW_Blink/build/pioasm /home/uzygncr/pico/pico-projects/Raspberrypi_PicoW_Blink/build/pioasm /home/uzygncr/pico/pico-projects/Raspberrypi_PicoW_Blink/build/pioasm/CMakeFiles/pioasm.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : CMakeFiles/pioasm.dir/depend
 

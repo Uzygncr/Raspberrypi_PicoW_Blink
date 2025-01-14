@@ -57,10 +57,10 @@ RM = /usr/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/uzygncr/pico/pico-projects/w_blink
+CMAKE_SOURCE_DIR = /home/uzygncr/pico/pico-projects/Raspberrypi_PicoW_Blink
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/uzygncr/pico/pico-projects/w_blink/build
+CMAKE_BINARY_DIR = /home/uzygncr/pico/pico-projects/Raspberrypi_PicoW_Blink/build
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -87,9 +87,9 @@ rebuild_cache/fast: rebuild_cache
 
 # The main all target
 all: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/uzygncr/pico/pico-projects/w_blink/build/CMakeFiles /home/uzygncr/pico/pico-projects/w_blink/build//CMakeFiles/progress.marks
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/uzygncr/pico/pico-projects/Raspberrypi_PicoW_Blink/build/CMakeFiles /home/uzygncr/pico/pico-projects/Raspberrypi_PicoW_Blink/build//CMakeFiles/progress.marks
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/uzygncr/pico/pico-projects/w_blink/build/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/uzygncr/pico/pico-projects/Raspberrypi_PicoW_Blink/build/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
@@ -156,30 +156,17 @@ bs2_default_bin/fast:
 .PHONY : bs2_default_bin/fast
 
 #=============================================================================
-# Target rules for targets named bs2_default_padded_checksummed_asm
+# Target rules for targets named bs2_default_library
 
 # Build rule for target.
-bs2_default_padded_checksummed_asm: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 bs2_default_padded_checksummed_asm
-.PHONY : bs2_default_padded_checksummed_asm
+bs2_default_library: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 bs2_default_library
+.PHONY : bs2_default_library
 
 # fast build rule for target.
-bs2_default_padded_checksummed_asm/fast:
-	$(MAKE) $(MAKESILENT) -f pico-sdk/src/rp2040/boot_stage2/CMakeFiles/bs2_default_padded_checksummed_asm.dir/build.make pico-sdk/src/rp2040/boot_stage2/CMakeFiles/bs2_default_padded_checksummed_asm.dir/build
-.PHONY : bs2_default_padded_checksummed_asm/fast
-
-#=============================================================================
-# Target rules for targets named pioasmBuild
-
-# Build rule for target.
-pioasmBuild: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 pioasmBuild
-.PHONY : pioasmBuild
-
-# fast build rule for target.
-pioasmBuild/fast:
-	$(MAKE) $(MAKESILENT) -f pico-sdk/src/rp2_common/pico_cyw43_driver/CMakeFiles/pioasmBuild.dir/build.make pico-sdk/src/rp2_common/pico_cyw43_driver/CMakeFiles/pioasmBuild.dir/build
-.PHONY : pioasmBuild/fast
+bs2_default_library/fast:
+	$(MAKE) $(MAKESILENT) -f pico-sdk/src/rp2040/boot_stage2/CMakeFiles/bs2_default_library.dir/build.make pico-sdk/src/rp2040/boot_stage2/CMakeFiles/bs2_default_library.dir/build
+.PHONY : bs2_default_library/fast
 
 #=============================================================================
 # Target rules for targets named cyw43_driver_picow_cyw43_bus_pio_spi_pio_h
@@ -194,13 +181,13 @@ cyw43_driver_picow_cyw43_bus_pio_spi_pio_h/fast:
 	$(MAKE) $(MAKESILENT) -f pico-sdk/src/rp2_common/pico_cyw43_driver/CMakeFiles/cyw43_driver_picow_cyw43_bus_pio_spi_pio_h.dir/build.make pico-sdk/src/rp2_common/pico_cyw43_driver/CMakeFiles/cyw43_driver_picow_cyw43_bus_pio_spi_pio_h.dir/build
 .PHONY : cyw43_driver_picow_cyw43_bus_pio_spi_pio_h/fast
 
-home/uzygncr/pico/pico-sdk/lib/cyw43-driver/src/cyw43_ctrl.obj: home/uzygncr/pico/pico-sdk/lib/cyw43-driver/src/cyw43_ctrl.c.obj
-.PHONY : home/uzygncr/pico/pico-sdk/lib/cyw43-driver/src/cyw43_ctrl.obj
+home/uzygncr/pico/pico-sdk/lib/cyw43-driver/src/cyw43_ctrl.o: home/uzygncr/pico/pico-sdk/lib/cyw43-driver/src/cyw43_ctrl.c.o
+.PHONY : home/uzygncr/pico/pico-sdk/lib/cyw43-driver/src/cyw43_ctrl.o
 
 # target to build an object file
-home/uzygncr/pico/pico-sdk/lib/cyw43-driver/src/cyw43_ctrl.c.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/test.dir/build.make CMakeFiles/test.dir/home/uzygncr/pico/pico-sdk/lib/cyw43-driver/src/cyw43_ctrl.c.obj
-.PHONY : home/uzygncr/pico/pico-sdk/lib/cyw43-driver/src/cyw43_ctrl.c.obj
+home/uzygncr/pico/pico-sdk/lib/cyw43-driver/src/cyw43_ctrl.c.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/test.dir/build.make CMakeFiles/test.dir/home/uzygncr/pico/pico-sdk/lib/cyw43-driver/src/cyw43_ctrl.c.o
+.PHONY : home/uzygncr/pico/pico-sdk/lib/cyw43-driver/src/cyw43_ctrl.c.o
 
 home/uzygncr/pico/pico-sdk/lib/cyw43-driver/src/cyw43_ctrl.i: home/uzygncr/pico/pico-sdk/lib/cyw43-driver/src/cyw43_ctrl.c.i
 .PHONY : home/uzygncr/pico/pico-sdk/lib/cyw43-driver/src/cyw43_ctrl.i
@@ -218,13 +205,13 @@ home/uzygncr/pico/pico-sdk/lib/cyw43-driver/src/cyw43_ctrl.c.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/test.dir/build.make CMakeFiles/test.dir/home/uzygncr/pico/pico-sdk/lib/cyw43-driver/src/cyw43_ctrl.c.s
 .PHONY : home/uzygncr/pico/pico-sdk/lib/cyw43-driver/src/cyw43_ctrl.c.s
 
-home/uzygncr/pico/pico-sdk/lib/cyw43-driver/src/cyw43_ll.obj: home/uzygncr/pico/pico-sdk/lib/cyw43-driver/src/cyw43_ll.c.obj
-.PHONY : home/uzygncr/pico/pico-sdk/lib/cyw43-driver/src/cyw43_ll.obj
+home/uzygncr/pico/pico-sdk/lib/cyw43-driver/src/cyw43_ll.o: home/uzygncr/pico/pico-sdk/lib/cyw43-driver/src/cyw43_ll.c.o
+.PHONY : home/uzygncr/pico/pico-sdk/lib/cyw43-driver/src/cyw43_ll.o
 
 # target to build an object file
-home/uzygncr/pico/pico-sdk/lib/cyw43-driver/src/cyw43_ll.c.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/test.dir/build.make CMakeFiles/test.dir/home/uzygncr/pico/pico-sdk/lib/cyw43-driver/src/cyw43_ll.c.obj
-.PHONY : home/uzygncr/pico/pico-sdk/lib/cyw43-driver/src/cyw43_ll.c.obj
+home/uzygncr/pico/pico-sdk/lib/cyw43-driver/src/cyw43_ll.c.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/test.dir/build.make CMakeFiles/test.dir/home/uzygncr/pico/pico-sdk/lib/cyw43-driver/src/cyw43_ll.c.o
+.PHONY : home/uzygncr/pico/pico-sdk/lib/cyw43-driver/src/cyw43_ll.c.o
 
 home/uzygncr/pico/pico-sdk/lib/cyw43-driver/src/cyw43_ll.i: home/uzygncr/pico/pico-sdk/lib/cyw43-driver/src/cyw43_ll.c.i
 .PHONY : home/uzygncr/pico/pico-sdk/lib/cyw43-driver/src/cyw43_ll.i
@@ -242,13 +229,13 @@ home/uzygncr/pico/pico-sdk/lib/cyw43-driver/src/cyw43_ll.c.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/test.dir/build.make CMakeFiles/test.dir/home/uzygncr/pico/pico-sdk/lib/cyw43-driver/src/cyw43_ll.c.s
 .PHONY : home/uzygncr/pico/pico-sdk/lib/cyw43-driver/src/cyw43_ll.c.s
 
-home/uzygncr/pico/pico-sdk/lib/cyw43-driver/src/cyw43_lwip.obj: home/uzygncr/pico/pico-sdk/lib/cyw43-driver/src/cyw43_lwip.c.obj
-.PHONY : home/uzygncr/pico/pico-sdk/lib/cyw43-driver/src/cyw43_lwip.obj
+home/uzygncr/pico/pico-sdk/lib/cyw43-driver/src/cyw43_lwip.o: home/uzygncr/pico/pico-sdk/lib/cyw43-driver/src/cyw43_lwip.c.o
+.PHONY : home/uzygncr/pico/pico-sdk/lib/cyw43-driver/src/cyw43_lwip.o
 
 # target to build an object file
-home/uzygncr/pico/pico-sdk/lib/cyw43-driver/src/cyw43_lwip.c.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/test.dir/build.make CMakeFiles/test.dir/home/uzygncr/pico/pico-sdk/lib/cyw43-driver/src/cyw43_lwip.c.obj
-.PHONY : home/uzygncr/pico/pico-sdk/lib/cyw43-driver/src/cyw43_lwip.c.obj
+home/uzygncr/pico/pico-sdk/lib/cyw43-driver/src/cyw43_lwip.c.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/test.dir/build.make CMakeFiles/test.dir/home/uzygncr/pico/pico-sdk/lib/cyw43-driver/src/cyw43_lwip.c.o
+.PHONY : home/uzygncr/pico/pico-sdk/lib/cyw43-driver/src/cyw43_lwip.c.o
 
 home/uzygncr/pico/pico-sdk/lib/cyw43-driver/src/cyw43_lwip.i: home/uzygncr/pico/pico-sdk/lib/cyw43-driver/src/cyw43_lwip.c.i
 .PHONY : home/uzygncr/pico/pico-sdk/lib/cyw43-driver/src/cyw43_lwip.i
@@ -266,13 +253,13 @@ home/uzygncr/pico/pico-sdk/lib/cyw43-driver/src/cyw43_lwip.c.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/test.dir/build.make CMakeFiles/test.dir/home/uzygncr/pico/pico-sdk/lib/cyw43-driver/src/cyw43_lwip.c.s
 .PHONY : home/uzygncr/pico/pico-sdk/lib/cyw43-driver/src/cyw43_lwip.c.s
 
-home/uzygncr/pico/pico-sdk/lib/cyw43-driver/src/cyw43_stats.obj: home/uzygncr/pico/pico-sdk/lib/cyw43-driver/src/cyw43_stats.c.obj
-.PHONY : home/uzygncr/pico/pico-sdk/lib/cyw43-driver/src/cyw43_stats.obj
+home/uzygncr/pico/pico-sdk/lib/cyw43-driver/src/cyw43_stats.o: home/uzygncr/pico/pico-sdk/lib/cyw43-driver/src/cyw43_stats.c.o
+.PHONY : home/uzygncr/pico/pico-sdk/lib/cyw43-driver/src/cyw43_stats.o
 
 # target to build an object file
-home/uzygncr/pico/pico-sdk/lib/cyw43-driver/src/cyw43_stats.c.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/test.dir/build.make CMakeFiles/test.dir/home/uzygncr/pico/pico-sdk/lib/cyw43-driver/src/cyw43_stats.c.obj
-.PHONY : home/uzygncr/pico/pico-sdk/lib/cyw43-driver/src/cyw43_stats.c.obj
+home/uzygncr/pico/pico-sdk/lib/cyw43-driver/src/cyw43_stats.c.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/test.dir/build.make CMakeFiles/test.dir/home/uzygncr/pico/pico-sdk/lib/cyw43-driver/src/cyw43_stats.c.o
+.PHONY : home/uzygncr/pico/pico-sdk/lib/cyw43-driver/src/cyw43_stats.c.o
 
 home/uzygncr/pico/pico-sdk/lib/cyw43-driver/src/cyw43_stats.i: home/uzygncr/pico/pico-sdk/lib/cyw43-driver/src/cyw43_stats.c.i
 .PHONY : home/uzygncr/pico/pico-sdk/lib/cyw43-driver/src/cyw43_stats.i
@@ -290,13 +277,13 @@ home/uzygncr/pico/pico-sdk/lib/cyw43-driver/src/cyw43_stats.c.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/test.dir/build.make CMakeFiles/test.dir/home/uzygncr/pico/pico-sdk/lib/cyw43-driver/src/cyw43_stats.c.s
 .PHONY : home/uzygncr/pico/pico-sdk/lib/cyw43-driver/src/cyw43_stats.c.s
 
-home/uzygncr/pico/pico-sdk/lib/lwip/src/api/api_lib.obj: home/uzygncr/pico/pico-sdk/lib/lwip/src/api/api_lib.c.obj
-.PHONY : home/uzygncr/pico/pico-sdk/lib/lwip/src/api/api_lib.obj
+home/uzygncr/pico/pico-sdk/lib/lwip/src/api/api_lib.o: home/uzygncr/pico/pico-sdk/lib/lwip/src/api/api_lib.c.o
+.PHONY : home/uzygncr/pico/pico-sdk/lib/lwip/src/api/api_lib.o
 
 # target to build an object file
-home/uzygncr/pico/pico-sdk/lib/lwip/src/api/api_lib.c.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/test.dir/build.make CMakeFiles/test.dir/home/uzygncr/pico/pico-sdk/lib/lwip/src/api/api_lib.c.obj
-.PHONY : home/uzygncr/pico/pico-sdk/lib/lwip/src/api/api_lib.c.obj
+home/uzygncr/pico/pico-sdk/lib/lwip/src/api/api_lib.c.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/test.dir/build.make CMakeFiles/test.dir/home/uzygncr/pico/pico-sdk/lib/lwip/src/api/api_lib.c.o
+.PHONY : home/uzygncr/pico/pico-sdk/lib/lwip/src/api/api_lib.c.o
 
 home/uzygncr/pico/pico-sdk/lib/lwip/src/api/api_lib.i: home/uzygncr/pico/pico-sdk/lib/lwip/src/api/api_lib.c.i
 .PHONY : home/uzygncr/pico/pico-sdk/lib/lwip/src/api/api_lib.i
@@ -314,13 +301,13 @@ home/uzygncr/pico/pico-sdk/lib/lwip/src/api/api_lib.c.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/test.dir/build.make CMakeFiles/test.dir/home/uzygncr/pico/pico-sdk/lib/lwip/src/api/api_lib.c.s
 .PHONY : home/uzygncr/pico/pico-sdk/lib/lwip/src/api/api_lib.c.s
 
-home/uzygncr/pico/pico-sdk/lib/lwip/src/api/api_msg.obj: home/uzygncr/pico/pico-sdk/lib/lwip/src/api/api_msg.c.obj
-.PHONY : home/uzygncr/pico/pico-sdk/lib/lwip/src/api/api_msg.obj
+home/uzygncr/pico/pico-sdk/lib/lwip/src/api/api_msg.o: home/uzygncr/pico/pico-sdk/lib/lwip/src/api/api_msg.c.o
+.PHONY : home/uzygncr/pico/pico-sdk/lib/lwip/src/api/api_msg.o
 
 # target to build an object file
-home/uzygncr/pico/pico-sdk/lib/lwip/src/api/api_msg.c.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/test.dir/build.make CMakeFiles/test.dir/home/uzygncr/pico/pico-sdk/lib/lwip/src/api/api_msg.c.obj
-.PHONY : home/uzygncr/pico/pico-sdk/lib/lwip/src/api/api_msg.c.obj
+home/uzygncr/pico/pico-sdk/lib/lwip/src/api/api_msg.c.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/test.dir/build.make CMakeFiles/test.dir/home/uzygncr/pico/pico-sdk/lib/lwip/src/api/api_msg.c.o
+.PHONY : home/uzygncr/pico/pico-sdk/lib/lwip/src/api/api_msg.c.o
 
 home/uzygncr/pico/pico-sdk/lib/lwip/src/api/api_msg.i: home/uzygncr/pico/pico-sdk/lib/lwip/src/api/api_msg.c.i
 .PHONY : home/uzygncr/pico/pico-sdk/lib/lwip/src/api/api_msg.i
@@ -338,13 +325,13 @@ home/uzygncr/pico/pico-sdk/lib/lwip/src/api/api_msg.c.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/test.dir/build.make CMakeFiles/test.dir/home/uzygncr/pico/pico-sdk/lib/lwip/src/api/api_msg.c.s
 .PHONY : home/uzygncr/pico/pico-sdk/lib/lwip/src/api/api_msg.c.s
 
-home/uzygncr/pico/pico-sdk/lib/lwip/src/api/err.obj: home/uzygncr/pico/pico-sdk/lib/lwip/src/api/err.c.obj
-.PHONY : home/uzygncr/pico/pico-sdk/lib/lwip/src/api/err.obj
+home/uzygncr/pico/pico-sdk/lib/lwip/src/api/err.o: home/uzygncr/pico/pico-sdk/lib/lwip/src/api/err.c.o
+.PHONY : home/uzygncr/pico/pico-sdk/lib/lwip/src/api/err.o
 
 # target to build an object file
-home/uzygncr/pico/pico-sdk/lib/lwip/src/api/err.c.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/test.dir/build.make CMakeFiles/test.dir/home/uzygncr/pico/pico-sdk/lib/lwip/src/api/err.c.obj
-.PHONY : home/uzygncr/pico/pico-sdk/lib/lwip/src/api/err.c.obj
+home/uzygncr/pico/pico-sdk/lib/lwip/src/api/err.c.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/test.dir/build.make CMakeFiles/test.dir/home/uzygncr/pico/pico-sdk/lib/lwip/src/api/err.c.o
+.PHONY : home/uzygncr/pico/pico-sdk/lib/lwip/src/api/err.c.o
 
 home/uzygncr/pico/pico-sdk/lib/lwip/src/api/err.i: home/uzygncr/pico/pico-sdk/lib/lwip/src/api/err.c.i
 .PHONY : home/uzygncr/pico/pico-sdk/lib/lwip/src/api/err.i
@@ -362,13 +349,13 @@ home/uzygncr/pico/pico-sdk/lib/lwip/src/api/err.c.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/test.dir/build.make CMakeFiles/test.dir/home/uzygncr/pico/pico-sdk/lib/lwip/src/api/err.c.s
 .PHONY : home/uzygncr/pico/pico-sdk/lib/lwip/src/api/err.c.s
 
-home/uzygncr/pico/pico-sdk/lib/lwip/src/api/if_api.obj: home/uzygncr/pico/pico-sdk/lib/lwip/src/api/if_api.c.obj
-.PHONY : home/uzygncr/pico/pico-sdk/lib/lwip/src/api/if_api.obj
+home/uzygncr/pico/pico-sdk/lib/lwip/src/api/if_api.o: home/uzygncr/pico/pico-sdk/lib/lwip/src/api/if_api.c.o
+.PHONY : home/uzygncr/pico/pico-sdk/lib/lwip/src/api/if_api.o
 
 # target to build an object file
-home/uzygncr/pico/pico-sdk/lib/lwip/src/api/if_api.c.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/test.dir/build.make CMakeFiles/test.dir/home/uzygncr/pico/pico-sdk/lib/lwip/src/api/if_api.c.obj
-.PHONY : home/uzygncr/pico/pico-sdk/lib/lwip/src/api/if_api.c.obj
+home/uzygncr/pico/pico-sdk/lib/lwip/src/api/if_api.c.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/test.dir/build.make CMakeFiles/test.dir/home/uzygncr/pico/pico-sdk/lib/lwip/src/api/if_api.c.o
+.PHONY : home/uzygncr/pico/pico-sdk/lib/lwip/src/api/if_api.c.o
 
 home/uzygncr/pico/pico-sdk/lib/lwip/src/api/if_api.i: home/uzygncr/pico/pico-sdk/lib/lwip/src/api/if_api.c.i
 .PHONY : home/uzygncr/pico/pico-sdk/lib/lwip/src/api/if_api.i
@@ -386,13 +373,13 @@ home/uzygncr/pico/pico-sdk/lib/lwip/src/api/if_api.c.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/test.dir/build.make CMakeFiles/test.dir/home/uzygncr/pico/pico-sdk/lib/lwip/src/api/if_api.c.s
 .PHONY : home/uzygncr/pico/pico-sdk/lib/lwip/src/api/if_api.c.s
 
-home/uzygncr/pico/pico-sdk/lib/lwip/src/api/netbuf.obj: home/uzygncr/pico/pico-sdk/lib/lwip/src/api/netbuf.c.obj
-.PHONY : home/uzygncr/pico/pico-sdk/lib/lwip/src/api/netbuf.obj
+home/uzygncr/pico/pico-sdk/lib/lwip/src/api/netbuf.o: home/uzygncr/pico/pico-sdk/lib/lwip/src/api/netbuf.c.o
+.PHONY : home/uzygncr/pico/pico-sdk/lib/lwip/src/api/netbuf.o
 
 # target to build an object file
-home/uzygncr/pico/pico-sdk/lib/lwip/src/api/netbuf.c.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/test.dir/build.make CMakeFiles/test.dir/home/uzygncr/pico/pico-sdk/lib/lwip/src/api/netbuf.c.obj
-.PHONY : home/uzygncr/pico/pico-sdk/lib/lwip/src/api/netbuf.c.obj
+home/uzygncr/pico/pico-sdk/lib/lwip/src/api/netbuf.c.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/test.dir/build.make CMakeFiles/test.dir/home/uzygncr/pico/pico-sdk/lib/lwip/src/api/netbuf.c.o
+.PHONY : home/uzygncr/pico/pico-sdk/lib/lwip/src/api/netbuf.c.o
 
 home/uzygncr/pico/pico-sdk/lib/lwip/src/api/netbuf.i: home/uzygncr/pico/pico-sdk/lib/lwip/src/api/netbuf.c.i
 .PHONY : home/uzygncr/pico/pico-sdk/lib/lwip/src/api/netbuf.i
@@ -410,13 +397,13 @@ home/uzygncr/pico/pico-sdk/lib/lwip/src/api/netbuf.c.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/test.dir/build.make CMakeFiles/test.dir/home/uzygncr/pico/pico-sdk/lib/lwip/src/api/netbuf.c.s
 .PHONY : home/uzygncr/pico/pico-sdk/lib/lwip/src/api/netbuf.c.s
 
-home/uzygncr/pico/pico-sdk/lib/lwip/src/api/netdb.obj: home/uzygncr/pico/pico-sdk/lib/lwip/src/api/netdb.c.obj
-.PHONY : home/uzygncr/pico/pico-sdk/lib/lwip/src/api/netdb.obj
+home/uzygncr/pico/pico-sdk/lib/lwip/src/api/netdb.o: home/uzygncr/pico/pico-sdk/lib/lwip/src/api/netdb.c.o
+.PHONY : home/uzygncr/pico/pico-sdk/lib/lwip/src/api/netdb.o
 
 # target to build an object file
-home/uzygncr/pico/pico-sdk/lib/lwip/src/api/netdb.c.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/test.dir/build.make CMakeFiles/test.dir/home/uzygncr/pico/pico-sdk/lib/lwip/src/api/netdb.c.obj
-.PHONY : home/uzygncr/pico/pico-sdk/lib/lwip/src/api/netdb.c.obj
+home/uzygncr/pico/pico-sdk/lib/lwip/src/api/netdb.c.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/test.dir/build.make CMakeFiles/test.dir/home/uzygncr/pico/pico-sdk/lib/lwip/src/api/netdb.c.o
+.PHONY : home/uzygncr/pico/pico-sdk/lib/lwip/src/api/netdb.c.o
 
 home/uzygncr/pico/pico-sdk/lib/lwip/src/api/netdb.i: home/uzygncr/pico/pico-sdk/lib/lwip/src/api/netdb.c.i
 .PHONY : home/uzygncr/pico/pico-sdk/lib/lwip/src/api/netdb.i
@@ -434,13 +421,13 @@ home/uzygncr/pico/pico-sdk/lib/lwip/src/api/netdb.c.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/test.dir/build.make CMakeFiles/test.dir/home/uzygncr/pico/pico-sdk/lib/lwip/src/api/netdb.c.s
 .PHONY : home/uzygncr/pico/pico-sdk/lib/lwip/src/api/netdb.c.s
 
-home/uzygncr/pico/pico-sdk/lib/lwip/src/api/netifapi.obj: home/uzygncr/pico/pico-sdk/lib/lwip/src/api/netifapi.c.obj
-.PHONY : home/uzygncr/pico/pico-sdk/lib/lwip/src/api/netifapi.obj
+home/uzygncr/pico/pico-sdk/lib/lwip/src/api/netifapi.o: home/uzygncr/pico/pico-sdk/lib/lwip/src/api/netifapi.c.o
+.PHONY : home/uzygncr/pico/pico-sdk/lib/lwip/src/api/netifapi.o
 
 # target to build an object file
-home/uzygncr/pico/pico-sdk/lib/lwip/src/api/netifapi.c.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/test.dir/build.make CMakeFiles/test.dir/home/uzygncr/pico/pico-sdk/lib/lwip/src/api/netifapi.c.obj
-.PHONY : home/uzygncr/pico/pico-sdk/lib/lwip/src/api/netifapi.c.obj
+home/uzygncr/pico/pico-sdk/lib/lwip/src/api/netifapi.c.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/test.dir/build.make CMakeFiles/test.dir/home/uzygncr/pico/pico-sdk/lib/lwip/src/api/netifapi.c.o
+.PHONY : home/uzygncr/pico/pico-sdk/lib/lwip/src/api/netifapi.c.o
 
 home/uzygncr/pico/pico-sdk/lib/lwip/src/api/netifapi.i: home/uzygncr/pico/pico-sdk/lib/lwip/src/api/netifapi.c.i
 .PHONY : home/uzygncr/pico/pico-sdk/lib/lwip/src/api/netifapi.i
@@ -458,13 +445,13 @@ home/uzygncr/pico/pico-sdk/lib/lwip/src/api/netifapi.c.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/test.dir/build.make CMakeFiles/test.dir/home/uzygncr/pico/pico-sdk/lib/lwip/src/api/netifapi.c.s
 .PHONY : home/uzygncr/pico/pico-sdk/lib/lwip/src/api/netifapi.c.s
 
-home/uzygncr/pico/pico-sdk/lib/lwip/src/api/sockets.obj: home/uzygncr/pico/pico-sdk/lib/lwip/src/api/sockets.c.obj
-.PHONY : home/uzygncr/pico/pico-sdk/lib/lwip/src/api/sockets.obj
+home/uzygncr/pico/pico-sdk/lib/lwip/src/api/sockets.o: home/uzygncr/pico/pico-sdk/lib/lwip/src/api/sockets.c.o
+.PHONY : home/uzygncr/pico/pico-sdk/lib/lwip/src/api/sockets.o
 
 # target to build an object file
-home/uzygncr/pico/pico-sdk/lib/lwip/src/api/sockets.c.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/test.dir/build.make CMakeFiles/test.dir/home/uzygncr/pico/pico-sdk/lib/lwip/src/api/sockets.c.obj
-.PHONY : home/uzygncr/pico/pico-sdk/lib/lwip/src/api/sockets.c.obj
+home/uzygncr/pico/pico-sdk/lib/lwip/src/api/sockets.c.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/test.dir/build.make CMakeFiles/test.dir/home/uzygncr/pico/pico-sdk/lib/lwip/src/api/sockets.c.o
+.PHONY : home/uzygncr/pico/pico-sdk/lib/lwip/src/api/sockets.c.o
 
 home/uzygncr/pico/pico-sdk/lib/lwip/src/api/sockets.i: home/uzygncr/pico/pico-sdk/lib/lwip/src/api/sockets.c.i
 .PHONY : home/uzygncr/pico/pico-sdk/lib/lwip/src/api/sockets.i
@@ -482,13 +469,13 @@ home/uzygncr/pico/pico-sdk/lib/lwip/src/api/sockets.c.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/test.dir/build.make CMakeFiles/test.dir/home/uzygncr/pico/pico-sdk/lib/lwip/src/api/sockets.c.s
 .PHONY : home/uzygncr/pico/pico-sdk/lib/lwip/src/api/sockets.c.s
 
-home/uzygncr/pico/pico-sdk/lib/lwip/src/api/tcpip.obj: home/uzygncr/pico/pico-sdk/lib/lwip/src/api/tcpip.c.obj
-.PHONY : home/uzygncr/pico/pico-sdk/lib/lwip/src/api/tcpip.obj
+home/uzygncr/pico/pico-sdk/lib/lwip/src/api/tcpip.o: home/uzygncr/pico/pico-sdk/lib/lwip/src/api/tcpip.c.o
+.PHONY : home/uzygncr/pico/pico-sdk/lib/lwip/src/api/tcpip.o
 
 # target to build an object file
-home/uzygncr/pico/pico-sdk/lib/lwip/src/api/tcpip.c.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/test.dir/build.make CMakeFiles/test.dir/home/uzygncr/pico/pico-sdk/lib/lwip/src/api/tcpip.c.obj
-.PHONY : home/uzygncr/pico/pico-sdk/lib/lwip/src/api/tcpip.c.obj
+home/uzygncr/pico/pico-sdk/lib/lwip/src/api/tcpip.c.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/test.dir/build.make CMakeFiles/test.dir/home/uzygncr/pico/pico-sdk/lib/lwip/src/api/tcpip.c.o
+.PHONY : home/uzygncr/pico/pico-sdk/lib/lwip/src/api/tcpip.c.o
 
 home/uzygncr/pico/pico-sdk/lib/lwip/src/api/tcpip.i: home/uzygncr/pico/pico-sdk/lib/lwip/src/api/tcpip.c.i
 .PHONY : home/uzygncr/pico/pico-sdk/lib/lwip/src/api/tcpip.i
@@ -506,13 +493,13 @@ home/uzygncr/pico/pico-sdk/lib/lwip/src/api/tcpip.c.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/test.dir/build.make CMakeFiles/test.dir/home/uzygncr/pico/pico-sdk/lib/lwip/src/api/tcpip.c.s
 .PHONY : home/uzygncr/pico/pico-sdk/lib/lwip/src/api/tcpip.c.s
 
-home/uzygncr/pico/pico-sdk/lib/lwip/src/core/altcp.obj: home/uzygncr/pico/pico-sdk/lib/lwip/src/core/altcp.c.obj
-.PHONY : home/uzygncr/pico/pico-sdk/lib/lwip/src/core/altcp.obj
+home/uzygncr/pico/pico-sdk/lib/lwip/src/core/altcp.o: home/uzygncr/pico/pico-sdk/lib/lwip/src/core/altcp.c.o
+.PHONY : home/uzygncr/pico/pico-sdk/lib/lwip/src/core/altcp.o
 
 # target to build an object file
-home/uzygncr/pico/pico-sdk/lib/lwip/src/core/altcp.c.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/test.dir/build.make CMakeFiles/test.dir/home/uzygncr/pico/pico-sdk/lib/lwip/src/core/altcp.c.obj
-.PHONY : home/uzygncr/pico/pico-sdk/lib/lwip/src/core/altcp.c.obj
+home/uzygncr/pico/pico-sdk/lib/lwip/src/core/altcp.c.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/test.dir/build.make CMakeFiles/test.dir/home/uzygncr/pico/pico-sdk/lib/lwip/src/core/altcp.c.o
+.PHONY : home/uzygncr/pico/pico-sdk/lib/lwip/src/core/altcp.c.o
 
 home/uzygncr/pico/pico-sdk/lib/lwip/src/core/altcp.i: home/uzygncr/pico/pico-sdk/lib/lwip/src/core/altcp.c.i
 .PHONY : home/uzygncr/pico/pico-sdk/lib/lwip/src/core/altcp.i
@@ -530,13 +517,13 @@ home/uzygncr/pico/pico-sdk/lib/lwip/src/core/altcp.c.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/test.dir/build.make CMakeFiles/test.dir/home/uzygncr/pico/pico-sdk/lib/lwip/src/core/altcp.c.s
 .PHONY : home/uzygncr/pico/pico-sdk/lib/lwip/src/core/altcp.c.s
 
-home/uzygncr/pico/pico-sdk/lib/lwip/src/core/altcp_alloc.obj: home/uzygncr/pico/pico-sdk/lib/lwip/src/core/altcp_alloc.c.obj
-.PHONY : home/uzygncr/pico/pico-sdk/lib/lwip/src/core/altcp_alloc.obj
+home/uzygncr/pico/pico-sdk/lib/lwip/src/core/altcp_alloc.o: home/uzygncr/pico/pico-sdk/lib/lwip/src/core/altcp_alloc.c.o
+.PHONY : home/uzygncr/pico/pico-sdk/lib/lwip/src/core/altcp_alloc.o
 
 # target to build an object file
-home/uzygncr/pico/pico-sdk/lib/lwip/src/core/altcp_alloc.c.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/test.dir/build.make CMakeFiles/test.dir/home/uzygncr/pico/pico-sdk/lib/lwip/src/core/altcp_alloc.c.obj
-.PHONY : home/uzygncr/pico/pico-sdk/lib/lwip/src/core/altcp_alloc.c.obj
+home/uzygncr/pico/pico-sdk/lib/lwip/src/core/altcp_alloc.c.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/test.dir/build.make CMakeFiles/test.dir/home/uzygncr/pico/pico-sdk/lib/lwip/src/core/altcp_alloc.c.o
+.PHONY : home/uzygncr/pico/pico-sdk/lib/lwip/src/core/altcp_alloc.c.o
 
 home/uzygncr/pico/pico-sdk/lib/lwip/src/core/altcp_alloc.i: home/uzygncr/pico/pico-sdk/lib/lwip/src/core/altcp_alloc.c.i
 .PHONY : home/uzygncr/pico/pico-sdk/lib/lwip/src/core/altcp_alloc.i
@@ -554,13 +541,13 @@ home/uzygncr/pico/pico-sdk/lib/lwip/src/core/altcp_alloc.c.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/test.dir/build.make CMakeFiles/test.dir/home/uzygncr/pico/pico-sdk/lib/lwip/src/core/altcp_alloc.c.s
 .PHONY : home/uzygncr/pico/pico-sdk/lib/lwip/src/core/altcp_alloc.c.s
 
-home/uzygncr/pico/pico-sdk/lib/lwip/src/core/altcp_tcp.obj: home/uzygncr/pico/pico-sdk/lib/lwip/src/core/altcp_tcp.c.obj
-.PHONY : home/uzygncr/pico/pico-sdk/lib/lwip/src/core/altcp_tcp.obj
+home/uzygncr/pico/pico-sdk/lib/lwip/src/core/altcp_tcp.o: home/uzygncr/pico/pico-sdk/lib/lwip/src/core/altcp_tcp.c.o
+.PHONY : home/uzygncr/pico/pico-sdk/lib/lwip/src/core/altcp_tcp.o
 
 # target to build an object file
-home/uzygncr/pico/pico-sdk/lib/lwip/src/core/altcp_tcp.c.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/test.dir/build.make CMakeFiles/test.dir/home/uzygncr/pico/pico-sdk/lib/lwip/src/core/altcp_tcp.c.obj
-.PHONY : home/uzygncr/pico/pico-sdk/lib/lwip/src/core/altcp_tcp.c.obj
+home/uzygncr/pico/pico-sdk/lib/lwip/src/core/altcp_tcp.c.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/test.dir/build.make CMakeFiles/test.dir/home/uzygncr/pico/pico-sdk/lib/lwip/src/core/altcp_tcp.c.o
+.PHONY : home/uzygncr/pico/pico-sdk/lib/lwip/src/core/altcp_tcp.c.o
 
 home/uzygncr/pico/pico-sdk/lib/lwip/src/core/altcp_tcp.i: home/uzygncr/pico/pico-sdk/lib/lwip/src/core/altcp_tcp.c.i
 .PHONY : home/uzygncr/pico/pico-sdk/lib/lwip/src/core/altcp_tcp.i
@@ -578,13 +565,13 @@ home/uzygncr/pico/pico-sdk/lib/lwip/src/core/altcp_tcp.c.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/test.dir/build.make CMakeFiles/test.dir/home/uzygncr/pico/pico-sdk/lib/lwip/src/core/altcp_tcp.c.s
 .PHONY : home/uzygncr/pico/pico-sdk/lib/lwip/src/core/altcp_tcp.c.s
 
-home/uzygncr/pico/pico-sdk/lib/lwip/src/core/def.obj: home/uzygncr/pico/pico-sdk/lib/lwip/src/core/def.c.obj
-.PHONY : home/uzygncr/pico/pico-sdk/lib/lwip/src/core/def.obj
+home/uzygncr/pico/pico-sdk/lib/lwip/src/core/def.o: home/uzygncr/pico/pico-sdk/lib/lwip/src/core/def.c.o
+.PHONY : home/uzygncr/pico/pico-sdk/lib/lwip/src/core/def.o
 
 # target to build an object file
-home/uzygncr/pico/pico-sdk/lib/lwip/src/core/def.c.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/test.dir/build.make CMakeFiles/test.dir/home/uzygncr/pico/pico-sdk/lib/lwip/src/core/def.c.obj
-.PHONY : home/uzygncr/pico/pico-sdk/lib/lwip/src/core/def.c.obj
+home/uzygncr/pico/pico-sdk/lib/lwip/src/core/def.c.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/test.dir/build.make CMakeFiles/test.dir/home/uzygncr/pico/pico-sdk/lib/lwip/src/core/def.c.o
+.PHONY : home/uzygncr/pico/pico-sdk/lib/lwip/src/core/def.c.o
 
 home/uzygncr/pico/pico-sdk/lib/lwip/src/core/def.i: home/uzygncr/pico/pico-sdk/lib/lwip/src/core/def.c.i
 .PHONY : home/uzygncr/pico/pico-sdk/lib/lwip/src/core/def.i
@@ -602,13 +589,13 @@ home/uzygncr/pico/pico-sdk/lib/lwip/src/core/def.c.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/test.dir/build.make CMakeFiles/test.dir/home/uzygncr/pico/pico-sdk/lib/lwip/src/core/def.c.s
 .PHONY : home/uzygncr/pico/pico-sdk/lib/lwip/src/core/def.c.s
 
-home/uzygncr/pico/pico-sdk/lib/lwip/src/core/dns.obj: home/uzygncr/pico/pico-sdk/lib/lwip/src/core/dns.c.obj
-.PHONY : home/uzygncr/pico/pico-sdk/lib/lwip/src/core/dns.obj
+home/uzygncr/pico/pico-sdk/lib/lwip/src/core/dns.o: home/uzygncr/pico/pico-sdk/lib/lwip/src/core/dns.c.o
+.PHONY : home/uzygncr/pico/pico-sdk/lib/lwip/src/core/dns.o
 
 # target to build an object file
-home/uzygncr/pico/pico-sdk/lib/lwip/src/core/dns.c.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/test.dir/build.make CMakeFiles/test.dir/home/uzygncr/pico/pico-sdk/lib/lwip/src/core/dns.c.obj
-.PHONY : home/uzygncr/pico/pico-sdk/lib/lwip/src/core/dns.c.obj
+home/uzygncr/pico/pico-sdk/lib/lwip/src/core/dns.c.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/test.dir/build.make CMakeFiles/test.dir/home/uzygncr/pico/pico-sdk/lib/lwip/src/core/dns.c.o
+.PHONY : home/uzygncr/pico/pico-sdk/lib/lwip/src/core/dns.c.o
 
 home/uzygncr/pico/pico-sdk/lib/lwip/src/core/dns.i: home/uzygncr/pico/pico-sdk/lib/lwip/src/core/dns.c.i
 .PHONY : home/uzygncr/pico/pico-sdk/lib/lwip/src/core/dns.i
@@ -626,13 +613,13 @@ home/uzygncr/pico/pico-sdk/lib/lwip/src/core/dns.c.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/test.dir/build.make CMakeFiles/test.dir/home/uzygncr/pico/pico-sdk/lib/lwip/src/core/dns.c.s
 .PHONY : home/uzygncr/pico/pico-sdk/lib/lwip/src/core/dns.c.s
 
-home/uzygncr/pico/pico-sdk/lib/lwip/src/core/inet_chksum.obj: home/uzygncr/pico/pico-sdk/lib/lwip/src/core/inet_chksum.c.obj
-.PHONY : home/uzygncr/pico/pico-sdk/lib/lwip/src/core/inet_chksum.obj
+home/uzygncr/pico/pico-sdk/lib/lwip/src/core/inet_chksum.o: home/uzygncr/pico/pico-sdk/lib/lwip/src/core/inet_chksum.c.o
+.PHONY : home/uzygncr/pico/pico-sdk/lib/lwip/src/core/inet_chksum.o
 
 # target to build an object file
-home/uzygncr/pico/pico-sdk/lib/lwip/src/core/inet_chksum.c.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/test.dir/build.make CMakeFiles/test.dir/home/uzygncr/pico/pico-sdk/lib/lwip/src/core/inet_chksum.c.obj
-.PHONY : home/uzygncr/pico/pico-sdk/lib/lwip/src/core/inet_chksum.c.obj
+home/uzygncr/pico/pico-sdk/lib/lwip/src/core/inet_chksum.c.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/test.dir/build.make CMakeFiles/test.dir/home/uzygncr/pico/pico-sdk/lib/lwip/src/core/inet_chksum.c.o
+.PHONY : home/uzygncr/pico/pico-sdk/lib/lwip/src/core/inet_chksum.c.o
 
 home/uzygncr/pico/pico-sdk/lib/lwip/src/core/inet_chksum.i: home/uzygncr/pico/pico-sdk/lib/lwip/src/core/inet_chksum.c.i
 .PHONY : home/uzygncr/pico/pico-sdk/lib/lwip/src/core/inet_chksum.i
@@ -650,13 +637,13 @@ home/uzygncr/pico/pico-sdk/lib/lwip/src/core/inet_chksum.c.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/test.dir/build.make CMakeFiles/test.dir/home/uzygncr/pico/pico-sdk/lib/lwip/src/core/inet_chksum.c.s
 .PHONY : home/uzygncr/pico/pico-sdk/lib/lwip/src/core/inet_chksum.c.s
 
-home/uzygncr/pico/pico-sdk/lib/lwip/src/core/init.obj: home/uzygncr/pico/pico-sdk/lib/lwip/src/core/init.c.obj
-.PHONY : home/uzygncr/pico/pico-sdk/lib/lwip/src/core/init.obj
+home/uzygncr/pico/pico-sdk/lib/lwip/src/core/init.o: home/uzygncr/pico/pico-sdk/lib/lwip/src/core/init.c.o
+.PHONY : home/uzygncr/pico/pico-sdk/lib/lwip/src/core/init.o
 
 # target to build an object file
-home/uzygncr/pico/pico-sdk/lib/lwip/src/core/init.c.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/test.dir/build.make CMakeFiles/test.dir/home/uzygncr/pico/pico-sdk/lib/lwip/src/core/init.c.obj
-.PHONY : home/uzygncr/pico/pico-sdk/lib/lwip/src/core/init.c.obj
+home/uzygncr/pico/pico-sdk/lib/lwip/src/core/init.c.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/test.dir/build.make CMakeFiles/test.dir/home/uzygncr/pico/pico-sdk/lib/lwip/src/core/init.c.o
+.PHONY : home/uzygncr/pico/pico-sdk/lib/lwip/src/core/init.c.o
 
 home/uzygncr/pico/pico-sdk/lib/lwip/src/core/init.i: home/uzygncr/pico/pico-sdk/lib/lwip/src/core/init.c.i
 .PHONY : home/uzygncr/pico/pico-sdk/lib/lwip/src/core/init.i
@@ -674,13 +661,13 @@ home/uzygncr/pico/pico-sdk/lib/lwip/src/core/init.c.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/test.dir/build.make CMakeFiles/test.dir/home/uzygncr/pico/pico-sdk/lib/lwip/src/core/init.c.s
 .PHONY : home/uzygncr/pico/pico-sdk/lib/lwip/src/core/init.c.s
 
-home/uzygncr/pico/pico-sdk/lib/lwip/src/core/ip.obj: home/uzygncr/pico/pico-sdk/lib/lwip/src/core/ip.c.obj
-.PHONY : home/uzygncr/pico/pico-sdk/lib/lwip/src/core/ip.obj
+home/uzygncr/pico/pico-sdk/lib/lwip/src/core/ip.o: home/uzygncr/pico/pico-sdk/lib/lwip/src/core/ip.c.o
+.PHONY : home/uzygncr/pico/pico-sdk/lib/lwip/src/core/ip.o
 
 # target to build an object file
-home/uzygncr/pico/pico-sdk/lib/lwip/src/core/ip.c.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/test.dir/build.make CMakeFiles/test.dir/home/uzygncr/pico/pico-sdk/lib/lwip/src/core/ip.c.obj
-.PHONY : home/uzygncr/pico/pico-sdk/lib/lwip/src/core/ip.c.obj
+home/uzygncr/pico/pico-sdk/lib/lwip/src/core/ip.c.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/test.dir/build.make CMakeFiles/test.dir/home/uzygncr/pico/pico-sdk/lib/lwip/src/core/ip.c.o
+.PHONY : home/uzygncr/pico/pico-sdk/lib/lwip/src/core/ip.c.o
 
 home/uzygncr/pico/pico-sdk/lib/lwip/src/core/ip.i: home/uzygncr/pico/pico-sdk/lib/lwip/src/core/ip.c.i
 .PHONY : home/uzygncr/pico/pico-sdk/lib/lwip/src/core/ip.i
@@ -698,13 +685,13 @@ home/uzygncr/pico/pico-sdk/lib/lwip/src/core/ip.c.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/test.dir/build.make CMakeFiles/test.dir/home/uzygncr/pico/pico-sdk/lib/lwip/src/core/ip.c.s
 .PHONY : home/uzygncr/pico/pico-sdk/lib/lwip/src/core/ip.c.s
 
-home/uzygncr/pico/pico-sdk/lib/lwip/src/core/ipv4/acd.obj: home/uzygncr/pico/pico-sdk/lib/lwip/src/core/ipv4/acd.c.obj
-.PHONY : home/uzygncr/pico/pico-sdk/lib/lwip/src/core/ipv4/acd.obj
+home/uzygncr/pico/pico-sdk/lib/lwip/src/core/ipv4/acd.o: home/uzygncr/pico/pico-sdk/lib/lwip/src/core/ipv4/acd.c.o
+.PHONY : home/uzygncr/pico/pico-sdk/lib/lwip/src/core/ipv4/acd.o
 
 # target to build an object file
-home/uzygncr/pico/pico-sdk/lib/lwip/src/core/ipv4/acd.c.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/test.dir/build.make CMakeFiles/test.dir/home/uzygncr/pico/pico-sdk/lib/lwip/src/core/ipv4/acd.c.obj
-.PHONY : home/uzygncr/pico/pico-sdk/lib/lwip/src/core/ipv4/acd.c.obj
+home/uzygncr/pico/pico-sdk/lib/lwip/src/core/ipv4/acd.c.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/test.dir/build.make CMakeFiles/test.dir/home/uzygncr/pico/pico-sdk/lib/lwip/src/core/ipv4/acd.c.o
+.PHONY : home/uzygncr/pico/pico-sdk/lib/lwip/src/core/ipv4/acd.c.o
 
 home/uzygncr/pico/pico-sdk/lib/lwip/src/core/ipv4/acd.i: home/uzygncr/pico/pico-sdk/lib/lwip/src/core/ipv4/acd.c.i
 .PHONY : home/uzygncr/pico/pico-sdk/lib/lwip/src/core/ipv4/acd.i
@@ -722,13 +709,13 @@ home/uzygncr/pico/pico-sdk/lib/lwip/src/core/ipv4/acd.c.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/test.dir/build.make CMakeFiles/test.dir/home/uzygncr/pico/pico-sdk/lib/lwip/src/core/ipv4/acd.c.s
 .PHONY : home/uzygncr/pico/pico-sdk/lib/lwip/src/core/ipv4/acd.c.s
 
-home/uzygncr/pico/pico-sdk/lib/lwip/src/core/ipv4/autoip.obj: home/uzygncr/pico/pico-sdk/lib/lwip/src/core/ipv4/autoip.c.obj
-.PHONY : home/uzygncr/pico/pico-sdk/lib/lwip/src/core/ipv4/autoip.obj
+home/uzygncr/pico/pico-sdk/lib/lwip/src/core/ipv4/autoip.o: home/uzygncr/pico/pico-sdk/lib/lwip/src/core/ipv4/autoip.c.o
+.PHONY : home/uzygncr/pico/pico-sdk/lib/lwip/src/core/ipv4/autoip.o
 
 # target to build an object file
-home/uzygncr/pico/pico-sdk/lib/lwip/src/core/ipv4/autoip.c.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/test.dir/build.make CMakeFiles/test.dir/home/uzygncr/pico/pico-sdk/lib/lwip/src/core/ipv4/autoip.c.obj
-.PHONY : home/uzygncr/pico/pico-sdk/lib/lwip/src/core/ipv4/autoip.c.obj
+home/uzygncr/pico/pico-sdk/lib/lwip/src/core/ipv4/autoip.c.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/test.dir/build.make CMakeFiles/test.dir/home/uzygncr/pico/pico-sdk/lib/lwip/src/core/ipv4/autoip.c.o
+.PHONY : home/uzygncr/pico/pico-sdk/lib/lwip/src/core/ipv4/autoip.c.o
 
 home/uzygncr/pico/pico-sdk/lib/lwip/src/core/ipv4/autoip.i: home/uzygncr/pico/pico-sdk/lib/lwip/src/core/ipv4/autoip.c.i
 .PHONY : home/uzygncr/pico/pico-sdk/lib/lwip/src/core/ipv4/autoip.i
@@ -746,13 +733,13 @@ home/uzygncr/pico/pico-sdk/lib/lwip/src/core/ipv4/autoip.c.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/test.dir/build.make CMakeFiles/test.dir/home/uzygncr/pico/pico-sdk/lib/lwip/src/core/ipv4/autoip.c.s
 .PHONY : home/uzygncr/pico/pico-sdk/lib/lwip/src/core/ipv4/autoip.c.s
 
-home/uzygncr/pico/pico-sdk/lib/lwip/src/core/ipv4/dhcp.obj: home/uzygncr/pico/pico-sdk/lib/lwip/src/core/ipv4/dhcp.c.obj
-.PHONY : home/uzygncr/pico/pico-sdk/lib/lwip/src/core/ipv4/dhcp.obj
+home/uzygncr/pico/pico-sdk/lib/lwip/src/core/ipv4/dhcp.o: home/uzygncr/pico/pico-sdk/lib/lwip/src/core/ipv4/dhcp.c.o
+.PHONY : home/uzygncr/pico/pico-sdk/lib/lwip/src/core/ipv4/dhcp.o
 
 # target to build an object file
-home/uzygncr/pico/pico-sdk/lib/lwip/src/core/ipv4/dhcp.c.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/test.dir/build.make CMakeFiles/test.dir/home/uzygncr/pico/pico-sdk/lib/lwip/src/core/ipv4/dhcp.c.obj
-.PHONY : home/uzygncr/pico/pico-sdk/lib/lwip/src/core/ipv4/dhcp.c.obj
+home/uzygncr/pico/pico-sdk/lib/lwip/src/core/ipv4/dhcp.c.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/test.dir/build.make CMakeFiles/test.dir/home/uzygncr/pico/pico-sdk/lib/lwip/src/core/ipv4/dhcp.c.o
+.PHONY : home/uzygncr/pico/pico-sdk/lib/lwip/src/core/ipv4/dhcp.c.o
 
 home/uzygncr/pico/pico-sdk/lib/lwip/src/core/ipv4/dhcp.i: home/uzygncr/pico/pico-sdk/lib/lwip/src/core/ipv4/dhcp.c.i
 .PHONY : home/uzygncr/pico/pico-sdk/lib/lwip/src/core/ipv4/dhcp.i
@@ -770,13 +757,13 @@ home/uzygncr/pico/pico-sdk/lib/lwip/src/core/ipv4/dhcp.c.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/test.dir/build.make CMakeFiles/test.dir/home/uzygncr/pico/pico-sdk/lib/lwip/src/core/ipv4/dhcp.c.s
 .PHONY : home/uzygncr/pico/pico-sdk/lib/lwip/src/core/ipv4/dhcp.c.s
 
-home/uzygncr/pico/pico-sdk/lib/lwip/src/core/ipv4/etharp.obj: home/uzygncr/pico/pico-sdk/lib/lwip/src/core/ipv4/etharp.c.obj
-.PHONY : home/uzygncr/pico/pico-sdk/lib/lwip/src/core/ipv4/etharp.obj
+home/uzygncr/pico/pico-sdk/lib/lwip/src/core/ipv4/etharp.o: home/uzygncr/pico/pico-sdk/lib/lwip/src/core/ipv4/etharp.c.o
+.PHONY : home/uzygncr/pico/pico-sdk/lib/lwip/src/core/ipv4/etharp.o
 
 # target to build an object file
-home/uzygncr/pico/pico-sdk/lib/lwip/src/core/ipv4/etharp.c.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/test.dir/build.make CMakeFiles/test.dir/home/uzygncr/pico/pico-sdk/lib/lwip/src/core/ipv4/etharp.c.obj
-.PHONY : home/uzygncr/pico/pico-sdk/lib/lwip/src/core/ipv4/etharp.c.obj
+home/uzygncr/pico/pico-sdk/lib/lwip/src/core/ipv4/etharp.c.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/test.dir/build.make CMakeFiles/test.dir/home/uzygncr/pico/pico-sdk/lib/lwip/src/core/ipv4/etharp.c.o
+.PHONY : home/uzygncr/pico/pico-sdk/lib/lwip/src/core/ipv4/etharp.c.o
 
 home/uzygncr/pico/pico-sdk/lib/lwip/src/core/ipv4/etharp.i: home/uzygncr/pico/pico-sdk/lib/lwip/src/core/ipv4/etharp.c.i
 .PHONY : home/uzygncr/pico/pico-sdk/lib/lwip/src/core/ipv4/etharp.i
@@ -794,13 +781,13 @@ home/uzygncr/pico/pico-sdk/lib/lwip/src/core/ipv4/etharp.c.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/test.dir/build.make CMakeFiles/test.dir/home/uzygncr/pico/pico-sdk/lib/lwip/src/core/ipv4/etharp.c.s
 .PHONY : home/uzygncr/pico/pico-sdk/lib/lwip/src/core/ipv4/etharp.c.s
 
-home/uzygncr/pico/pico-sdk/lib/lwip/src/core/ipv4/icmp.obj: home/uzygncr/pico/pico-sdk/lib/lwip/src/core/ipv4/icmp.c.obj
-.PHONY : home/uzygncr/pico/pico-sdk/lib/lwip/src/core/ipv4/icmp.obj
+home/uzygncr/pico/pico-sdk/lib/lwip/src/core/ipv4/icmp.o: home/uzygncr/pico/pico-sdk/lib/lwip/src/core/ipv4/icmp.c.o
+.PHONY : home/uzygncr/pico/pico-sdk/lib/lwip/src/core/ipv4/icmp.o
 
 # target to build an object file
-home/uzygncr/pico/pico-sdk/lib/lwip/src/core/ipv4/icmp.c.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/test.dir/build.make CMakeFiles/test.dir/home/uzygncr/pico/pico-sdk/lib/lwip/src/core/ipv4/icmp.c.obj
-.PHONY : home/uzygncr/pico/pico-sdk/lib/lwip/src/core/ipv4/icmp.c.obj
+home/uzygncr/pico/pico-sdk/lib/lwip/src/core/ipv4/icmp.c.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/test.dir/build.make CMakeFiles/test.dir/home/uzygncr/pico/pico-sdk/lib/lwip/src/core/ipv4/icmp.c.o
+.PHONY : home/uzygncr/pico/pico-sdk/lib/lwip/src/core/ipv4/icmp.c.o
 
 home/uzygncr/pico/pico-sdk/lib/lwip/src/core/ipv4/icmp.i: home/uzygncr/pico/pico-sdk/lib/lwip/src/core/ipv4/icmp.c.i
 .PHONY : home/uzygncr/pico/pico-sdk/lib/lwip/src/core/ipv4/icmp.i
@@ -818,13 +805,13 @@ home/uzygncr/pico/pico-sdk/lib/lwip/src/core/ipv4/icmp.c.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/test.dir/build.make CMakeFiles/test.dir/home/uzygncr/pico/pico-sdk/lib/lwip/src/core/ipv4/icmp.c.s
 .PHONY : home/uzygncr/pico/pico-sdk/lib/lwip/src/core/ipv4/icmp.c.s
 
-home/uzygncr/pico/pico-sdk/lib/lwip/src/core/ipv4/igmp.obj: home/uzygncr/pico/pico-sdk/lib/lwip/src/core/ipv4/igmp.c.obj
-.PHONY : home/uzygncr/pico/pico-sdk/lib/lwip/src/core/ipv4/igmp.obj
+home/uzygncr/pico/pico-sdk/lib/lwip/src/core/ipv4/igmp.o: home/uzygncr/pico/pico-sdk/lib/lwip/src/core/ipv4/igmp.c.o
+.PHONY : home/uzygncr/pico/pico-sdk/lib/lwip/src/core/ipv4/igmp.o
 
 # target to build an object file
-home/uzygncr/pico/pico-sdk/lib/lwip/src/core/ipv4/igmp.c.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/test.dir/build.make CMakeFiles/test.dir/home/uzygncr/pico/pico-sdk/lib/lwip/src/core/ipv4/igmp.c.obj
-.PHONY : home/uzygncr/pico/pico-sdk/lib/lwip/src/core/ipv4/igmp.c.obj
+home/uzygncr/pico/pico-sdk/lib/lwip/src/core/ipv4/igmp.c.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/test.dir/build.make CMakeFiles/test.dir/home/uzygncr/pico/pico-sdk/lib/lwip/src/core/ipv4/igmp.c.o
+.PHONY : home/uzygncr/pico/pico-sdk/lib/lwip/src/core/ipv4/igmp.c.o
 
 home/uzygncr/pico/pico-sdk/lib/lwip/src/core/ipv4/igmp.i: home/uzygncr/pico/pico-sdk/lib/lwip/src/core/ipv4/igmp.c.i
 .PHONY : home/uzygncr/pico/pico-sdk/lib/lwip/src/core/ipv4/igmp.i
@@ -842,13 +829,13 @@ home/uzygncr/pico/pico-sdk/lib/lwip/src/core/ipv4/igmp.c.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/test.dir/build.make CMakeFiles/test.dir/home/uzygncr/pico/pico-sdk/lib/lwip/src/core/ipv4/igmp.c.s
 .PHONY : home/uzygncr/pico/pico-sdk/lib/lwip/src/core/ipv4/igmp.c.s
 
-home/uzygncr/pico/pico-sdk/lib/lwip/src/core/ipv4/ip4.obj: home/uzygncr/pico/pico-sdk/lib/lwip/src/core/ipv4/ip4.c.obj
-.PHONY : home/uzygncr/pico/pico-sdk/lib/lwip/src/core/ipv4/ip4.obj
+home/uzygncr/pico/pico-sdk/lib/lwip/src/core/ipv4/ip4.o: home/uzygncr/pico/pico-sdk/lib/lwip/src/core/ipv4/ip4.c.o
+.PHONY : home/uzygncr/pico/pico-sdk/lib/lwip/src/core/ipv4/ip4.o
 
 # target to build an object file
-home/uzygncr/pico/pico-sdk/lib/lwip/src/core/ipv4/ip4.c.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/test.dir/build.make CMakeFiles/test.dir/home/uzygncr/pico/pico-sdk/lib/lwip/src/core/ipv4/ip4.c.obj
-.PHONY : home/uzygncr/pico/pico-sdk/lib/lwip/src/core/ipv4/ip4.c.obj
+home/uzygncr/pico/pico-sdk/lib/lwip/src/core/ipv4/ip4.c.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/test.dir/build.make CMakeFiles/test.dir/home/uzygncr/pico/pico-sdk/lib/lwip/src/core/ipv4/ip4.c.o
+.PHONY : home/uzygncr/pico/pico-sdk/lib/lwip/src/core/ipv4/ip4.c.o
 
 home/uzygncr/pico/pico-sdk/lib/lwip/src/core/ipv4/ip4.i: home/uzygncr/pico/pico-sdk/lib/lwip/src/core/ipv4/ip4.c.i
 .PHONY : home/uzygncr/pico/pico-sdk/lib/lwip/src/core/ipv4/ip4.i
@@ -866,13 +853,13 @@ home/uzygncr/pico/pico-sdk/lib/lwip/src/core/ipv4/ip4.c.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/test.dir/build.make CMakeFiles/test.dir/home/uzygncr/pico/pico-sdk/lib/lwip/src/core/ipv4/ip4.c.s
 .PHONY : home/uzygncr/pico/pico-sdk/lib/lwip/src/core/ipv4/ip4.c.s
 
-home/uzygncr/pico/pico-sdk/lib/lwip/src/core/ipv4/ip4_addr.obj: home/uzygncr/pico/pico-sdk/lib/lwip/src/core/ipv4/ip4_addr.c.obj
-.PHONY : home/uzygncr/pico/pico-sdk/lib/lwip/src/core/ipv4/ip4_addr.obj
+home/uzygncr/pico/pico-sdk/lib/lwip/src/core/ipv4/ip4_addr.o: home/uzygncr/pico/pico-sdk/lib/lwip/src/core/ipv4/ip4_addr.c.o
+.PHONY : home/uzygncr/pico/pico-sdk/lib/lwip/src/core/ipv4/ip4_addr.o
 
 # target to build an object file
-home/uzygncr/pico/pico-sdk/lib/lwip/src/core/ipv4/ip4_addr.c.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/test.dir/build.make CMakeFiles/test.dir/home/uzygncr/pico/pico-sdk/lib/lwip/src/core/ipv4/ip4_addr.c.obj
-.PHONY : home/uzygncr/pico/pico-sdk/lib/lwip/src/core/ipv4/ip4_addr.c.obj
+home/uzygncr/pico/pico-sdk/lib/lwip/src/core/ipv4/ip4_addr.c.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/test.dir/build.make CMakeFiles/test.dir/home/uzygncr/pico/pico-sdk/lib/lwip/src/core/ipv4/ip4_addr.c.o
+.PHONY : home/uzygncr/pico/pico-sdk/lib/lwip/src/core/ipv4/ip4_addr.c.o
 
 home/uzygncr/pico/pico-sdk/lib/lwip/src/core/ipv4/ip4_addr.i: home/uzygncr/pico/pico-sdk/lib/lwip/src/core/ipv4/ip4_addr.c.i
 .PHONY : home/uzygncr/pico/pico-sdk/lib/lwip/src/core/ipv4/ip4_addr.i
@@ -890,13 +877,13 @@ home/uzygncr/pico/pico-sdk/lib/lwip/src/core/ipv4/ip4_addr.c.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/test.dir/build.make CMakeFiles/test.dir/home/uzygncr/pico/pico-sdk/lib/lwip/src/core/ipv4/ip4_addr.c.s
 .PHONY : home/uzygncr/pico/pico-sdk/lib/lwip/src/core/ipv4/ip4_addr.c.s
 
-home/uzygncr/pico/pico-sdk/lib/lwip/src/core/ipv4/ip4_frag.obj: home/uzygncr/pico/pico-sdk/lib/lwip/src/core/ipv4/ip4_frag.c.obj
-.PHONY : home/uzygncr/pico/pico-sdk/lib/lwip/src/core/ipv4/ip4_frag.obj
+home/uzygncr/pico/pico-sdk/lib/lwip/src/core/ipv4/ip4_frag.o: home/uzygncr/pico/pico-sdk/lib/lwip/src/core/ipv4/ip4_frag.c.o
+.PHONY : home/uzygncr/pico/pico-sdk/lib/lwip/src/core/ipv4/ip4_frag.o
 
 # target to build an object file
-home/uzygncr/pico/pico-sdk/lib/lwip/src/core/ipv4/ip4_frag.c.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/test.dir/build.make CMakeFiles/test.dir/home/uzygncr/pico/pico-sdk/lib/lwip/src/core/ipv4/ip4_frag.c.obj
-.PHONY : home/uzygncr/pico/pico-sdk/lib/lwip/src/core/ipv4/ip4_frag.c.obj
+home/uzygncr/pico/pico-sdk/lib/lwip/src/core/ipv4/ip4_frag.c.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/test.dir/build.make CMakeFiles/test.dir/home/uzygncr/pico/pico-sdk/lib/lwip/src/core/ipv4/ip4_frag.c.o
+.PHONY : home/uzygncr/pico/pico-sdk/lib/lwip/src/core/ipv4/ip4_frag.c.o
 
 home/uzygncr/pico/pico-sdk/lib/lwip/src/core/ipv4/ip4_frag.i: home/uzygncr/pico/pico-sdk/lib/lwip/src/core/ipv4/ip4_frag.c.i
 .PHONY : home/uzygncr/pico/pico-sdk/lib/lwip/src/core/ipv4/ip4_frag.i
@@ -914,13 +901,13 @@ home/uzygncr/pico/pico-sdk/lib/lwip/src/core/ipv4/ip4_frag.c.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/test.dir/build.make CMakeFiles/test.dir/home/uzygncr/pico/pico-sdk/lib/lwip/src/core/ipv4/ip4_frag.c.s
 .PHONY : home/uzygncr/pico/pico-sdk/lib/lwip/src/core/ipv4/ip4_frag.c.s
 
-home/uzygncr/pico/pico-sdk/lib/lwip/src/core/ipv6/dhcp6.obj: home/uzygncr/pico/pico-sdk/lib/lwip/src/core/ipv6/dhcp6.c.obj
-.PHONY : home/uzygncr/pico/pico-sdk/lib/lwip/src/core/ipv6/dhcp6.obj
+home/uzygncr/pico/pico-sdk/lib/lwip/src/core/ipv6/dhcp6.o: home/uzygncr/pico/pico-sdk/lib/lwip/src/core/ipv6/dhcp6.c.o
+.PHONY : home/uzygncr/pico/pico-sdk/lib/lwip/src/core/ipv6/dhcp6.o
 
 # target to build an object file
-home/uzygncr/pico/pico-sdk/lib/lwip/src/core/ipv6/dhcp6.c.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/test.dir/build.make CMakeFiles/test.dir/home/uzygncr/pico/pico-sdk/lib/lwip/src/core/ipv6/dhcp6.c.obj
-.PHONY : home/uzygncr/pico/pico-sdk/lib/lwip/src/core/ipv6/dhcp6.c.obj
+home/uzygncr/pico/pico-sdk/lib/lwip/src/core/ipv6/dhcp6.c.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/test.dir/build.make CMakeFiles/test.dir/home/uzygncr/pico/pico-sdk/lib/lwip/src/core/ipv6/dhcp6.c.o
+.PHONY : home/uzygncr/pico/pico-sdk/lib/lwip/src/core/ipv6/dhcp6.c.o
 
 home/uzygncr/pico/pico-sdk/lib/lwip/src/core/ipv6/dhcp6.i: home/uzygncr/pico/pico-sdk/lib/lwip/src/core/ipv6/dhcp6.c.i
 .PHONY : home/uzygncr/pico/pico-sdk/lib/lwip/src/core/ipv6/dhcp6.i
@@ -938,13 +925,13 @@ home/uzygncr/pico/pico-sdk/lib/lwip/src/core/ipv6/dhcp6.c.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/test.dir/build.make CMakeFiles/test.dir/home/uzygncr/pico/pico-sdk/lib/lwip/src/core/ipv6/dhcp6.c.s
 .PHONY : home/uzygncr/pico/pico-sdk/lib/lwip/src/core/ipv6/dhcp6.c.s
 
-home/uzygncr/pico/pico-sdk/lib/lwip/src/core/ipv6/ethip6.obj: home/uzygncr/pico/pico-sdk/lib/lwip/src/core/ipv6/ethip6.c.obj
-.PHONY : home/uzygncr/pico/pico-sdk/lib/lwip/src/core/ipv6/ethip6.obj
+home/uzygncr/pico/pico-sdk/lib/lwip/src/core/ipv6/ethip6.o: home/uzygncr/pico/pico-sdk/lib/lwip/src/core/ipv6/ethip6.c.o
+.PHONY : home/uzygncr/pico/pico-sdk/lib/lwip/src/core/ipv6/ethip6.o
 
 # target to build an object file
-home/uzygncr/pico/pico-sdk/lib/lwip/src/core/ipv6/ethip6.c.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/test.dir/build.make CMakeFiles/test.dir/home/uzygncr/pico/pico-sdk/lib/lwip/src/core/ipv6/ethip6.c.obj
-.PHONY : home/uzygncr/pico/pico-sdk/lib/lwip/src/core/ipv6/ethip6.c.obj
+home/uzygncr/pico/pico-sdk/lib/lwip/src/core/ipv6/ethip6.c.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/test.dir/build.make CMakeFiles/test.dir/home/uzygncr/pico/pico-sdk/lib/lwip/src/core/ipv6/ethip6.c.o
+.PHONY : home/uzygncr/pico/pico-sdk/lib/lwip/src/core/ipv6/ethip6.c.o
 
 home/uzygncr/pico/pico-sdk/lib/lwip/src/core/ipv6/ethip6.i: home/uzygncr/pico/pico-sdk/lib/lwip/src/core/ipv6/ethip6.c.i
 .PHONY : home/uzygncr/pico/pico-sdk/lib/lwip/src/core/ipv6/ethip6.i
@@ -962,13 +949,13 @@ home/uzygncr/pico/pico-sdk/lib/lwip/src/core/ipv6/ethip6.c.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/test.dir/build.make CMakeFiles/test.dir/home/uzygncr/pico/pico-sdk/lib/lwip/src/core/ipv6/ethip6.c.s
 .PHONY : home/uzygncr/pico/pico-sdk/lib/lwip/src/core/ipv6/ethip6.c.s
 
-home/uzygncr/pico/pico-sdk/lib/lwip/src/core/ipv6/icmp6.obj: home/uzygncr/pico/pico-sdk/lib/lwip/src/core/ipv6/icmp6.c.obj
-.PHONY : home/uzygncr/pico/pico-sdk/lib/lwip/src/core/ipv6/icmp6.obj
+home/uzygncr/pico/pico-sdk/lib/lwip/src/core/ipv6/icmp6.o: home/uzygncr/pico/pico-sdk/lib/lwip/src/core/ipv6/icmp6.c.o
+.PHONY : home/uzygncr/pico/pico-sdk/lib/lwip/src/core/ipv6/icmp6.o
 
 # target to build an object file
-home/uzygncr/pico/pico-sdk/lib/lwip/src/core/ipv6/icmp6.c.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/test.dir/build.make CMakeFiles/test.dir/home/uzygncr/pico/pico-sdk/lib/lwip/src/core/ipv6/icmp6.c.obj
-.PHONY : home/uzygncr/pico/pico-sdk/lib/lwip/src/core/ipv6/icmp6.c.obj
+home/uzygncr/pico/pico-sdk/lib/lwip/src/core/ipv6/icmp6.c.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/test.dir/build.make CMakeFiles/test.dir/home/uzygncr/pico/pico-sdk/lib/lwip/src/core/ipv6/icmp6.c.o
+.PHONY : home/uzygncr/pico/pico-sdk/lib/lwip/src/core/ipv6/icmp6.c.o
 
 home/uzygncr/pico/pico-sdk/lib/lwip/src/core/ipv6/icmp6.i: home/uzygncr/pico/pico-sdk/lib/lwip/src/core/ipv6/icmp6.c.i
 .PHONY : home/uzygncr/pico/pico-sdk/lib/lwip/src/core/ipv6/icmp6.i
@@ -986,13 +973,13 @@ home/uzygncr/pico/pico-sdk/lib/lwip/src/core/ipv6/icmp6.c.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/test.dir/build.make CMakeFiles/test.dir/home/uzygncr/pico/pico-sdk/lib/lwip/src/core/ipv6/icmp6.c.s
 .PHONY : home/uzygncr/pico/pico-sdk/lib/lwip/src/core/ipv6/icmp6.c.s
 
-home/uzygncr/pico/pico-sdk/lib/lwip/src/core/ipv6/inet6.obj: home/uzygncr/pico/pico-sdk/lib/lwip/src/core/ipv6/inet6.c.obj
-.PHONY : home/uzygncr/pico/pico-sdk/lib/lwip/src/core/ipv6/inet6.obj
+home/uzygncr/pico/pico-sdk/lib/lwip/src/core/ipv6/inet6.o: home/uzygncr/pico/pico-sdk/lib/lwip/src/core/ipv6/inet6.c.o
+.PHONY : home/uzygncr/pico/pico-sdk/lib/lwip/src/core/ipv6/inet6.o
 
 # target to build an object file
-home/uzygncr/pico/pico-sdk/lib/lwip/src/core/ipv6/inet6.c.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/test.dir/build.make CMakeFiles/test.dir/home/uzygncr/pico/pico-sdk/lib/lwip/src/core/ipv6/inet6.c.obj
-.PHONY : home/uzygncr/pico/pico-sdk/lib/lwip/src/core/ipv6/inet6.c.obj
+home/uzygncr/pico/pico-sdk/lib/lwip/src/core/ipv6/inet6.c.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/test.dir/build.make CMakeFiles/test.dir/home/uzygncr/pico/pico-sdk/lib/lwip/src/core/ipv6/inet6.c.o
+.PHONY : home/uzygncr/pico/pico-sdk/lib/lwip/src/core/ipv6/inet6.c.o
 
 home/uzygncr/pico/pico-sdk/lib/lwip/src/core/ipv6/inet6.i: home/uzygncr/pico/pico-sdk/lib/lwip/src/core/ipv6/inet6.c.i
 .PHONY : home/uzygncr/pico/pico-sdk/lib/lwip/src/core/ipv6/inet6.i
@@ -1010,13 +997,13 @@ home/uzygncr/pico/pico-sdk/lib/lwip/src/core/ipv6/inet6.c.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/test.dir/build.make CMakeFiles/test.dir/home/uzygncr/pico/pico-sdk/lib/lwip/src/core/ipv6/inet6.c.s
 .PHONY : home/uzygncr/pico/pico-sdk/lib/lwip/src/core/ipv6/inet6.c.s
 
-home/uzygncr/pico/pico-sdk/lib/lwip/src/core/ipv6/ip6.obj: home/uzygncr/pico/pico-sdk/lib/lwip/src/core/ipv6/ip6.c.obj
-.PHONY : home/uzygncr/pico/pico-sdk/lib/lwip/src/core/ipv6/ip6.obj
+home/uzygncr/pico/pico-sdk/lib/lwip/src/core/ipv6/ip6.o: home/uzygncr/pico/pico-sdk/lib/lwip/src/core/ipv6/ip6.c.o
+.PHONY : home/uzygncr/pico/pico-sdk/lib/lwip/src/core/ipv6/ip6.o
 
 # target to build an object file
-home/uzygncr/pico/pico-sdk/lib/lwip/src/core/ipv6/ip6.c.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/test.dir/build.make CMakeFiles/test.dir/home/uzygncr/pico/pico-sdk/lib/lwip/src/core/ipv6/ip6.c.obj
-.PHONY : home/uzygncr/pico/pico-sdk/lib/lwip/src/core/ipv6/ip6.c.obj
+home/uzygncr/pico/pico-sdk/lib/lwip/src/core/ipv6/ip6.c.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/test.dir/build.make CMakeFiles/test.dir/home/uzygncr/pico/pico-sdk/lib/lwip/src/core/ipv6/ip6.c.o
+.PHONY : home/uzygncr/pico/pico-sdk/lib/lwip/src/core/ipv6/ip6.c.o
 
 home/uzygncr/pico/pico-sdk/lib/lwip/src/core/ipv6/ip6.i: home/uzygncr/pico/pico-sdk/lib/lwip/src/core/ipv6/ip6.c.i
 .PHONY : home/uzygncr/pico/pico-sdk/lib/lwip/src/core/ipv6/ip6.i
@@ -1034,13 +1021,13 @@ home/uzygncr/pico/pico-sdk/lib/lwip/src/core/ipv6/ip6.c.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/test.dir/build.make CMakeFiles/test.dir/home/uzygncr/pico/pico-sdk/lib/lwip/src/core/ipv6/ip6.c.s
 .PHONY : home/uzygncr/pico/pico-sdk/lib/lwip/src/core/ipv6/ip6.c.s
 
-home/uzygncr/pico/pico-sdk/lib/lwip/src/core/ipv6/ip6_addr.obj: home/uzygncr/pico/pico-sdk/lib/lwip/src/core/ipv6/ip6_addr.c.obj
-.PHONY : home/uzygncr/pico/pico-sdk/lib/lwip/src/core/ipv6/ip6_addr.obj
+home/uzygncr/pico/pico-sdk/lib/lwip/src/core/ipv6/ip6_addr.o: home/uzygncr/pico/pico-sdk/lib/lwip/src/core/ipv6/ip6_addr.c.o
+.PHONY : home/uzygncr/pico/pico-sdk/lib/lwip/src/core/ipv6/ip6_addr.o
 
 # target to build an object file
-home/uzygncr/pico/pico-sdk/lib/lwip/src/core/ipv6/ip6_addr.c.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/test.dir/build.make CMakeFiles/test.dir/home/uzygncr/pico/pico-sdk/lib/lwip/src/core/ipv6/ip6_addr.c.obj
-.PHONY : home/uzygncr/pico/pico-sdk/lib/lwip/src/core/ipv6/ip6_addr.c.obj
+home/uzygncr/pico/pico-sdk/lib/lwip/src/core/ipv6/ip6_addr.c.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/test.dir/build.make CMakeFiles/test.dir/home/uzygncr/pico/pico-sdk/lib/lwip/src/core/ipv6/ip6_addr.c.o
+.PHONY : home/uzygncr/pico/pico-sdk/lib/lwip/src/core/ipv6/ip6_addr.c.o
 
 home/uzygncr/pico/pico-sdk/lib/lwip/src/core/ipv6/ip6_addr.i: home/uzygncr/pico/pico-sdk/lib/lwip/src/core/ipv6/ip6_addr.c.i
 .PHONY : home/uzygncr/pico/pico-sdk/lib/lwip/src/core/ipv6/ip6_addr.i
@@ -1058,13 +1045,13 @@ home/uzygncr/pico/pico-sdk/lib/lwip/src/core/ipv6/ip6_addr.c.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/test.dir/build.make CMakeFiles/test.dir/home/uzygncr/pico/pico-sdk/lib/lwip/src/core/ipv6/ip6_addr.c.s
 .PHONY : home/uzygncr/pico/pico-sdk/lib/lwip/src/core/ipv6/ip6_addr.c.s
 
-home/uzygncr/pico/pico-sdk/lib/lwip/src/core/ipv6/ip6_frag.obj: home/uzygncr/pico/pico-sdk/lib/lwip/src/core/ipv6/ip6_frag.c.obj
-.PHONY : home/uzygncr/pico/pico-sdk/lib/lwip/src/core/ipv6/ip6_frag.obj
+home/uzygncr/pico/pico-sdk/lib/lwip/src/core/ipv6/ip6_frag.o: home/uzygncr/pico/pico-sdk/lib/lwip/src/core/ipv6/ip6_frag.c.o
+.PHONY : home/uzygncr/pico/pico-sdk/lib/lwip/src/core/ipv6/ip6_frag.o
 
 # target to build an object file
-home/uzygncr/pico/pico-sdk/lib/lwip/src/core/ipv6/ip6_frag.c.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/test.dir/build.make CMakeFiles/test.dir/home/uzygncr/pico/pico-sdk/lib/lwip/src/core/ipv6/ip6_frag.c.obj
-.PHONY : home/uzygncr/pico/pico-sdk/lib/lwip/src/core/ipv6/ip6_frag.c.obj
+home/uzygncr/pico/pico-sdk/lib/lwip/src/core/ipv6/ip6_frag.c.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/test.dir/build.make CMakeFiles/test.dir/home/uzygncr/pico/pico-sdk/lib/lwip/src/core/ipv6/ip6_frag.c.o
+.PHONY : home/uzygncr/pico/pico-sdk/lib/lwip/src/core/ipv6/ip6_frag.c.o
 
 home/uzygncr/pico/pico-sdk/lib/lwip/src/core/ipv6/ip6_frag.i: home/uzygncr/pico/pico-sdk/lib/lwip/src/core/ipv6/ip6_frag.c.i
 .PHONY : home/uzygncr/pico/pico-sdk/lib/lwip/src/core/ipv6/ip6_frag.i
@@ -1082,13 +1069,13 @@ home/uzygncr/pico/pico-sdk/lib/lwip/src/core/ipv6/ip6_frag.c.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/test.dir/build.make CMakeFiles/test.dir/home/uzygncr/pico/pico-sdk/lib/lwip/src/core/ipv6/ip6_frag.c.s
 .PHONY : home/uzygncr/pico/pico-sdk/lib/lwip/src/core/ipv6/ip6_frag.c.s
 
-home/uzygncr/pico/pico-sdk/lib/lwip/src/core/ipv6/mld6.obj: home/uzygncr/pico/pico-sdk/lib/lwip/src/core/ipv6/mld6.c.obj
-.PHONY : home/uzygncr/pico/pico-sdk/lib/lwip/src/core/ipv6/mld6.obj
+home/uzygncr/pico/pico-sdk/lib/lwip/src/core/ipv6/mld6.o: home/uzygncr/pico/pico-sdk/lib/lwip/src/core/ipv6/mld6.c.o
+.PHONY : home/uzygncr/pico/pico-sdk/lib/lwip/src/core/ipv6/mld6.o
 
 # target to build an object file
-home/uzygncr/pico/pico-sdk/lib/lwip/src/core/ipv6/mld6.c.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/test.dir/build.make CMakeFiles/test.dir/home/uzygncr/pico/pico-sdk/lib/lwip/src/core/ipv6/mld6.c.obj
-.PHONY : home/uzygncr/pico/pico-sdk/lib/lwip/src/core/ipv6/mld6.c.obj
+home/uzygncr/pico/pico-sdk/lib/lwip/src/core/ipv6/mld6.c.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/test.dir/build.make CMakeFiles/test.dir/home/uzygncr/pico/pico-sdk/lib/lwip/src/core/ipv6/mld6.c.o
+.PHONY : home/uzygncr/pico/pico-sdk/lib/lwip/src/core/ipv6/mld6.c.o
 
 home/uzygncr/pico/pico-sdk/lib/lwip/src/core/ipv6/mld6.i: home/uzygncr/pico/pico-sdk/lib/lwip/src/core/ipv6/mld6.c.i
 .PHONY : home/uzygncr/pico/pico-sdk/lib/lwip/src/core/ipv6/mld6.i
@@ -1106,13 +1093,13 @@ home/uzygncr/pico/pico-sdk/lib/lwip/src/core/ipv6/mld6.c.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/test.dir/build.make CMakeFiles/test.dir/home/uzygncr/pico/pico-sdk/lib/lwip/src/core/ipv6/mld6.c.s
 .PHONY : home/uzygncr/pico/pico-sdk/lib/lwip/src/core/ipv6/mld6.c.s
 
-home/uzygncr/pico/pico-sdk/lib/lwip/src/core/ipv6/nd6.obj: home/uzygncr/pico/pico-sdk/lib/lwip/src/core/ipv6/nd6.c.obj
-.PHONY : home/uzygncr/pico/pico-sdk/lib/lwip/src/core/ipv6/nd6.obj
+home/uzygncr/pico/pico-sdk/lib/lwip/src/core/ipv6/nd6.o: home/uzygncr/pico/pico-sdk/lib/lwip/src/core/ipv6/nd6.c.o
+.PHONY : home/uzygncr/pico/pico-sdk/lib/lwip/src/core/ipv6/nd6.o
 
 # target to build an object file
-home/uzygncr/pico/pico-sdk/lib/lwip/src/core/ipv6/nd6.c.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/test.dir/build.make CMakeFiles/test.dir/home/uzygncr/pico/pico-sdk/lib/lwip/src/core/ipv6/nd6.c.obj
-.PHONY : home/uzygncr/pico/pico-sdk/lib/lwip/src/core/ipv6/nd6.c.obj
+home/uzygncr/pico/pico-sdk/lib/lwip/src/core/ipv6/nd6.c.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/test.dir/build.make CMakeFiles/test.dir/home/uzygncr/pico/pico-sdk/lib/lwip/src/core/ipv6/nd6.c.o
+.PHONY : home/uzygncr/pico/pico-sdk/lib/lwip/src/core/ipv6/nd6.c.o
 
 home/uzygncr/pico/pico-sdk/lib/lwip/src/core/ipv6/nd6.i: home/uzygncr/pico/pico-sdk/lib/lwip/src/core/ipv6/nd6.c.i
 .PHONY : home/uzygncr/pico/pico-sdk/lib/lwip/src/core/ipv6/nd6.i
@@ -1130,13 +1117,13 @@ home/uzygncr/pico/pico-sdk/lib/lwip/src/core/ipv6/nd6.c.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/test.dir/build.make CMakeFiles/test.dir/home/uzygncr/pico/pico-sdk/lib/lwip/src/core/ipv6/nd6.c.s
 .PHONY : home/uzygncr/pico/pico-sdk/lib/lwip/src/core/ipv6/nd6.c.s
 
-home/uzygncr/pico/pico-sdk/lib/lwip/src/core/mem.obj: home/uzygncr/pico/pico-sdk/lib/lwip/src/core/mem.c.obj
-.PHONY : home/uzygncr/pico/pico-sdk/lib/lwip/src/core/mem.obj
+home/uzygncr/pico/pico-sdk/lib/lwip/src/core/mem.o: home/uzygncr/pico/pico-sdk/lib/lwip/src/core/mem.c.o
+.PHONY : home/uzygncr/pico/pico-sdk/lib/lwip/src/core/mem.o
 
 # target to build an object file
-home/uzygncr/pico/pico-sdk/lib/lwip/src/core/mem.c.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/test.dir/build.make CMakeFiles/test.dir/home/uzygncr/pico/pico-sdk/lib/lwip/src/core/mem.c.obj
-.PHONY : home/uzygncr/pico/pico-sdk/lib/lwip/src/core/mem.c.obj
+home/uzygncr/pico/pico-sdk/lib/lwip/src/core/mem.c.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/test.dir/build.make CMakeFiles/test.dir/home/uzygncr/pico/pico-sdk/lib/lwip/src/core/mem.c.o
+.PHONY : home/uzygncr/pico/pico-sdk/lib/lwip/src/core/mem.c.o
 
 home/uzygncr/pico/pico-sdk/lib/lwip/src/core/mem.i: home/uzygncr/pico/pico-sdk/lib/lwip/src/core/mem.c.i
 .PHONY : home/uzygncr/pico/pico-sdk/lib/lwip/src/core/mem.i
@@ -1154,13 +1141,13 @@ home/uzygncr/pico/pico-sdk/lib/lwip/src/core/mem.c.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/test.dir/build.make CMakeFiles/test.dir/home/uzygncr/pico/pico-sdk/lib/lwip/src/core/mem.c.s
 .PHONY : home/uzygncr/pico/pico-sdk/lib/lwip/src/core/mem.c.s
 
-home/uzygncr/pico/pico-sdk/lib/lwip/src/core/memp.obj: home/uzygncr/pico/pico-sdk/lib/lwip/src/core/memp.c.obj
-.PHONY : home/uzygncr/pico/pico-sdk/lib/lwip/src/core/memp.obj
+home/uzygncr/pico/pico-sdk/lib/lwip/src/core/memp.o: home/uzygncr/pico/pico-sdk/lib/lwip/src/core/memp.c.o
+.PHONY : home/uzygncr/pico/pico-sdk/lib/lwip/src/core/memp.o
 
 # target to build an object file
-home/uzygncr/pico/pico-sdk/lib/lwip/src/core/memp.c.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/test.dir/build.make CMakeFiles/test.dir/home/uzygncr/pico/pico-sdk/lib/lwip/src/core/memp.c.obj
-.PHONY : home/uzygncr/pico/pico-sdk/lib/lwip/src/core/memp.c.obj
+home/uzygncr/pico/pico-sdk/lib/lwip/src/core/memp.c.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/test.dir/build.make CMakeFiles/test.dir/home/uzygncr/pico/pico-sdk/lib/lwip/src/core/memp.c.o
+.PHONY : home/uzygncr/pico/pico-sdk/lib/lwip/src/core/memp.c.o
 
 home/uzygncr/pico/pico-sdk/lib/lwip/src/core/memp.i: home/uzygncr/pico/pico-sdk/lib/lwip/src/core/memp.c.i
 .PHONY : home/uzygncr/pico/pico-sdk/lib/lwip/src/core/memp.i
@@ -1178,13 +1165,13 @@ home/uzygncr/pico/pico-sdk/lib/lwip/src/core/memp.c.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/test.dir/build.make CMakeFiles/test.dir/home/uzygncr/pico/pico-sdk/lib/lwip/src/core/memp.c.s
 .PHONY : home/uzygncr/pico/pico-sdk/lib/lwip/src/core/memp.c.s
 
-home/uzygncr/pico/pico-sdk/lib/lwip/src/core/netif.obj: home/uzygncr/pico/pico-sdk/lib/lwip/src/core/netif.c.obj
-.PHONY : home/uzygncr/pico/pico-sdk/lib/lwip/src/core/netif.obj
+home/uzygncr/pico/pico-sdk/lib/lwip/src/core/netif.o: home/uzygncr/pico/pico-sdk/lib/lwip/src/core/netif.c.o
+.PHONY : home/uzygncr/pico/pico-sdk/lib/lwip/src/core/netif.o
 
 # target to build an object file
-home/uzygncr/pico/pico-sdk/lib/lwip/src/core/netif.c.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/test.dir/build.make CMakeFiles/test.dir/home/uzygncr/pico/pico-sdk/lib/lwip/src/core/netif.c.obj
-.PHONY : home/uzygncr/pico/pico-sdk/lib/lwip/src/core/netif.c.obj
+home/uzygncr/pico/pico-sdk/lib/lwip/src/core/netif.c.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/test.dir/build.make CMakeFiles/test.dir/home/uzygncr/pico/pico-sdk/lib/lwip/src/core/netif.c.o
+.PHONY : home/uzygncr/pico/pico-sdk/lib/lwip/src/core/netif.c.o
 
 home/uzygncr/pico/pico-sdk/lib/lwip/src/core/netif.i: home/uzygncr/pico/pico-sdk/lib/lwip/src/core/netif.c.i
 .PHONY : home/uzygncr/pico/pico-sdk/lib/lwip/src/core/netif.i
@@ -1202,13 +1189,13 @@ home/uzygncr/pico/pico-sdk/lib/lwip/src/core/netif.c.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/test.dir/build.make CMakeFiles/test.dir/home/uzygncr/pico/pico-sdk/lib/lwip/src/core/netif.c.s
 .PHONY : home/uzygncr/pico/pico-sdk/lib/lwip/src/core/netif.c.s
 
-home/uzygncr/pico/pico-sdk/lib/lwip/src/core/pbuf.obj: home/uzygncr/pico/pico-sdk/lib/lwip/src/core/pbuf.c.obj
-.PHONY : home/uzygncr/pico/pico-sdk/lib/lwip/src/core/pbuf.obj
+home/uzygncr/pico/pico-sdk/lib/lwip/src/core/pbuf.o: home/uzygncr/pico/pico-sdk/lib/lwip/src/core/pbuf.c.o
+.PHONY : home/uzygncr/pico/pico-sdk/lib/lwip/src/core/pbuf.o
 
 # target to build an object file
-home/uzygncr/pico/pico-sdk/lib/lwip/src/core/pbuf.c.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/test.dir/build.make CMakeFiles/test.dir/home/uzygncr/pico/pico-sdk/lib/lwip/src/core/pbuf.c.obj
-.PHONY : home/uzygncr/pico/pico-sdk/lib/lwip/src/core/pbuf.c.obj
+home/uzygncr/pico/pico-sdk/lib/lwip/src/core/pbuf.c.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/test.dir/build.make CMakeFiles/test.dir/home/uzygncr/pico/pico-sdk/lib/lwip/src/core/pbuf.c.o
+.PHONY : home/uzygncr/pico/pico-sdk/lib/lwip/src/core/pbuf.c.o
 
 home/uzygncr/pico/pico-sdk/lib/lwip/src/core/pbuf.i: home/uzygncr/pico/pico-sdk/lib/lwip/src/core/pbuf.c.i
 .PHONY : home/uzygncr/pico/pico-sdk/lib/lwip/src/core/pbuf.i
@@ -1226,13 +1213,13 @@ home/uzygncr/pico/pico-sdk/lib/lwip/src/core/pbuf.c.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/test.dir/build.make CMakeFiles/test.dir/home/uzygncr/pico/pico-sdk/lib/lwip/src/core/pbuf.c.s
 .PHONY : home/uzygncr/pico/pico-sdk/lib/lwip/src/core/pbuf.c.s
 
-home/uzygncr/pico/pico-sdk/lib/lwip/src/core/raw.obj: home/uzygncr/pico/pico-sdk/lib/lwip/src/core/raw.c.obj
-.PHONY : home/uzygncr/pico/pico-sdk/lib/lwip/src/core/raw.obj
+home/uzygncr/pico/pico-sdk/lib/lwip/src/core/raw.o: home/uzygncr/pico/pico-sdk/lib/lwip/src/core/raw.c.o
+.PHONY : home/uzygncr/pico/pico-sdk/lib/lwip/src/core/raw.o
 
 # target to build an object file
-home/uzygncr/pico/pico-sdk/lib/lwip/src/core/raw.c.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/test.dir/build.make CMakeFiles/test.dir/home/uzygncr/pico/pico-sdk/lib/lwip/src/core/raw.c.obj
-.PHONY : home/uzygncr/pico/pico-sdk/lib/lwip/src/core/raw.c.obj
+home/uzygncr/pico/pico-sdk/lib/lwip/src/core/raw.c.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/test.dir/build.make CMakeFiles/test.dir/home/uzygncr/pico/pico-sdk/lib/lwip/src/core/raw.c.o
+.PHONY : home/uzygncr/pico/pico-sdk/lib/lwip/src/core/raw.c.o
 
 home/uzygncr/pico/pico-sdk/lib/lwip/src/core/raw.i: home/uzygncr/pico/pico-sdk/lib/lwip/src/core/raw.c.i
 .PHONY : home/uzygncr/pico/pico-sdk/lib/lwip/src/core/raw.i
@@ -1250,13 +1237,13 @@ home/uzygncr/pico/pico-sdk/lib/lwip/src/core/raw.c.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/test.dir/build.make CMakeFiles/test.dir/home/uzygncr/pico/pico-sdk/lib/lwip/src/core/raw.c.s
 .PHONY : home/uzygncr/pico/pico-sdk/lib/lwip/src/core/raw.c.s
 
-home/uzygncr/pico/pico-sdk/lib/lwip/src/core/stats.obj: home/uzygncr/pico/pico-sdk/lib/lwip/src/core/stats.c.obj
-.PHONY : home/uzygncr/pico/pico-sdk/lib/lwip/src/core/stats.obj
+home/uzygncr/pico/pico-sdk/lib/lwip/src/core/stats.o: home/uzygncr/pico/pico-sdk/lib/lwip/src/core/stats.c.o
+.PHONY : home/uzygncr/pico/pico-sdk/lib/lwip/src/core/stats.o
 
 # target to build an object file
-home/uzygncr/pico/pico-sdk/lib/lwip/src/core/stats.c.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/test.dir/build.make CMakeFiles/test.dir/home/uzygncr/pico/pico-sdk/lib/lwip/src/core/stats.c.obj
-.PHONY : home/uzygncr/pico/pico-sdk/lib/lwip/src/core/stats.c.obj
+home/uzygncr/pico/pico-sdk/lib/lwip/src/core/stats.c.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/test.dir/build.make CMakeFiles/test.dir/home/uzygncr/pico/pico-sdk/lib/lwip/src/core/stats.c.o
+.PHONY : home/uzygncr/pico/pico-sdk/lib/lwip/src/core/stats.c.o
 
 home/uzygncr/pico/pico-sdk/lib/lwip/src/core/stats.i: home/uzygncr/pico/pico-sdk/lib/lwip/src/core/stats.c.i
 .PHONY : home/uzygncr/pico/pico-sdk/lib/lwip/src/core/stats.i
@@ -1274,13 +1261,13 @@ home/uzygncr/pico/pico-sdk/lib/lwip/src/core/stats.c.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/test.dir/build.make CMakeFiles/test.dir/home/uzygncr/pico/pico-sdk/lib/lwip/src/core/stats.c.s
 .PHONY : home/uzygncr/pico/pico-sdk/lib/lwip/src/core/stats.c.s
 
-home/uzygncr/pico/pico-sdk/lib/lwip/src/core/sys.obj: home/uzygncr/pico/pico-sdk/lib/lwip/src/core/sys.c.obj
-.PHONY : home/uzygncr/pico/pico-sdk/lib/lwip/src/core/sys.obj
+home/uzygncr/pico/pico-sdk/lib/lwip/src/core/sys.o: home/uzygncr/pico/pico-sdk/lib/lwip/src/core/sys.c.o
+.PHONY : home/uzygncr/pico/pico-sdk/lib/lwip/src/core/sys.o
 
 # target to build an object file
-home/uzygncr/pico/pico-sdk/lib/lwip/src/core/sys.c.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/test.dir/build.make CMakeFiles/test.dir/home/uzygncr/pico/pico-sdk/lib/lwip/src/core/sys.c.obj
-.PHONY : home/uzygncr/pico/pico-sdk/lib/lwip/src/core/sys.c.obj
+home/uzygncr/pico/pico-sdk/lib/lwip/src/core/sys.c.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/test.dir/build.make CMakeFiles/test.dir/home/uzygncr/pico/pico-sdk/lib/lwip/src/core/sys.c.o
+.PHONY : home/uzygncr/pico/pico-sdk/lib/lwip/src/core/sys.c.o
 
 home/uzygncr/pico/pico-sdk/lib/lwip/src/core/sys.i: home/uzygncr/pico/pico-sdk/lib/lwip/src/core/sys.c.i
 .PHONY : home/uzygncr/pico/pico-sdk/lib/lwip/src/core/sys.i
@@ -1298,13 +1285,13 @@ home/uzygncr/pico/pico-sdk/lib/lwip/src/core/sys.c.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/test.dir/build.make CMakeFiles/test.dir/home/uzygncr/pico/pico-sdk/lib/lwip/src/core/sys.c.s
 .PHONY : home/uzygncr/pico/pico-sdk/lib/lwip/src/core/sys.c.s
 
-home/uzygncr/pico/pico-sdk/lib/lwip/src/core/tcp.obj: home/uzygncr/pico/pico-sdk/lib/lwip/src/core/tcp.c.obj
-.PHONY : home/uzygncr/pico/pico-sdk/lib/lwip/src/core/tcp.obj
+home/uzygncr/pico/pico-sdk/lib/lwip/src/core/tcp.o: home/uzygncr/pico/pico-sdk/lib/lwip/src/core/tcp.c.o
+.PHONY : home/uzygncr/pico/pico-sdk/lib/lwip/src/core/tcp.o
 
 # target to build an object file
-home/uzygncr/pico/pico-sdk/lib/lwip/src/core/tcp.c.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/test.dir/build.make CMakeFiles/test.dir/home/uzygncr/pico/pico-sdk/lib/lwip/src/core/tcp.c.obj
-.PHONY : home/uzygncr/pico/pico-sdk/lib/lwip/src/core/tcp.c.obj
+home/uzygncr/pico/pico-sdk/lib/lwip/src/core/tcp.c.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/test.dir/build.make CMakeFiles/test.dir/home/uzygncr/pico/pico-sdk/lib/lwip/src/core/tcp.c.o
+.PHONY : home/uzygncr/pico/pico-sdk/lib/lwip/src/core/tcp.c.o
 
 home/uzygncr/pico/pico-sdk/lib/lwip/src/core/tcp.i: home/uzygncr/pico/pico-sdk/lib/lwip/src/core/tcp.c.i
 .PHONY : home/uzygncr/pico/pico-sdk/lib/lwip/src/core/tcp.i
@@ -1322,13 +1309,13 @@ home/uzygncr/pico/pico-sdk/lib/lwip/src/core/tcp.c.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/test.dir/build.make CMakeFiles/test.dir/home/uzygncr/pico/pico-sdk/lib/lwip/src/core/tcp.c.s
 .PHONY : home/uzygncr/pico/pico-sdk/lib/lwip/src/core/tcp.c.s
 
-home/uzygncr/pico/pico-sdk/lib/lwip/src/core/tcp_in.obj: home/uzygncr/pico/pico-sdk/lib/lwip/src/core/tcp_in.c.obj
-.PHONY : home/uzygncr/pico/pico-sdk/lib/lwip/src/core/tcp_in.obj
+home/uzygncr/pico/pico-sdk/lib/lwip/src/core/tcp_in.o: home/uzygncr/pico/pico-sdk/lib/lwip/src/core/tcp_in.c.o
+.PHONY : home/uzygncr/pico/pico-sdk/lib/lwip/src/core/tcp_in.o
 
 # target to build an object file
-home/uzygncr/pico/pico-sdk/lib/lwip/src/core/tcp_in.c.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/test.dir/build.make CMakeFiles/test.dir/home/uzygncr/pico/pico-sdk/lib/lwip/src/core/tcp_in.c.obj
-.PHONY : home/uzygncr/pico/pico-sdk/lib/lwip/src/core/tcp_in.c.obj
+home/uzygncr/pico/pico-sdk/lib/lwip/src/core/tcp_in.c.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/test.dir/build.make CMakeFiles/test.dir/home/uzygncr/pico/pico-sdk/lib/lwip/src/core/tcp_in.c.o
+.PHONY : home/uzygncr/pico/pico-sdk/lib/lwip/src/core/tcp_in.c.o
 
 home/uzygncr/pico/pico-sdk/lib/lwip/src/core/tcp_in.i: home/uzygncr/pico/pico-sdk/lib/lwip/src/core/tcp_in.c.i
 .PHONY : home/uzygncr/pico/pico-sdk/lib/lwip/src/core/tcp_in.i
@@ -1346,13 +1333,13 @@ home/uzygncr/pico/pico-sdk/lib/lwip/src/core/tcp_in.c.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/test.dir/build.make CMakeFiles/test.dir/home/uzygncr/pico/pico-sdk/lib/lwip/src/core/tcp_in.c.s
 .PHONY : home/uzygncr/pico/pico-sdk/lib/lwip/src/core/tcp_in.c.s
 
-home/uzygncr/pico/pico-sdk/lib/lwip/src/core/tcp_out.obj: home/uzygncr/pico/pico-sdk/lib/lwip/src/core/tcp_out.c.obj
-.PHONY : home/uzygncr/pico/pico-sdk/lib/lwip/src/core/tcp_out.obj
+home/uzygncr/pico/pico-sdk/lib/lwip/src/core/tcp_out.o: home/uzygncr/pico/pico-sdk/lib/lwip/src/core/tcp_out.c.o
+.PHONY : home/uzygncr/pico/pico-sdk/lib/lwip/src/core/tcp_out.o
 
 # target to build an object file
-home/uzygncr/pico/pico-sdk/lib/lwip/src/core/tcp_out.c.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/test.dir/build.make CMakeFiles/test.dir/home/uzygncr/pico/pico-sdk/lib/lwip/src/core/tcp_out.c.obj
-.PHONY : home/uzygncr/pico/pico-sdk/lib/lwip/src/core/tcp_out.c.obj
+home/uzygncr/pico/pico-sdk/lib/lwip/src/core/tcp_out.c.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/test.dir/build.make CMakeFiles/test.dir/home/uzygncr/pico/pico-sdk/lib/lwip/src/core/tcp_out.c.o
+.PHONY : home/uzygncr/pico/pico-sdk/lib/lwip/src/core/tcp_out.c.o
 
 home/uzygncr/pico/pico-sdk/lib/lwip/src/core/tcp_out.i: home/uzygncr/pico/pico-sdk/lib/lwip/src/core/tcp_out.c.i
 .PHONY : home/uzygncr/pico/pico-sdk/lib/lwip/src/core/tcp_out.i
@@ -1370,13 +1357,13 @@ home/uzygncr/pico/pico-sdk/lib/lwip/src/core/tcp_out.c.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/test.dir/build.make CMakeFiles/test.dir/home/uzygncr/pico/pico-sdk/lib/lwip/src/core/tcp_out.c.s
 .PHONY : home/uzygncr/pico/pico-sdk/lib/lwip/src/core/tcp_out.c.s
 
-home/uzygncr/pico/pico-sdk/lib/lwip/src/core/timeouts.obj: home/uzygncr/pico/pico-sdk/lib/lwip/src/core/timeouts.c.obj
-.PHONY : home/uzygncr/pico/pico-sdk/lib/lwip/src/core/timeouts.obj
+home/uzygncr/pico/pico-sdk/lib/lwip/src/core/timeouts.o: home/uzygncr/pico/pico-sdk/lib/lwip/src/core/timeouts.c.o
+.PHONY : home/uzygncr/pico/pico-sdk/lib/lwip/src/core/timeouts.o
 
 # target to build an object file
-home/uzygncr/pico/pico-sdk/lib/lwip/src/core/timeouts.c.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/test.dir/build.make CMakeFiles/test.dir/home/uzygncr/pico/pico-sdk/lib/lwip/src/core/timeouts.c.obj
-.PHONY : home/uzygncr/pico/pico-sdk/lib/lwip/src/core/timeouts.c.obj
+home/uzygncr/pico/pico-sdk/lib/lwip/src/core/timeouts.c.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/test.dir/build.make CMakeFiles/test.dir/home/uzygncr/pico/pico-sdk/lib/lwip/src/core/timeouts.c.o
+.PHONY : home/uzygncr/pico/pico-sdk/lib/lwip/src/core/timeouts.c.o
 
 home/uzygncr/pico/pico-sdk/lib/lwip/src/core/timeouts.i: home/uzygncr/pico/pico-sdk/lib/lwip/src/core/timeouts.c.i
 .PHONY : home/uzygncr/pico/pico-sdk/lib/lwip/src/core/timeouts.i
@@ -1394,13 +1381,13 @@ home/uzygncr/pico/pico-sdk/lib/lwip/src/core/timeouts.c.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/test.dir/build.make CMakeFiles/test.dir/home/uzygncr/pico/pico-sdk/lib/lwip/src/core/timeouts.c.s
 .PHONY : home/uzygncr/pico/pico-sdk/lib/lwip/src/core/timeouts.c.s
 
-home/uzygncr/pico/pico-sdk/lib/lwip/src/core/udp.obj: home/uzygncr/pico/pico-sdk/lib/lwip/src/core/udp.c.obj
-.PHONY : home/uzygncr/pico/pico-sdk/lib/lwip/src/core/udp.obj
+home/uzygncr/pico/pico-sdk/lib/lwip/src/core/udp.o: home/uzygncr/pico/pico-sdk/lib/lwip/src/core/udp.c.o
+.PHONY : home/uzygncr/pico/pico-sdk/lib/lwip/src/core/udp.o
 
 # target to build an object file
-home/uzygncr/pico/pico-sdk/lib/lwip/src/core/udp.c.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/test.dir/build.make CMakeFiles/test.dir/home/uzygncr/pico/pico-sdk/lib/lwip/src/core/udp.c.obj
-.PHONY : home/uzygncr/pico/pico-sdk/lib/lwip/src/core/udp.c.obj
+home/uzygncr/pico/pico-sdk/lib/lwip/src/core/udp.c.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/test.dir/build.make CMakeFiles/test.dir/home/uzygncr/pico/pico-sdk/lib/lwip/src/core/udp.c.o
+.PHONY : home/uzygncr/pico/pico-sdk/lib/lwip/src/core/udp.c.o
 
 home/uzygncr/pico/pico-sdk/lib/lwip/src/core/udp.i: home/uzygncr/pico/pico-sdk/lib/lwip/src/core/udp.c.i
 .PHONY : home/uzygncr/pico/pico-sdk/lib/lwip/src/core/udp.i
@@ -1418,13 +1405,13 @@ home/uzygncr/pico/pico-sdk/lib/lwip/src/core/udp.c.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/test.dir/build.make CMakeFiles/test.dir/home/uzygncr/pico/pico-sdk/lib/lwip/src/core/udp.c.s
 .PHONY : home/uzygncr/pico/pico-sdk/lib/lwip/src/core/udp.c.s
 
-home/uzygncr/pico/pico-sdk/lib/lwip/src/netif/bridgeif.obj: home/uzygncr/pico/pico-sdk/lib/lwip/src/netif/bridgeif.c.obj
-.PHONY : home/uzygncr/pico/pico-sdk/lib/lwip/src/netif/bridgeif.obj
+home/uzygncr/pico/pico-sdk/lib/lwip/src/netif/bridgeif.o: home/uzygncr/pico/pico-sdk/lib/lwip/src/netif/bridgeif.c.o
+.PHONY : home/uzygncr/pico/pico-sdk/lib/lwip/src/netif/bridgeif.o
 
 # target to build an object file
-home/uzygncr/pico/pico-sdk/lib/lwip/src/netif/bridgeif.c.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/test.dir/build.make CMakeFiles/test.dir/home/uzygncr/pico/pico-sdk/lib/lwip/src/netif/bridgeif.c.obj
-.PHONY : home/uzygncr/pico/pico-sdk/lib/lwip/src/netif/bridgeif.c.obj
+home/uzygncr/pico/pico-sdk/lib/lwip/src/netif/bridgeif.c.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/test.dir/build.make CMakeFiles/test.dir/home/uzygncr/pico/pico-sdk/lib/lwip/src/netif/bridgeif.c.o
+.PHONY : home/uzygncr/pico/pico-sdk/lib/lwip/src/netif/bridgeif.c.o
 
 home/uzygncr/pico/pico-sdk/lib/lwip/src/netif/bridgeif.i: home/uzygncr/pico/pico-sdk/lib/lwip/src/netif/bridgeif.c.i
 .PHONY : home/uzygncr/pico/pico-sdk/lib/lwip/src/netif/bridgeif.i
@@ -1442,13 +1429,13 @@ home/uzygncr/pico/pico-sdk/lib/lwip/src/netif/bridgeif.c.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/test.dir/build.make CMakeFiles/test.dir/home/uzygncr/pico/pico-sdk/lib/lwip/src/netif/bridgeif.c.s
 .PHONY : home/uzygncr/pico/pico-sdk/lib/lwip/src/netif/bridgeif.c.s
 
-home/uzygncr/pico/pico-sdk/lib/lwip/src/netif/bridgeif_fdb.obj: home/uzygncr/pico/pico-sdk/lib/lwip/src/netif/bridgeif_fdb.c.obj
-.PHONY : home/uzygncr/pico/pico-sdk/lib/lwip/src/netif/bridgeif_fdb.obj
+home/uzygncr/pico/pico-sdk/lib/lwip/src/netif/bridgeif_fdb.o: home/uzygncr/pico/pico-sdk/lib/lwip/src/netif/bridgeif_fdb.c.o
+.PHONY : home/uzygncr/pico/pico-sdk/lib/lwip/src/netif/bridgeif_fdb.o
 
 # target to build an object file
-home/uzygncr/pico/pico-sdk/lib/lwip/src/netif/bridgeif_fdb.c.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/test.dir/build.make CMakeFiles/test.dir/home/uzygncr/pico/pico-sdk/lib/lwip/src/netif/bridgeif_fdb.c.obj
-.PHONY : home/uzygncr/pico/pico-sdk/lib/lwip/src/netif/bridgeif_fdb.c.obj
+home/uzygncr/pico/pico-sdk/lib/lwip/src/netif/bridgeif_fdb.c.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/test.dir/build.make CMakeFiles/test.dir/home/uzygncr/pico/pico-sdk/lib/lwip/src/netif/bridgeif_fdb.c.o
+.PHONY : home/uzygncr/pico/pico-sdk/lib/lwip/src/netif/bridgeif_fdb.c.o
 
 home/uzygncr/pico/pico-sdk/lib/lwip/src/netif/bridgeif_fdb.i: home/uzygncr/pico/pico-sdk/lib/lwip/src/netif/bridgeif_fdb.c.i
 .PHONY : home/uzygncr/pico/pico-sdk/lib/lwip/src/netif/bridgeif_fdb.i
@@ -1466,13 +1453,13 @@ home/uzygncr/pico/pico-sdk/lib/lwip/src/netif/bridgeif_fdb.c.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/test.dir/build.make CMakeFiles/test.dir/home/uzygncr/pico/pico-sdk/lib/lwip/src/netif/bridgeif_fdb.c.s
 .PHONY : home/uzygncr/pico/pico-sdk/lib/lwip/src/netif/bridgeif_fdb.c.s
 
-home/uzygncr/pico/pico-sdk/lib/lwip/src/netif/ethernet.obj: home/uzygncr/pico/pico-sdk/lib/lwip/src/netif/ethernet.c.obj
-.PHONY : home/uzygncr/pico/pico-sdk/lib/lwip/src/netif/ethernet.obj
+home/uzygncr/pico/pico-sdk/lib/lwip/src/netif/ethernet.o: home/uzygncr/pico/pico-sdk/lib/lwip/src/netif/ethernet.c.o
+.PHONY : home/uzygncr/pico/pico-sdk/lib/lwip/src/netif/ethernet.o
 
 # target to build an object file
-home/uzygncr/pico/pico-sdk/lib/lwip/src/netif/ethernet.c.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/test.dir/build.make CMakeFiles/test.dir/home/uzygncr/pico/pico-sdk/lib/lwip/src/netif/ethernet.c.obj
-.PHONY : home/uzygncr/pico/pico-sdk/lib/lwip/src/netif/ethernet.c.obj
+home/uzygncr/pico/pico-sdk/lib/lwip/src/netif/ethernet.c.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/test.dir/build.make CMakeFiles/test.dir/home/uzygncr/pico/pico-sdk/lib/lwip/src/netif/ethernet.c.o
+.PHONY : home/uzygncr/pico/pico-sdk/lib/lwip/src/netif/ethernet.c.o
 
 home/uzygncr/pico/pico-sdk/lib/lwip/src/netif/ethernet.i: home/uzygncr/pico/pico-sdk/lib/lwip/src/netif/ethernet.c.i
 .PHONY : home/uzygncr/pico/pico-sdk/lib/lwip/src/netif/ethernet.i
@@ -1490,13 +1477,13 @@ home/uzygncr/pico/pico-sdk/lib/lwip/src/netif/ethernet.c.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/test.dir/build.make CMakeFiles/test.dir/home/uzygncr/pico/pico-sdk/lib/lwip/src/netif/ethernet.c.s
 .PHONY : home/uzygncr/pico/pico-sdk/lib/lwip/src/netif/ethernet.c.s
 
-home/uzygncr/pico/pico-sdk/lib/lwip/src/netif/lowpan6.obj: home/uzygncr/pico/pico-sdk/lib/lwip/src/netif/lowpan6.c.obj
-.PHONY : home/uzygncr/pico/pico-sdk/lib/lwip/src/netif/lowpan6.obj
+home/uzygncr/pico/pico-sdk/lib/lwip/src/netif/lowpan6.o: home/uzygncr/pico/pico-sdk/lib/lwip/src/netif/lowpan6.c.o
+.PHONY : home/uzygncr/pico/pico-sdk/lib/lwip/src/netif/lowpan6.o
 
 # target to build an object file
-home/uzygncr/pico/pico-sdk/lib/lwip/src/netif/lowpan6.c.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/test.dir/build.make CMakeFiles/test.dir/home/uzygncr/pico/pico-sdk/lib/lwip/src/netif/lowpan6.c.obj
-.PHONY : home/uzygncr/pico/pico-sdk/lib/lwip/src/netif/lowpan6.c.obj
+home/uzygncr/pico/pico-sdk/lib/lwip/src/netif/lowpan6.c.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/test.dir/build.make CMakeFiles/test.dir/home/uzygncr/pico/pico-sdk/lib/lwip/src/netif/lowpan6.c.o
+.PHONY : home/uzygncr/pico/pico-sdk/lib/lwip/src/netif/lowpan6.c.o
 
 home/uzygncr/pico/pico-sdk/lib/lwip/src/netif/lowpan6.i: home/uzygncr/pico/pico-sdk/lib/lwip/src/netif/lowpan6.c.i
 .PHONY : home/uzygncr/pico/pico-sdk/lib/lwip/src/netif/lowpan6.i
@@ -1514,13 +1501,13 @@ home/uzygncr/pico/pico-sdk/lib/lwip/src/netif/lowpan6.c.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/test.dir/build.make CMakeFiles/test.dir/home/uzygncr/pico/pico-sdk/lib/lwip/src/netif/lowpan6.c.s
 .PHONY : home/uzygncr/pico/pico-sdk/lib/lwip/src/netif/lowpan6.c.s
 
-home/uzygncr/pico/pico-sdk/lib/lwip/src/netif/lowpan6_ble.obj: home/uzygncr/pico/pico-sdk/lib/lwip/src/netif/lowpan6_ble.c.obj
-.PHONY : home/uzygncr/pico/pico-sdk/lib/lwip/src/netif/lowpan6_ble.obj
+home/uzygncr/pico/pico-sdk/lib/lwip/src/netif/lowpan6_ble.o: home/uzygncr/pico/pico-sdk/lib/lwip/src/netif/lowpan6_ble.c.o
+.PHONY : home/uzygncr/pico/pico-sdk/lib/lwip/src/netif/lowpan6_ble.o
 
 # target to build an object file
-home/uzygncr/pico/pico-sdk/lib/lwip/src/netif/lowpan6_ble.c.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/test.dir/build.make CMakeFiles/test.dir/home/uzygncr/pico/pico-sdk/lib/lwip/src/netif/lowpan6_ble.c.obj
-.PHONY : home/uzygncr/pico/pico-sdk/lib/lwip/src/netif/lowpan6_ble.c.obj
+home/uzygncr/pico/pico-sdk/lib/lwip/src/netif/lowpan6_ble.c.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/test.dir/build.make CMakeFiles/test.dir/home/uzygncr/pico/pico-sdk/lib/lwip/src/netif/lowpan6_ble.c.o
+.PHONY : home/uzygncr/pico/pico-sdk/lib/lwip/src/netif/lowpan6_ble.c.o
 
 home/uzygncr/pico/pico-sdk/lib/lwip/src/netif/lowpan6_ble.i: home/uzygncr/pico/pico-sdk/lib/lwip/src/netif/lowpan6_ble.c.i
 .PHONY : home/uzygncr/pico/pico-sdk/lib/lwip/src/netif/lowpan6_ble.i
@@ -1538,13 +1525,13 @@ home/uzygncr/pico/pico-sdk/lib/lwip/src/netif/lowpan6_ble.c.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/test.dir/build.make CMakeFiles/test.dir/home/uzygncr/pico/pico-sdk/lib/lwip/src/netif/lowpan6_ble.c.s
 .PHONY : home/uzygncr/pico/pico-sdk/lib/lwip/src/netif/lowpan6_ble.c.s
 
-home/uzygncr/pico/pico-sdk/lib/lwip/src/netif/lowpan6_common.obj: home/uzygncr/pico/pico-sdk/lib/lwip/src/netif/lowpan6_common.c.obj
-.PHONY : home/uzygncr/pico/pico-sdk/lib/lwip/src/netif/lowpan6_common.obj
+home/uzygncr/pico/pico-sdk/lib/lwip/src/netif/lowpan6_common.o: home/uzygncr/pico/pico-sdk/lib/lwip/src/netif/lowpan6_common.c.o
+.PHONY : home/uzygncr/pico/pico-sdk/lib/lwip/src/netif/lowpan6_common.o
 
 # target to build an object file
-home/uzygncr/pico/pico-sdk/lib/lwip/src/netif/lowpan6_common.c.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/test.dir/build.make CMakeFiles/test.dir/home/uzygncr/pico/pico-sdk/lib/lwip/src/netif/lowpan6_common.c.obj
-.PHONY : home/uzygncr/pico/pico-sdk/lib/lwip/src/netif/lowpan6_common.c.obj
+home/uzygncr/pico/pico-sdk/lib/lwip/src/netif/lowpan6_common.c.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/test.dir/build.make CMakeFiles/test.dir/home/uzygncr/pico/pico-sdk/lib/lwip/src/netif/lowpan6_common.c.o
+.PHONY : home/uzygncr/pico/pico-sdk/lib/lwip/src/netif/lowpan6_common.c.o
 
 home/uzygncr/pico/pico-sdk/lib/lwip/src/netif/lowpan6_common.i: home/uzygncr/pico/pico-sdk/lib/lwip/src/netif/lowpan6_common.c.i
 .PHONY : home/uzygncr/pico/pico-sdk/lib/lwip/src/netif/lowpan6_common.i
@@ -1562,13 +1549,13 @@ home/uzygncr/pico/pico-sdk/lib/lwip/src/netif/lowpan6_common.c.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/test.dir/build.make CMakeFiles/test.dir/home/uzygncr/pico/pico-sdk/lib/lwip/src/netif/lowpan6_common.c.s
 .PHONY : home/uzygncr/pico/pico-sdk/lib/lwip/src/netif/lowpan6_common.c.s
 
-home/uzygncr/pico/pico-sdk/lib/lwip/src/netif/ppp/auth.obj: home/uzygncr/pico/pico-sdk/lib/lwip/src/netif/ppp/auth.c.obj
-.PHONY : home/uzygncr/pico/pico-sdk/lib/lwip/src/netif/ppp/auth.obj
+home/uzygncr/pico/pico-sdk/lib/lwip/src/netif/ppp/auth.o: home/uzygncr/pico/pico-sdk/lib/lwip/src/netif/ppp/auth.c.o
+.PHONY : home/uzygncr/pico/pico-sdk/lib/lwip/src/netif/ppp/auth.o
 
 # target to build an object file
-home/uzygncr/pico/pico-sdk/lib/lwip/src/netif/ppp/auth.c.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/test.dir/build.make CMakeFiles/test.dir/home/uzygncr/pico/pico-sdk/lib/lwip/src/netif/ppp/auth.c.obj
-.PHONY : home/uzygncr/pico/pico-sdk/lib/lwip/src/netif/ppp/auth.c.obj
+home/uzygncr/pico/pico-sdk/lib/lwip/src/netif/ppp/auth.c.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/test.dir/build.make CMakeFiles/test.dir/home/uzygncr/pico/pico-sdk/lib/lwip/src/netif/ppp/auth.c.o
+.PHONY : home/uzygncr/pico/pico-sdk/lib/lwip/src/netif/ppp/auth.c.o
 
 home/uzygncr/pico/pico-sdk/lib/lwip/src/netif/ppp/auth.i: home/uzygncr/pico/pico-sdk/lib/lwip/src/netif/ppp/auth.c.i
 .PHONY : home/uzygncr/pico/pico-sdk/lib/lwip/src/netif/ppp/auth.i
@@ -1586,13 +1573,13 @@ home/uzygncr/pico/pico-sdk/lib/lwip/src/netif/ppp/auth.c.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/test.dir/build.make CMakeFiles/test.dir/home/uzygncr/pico/pico-sdk/lib/lwip/src/netif/ppp/auth.c.s
 .PHONY : home/uzygncr/pico/pico-sdk/lib/lwip/src/netif/ppp/auth.c.s
 
-home/uzygncr/pico/pico-sdk/lib/lwip/src/netif/ppp/ccp.obj: home/uzygncr/pico/pico-sdk/lib/lwip/src/netif/ppp/ccp.c.obj
-.PHONY : home/uzygncr/pico/pico-sdk/lib/lwip/src/netif/ppp/ccp.obj
+home/uzygncr/pico/pico-sdk/lib/lwip/src/netif/ppp/ccp.o: home/uzygncr/pico/pico-sdk/lib/lwip/src/netif/ppp/ccp.c.o
+.PHONY : home/uzygncr/pico/pico-sdk/lib/lwip/src/netif/ppp/ccp.o
 
 # target to build an object file
-home/uzygncr/pico/pico-sdk/lib/lwip/src/netif/ppp/ccp.c.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/test.dir/build.make CMakeFiles/test.dir/home/uzygncr/pico/pico-sdk/lib/lwip/src/netif/ppp/ccp.c.obj
-.PHONY : home/uzygncr/pico/pico-sdk/lib/lwip/src/netif/ppp/ccp.c.obj
+home/uzygncr/pico/pico-sdk/lib/lwip/src/netif/ppp/ccp.c.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/test.dir/build.make CMakeFiles/test.dir/home/uzygncr/pico/pico-sdk/lib/lwip/src/netif/ppp/ccp.c.o
+.PHONY : home/uzygncr/pico/pico-sdk/lib/lwip/src/netif/ppp/ccp.c.o
 
 home/uzygncr/pico/pico-sdk/lib/lwip/src/netif/ppp/ccp.i: home/uzygncr/pico/pico-sdk/lib/lwip/src/netif/ppp/ccp.c.i
 .PHONY : home/uzygncr/pico/pico-sdk/lib/lwip/src/netif/ppp/ccp.i
@@ -1610,13 +1597,13 @@ home/uzygncr/pico/pico-sdk/lib/lwip/src/netif/ppp/ccp.c.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/test.dir/build.make CMakeFiles/test.dir/home/uzygncr/pico/pico-sdk/lib/lwip/src/netif/ppp/ccp.c.s
 .PHONY : home/uzygncr/pico/pico-sdk/lib/lwip/src/netif/ppp/ccp.c.s
 
-home/uzygncr/pico/pico-sdk/lib/lwip/src/netif/ppp/chap-md5.obj: home/uzygncr/pico/pico-sdk/lib/lwip/src/netif/ppp/chap-md5.c.obj
-.PHONY : home/uzygncr/pico/pico-sdk/lib/lwip/src/netif/ppp/chap-md5.obj
+home/uzygncr/pico/pico-sdk/lib/lwip/src/netif/ppp/chap-md5.o: home/uzygncr/pico/pico-sdk/lib/lwip/src/netif/ppp/chap-md5.c.o
+.PHONY : home/uzygncr/pico/pico-sdk/lib/lwip/src/netif/ppp/chap-md5.o
 
 # target to build an object file
-home/uzygncr/pico/pico-sdk/lib/lwip/src/netif/ppp/chap-md5.c.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/test.dir/build.make CMakeFiles/test.dir/home/uzygncr/pico/pico-sdk/lib/lwip/src/netif/ppp/chap-md5.c.obj
-.PHONY : home/uzygncr/pico/pico-sdk/lib/lwip/src/netif/ppp/chap-md5.c.obj
+home/uzygncr/pico/pico-sdk/lib/lwip/src/netif/ppp/chap-md5.c.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/test.dir/build.make CMakeFiles/test.dir/home/uzygncr/pico/pico-sdk/lib/lwip/src/netif/ppp/chap-md5.c.o
+.PHONY : home/uzygncr/pico/pico-sdk/lib/lwip/src/netif/ppp/chap-md5.c.o
 
 home/uzygncr/pico/pico-sdk/lib/lwip/src/netif/ppp/chap-md5.i: home/uzygncr/pico/pico-sdk/lib/lwip/src/netif/ppp/chap-md5.c.i
 .PHONY : home/uzygncr/pico/pico-sdk/lib/lwip/src/netif/ppp/chap-md5.i
@@ -1634,13 +1621,13 @@ home/uzygncr/pico/pico-sdk/lib/lwip/src/netif/ppp/chap-md5.c.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/test.dir/build.make CMakeFiles/test.dir/home/uzygncr/pico/pico-sdk/lib/lwip/src/netif/ppp/chap-md5.c.s
 .PHONY : home/uzygncr/pico/pico-sdk/lib/lwip/src/netif/ppp/chap-md5.c.s
 
-home/uzygncr/pico/pico-sdk/lib/lwip/src/netif/ppp/chap-new.obj: home/uzygncr/pico/pico-sdk/lib/lwip/src/netif/ppp/chap-new.c.obj
-.PHONY : home/uzygncr/pico/pico-sdk/lib/lwip/src/netif/ppp/chap-new.obj
+home/uzygncr/pico/pico-sdk/lib/lwip/src/netif/ppp/chap-new.o: home/uzygncr/pico/pico-sdk/lib/lwip/src/netif/ppp/chap-new.c.o
+.PHONY : home/uzygncr/pico/pico-sdk/lib/lwip/src/netif/ppp/chap-new.o
 
 # target to build an object file
-home/uzygncr/pico/pico-sdk/lib/lwip/src/netif/ppp/chap-new.c.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/test.dir/build.make CMakeFiles/test.dir/home/uzygncr/pico/pico-sdk/lib/lwip/src/netif/ppp/chap-new.c.obj
-.PHONY : home/uzygncr/pico/pico-sdk/lib/lwip/src/netif/ppp/chap-new.c.obj
+home/uzygncr/pico/pico-sdk/lib/lwip/src/netif/ppp/chap-new.c.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/test.dir/build.make CMakeFiles/test.dir/home/uzygncr/pico/pico-sdk/lib/lwip/src/netif/ppp/chap-new.c.o
+.PHONY : home/uzygncr/pico/pico-sdk/lib/lwip/src/netif/ppp/chap-new.c.o
 
 home/uzygncr/pico/pico-sdk/lib/lwip/src/netif/ppp/chap-new.i: home/uzygncr/pico/pico-sdk/lib/lwip/src/netif/ppp/chap-new.c.i
 .PHONY : home/uzygncr/pico/pico-sdk/lib/lwip/src/netif/ppp/chap-new.i
@@ -1658,13 +1645,13 @@ home/uzygncr/pico/pico-sdk/lib/lwip/src/netif/ppp/chap-new.c.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/test.dir/build.make CMakeFiles/test.dir/home/uzygncr/pico/pico-sdk/lib/lwip/src/netif/ppp/chap-new.c.s
 .PHONY : home/uzygncr/pico/pico-sdk/lib/lwip/src/netif/ppp/chap-new.c.s
 
-home/uzygncr/pico/pico-sdk/lib/lwip/src/netif/ppp/chap_ms.obj: home/uzygncr/pico/pico-sdk/lib/lwip/src/netif/ppp/chap_ms.c.obj
-.PHONY : home/uzygncr/pico/pico-sdk/lib/lwip/src/netif/ppp/chap_ms.obj
+home/uzygncr/pico/pico-sdk/lib/lwip/src/netif/ppp/chap_ms.o: home/uzygncr/pico/pico-sdk/lib/lwip/src/netif/ppp/chap_ms.c.o
+.PHONY : home/uzygncr/pico/pico-sdk/lib/lwip/src/netif/ppp/chap_ms.o
 
 # target to build an object file
-home/uzygncr/pico/pico-sdk/lib/lwip/src/netif/ppp/chap_ms.c.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/test.dir/build.make CMakeFiles/test.dir/home/uzygncr/pico/pico-sdk/lib/lwip/src/netif/ppp/chap_ms.c.obj
-.PHONY : home/uzygncr/pico/pico-sdk/lib/lwip/src/netif/ppp/chap_ms.c.obj
+home/uzygncr/pico/pico-sdk/lib/lwip/src/netif/ppp/chap_ms.c.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/test.dir/build.make CMakeFiles/test.dir/home/uzygncr/pico/pico-sdk/lib/lwip/src/netif/ppp/chap_ms.c.o
+.PHONY : home/uzygncr/pico/pico-sdk/lib/lwip/src/netif/ppp/chap_ms.c.o
 
 home/uzygncr/pico/pico-sdk/lib/lwip/src/netif/ppp/chap_ms.i: home/uzygncr/pico/pico-sdk/lib/lwip/src/netif/ppp/chap_ms.c.i
 .PHONY : home/uzygncr/pico/pico-sdk/lib/lwip/src/netif/ppp/chap_ms.i
@@ -1682,13 +1669,13 @@ home/uzygncr/pico/pico-sdk/lib/lwip/src/netif/ppp/chap_ms.c.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/test.dir/build.make CMakeFiles/test.dir/home/uzygncr/pico/pico-sdk/lib/lwip/src/netif/ppp/chap_ms.c.s
 .PHONY : home/uzygncr/pico/pico-sdk/lib/lwip/src/netif/ppp/chap_ms.c.s
 
-home/uzygncr/pico/pico-sdk/lib/lwip/src/netif/ppp/demand.obj: home/uzygncr/pico/pico-sdk/lib/lwip/src/netif/ppp/demand.c.obj
-.PHONY : home/uzygncr/pico/pico-sdk/lib/lwip/src/netif/ppp/demand.obj
+home/uzygncr/pico/pico-sdk/lib/lwip/src/netif/ppp/demand.o: home/uzygncr/pico/pico-sdk/lib/lwip/src/netif/ppp/demand.c.o
+.PHONY : home/uzygncr/pico/pico-sdk/lib/lwip/src/netif/ppp/demand.o
 
 # target to build an object file
-home/uzygncr/pico/pico-sdk/lib/lwip/src/netif/ppp/demand.c.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/test.dir/build.make CMakeFiles/test.dir/home/uzygncr/pico/pico-sdk/lib/lwip/src/netif/ppp/demand.c.obj
-.PHONY : home/uzygncr/pico/pico-sdk/lib/lwip/src/netif/ppp/demand.c.obj
+home/uzygncr/pico/pico-sdk/lib/lwip/src/netif/ppp/demand.c.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/test.dir/build.make CMakeFiles/test.dir/home/uzygncr/pico/pico-sdk/lib/lwip/src/netif/ppp/demand.c.o
+.PHONY : home/uzygncr/pico/pico-sdk/lib/lwip/src/netif/ppp/demand.c.o
 
 home/uzygncr/pico/pico-sdk/lib/lwip/src/netif/ppp/demand.i: home/uzygncr/pico/pico-sdk/lib/lwip/src/netif/ppp/demand.c.i
 .PHONY : home/uzygncr/pico/pico-sdk/lib/lwip/src/netif/ppp/demand.i
@@ -1706,13 +1693,13 @@ home/uzygncr/pico/pico-sdk/lib/lwip/src/netif/ppp/demand.c.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/test.dir/build.make CMakeFiles/test.dir/home/uzygncr/pico/pico-sdk/lib/lwip/src/netif/ppp/demand.c.s
 .PHONY : home/uzygncr/pico/pico-sdk/lib/lwip/src/netif/ppp/demand.c.s
 
-home/uzygncr/pico/pico-sdk/lib/lwip/src/netif/ppp/eap.obj: home/uzygncr/pico/pico-sdk/lib/lwip/src/netif/ppp/eap.c.obj
-.PHONY : home/uzygncr/pico/pico-sdk/lib/lwip/src/netif/ppp/eap.obj
+home/uzygncr/pico/pico-sdk/lib/lwip/src/netif/ppp/eap.o: home/uzygncr/pico/pico-sdk/lib/lwip/src/netif/ppp/eap.c.o
+.PHONY : home/uzygncr/pico/pico-sdk/lib/lwip/src/netif/ppp/eap.o
 
 # target to build an object file
-home/uzygncr/pico/pico-sdk/lib/lwip/src/netif/ppp/eap.c.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/test.dir/build.make CMakeFiles/test.dir/home/uzygncr/pico/pico-sdk/lib/lwip/src/netif/ppp/eap.c.obj
-.PHONY : home/uzygncr/pico/pico-sdk/lib/lwip/src/netif/ppp/eap.c.obj
+home/uzygncr/pico/pico-sdk/lib/lwip/src/netif/ppp/eap.c.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/test.dir/build.make CMakeFiles/test.dir/home/uzygncr/pico/pico-sdk/lib/lwip/src/netif/ppp/eap.c.o
+.PHONY : home/uzygncr/pico/pico-sdk/lib/lwip/src/netif/ppp/eap.c.o
 
 home/uzygncr/pico/pico-sdk/lib/lwip/src/netif/ppp/eap.i: home/uzygncr/pico/pico-sdk/lib/lwip/src/netif/ppp/eap.c.i
 .PHONY : home/uzygncr/pico/pico-sdk/lib/lwip/src/netif/ppp/eap.i
@@ -1730,13 +1717,13 @@ home/uzygncr/pico/pico-sdk/lib/lwip/src/netif/ppp/eap.c.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/test.dir/build.make CMakeFiles/test.dir/home/uzygncr/pico/pico-sdk/lib/lwip/src/netif/ppp/eap.c.s
 .PHONY : home/uzygncr/pico/pico-sdk/lib/lwip/src/netif/ppp/eap.c.s
 
-home/uzygncr/pico/pico-sdk/lib/lwip/src/netif/ppp/ecp.obj: home/uzygncr/pico/pico-sdk/lib/lwip/src/netif/ppp/ecp.c.obj
-.PHONY : home/uzygncr/pico/pico-sdk/lib/lwip/src/netif/ppp/ecp.obj
+home/uzygncr/pico/pico-sdk/lib/lwip/src/netif/ppp/ecp.o: home/uzygncr/pico/pico-sdk/lib/lwip/src/netif/ppp/ecp.c.o
+.PHONY : home/uzygncr/pico/pico-sdk/lib/lwip/src/netif/ppp/ecp.o
 
 # target to build an object file
-home/uzygncr/pico/pico-sdk/lib/lwip/src/netif/ppp/ecp.c.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/test.dir/build.make CMakeFiles/test.dir/home/uzygncr/pico/pico-sdk/lib/lwip/src/netif/ppp/ecp.c.obj
-.PHONY : home/uzygncr/pico/pico-sdk/lib/lwip/src/netif/ppp/ecp.c.obj
+home/uzygncr/pico/pico-sdk/lib/lwip/src/netif/ppp/ecp.c.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/test.dir/build.make CMakeFiles/test.dir/home/uzygncr/pico/pico-sdk/lib/lwip/src/netif/ppp/ecp.c.o
+.PHONY : home/uzygncr/pico/pico-sdk/lib/lwip/src/netif/ppp/ecp.c.o
 
 home/uzygncr/pico/pico-sdk/lib/lwip/src/netif/ppp/ecp.i: home/uzygncr/pico/pico-sdk/lib/lwip/src/netif/ppp/ecp.c.i
 .PHONY : home/uzygncr/pico/pico-sdk/lib/lwip/src/netif/ppp/ecp.i
@@ -1754,13 +1741,13 @@ home/uzygncr/pico/pico-sdk/lib/lwip/src/netif/ppp/ecp.c.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/test.dir/build.make CMakeFiles/test.dir/home/uzygncr/pico/pico-sdk/lib/lwip/src/netif/ppp/ecp.c.s
 .PHONY : home/uzygncr/pico/pico-sdk/lib/lwip/src/netif/ppp/ecp.c.s
 
-home/uzygncr/pico/pico-sdk/lib/lwip/src/netif/ppp/eui64.obj: home/uzygncr/pico/pico-sdk/lib/lwip/src/netif/ppp/eui64.c.obj
-.PHONY : home/uzygncr/pico/pico-sdk/lib/lwip/src/netif/ppp/eui64.obj
+home/uzygncr/pico/pico-sdk/lib/lwip/src/netif/ppp/eui64.o: home/uzygncr/pico/pico-sdk/lib/lwip/src/netif/ppp/eui64.c.o
+.PHONY : home/uzygncr/pico/pico-sdk/lib/lwip/src/netif/ppp/eui64.o
 
 # target to build an object file
-home/uzygncr/pico/pico-sdk/lib/lwip/src/netif/ppp/eui64.c.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/test.dir/build.make CMakeFiles/test.dir/home/uzygncr/pico/pico-sdk/lib/lwip/src/netif/ppp/eui64.c.obj
-.PHONY : home/uzygncr/pico/pico-sdk/lib/lwip/src/netif/ppp/eui64.c.obj
+home/uzygncr/pico/pico-sdk/lib/lwip/src/netif/ppp/eui64.c.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/test.dir/build.make CMakeFiles/test.dir/home/uzygncr/pico/pico-sdk/lib/lwip/src/netif/ppp/eui64.c.o
+.PHONY : home/uzygncr/pico/pico-sdk/lib/lwip/src/netif/ppp/eui64.c.o
 
 home/uzygncr/pico/pico-sdk/lib/lwip/src/netif/ppp/eui64.i: home/uzygncr/pico/pico-sdk/lib/lwip/src/netif/ppp/eui64.c.i
 .PHONY : home/uzygncr/pico/pico-sdk/lib/lwip/src/netif/ppp/eui64.i
@@ -1778,13 +1765,13 @@ home/uzygncr/pico/pico-sdk/lib/lwip/src/netif/ppp/eui64.c.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/test.dir/build.make CMakeFiles/test.dir/home/uzygncr/pico/pico-sdk/lib/lwip/src/netif/ppp/eui64.c.s
 .PHONY : home/uzygncr/pico/pico-sdk/lib/lwip/src/netif/ppp/eui64.c.s
 
-home/uzygncr/pico/pico-sdk/lib/lwip/src/netif/ppp/fsm.obj: home/uzygncr/pico/pico-sdk/lib/lwip/src/netif/ppp/fsm.c.obj
-.PHONY : home/uzygncr/pico/pico-sdk/lib/lwip/src/netif/ppp/fsm.obj
+home/uzygncr/pico/pico-sdk/lib/lwip/src/netif/ppp/fsm.o: home/uzygncr/pico/pico-sdk/lib/lwip/src/netif/ppp/fsm.c.o
+.PHONY : home/uzygncr/pico/pico-sdk/lib/lwip/src/netif/ppp/fsm.o
 
 # target to build an object file
-home/uzygncr/pico/pico-sdk/lib/lwip/src/netif/ppp/fsm.c.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/test.dir/build.make CMakeFiles/test.dir/home/uzygncr/pico/pico-sdk/lib/lwip/src/netif/ppp/fsm.c.obj
-.PHONY : home/uzygncr/pico/pico-sdk/lib/lwip/src/netif/ppp/fsm.c.obj
+home/uzygncr/pico/pico-sdk/lib/lwip/src/netif/ppp/fsm.c.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/test.dir/build.make CMakeFiles/test.dir/home/uzygncr/pico/pico-sdk/lib/lwip/src/netif/ppp/fsm.c.o
+.PHONY : home/uzygncr/pico/pico-sdk/lib/lwip/src/netif/ppp/fsm.c.o
 
 home/uzygncr/pico/pico-sdk/lib/lwip/src/netif/ppp/fsm.i: home/uzygncr/pico/pico-sdk/lib/lwip/src/netif/ppp/fsm.c.i
 .PHONY : home/uzygncr/pico/pico-sdk/lib/lwip/src/netif/ppp/fsm.i
@@ -1802,13 +1789,13 @@ home/uzygncr/pico/pico-sdk/lib/lwip/src/netif/ppp/fsm.c.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/test.dir/build.make CMakeFiles/test.dir/home/uzygncr/pico/pico-sdk/lib/lwip/src/netif/ppp/fsm.c.s
 .PHONY : home/uzygncr/pico/pico-sdk/lib/lwip/src/netif/ppp/fsm.c.s
 
-home/uzygncr/pico/pico-sdk/lib/lwip/src/netif/ppp/ipcp.obj: home/uzygncr/pico/pico-sdk/lib/lwip/src/netif/ppp/ipcp.c.obj
-.PHONY : home/uzygncr/pico/pico-sdk/lib/lwip/src/netif/ppp/ipcp.obj
+home/uzygncr/pico/pico-sdk/lib/lwip/src/netif/ppp/ipcp.o: home/uzygncr/pico/pico-sdk/lib/lwip/src/netif/ppp/ipcp.c.o
+.PHONY : home/uzygncr/pico/pico-sdk/lib/lwip/src/netif/ppp/ipcp.o
 
 # target to build an object file
-home/uzygncr/pico/pico-sdk/lib/lwip/src/netif/ppp/ipcp.c.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/test.dir/build.make CMakeFiles/test.dir/home/uzygncr/pico/pico-sdk/lib/lwip/src/netif/ppp/ipcp.c.obj
-.PHONY : home/uzygncr/pico/pico-sdk/lib/lwip/src/netif/ppp/ipcp.c.obj
+home/uzygncr/pico/pico-sdk/lib/lwip/src/netif/ppp/ipcp.c.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/test.dir/build.make CMakeFiles/test.dir/home/uzygncr/pico/pico-sdk/lib/lwip/src/netif/ppp/ipcp.c.o
+.PHONY : home/uzygncr/pico/pico-sdk/lib/lwip/src/netif/ppp/ipcp.c.o
 
 home/uzygncr/pico/pico-sdk/lib/lwip/src/netif/ppp/ipcp.i: home/uzygncr/pico/pico-sdk/lib/lwip/src/netif/ppp/ipcp.c.i
 .PHONY : home/uzygncr/pico/pico-sdk/lib/lwip/src/netif/ppp/ipcp.i
@@ -1826,13 +1813,13 @@ home/uzygncr/pico/pico-sdk/lib/lwip/src/netif/ppp/ipcp.c.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/test.dir/build.make CMakeFiles/test.dir/home/uzygncr/pico/pico-sdk/lib/lwip/src/netif/ppp/ipcp.c.s
 .PHONY : home/uzygncr/pico/pico-sdk/lib/lwip/src/netif/ppp/ipcp.c.s
 
-home/uzygncr/pico/pico-sdk/lib/lwip/src/netif/ppp/ipv6cp.obj: home/uzygncr/pico/pico-sdk/lib/lwip/src/netif/ppp/ipv6cp.c.obj
-.PHONY : home/uzygncr/pico/pico-sdk/lib/lwip/src/netif/ppp/ipv6cp.obj
+home/uzygncr/pico/pico-sdk/lib/lwip/src/netif/ppp/ipv6cp.o: home/uzygncr/pico/pico-sdk/lib/lwip/src/netif/ppp/ipv6cp.c.o
+.PHONY : home/uzygncr/pico/pico-sdk/lib/lwip/src/netif/ppp/ipv6cp.o
 
 # target to build an object file
-home/uzygncr/pico/pico-sdk/lib/lwip/src/netif/ppp/ipv6cp.c.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/test.dir/build.make CMakeFiles/test.dir/home/uzygncr/pico/pico-sdk/lib/lwip/src/netif/ppp/ipv6cp.c.obj
-.PHONY : home/uzygncr/pico/pico-sdk/lib/lwip/src/netif/ppp/ipv6cp.c.obj
+home/uzygncr/pico/pico-sdk/lib/lwip/src/netif/ppp/ipv6cp.c.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/test.dir/build.make CMakeFiles/test.dir/home/uzygncr/pico/pico-sdk/lib/lwip/src/netif/ppp/ipv6cp.c.o
+.PHONY : home/uzygncr/pico/pico-sdk/lib/lwip/src/netif/ppp/ipv6cp.c.o
 
 home/uzygncr/pico/pico-sdk/lib/lwip/src/netif/ppp/ipv6cp.i: home/uzygncr/pico/pico-sdk/lib/lwip/src/netif/ppp/ipv6cp.c.i
 .PHONY : home/uzygncr/pico/pico-sdk/lib/lwip/src/netif/ppp/ipv6cp.i
@@ -1850,13 +1837,13 @@ home/uzygncr/pico/pico-sdk/lib/lwip/src/netif/ppp/ipv6cp.c.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/test.dir/build.make CMakeFiles/test.dir/home/uzygncr/pico/pico-sdk/lib/lwip/src/netif/ppp/ipv6cp.c.s
 .PHONY : home/uzygncr/pico/pico-sdk/lib/lwip/src/netif/ppp/ipv6cp.c.s
 
-home/uzygncr/pico/pico-sdk/lib/lwip/src/netif/ppp/lcp.obj: home/uzygncr/pico/pico-sdk/lib/lwip/src/netif/ppp/lcp.c.obj
-.PHONY : home/uzygncr/pico/pico-sdk/lib/lwip/src/netif/ppp/lcp.obj
+home/uzygncr/pico/pico-sdk/lib/lwip/src/netif/ppp/lcp.o: home/uzygncr/pico/pico-sdk/lib/lwip/src/netif/ppp/lcp.c.o
+.PHONY : home/uzygncr/pico/pico-sdk/lib/lwip/src/netif/ppp/lcp.o
 
 # target to build an object file
-home/uzygncr/pico/pico-sdk/lib/lwip/src/netif/ppp/lcp.c.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/test.dir/build.make CMakeFiles/test.dir/home/uzygncr/pico/pico-sdk/lib/lwip/src/netif/ppp/lcp.c.obj
-.PHONY : home/uzygncr/pico/pico-sdk/lib/lwip/src/netif/ppp/lcp.c.obj
+home/uzygncr/pico/pico-sdk/lib/lwip/src/netif/ppp/lcp.c.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/test.dir/build.make CMakeFiles/test.dir/home/uzygncr/pico/pico-sdk/lib/lwip/src/netif/ppp/lcp.c.o
+.PHONY : home/uzygncr/pico/pico-sdk/lib/lwip/src/netif/ppp/lcp.c.o
 
 home/uzygncr/pico/pico-sdk/lib/lwip/src/netif/ppp/lcp.i: home/uzygncr/pico/pico-sdk/lib/lwip/src/netif/ppp/lcp.c.i
 .PHONY : home/uzygncr/pico/pico-sdk/lib/lwip/src/netif/ppp/lcp.i
@@ -1874,13 +1861,13 @@ home/uzygncr/pico/pico-sdk/lib/lwip/src/netif/ppp/lcp.c.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/test.dir/build.make CMakeFiles/test.dir/home/uzygncr/pico/pico-sdk/lib/lwip/src/netif/ppp/lcp.c.s
 .PHONY : home/uzygncr/pico/pico-sdk/lib/lwip/src/netif/ppp/lcp.c.s
 
-home/uzygncr/pico/pico-sdk/lib/lwip/src/netif/ppp/magic.obj: home/uzygncr/pico/pico-sdk/lib/lwip/src/netif/ppp/magic.c.obj
-.PHONY : home/uzygncr/pico/pico-sdk/lib/lwip/src/netif/ppp/magic.obj
+home/uzygncr/pico/pico-sdk/lib/lwip/src/netif/ppp/magic.o: home/uzygncr/pico/pico-sdk/lib/lwip/src/netif/ppp/magic.c.o
+.PHONY : home/uzygncr/pico/pico-sdk/lib/lwip/src/netif/ppp/magic.o
 
 # target to build an object file
-home/uzygncr/pico/pico-sdk/lib/lwip/src/netif/ppp/magic.c.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/test.dir/build.make CMakeFiles/test.dir/home/uzygncr/pico/pico-sdk/lib/lwip/src/netif/ppp/magic.c.obj
-.PHONY : home/uzygncr/pico/pico-sdk/lib/lwip/src/netif/ppp/magic.c.obj
+home/uzygncr/pico/pico-sdk/lib/lwip/src/netif/ppp/magic.c.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/test.dir/build.make CMakeFiles/test.dir/home/uzygncr/pico/pico-sdk/lib/lwip/src/netif/ppp/magic.c.o
+.PHONY : home/uzygncr/pico/pico-sdk/lib/lwip/src/netif/ppp/magic.c.o
 
 home/uzygncr/pico/pico-sdk/lib/lwip/src/netif/ppp/magic.i: home/uzygncr/pico/pico-sdk/lib/lwip/src/netif/ppp/magic.c.i
 .PHONY : home/uzygncr/pico/pico-sdk/lib/lwip/src/netif/ppp/magic.i
@@ -1898,13 +1885,13 @@ home/uzygncr/pico/pico-sdk/lib/lwip/src/netif/ppp/magic.c.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/test.dir/build.make CMakeFiles/test.dir/home/uzygncr/pico/pico-sdk/lib/lwip/src/netif/ppp/magic.c.s
 .PHONY : home/uzygncr/pico/pico-sdk/lib/lwip/src/netif/ppp/magic.c.s
 
-home/uzygncr/pico/pico-sdk/lib/lwip/src/netif/ppp/mppe.obj: home/uzygncr/pico/pico-sdk/lib/lwip/src/netif/ppp/mppe.c.obj
-.PHONY : home/uzygncr/pico/pico-sdk/lib/lwip/src/netif/ppp/mppe.obj
+home/uzygncr/pico/pico-sdk/lib/lwip/src/netif/ppp/mppe.o: home/uzygncr/pico/pico-sdk/lib/lwip/src/netif/ppp/mppe.c.o
+.PHONY : home/uzygncr/pico/pico-sdk/lib/lwip/src/netif/ppp/mppe.o
 
 # target to build an object file
-home/uzygncr/pico/pico-sdk/lib/lwip/src/netif/ppp/mppe.c.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/test.dir/build.make CMakeFiles/test.dir/home/uzygncr/pico/pico-sdk/lib/lwip/src/netif/ppp/mppe.c.obj
-.PHONY : home/uzygncr/pico/pico-sdk/lib/lwip/src/netif/ppp/mppe.c.obj
+home/uzygncr/pico/pico-sdk/lib/lwip/src/netif/ppp/mppe.c.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/test.dir/build.make CMakeFiles/test.dir/home/uzygncr/pico/pico-sdk/lib/lwip/src/netif/ppp/mppe.c.o
+.PHONY : home/uzygncr/pico/pico-sdk/lib/lwip/src/netif/ppp/mppe.c.o
 
 home/uzygncr/pico/pico-sdk/lib/lwip/src/netif/ppp/mppe.i: home/uzygncr/pico/pico-sdk/lib/lwip/src/netif/ppp/mppe.c.i
 .PHONY : home/uzygncr/pico/pico-sdk/lib/lwip/src/netif/ppp/mppe.i
@@ -1922,13 +1909,13 @@ home/uzygncr/pico/pico-sdk/lib/lwip/src/netif/ppp/mppe.c.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/test.dir/build.make CMakeFiles/test.dir/home/uzygncr/pico/pico-sdk/lib/lwip/src/netif/ppp/mppe.c.s
 .PHONY : home/uzygncr/pico/pico-sdk/lib/lwip/src/netif/ppp/mppe.c.s
 
-home/uzygncr/pico/pico-sdk/lib/lwip/src/netif/ppp/multilink.obj: home/uzygncr/pico/pico-sdk/lib/lwip/src/netif/ppp/multilink.c.obj
-.PHONY : home/uzygncr/pico/pico-sdk/lib/lwip/src/netif/ppp/multilink.obj
+home/uzygncr/pico/pico-sdk/lib/lwip/src/netif/ppp/multilink.o: home/uzygncr/pico/pico-sdk/lib/lwip/src/netif/ppp/multilink.c.o
+.PHONY : home/uzygncr/pico/pico-sdk/lib/lwip/src/netif/ppp/multilink.o
 
 # target to build an object file
-home/uzygncr/pico/pico-sdk/lib/lwip/src/netif/ppp/multilink.c.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/test.dir/build.make CMakeFiles/test.dir/home/uzygncr/pico/pico-sdk/lib/lwip/src/netif/ppp/multilink.c.obj
-.PHONY : home/uzygncr/pico/pico-sdk/lib/lwip/src/netif/ppp/multilink.c.obj
+home/uzygncr/pico/pico-sdk/lib/lwip/src/netif/ppp/multilink.c.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/test.dir/build.make CMakeFiles/test.dir/home/uzygncr/pico/pico-sdk/lib/lwip/src/netif/ppp/multilink.c.o
+.PHONY : home/uzygncr/pico/pico-sdk/lib/lwip/src/netif/ppp/multilink.c.o
 
 home/uzygncr/pico/pico-sdk/lib/lwip/src/netif/ppp/multilink.i: home/uzygncr/pico/pico-sdk/lib/lwip/src/netif/ppp/multilink.c.i
 .PHONY : home/uzygncr/pico/pico-sdk/lib/lwip/src/netif/ppp/multilink.i
@@ -1946,13 +1933,13 @@ home/uzygncr/pico/pico-sdk/lib/lwip/src/netif/ppp/multilink.c.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/test.dir/build.make CMakeFiles/test.dir/home/uzygncr/pico/pico-sdk/lib/lwip/src/netif/ppp/multilink.c.s
 .PHONY : home/uzygncr/pico/pico-sdk/lib/lwip/src/netif/ppp/multilink.c.s
 
-home/uzygncr/pico/pico-sdk/lib/lwip/src/netif/ppp/polarssl/arc4.obj: home/uzygncr/pico/pico-sdk/lib/lwip/src/netif/ppp/polarssl/arc4.c.obj
-.PHONY : home/uzygncr/pico/pico-sdk/lib/lwip/src/netif/ppp/polarssl/arc4.obj
+home/uzygncr/pico/pico-sdk/lib/lwip/src/netif/ppp/polarssl/arc4.o: home/uzygncr/pico/pico-sdk/lib/lwip/src/netif/ppp/polarssl/arc4.c.o
+.PHONY : home/uzygncr/pico/pico-sdk/lib/lwip/src/netif/ppp/polarssl/arc4.o
 
 # target to build an object file
-home/uzygncr/pico/pico-sdk/lib/lwip/src/netif/ppp/polarssl/arc4.c.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/test.dir/build.make CMakeFiles/test.dir/home/uzygncr/pico/pico-sdk/lib/lwip/src/netif/ppp/polarssl/arc4.c.obj
-.PHONY : home/uzygncr/pico/pico-sdk/lib/lwip/src/netif/ppp/polarssl/arc4.c.obj
+home/uzygncr/pico/pico-sdk/lib/lwip/src/netif/ppp/polarssl/arc4.c.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/test.dir/build.make CMakeFiles/test.dir/home/uzygncr/pico/pico-sdk/lib/lwip/src/netif/ppp/polarssl/arc4.c.o
+.PHONY : home/uzygncr/pico/pico-sdk/lib/lwip/src/netif/ppp/polarssl/arc4.c.o
 
 home/uzygncr/pico/pico-sdk/lib/lwip/src/netif/ppp/polarssl/arc4.i: home/uzygncr/pico/pico-sdk/lib/lwip/src/netif/ppp/polarssl/arc4.c.i
 .PHONY : home/uzygncr/pico/pico-sdk/lib/lwip/src/netif/ppp/polarssl/arc4.i
@@ -1970,13 +1957,13 @@ home/uzygncr/pico/pico-sdk/lib/lwip/src/netif/ppp/polarssl/arc4.c.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/test.dir/build.make CMakeFiles/test.dir/home/uzygncr/pico/pico-sdk/lib/lwip/src/netif/ppp/polarssl/arc4.c.s
 .PHONY : home/uzygncr/pico/pico-sdk/lib/lwip/src/netif/ppp/polarssl/arc4.c.s
 
-home/uzygncr/pico/pico-sdk/lib/lwip/src/netif/ppp/polarssl/des.obj: home/uzygncr/pico/pico-sdk/lib/lwip/src/netif/ppp/polarssl/des.c.obj
-.PHONY : home/uzygncr/pico/pico-sdk/lib/lwip/src/netif/ppp/polarssl/des.obj
+home/uzygncr/pico/pico-sdk/lib/lwip/src/netif/ppp/polarssl/des.o: home/uzygncr/pico/pico-sdk/lib/lwip/src/netif/ppp/polarssl/des.c.o
+.PHONY : home/uzygncr/pico/pico-sdk/lib/lwip/src/netif/ppp/polarssl/des.o
 
 # target to build an object file
-home/uzygncr/pico/pico-sdk/lib/lwip/src/netif/ppp/polarssl/des.c.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/test.dir/build.make CMakeFiles/test.dir/home/uzygncr/pico/pico-sdk/lib/lwip/src/netif/ppp/polarssl/des.c.obj
-.PHONY : home/uzygncr/pico/pico-sdk/lib/lwip/src/netif/ppp/polarssl/des.c.obj
+home/uzygncr/pico/pico-sdk/lib/lwip/src/netif/ppp/polarssl/des.c.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/test.dir/build.make CMakeFiles/test.dir/home/uzygncr/pico/pico-sdk/lib/lwip/src/netif/ppp/polarssl/des.c.o
+.PHONY : home/uzygncr/pico/pico-sdk/lib/lwip/src/netif/ppp/polarssl/des.c.o
 
 home/uzygncr/pico/pico-sdk/lib/lwip/src/netif/ppp/polarssl/des.i: home/uzygncr/pico/pico-sdk/lib/lwip/src/netif/ppp/polarssl/des.c.i
 .PHONY : home/uzygncr/pico/pico-sdk/lib/lwip/src/netif/ppp/polarssl/des.i
@@ -1994,13 +1981,13 @@ home/uzygncr/pico/pico-sdk/lib/lwip/src/netif/ppp/polarssl/des.c.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/test.dir/build.make CMakeFiles/test.dir/home/uzygncr/pico/pico-sdk/lib/lwip/src/netif/ppp/polarssl/des.c.s
 .PHONY : home/uzygncr/pico/pico-sdk/lib/lwip/src/netif/ppp/polarssl/des.c.s
 
-home/uzygncr/pico/pico-sdk/lib/lwip/src/netif/ppp/polarssl/md4.obj: home/uzygncr/pico/pico-sdk/lib/lwip/src/netif/ppp/polarssl/md4.c.obj
-.PHONY : home/uzygncr/pico/pico-sdk/lib/lwip/src/netif/ppp/polarssl/md4.obj
+home/uzygncr/pico/pico-sdk/lib/lwip/src/netif/ppp/polarssl/md4.o: home/uzygncr/pico/pico-sdk/lib/lwip/src/netif/ppp/polarssl/md4.c.o
+.PHONY : home/uzygncr/pico/pico-sdk/lib/lwip/src/netif/ppp/polarssl/md4.o
 
 # target to build an object file
-home/uzygncr/pico/pico-sdk/lib/lwip/src/netif/ppp/polarssl/md4.c.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/test.dir/build.make CMakeFiles/test.dir/home/uzygncr/pico/pico-sdk/lib/lwip/src/netif/ppp/polarssl/md4.c.obj
-.PHONY : home/uzygncr/pico/pico-sdk/lib/lwip/src/netif/ppp/polarssl/md4.c.obj
+home/uzygncr/pico/pico-sdk/lib/lwip/src/netif/ppp/polarssl/md4.c.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/test.dir/build.make CMakeFiles/test.dir/home/uzygncr/pico/pico-sdk/lib/lwip/src/netif/ppp/polarssl/md4.c.o
+.PHONY : home/uzygncr/pico/pico-sdk/lib/lwip/src/netif/ppp/polarssl/md4.c.o
 
 home/uzygncr/pico/pico-sdk/lib/lwip/src/netif/ppp/polarssl/md4.i: home/uzygncr/pico/pico-sdk/lib/lwip/src/netif/ppp/polarssl/md4.c.i
 .PHONY : home/uzygncr/pico/pico-sdk/lib/lwip/src/netif/ppp/polarssl/md4.i
@@ -2018,13 +2005,13 @@ home/uzygncr/pico/pico-sdk/lib/lwip/src/netif/ppp/polarssl/md4.c.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/test.dir/build.make CMakeFiles/test.dir/home/uzygncr/pico/pico-sdk/lib/lwip/src/netif/ppp/polarssl/md4.c.s
 .PHONY : home/uzygncr/pico/pico-sdk/lib/lwip/src/netif/ppp/polarssl/md4.c.s
 
-home/uzygncr/pico/pico-sdk/lib/lwip/src/netif/ppp/polarssl/md5.obj: home/uzygncr/pico/pico-sdk/lib/lwip/src/netif/ppp/polarssl/md5.c.obj
-.PHONY : home/uzygncr/pico/pico-sdk/lib/lwip/src/netif/ppp/polarssl/md5.obj
+home/uzygncr/pico/pico-sdk/lib/lwip/src/netif/ppp/polarssl/md5.o: home/uzygncr/pico/pico-sdk/lib/lwip/src/netif/ppp/polarssl/md5.c.o
+.PHONY : home/uzygncr/pico/pico-sdk/lib/lwip/src/netif/ppp/polarssl/md5.o
 
 # target to build an object file
-home/uzygncr/pico/pico-sdk/lib/lwip/src/netif/ppp/polarssl/md5.c.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/test.dir/build.make CMakeFiles/test.dir/home/uzygncr/pico/pico-sdk/lib/lwip/src/netif/ppp/polarssl/md5.c.obj
-.PHONY : home/uzygncr/pico/pico-sdk/lib/lwip/src/netif/ppp/polarssl/md5.c.obj
+home/uzygncr/pico/pico-sdk/lib/lwip/src/netif/ppp/polarssl/md5.c.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/test.dir/build.make CMakeFiles/test.dir/home/uzygncr/pico/pico-sdk/lib/lwip/src/netif/ppp/polarssl/md5.c.o
+.PHONY : home/uzygncr/pico/pico-sdk/lib/lwip/src/netif/ppp/polarssl/md5.c.o
 
 home/uzygncr/pico/pico-sdk/lib/lwip/src/netif/ppp/polarssl/md5.i: home/uzygncr/pico/pico-sdk/lib/lwip/src/netif/ppp/polarssl/md5.c.i
 .PHONY : home/uzygncr/pico/pico-sdk/lib/lwip/src/netif/ppp/polarssl/md5.i
@@ -2042,13 +2029,13 @@ home/uzygncr/pico/pico-sdk/lib/lwip/src/netif/ppp/polarssl/md5.c.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/test.dir/build.make CMakeFiles/test.dir/home/uzygncr/pico/pico-sdk/lib/lwip/src/netif/ppp/polarssl/md5.c.s
 .PHONY : home/uzygncr/pico/pico-sdk/lib/lwip/src/netif/ppp/polarssl/md5.c.s
 
-home/uzygncr/pico/pico-sdk/lib/lwip/src/netif/ppp/polarssl/sha1.obj: home/uzygncr/pico/pico-sdk/lib/lwip/src/netif/ppp/polarssl/sha1.c.obj
-.PHONY : home/uzygncr/pico/pico-sdk/lib/lwip/src/netif/ppp/polarssl/sha1.obj
+home/uzygncr/pico/pico-sdk/lib/lwip/src/netif/ppp/polarssl/sha1.o: home/uzygncr/pico/pico-sdk/lib/lwip/src/netif/ppp/polarssl/sha1.c.o
+.PHONY : home/uzygncr/pico/pico-sdk/lib/lwip/src/netif/ppp/polarssl/sha1.o
 
 # target to build an object file
-home/uzygncr/pico/pico-sdk/lib/lwip/src/netif/ppp/polarssl/sha1.c.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/test.dir/build.make CMakeFiles/test.dir/home/uzygncr/pico/pico-sdk/lib/lwip/src/netif/ppp/polarssl/sha1.c.obj
-.PHONY : home/uzygncr/pico/pico-sdk/lib/lwip/src/netif/ppp/polarssl/sha1.c.obj
+home/uzygncr/pico/pico-sdk/lib/lwip/src/netif/ppp/polarssl/sha1.c.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/test.dir/build.make CMakeFiles/test.dir/home/uzygncr/pico/pico-sdk/lib/lwip/src/netif/ppp/polarssl/sha1.c.o
+.PHONY : home/uzygncr/pico/pico-sdk/lib/lwip/src/netif/ppp/polarssl/sha1.c.o
 
 home/uzygncr/pico/pico-sdk/lib/lwip/src/netif/ppp/polarssl/sha1.i: home/uzygncr/pico/pico-sdk/lib/lwip/src/netif/ppp/polarssl/sha1.c.i
 .PHONY : home/uzygncr/pico/pico-sdk/lib/lwip/src/netif/ppp/polarssl/sha1.i
@@ -2066,13 +2053,13 @@ home/uzygncr/pico/pico-sdk/lib/lwip/src/netif/ppp/polarssl/sha1.c.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/test.dir/build.make CMakeFiles/test.dir/home/uzygncr/pico/pico-sdk/lib/lwip/src/netif/ppp/polarssl/sha1.c.s
 .PHONY : home/uzygncr/pico/pico-sdk/lib/lwip/src/netif/ppp/polarssl/sha1.c.s
 
-home/uzygncr/pico/pico-sdk/lib/lwip/src/netif/ppp/ppp.obj: home/uzygncr/pico/pico-sdk/lib/lwip/src/netif/ppp/ppp.c.obj
-.PHONY : home/uzygncr/pico/pico-sdk/lib/lwip/src/netif/ppp/ppp.obj
+home/uzygncr/pico/pico-sdk/lib/lwip/src/netif/ppp/ppp.o: home/uzygncr/pico/pico-sdk/lib/lwip/src/netif/ppp/ppp.c.o
+.PHONY : home/uzygncr/pico/pico-sdk/lib/lwip/src/netif/ppp/ppp.o
 
 # target to build an object file
-home/uzygncr/pico/pico-sdk/lib/lwip/src/netif/ppp/ppp.c.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/test.dir/build.make CMakeFiles/test.dir/home/uzygncr/pico/pico-sdk/lib/lwip/src/netif/ppp/ppp.c.obj
-.PHONY : home/uzygncr/pico/pico-sdk/lib/lwip/src/netif/ppp/ppp.c.obj
+home/uzygncr/pico/pico-sdk/lib/lwip/src/netif/ppp/ppp.c.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/test.dir/build.make CMakeFiles/test.dir/home/uzygncr/pico/pico-sdk/lib/lwip/src/netif/ppp/ppp.c.o
+.PHONY : home/uzygncr/pico/pico-sdk/lib/lwip/src/netif/ppp/ppp.c.o
 
 home/uzygncr/pico/pico-sdk/lib/lwip/src/netif/ppp/ppp.i: home/uzygncr/pico/pico-sdk/lib/lwip/src/netif/ppp/ppp.c.i
 .PHONY : home/uzygncr/pico/pico-sdk/lib/lwip/src/netif/ppp/ppp.i
@@ -2090,13 +2077,13 @@ home/uzygncr/pico/pico-sdk/lib/lwip/src/netif/ppp/ppp.c.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/test.dir/build.make CMakeFiles/test.dir/home/uzygncr/pico/pico-sdk/lib/lwip/src/netif/ppp/ppp.c.s
 .PHONY : home/uzygncr/pico/pico-sdk/lib/lwip/src/netif/ppp/ppp.c.s
 
-home/uzygncr/pico/pico-sdk/lib/lwip/src/netif/ppp/pppapi.obj: home/uzygncr/pico/pico-sdk/lib/lwip/src/netif/ppp/pppapi.c.obj
-.PHONY : home/uzygncr/pico/pico-sdk/lib/lwip/src/netif/ppp/pppapi.obj
+home/uzygncr/pico/pico-sdk/lib/lwip/src/netif/ppp/pppapi.o: home/uzygncr/pico/pico-sdk/lib/lwip/src/netif/ppp/pppapi.c.o
+.PHONY : home/uzygncr/pico/pico-sdk/lib/lwip/src/netif/ppp/pppapi.o
 
 # target to build an object file
-home/uzygncr/pico/pico-sdk/lib/lwip/src/netif/ppp/pppapi.c.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/test.dir/build.make CMakeFiles/test.dir/home/uzygncr/pico/pico-sdk/lib/lwip/src/netif/ppp/pppapi.c.obj
-.PHONY : home/uzygncr/pico/pico-sdk/lib/lwip/src/netif/ppp/pppapi.c.obj
+home/uzygncr/pico/pico-sdk/lib/lwip/src/netif/ppp/pppapi.c.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/test.dir/build.make CMakeFiles/test.dir/home/uzygncr/pico/pico-sdk/lib/lwip/src/netif/ppp/pppapi.c.o
+.PHONY : home/uzygncr/pico/pico-sdk/lib/lwip/src/netif/ppp/pppapi.c.o
 
 home/uzygncr/pico/pico-sdk/lib/lwip/src/netif/ppp/pppapi.i: home/uzygncr/pico/pico-sdk/lib/lwip/src/netif/ppp/pppapi.c.i
 .PHONY : home/uzygncr/pico/pico-sdk/lib/lwip/src/netif/ppp/pppapi.i
@@ -2114,13 +2101,13 @@ home/uzygncr/pico/pico-sdk/lib/lwip/src/netif/ppp/pppapi.c.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/test.dir/build.make CMakeFiles/test.dir/home/uzygncr/pico/pico-sdk/lib/lwip/src/netif/ppp/pppapi.c.s
 .PHONY : home/uzygncr/pico/pico-sdk/lib/lwip/src/netif/ppp/pppapi.c.s
 
-home/uzygncr/pico/pico-sdk/lib/lwip/src/netif/ppp/pppcrypt.obj: home/uzygncr/pico/pico-sdk/lib/lwip/src/netif/ppp/pppcrypt.c.obj
-.PHONY : home/uzygncr/pico/pico-sdk/lib/lwip/src/netif/ppp/pppcrypt.obj
+home/uzygncr/pico/pico-sdk/lib/lwip/src/netif/ppp/pppcrypt.o: home/uzygncr/pico/pico-sdk/lib/lwip/src/netif/ppp/pppcrypt.c.o
+.PHONY : home/uzygncr/pico/pico-sdk/lib/lwip/src/netif/ppp/pppcrypt.o
 
 # target to build an object file
-home/uzygncr/pico/pico-sdk/lib/lwip/src/netif/ppp/pppcrypt.c.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/test.dir/build.make CMakeFiles/test.dir/home/uzygncr/pico/pico-sdk/lib/lwip/src/netif/ppp/pppcrypt.c.obj
-.PHONY : home/uzygncr/pico/pico-sdk/lib/lwip/src/netif/ppp/pppcrypt.c.obj
+home/uzygncr/pico/pico-sdk/lib/lwip/src/netif/ppp/pppcrypt.c.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/test.dir/build.make CMakeFiles/test.dir/home/uzygncr/pico/pico-sdk/lib/lwip/src/netif/ppp/pppcrypt.c.o
+.PHONY : home/uzygncr/pico/pico-sdk/lib/lwip/src/netif/ppp/pppcrypt.c.o
 
 home/uzygncr/pico/pico-sdk/lib/lwip/src/netif/ppp/pppcrypt.i: home/uzygncr/pico/pico-sdk/lib/lwip/src/netif/ppp/pppcrypt.c.i
 .PHONY : home/uzygncr/pico/pico-sdk/lib/lwip/src/netif/ppp/pppcrypt.i
@@ -2138,13 +2125,13 @@ home/uzygncr/pico/pico-sdk/lib/lwip/src/netif/ppp/pppcrypt.c.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/test.dir/build.make CMakeFiles/test.dir/home/uzygncr/pico/pico-sdk/lib/lwip/src/netif/ppp/pppcrypt.c.s
 .PHONY : home/uzygncr/pico/pico-sdk/lib/lwip/src/netif/ppp/pppcrypt.c.s
 
-home/uzygncr/pico/pico-sdk/lib/lwip/src/netif/ppp/pppoe.obj: home/uzygncr/pico/pico-sdk/lib/lwip/src/netif/ppp/pppoe.c.obj
-.PHONY : home/uzygncr/pico/pico-sdk/lib/lwip/src/netif/ppp/pppoe.obj
+home/uzygncr/pico/pico-sdk/lib/lwip/src/netif/ppp/pppoe.o: home/uzygncr/pico/pico-sdk/lib/lwip/src/netif/ppp/pppoe.c.o
+.PHONY : home/uzygncr/pico/pico-sdk/lib/lwip/src/netif/ppp/pppoe.o
 
 # target to build an object file
-home/uzygncr/pico/pico-sdk/lib/lwip/src/netif/ppp/pppoe.c.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/test.dir/build.make CMakeFiles/test.dir/home/uzygncr/pico/pico-sdk/lib/lwip/src/netif/ppp/pppoe.c.obj
-.PHONY : home/uzygncr/pico/pico-sdk/lib/lwip/src/netif/ppp/pppoe.c.obj
+home/uzygncr/pico/pico-sdk/lib/lwip/src/netif/ppp/pppoe.c.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/test.dir/build.make CMakeFiles/test.dir/home/uzygncr/pico/pico-sdk/lib/lwip/src/netif/ppp/pppoe.c.o
+.PHONY : home/uzygncr/pico/pico-sdk/lib/lwip/src/netif/ppp/pppoe.c.o
 
 home/uzygncr/pico/pico-sdk/lib/lwip/src/netif/ppp/pppoe.i: home/uzygncr/pico/pico-sdk/lib/lwip/src/netif/ppp/pppoe.c.i
 .PHONY : home/uzygncr/pico/pico-sdk/lib/lwip/src/netif/ppp/pppoe.i
@@ -2162,13 +2149,13 @@ home/uzygncr/pico/pico-sdk/lib/lwip/src/netif/ppp/pppoe.c.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/test.dir/build.make CMakeFiles/test.dir/home/uzygncr/pico/pico-sdk/lib/lwip/src/netif/ppp/pppoe.c.s
 .PHONY : home/uzygncr/pico/pico-sdk/lib/lwip/src/netif/ppp/pppoe.c.s
 
-home/uzygncr/pico/pico-sdk/lib/lwip/src/netif/ppp/pppol2tp.obj: home/uzygncr/pico/pico-sdk/lib/lwip/src/netif/ppp/pppol2tp.c.obj
-.PHONY : home/uzygncr/pico/pico-sdk/lib/lwip/src/netif/ppp/pppol2tp.obj
+home/uzygncr/pico/pico-sdk/lib/lwip/src/netif/ppp/pppol2tp.o: home/uzygncr/pico/pico-sdk/lib/lwip/src/netif/ppp/pppol2tp.c.o
+.PHONY : home/uzygncr/pico/pico-sdk/lib/lwip/src/netif/ppp/pppol2tp.o
 
 # target to build an object file
-home/uzygncr/pico/pico-sdk/lib/lwip/src/netif/ppp/pppol2tp.c.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/test.dir/build.make CMakeFiles/test.dir/home/uzygncr/pico/pico-sdk/lib/lwip/src/netif/ppp/pppol2tp.c.obj
-.PHONY : home/uzygncr/pico/pico-sdk/lib/lwip/src/netif/ppp/pppol2tp.c.obj
+home/uzygncr/pico/pico-sdk/lib/lwip/src/netif/ppp/pppol2tp.c.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/test.dir/build.make CMakeFiles/test.dir/home/uzygncr/pico/pico-sdk/lib/lwip/src/netif/ppp/pppol2tp.c.o
+.PHONY : home/uzygncr/pico/pico-sdk/lib/lwip/src/netif/ppp/pppol2tp.c.o
 
 home/uzygncr/pico/pico-sdk/lib/lwip/src/netif/ppp/pppol2tp.i: home/uzygncr/pico/pico-sdk/lib/lwip/src/netif/ppp/pppol2tp.c.i
 .PHONY : home/uzygncr/pico/pico-sdk/lib/lwip/src/netif/ppp/pppol2tp.i
@@ -2186,13 +2173,13 @@ home/uzygncr/pico/pico-sdk/lib/lwip/src/netif/ppp/pppol2tp.c.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/test.dir/build.make CMakeFiles/test.dir/home/uzygncr/pico/pico-sdk/lib/lwip/src/netif/ppp/pppol2tp.c.s
 .PHONY : home/uzygncr/pico/pico-sdk/lib/lwip/src/netif/ppp/pppol2tp.c.s
 
-home/uzygncr/pico/pico-sdk/lib/lwip/src/netif/ppp/pppos.obj: home/uzygncr/pico/pico-sdk/lib/lwip/src/netif/ppp/pppos.c.obj
-.PHONY : home/uzygncr/pico/pico-sdk/lib/lwip/src/netif/ppp/pppos.obj
+home/uzygncr/pico/pico-sdk/lib/lwip/src/netif/ppp/pppos.o: home/uzygncr/pico/pico-sdk/lib/lwip/src/netif/ppp/pppos.c.o
+.PHONY : home/uzygncr/pico/pico-sdk/lib/lwip/src/netif/ppp/pppos.o
 
 # target to build an object file
-home/uzygncr/pico/pico-sdk/lib/lwip/src/netif/ppp/pppos.c.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/test.dir/build.make CMakeFiles/test.dir/home/uzygncr/pico/pico-sdk/lib/lwip/src/netif/ppp/pppos.c.obj
-.PHONY : home/uzygncr/pico/pico-sdk/lib/lwip/src/netif/ppp/pppos.c.obj
+home/uzygncr/pico/pico-sdk/lib/lwip/src/netif/ppp/pppos.c.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/test.dir/build.make CMakeFiles/test.dir/home/uzygncr/pico/pico-sdk/lib/lwip/src/netif/ppp/pppos.c.o
+.PHONY : home/uzygncr/pico/pico-sdk/lib/lwip/src/netif/ppp/pppos.c.o
 
 home/uzygncr/pico/pico-sdk/lib/lwip/src/netif/ppp/pppos.i: home/uzygncr/pico/pico-sdk/lib/lwip/src/netif/ppp/pppos.c.i
 .PHONY : home/uzygncr/pico/pico-sdk/lib/lwip/src/netif/ppp/pppos.i
@@ -2210,13 +2197,13 @@ home/uzygncr/pico/pico-sdk/lib/lwip/src/netif/ppp/pppos.c.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/test.dir/build.make CMakeFiles/test.dir/home/uzygncr/pico/pico-sdk/lib/lwip/src/netif/ppp/pppos.c.s
 .PHONY : home/uzygncr/pico/pico-sdk/lib/lwip/src/netif/ppp/pppos.c.s
 
-home/uzygncr/pico/pico-sdk/lib/lwip/src/netif/ppp/upap.obj: home/uzygncr/pico/pico-sdk/lib/lwip/src/netif/ppp/upap.c.obj
-.PHONY : home/uzygncr/pico/pico-sdk/lib/lwip/src/netif/ppp/upap.obj
+home/uzygncr/pico/pico-sdk/lib/lwip/src/netif/ppp/upap.o: home/uzygncr/pico/pico-sdk/lib/lwip/src/netif/ppp/upap.c.o
+.PHONY : home/uzygncr/pico/pico-sdk/lib/lwip/src/netif/ppp/upap.o
 
 # target to build an object file
-home/uzygncr/pico/pico-sdk/lib/lwip/src/netif/ppp/upap.c.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/test.dir/build.make CMakeFiles/test.dir/home/uzygncr/pico/pico-sdk/lib/lwip/src/netif/ppp/upap.c.obj
-.PHONY : home/uzygncr/pico/pico-sdk/lib/lwip/src/netif/ppp/upap.c.obj
+home/uzygncr/pico/pico-sdk/lib/lwip/src/netif/ppp/upap.c.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/test.dir/build.make CMakeFiles/test.dir/home/uzygncr/pico/pico-sdk/lib/lwip/src/netif/ppp/upap.c.o
+.PHONY : home/uzygncr/pico/pico-sdk/lib/lwip/src/netif/ppp/upap.c.o
 
 home/uzygncr/pico/pico-sdk/lib/lwip/src/netif/ppp/upap.i: home/uzygncr/pico/pico-sdk/lib/lwip/src/netif/ppp/upap.c.i
 .PHONY : home/uzygncr/pico/pico-sdk/lib/lwip/src/netif/ppp/upap.i
@@ -2234,13 +2221,13 @@ home/uzygncr/pico/pico-sdk/lib/lwip/src/netif/ppp/upap.c.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/test.dir/build.make CMakeFiles/test.dir/home/uzygncr/pico/pico-sdk/lib/lwip/src/netif/ppp/upap.c.s
 .PHONY : home/uzygncr/pico/pico-sdk/lib/lwip/src/netif/ppp/upap.c.s
 
-home/uzygncr/pico/pico-sdk/lib/lwip/src/netif/ppp/utils.obj: home/uzygncr/pico/pico-sdk/lib/lwip/src/netif/ppp/utils.c.obj
-.PHONY : home/uzygncr/pico/pico-sdk/lib/lwip/src/netif/ppp/utils.obj
+home/uzygncr/pico/pico-sdk/lib/lwip/src/netif/ppp/utils.o: home/uzygncr/pico/pico-sdk/lib/lwip/src/netif/ppp/utils.c.o
+.PHONY : home/uzygncr/pico/pico-sdk/lib/lwip/src/netif/ppp/utils.o
 
 # target to build an object file
-home/uzygncr/pico/pico-sdk/lib/lwip/src/netif/ppp/utils.c.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/test.dir/build.make CMakeFiles/test.dir/home/uzygncr/pico/pico-sdk/lib/lwip/src/netif/ppp/utils.c.obj
-.PHONY : home/uzygncr/pico/pico-sdk/lib/lwip/src/netif/ppp/utils.c.obj
+home/uzygncr/pico/pico-sdk/lib/lwip/src/netif/ppp/utils.c.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/test.dir/build.make CMakeFiles/test.dir/home/uzygncr/pico/pico-sdk/lib/lwip/src/netif/ppp/utils.c.o
+.PHONY : home/uzygncr/pico/pico-sdk/lib/lwip/src/netif/ppp/utils.c.o
 
 home/uzygncr/pico/pico-sdk/lib/lwip/src/netif/ppp/utils.i: home/uzygncr/pico/pico-sdk/lib/lwip/src/netif/ppp/utils.c.i
 .PHONY : home/uzygncr/pico/pico-sdk/lib/lwip/src/netif/ppp/utils.i
@@ -2258,13 +2245,13 @@ home/uzygncr/pico/pico-sdk/lib/lwip/src/netif/ppp/utils.c.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/test.dir/build.make CMakeFiles/test.dir/home/uzygncr/pico/pico-sdk/lib/lwip/src/netif/ppp/utils.c.s
 .PHONY : home/uzygncr/pico/pico-sdk/lib/lwip/src/netif/ppp/utils.c.s
 
-home/uzygncr/pico/pico-sdk/lib/lwip/src/netif/ppp/vj.obj: home/uzygncr/pico/pico-sdk/lib/lwip/src/netif/ppp/vj.c.obj
-.PHONY : home/uzygncr/pico/pico-sdk/lib/lwip/src/netif/ppp/vj.obj
+home/uzygncr/pico/pico-sdk/lib/lwip/src/netif/ppp/vj.o: home/uzygncr/pico/pico-sdk/lib/lwip/src/netif/ppp/vj.c.o
+.PHONY : home/uzygncr/pico/pico-sdk/lib/lwip/src/netif/ppp/vj.o
 
 # target to build an object file
-home/uzygncr/pico/pico-sdk/lib/lwip/src/netif/ppp/vj.c.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/test.dir/build.make CMakeFiles/test.dir/home/uzygncr/pico/pico-sdk/lib/lwip/src/netif/ppp/vj.c.obj
-.PHONY : home/uzygncr/pico/pico-sdk/lib/lwip/src/netif/ppp/vj.c.obj
+home/uzygncr/pico/pico-sdk/lib/lwip/src/netif/ppp/vj.c.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/test.dir/build.make CMakeFiles/test.dir/home/uzygncr/pico/pico-sdk/lib/lwip/src/netif/ppp/vj.c.o
+.PHONY : home/uzygncr/pico/pico-sdk/lib/lwip/src/netif/ppp/vj.c.o
 
 home/uzygncr/pico/pico-sdk/lib/lwip/src/netif/ppp/vj.i: home/uzygncr/pico/pico-sdk/lib/lwip/src/netif/ppp/vj.c.i
 .PHONY : home/uzygncr/pico/pico-sdk/lib/lwip/src/netif/ppp/vj.i
@@ -2282,13 +2269,13 @@ home/uzygncr/pico/pico-sdk/lib/lwip/src/netif/ppp/vj.c.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/test.dir/build.make CMakeFiles/test.dir/home/uzygncr/pico/pico-sdk/lib/lwip/src/netif/ppp/vj.c.s
 .PHONY : home/uzygncr/pico/pico-sdk/lib/lwip/src/netif/ppp/vj.c.s
 
-home/uzygncr/pico/pico-sdk/lib/lwip/src/netif/slipif.obj: home/uzygncr/pico/pico-sdk/lib/lwip/src/netif/slipif.c.obj
-.PHONY : home/uzygncr/pico/pico-sdk/lib/lwip/src/netif/slipif.obj
+home/uzygncr/pico/pico-sdk/lib/lwip/src/netif/slipif.o: home/uzygncr/pico/pico-sdk/lib/lwip/src/netif/slipif.c.o
+.PHONY : home/uzygncr/pico/pico-sdk/lib/lwip/src/netif/slipif.o
 
 # target to build an object file
-home/uzygncr/pico/pico-sdk/lib/lwip/src/netif/slipif.c.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/test.dir/build.make CMakeFiles/test.dir/home/uzygncr/pico/pico-sdk/lib/lwip/src/netif/slipif.c.obj
-.PHONY : home/uzygncr/pico/pico-sdk/lib/lwip/src/netif/slipif.c.obj
+home/uzygncr/pico/pico-sdk/lib/lwip/src/netif/slipif.c.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/test.dir/build.make CMakeFiles/test.dir/home/uzygncr/pico/pico-sdk/lib/lwip/src/netif/slipif.c.o
+.PHONY : home/uzygncr/pico/pico-sdk/lib/lwip/src/netif/slipif.c.o
 
 home/uzygncr/pico/pico-sdk/lib/lwip/src/netif/slipif.i: home/uzygncr/pico/pico-sdk/lib/lwip/src/netif/slipif.c.i
 .PHONY : home/uzygncr/pico/pico-sdk/lib/lwip/src/netif/slipif.i
@@ -2306,13 +2293,13 @@ home/uzygncr/pico/pico-sdk/lib/lwip/src/netif/slipif.c.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/test.dir/build.make CMakeFiles/test.dir/home/uzygncr/pico/pico-sdk/lib/lwip/src/netif/slipif.c.s
 .PHONY : home/uzygncr/pico/pico-sdk/lib/lwip/src/netif/slipif.c.s
 
-home/uzygncr/pico/pico-sdk/lib/lwip/src/netif/zepif.obj: home/uzygncr/pico/pico-sdk/lib/lwip/src/netif/zepif.c.obj
-.PHONY : home/uzygncr/pico/pico-sdk/lib/lwip/src/netif/zepif.obj
+home/uzygncr/pico/pico-sdk/lib/lwip/src/netif/zepif.o: home/uzygncr/pico/pico-sdk/lib/lwip/src/netif/zepif.c.o
+.PHONY : home/uzygncr/pico/pico-sdk/lib/lwip/src/netif/zepif.o
 
 # target to build an object file
-home/uzygncr/pico/pico-sdk/lib/lwip/src/netif/zepif.c.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/test.dir/build.make CMakeFiles/test.dir/home/uzygncr/pico/pico-sdk/lib/lwip/src/netif/zepif.c.obj
-.PHONY : home/uzygncr/pico/pico-sdk/lib/lwip/src/netif/zepif.c.obj
+home/uzygncr/pico/pico-sdk/lib/lwip/src/netif/zepif.c.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/test.dir/build.make CMakeFiles/test.dir/home/uzygncr/pico/pico-sdk/lib/lwip/src/netif/zepif.c.o
+.PHONY : home/uzygncr/pico/pico-sdk/lib/lwip/src/netif/zepif.c.o
 
 home/uzygncr/pico/pico-sdk/lib/lwip/src/netif/zepif.i: home/uzygncr/pico/pico-sdk/lib/lwip/src/netif/zepif.c.i
 .PHONY : home/uzygncr/pico/pico-sdk/lib/lwip/src/netif/zepif.i
@@ -2330,13 +2317,13 @@ home/uzygncr/pico/pico-sdk/lib/lwip/src/netif/zepif.c.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/test.dir/build.make CMakeFiles/test.dir/home/uzygncr/pico/pico-sdk/lib/lwip/src/netif/zepif.c.s
 .PHONY : home/uzygncr/pico/pico-sdk/lib/lwip/src/netif/zepif.c.s
 
-home/uzygncr/pico/pico-sdk/src/common/hardware_claim/claim.obj: home/uzygncr/pico/pico-sdk/src/common/hardware_claim/claim.c.obj
-.PHONY : home/uzygncr/pico/pico-sdk/src/common/hardware_claim/claim.obj
+home/uzygncr/pico/pico-sdk/src/common/hardware_claim/claim.o: home/uzygncr/pico/pico-sdk/src/common/hardware_claim/claim.c.o
+.PHONY : home/uzygncr/pico/pico-sdk/src/common/hardware_claim/claim.o
 
 # target to build an object file
-home/uzygncr/pico/pico-sdk/src/common/hardware_claim/claim.c.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/test.dir/build.make CMakeFiles/test.dir/home/uzygncr/pico/pico-sdk/src/common/hardware_claim/claim.c.obj
-.PHONY : home/uzygncr/pico/pico-sdk/src/common/hardware_claim/claim.c.obj
+home/uzygncr/pico/pico-sdk/src/common/hardware_claim/claim.c.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/test.dir/build.make CMakeFiles/test.dir/home/uzygncr/pico/pico-sdk/src/common/hardware_claim/claim.c.o
+.PHONY : home/uzygncr/pico/pico-sdk/src/common/hardware_claim/claim.c.o
 
 home/uzygncr/pico/pico-sdk/src/common/hardware_claim/claim.i: home/uzygncr/pico/pico-sdk/src/common/hardware_claim/claim.c.i
 .PHONY : home/uzygncr/pico/pico-sdk/src/common/hardware_claim/claim.i
@@ -2354,13 +2341,13 @@ home/uzygncr/pico/pico-sdk/src/common/hardware_claim/claim.c.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/test.dir/build.make CMakeFiles/test.dir/home/uzygncr/pico/pico-sdk/src/common/hardware_claim/claim.c.s
 .PHONY : home/uzygncr/pico/pico-sdk/src/common/hardware_claim/claim.c.s
 
-home/uzygncr/pico/pico-sdk/src/common/pico_sync/critical_section.obj: home/uzygncr/pico/pico-sdk/src/common/pico_sync/critical_section.c.obj
-.PHONY : home/uzygncr/pico/pico-sdk/src/common/pico_sync/critical_section.obj
+home/uzygncr/pico/pico-sdk/src/common/pico_sync/critical_section.o: home/uzygncr/pico/pico-sdk/src/common/pico_sync/critical_section.c.o
+.PHONY : home/uzygncr/pico/pico-sdk/src/common/pico_sync/critical_section.o
 
 # target to build an object file
-home/uzygncr/pico/pico-sdk/src/common/pico_sync/critical_section.c.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/test.dir/build.make CMakeFiles/test.dir/home/uzygncr/pico/pico-sdk/src/common/pico_sync/critical_section.c.obj
-.PHONY : home/uzygncr/pico/pico-sdk/src/common/pico_sync/critical_section.c.obj
+home/uzygncr/pico/pico-sdk/src/common/pico_sync/critical_section.c.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/test.dir/build.make CMakeFiles/test.dir/home/uzygncr/pico/pico-sdk/src/common/pico_sync/critical_section.c.o
+.PHONY : home/uzygncr/pico/pico-sdk/src/common/pico_sync/critical_section.c.o
 
 home/uzygncr/pico/pico-sdk/src/common/pico_sync/critical_section.i: home/uzygncr/pico/pico-sdk/src/common/pico_sync/critical_section.c.i
 .PHONY : home/uzygncr/pico/pico-sdk/src/common/pico_sync/critical_section.i
@@ -2378,13 +2365,13 @@ home/uzygncr/pico/pico-sdk/src/common/pico_sync/critical_section.c.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/test.dir/build.make CMakeFiles/test.dir/home/uzygncr/pico/pico-sdk/src/common/pico_sync/critical_section.c.s
 .PHONY : home/uzygncr/pico/pico-sdk/src/common/pico_sync/critical_section.c.s
 
-home/uzygncr/pico/pico-sdk/src/common/pico_sync/lock_core.obj: home/uzygncr/pico/pico-sdk/src/common/pico_sync/lock_core.c.obj
-.PHONY : home/uzygncr/pico/pico-sdk/src/common/pico_sync/lock_core.obj
+home/uzygncr/pico/pico-sdk/src/common/pico_sync/lock_core.o: home/uzygncr/pico/pico-sdk/src/common/pico_sync/lock_core.c.o
+.PHONY : home/uzygncr/pico/pico-sdk/src/common/pico_sync/lock_core.o
 
 # target to build an object file
-home/uzygncr/pico/pico-sdk/src/common/pico_sync/lock_core.c.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/test.dir/build.make CMakeFiles/test.dir/home/uzygncr/pico/pico-sdk/src/common/pico_sync/lock_core.c.obj
-.PHONY : home/uzygncr/pico/pico-sdk/src/common/pico_sync/lock_core.c.obj
+home/uzygncr/pico/pico-sdk/src/common/pico_sync/lock_core.c.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/test.dir/build.make CMakeFiles/test.dir/home/uzygncr/pico/pico-sdk/src/common/pico_sync/lock_core.c.o
+.PHONY : home/uzygncr/pico/pico-sdk/src/common/pico_sync/lock_core.c.o
 
 home/uzygncr/pico/pico-sdk/src/common/pico_sync/lock_core.i: home/uzygncr/pico/pico-sdk/src/common/pico_sync/lock_core.c.i
 .PHONY : home/uzygncr/pico/pico-sdk/src/common/pico_sync/lock_core.i
@@ -2402,13 +2389,13 @@ home/uzygncr/pico/pico-sdk/src/common/pico_sync/lock_core.c.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/test.dir/build.make CMakeFiles/test.dir/home/uzygncr/pico/pico-sdk/src/common/pico_sync/lock_core.c.s
 .PHONY : home/uzygncr/pico/pico-sdk/src/common/pico_sync/lock_core.c.s
 
-home/uzygncr/pico/pico-sdk/src/common/pico_sync/mutex.obj: home/uzygncr/pico/pico-sdk/src/common/pico_sync/mutex.c.obj
-.PHONY : home/uzygncr/pico/pico-sdk/src/common/pico_sync/mutex.obj
+home/uzygncr/pico/pico-sdk/src/common/pico_sync/mutex.o: home/uzygncr/pico/pico-sdk/src/common/pico_sync/mutex.c.o
+.PHONY : home/uzygncr/pico/pico-sdk/src/common/pico_sync/mutex.o
 
 # target to build an object file
-home/uzygncr/pico/pico-sdk/src/common/pico_sync/mutex.c.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/test.dir/build.make CMakeFiles/test.dir/home/uzygncr/pico/pico-sdk/src/common/pico_sync/mutex.c.obj
-.PHONY : home/uzygncr/pico/pico-sdk/src/common/pico_sync/mutex.c.obj
+home/uzygncr/pico/pico-sdk/src/common/pico_sync/mutex.c.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/test.dir/build.make CMakeFiles/test.dir/home/uzygncr/pico/pico-sdk/src/common/pico_sync/mutex.c.o
+.PHONY : home/uzygncr/pico/pico-sdk/src/common/pico_sync/mutex.c.o
 
 home/uzygncr/pico/pico-sdk/src/common/pico_sync/mutex.i: home/uzygncr/pico/pico-sdk/src/common/pico_sync/mutex.c.i
 .PHONY : home/uzygncr/pico/pico-sdk/src/common/pico_sync/mutex.i
@@ -2426,13 +2413,13 @@ home/uzygncr/pico/pico-sdk/src/common/pico_sync/mutex.c.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/test.dir/build.make CMakeFiles/test.dir/home/uzygncr/pico/pico-sdk/src/common/pico_sync/mutex.c.s
 .PHONY : home/uzygncr/pico/pico-sdk/src/common/pico_sync/mutex.c.s
 
-home/uzygncr/pico/pico-sdk/src/common/pico_sync/sem.obj: home/uzygncr/pico/pico-sdk/src/common/pico_sync/sem.c.obj
-.PHONY : home/uzygncr/pico/pico-sdk/src/common/pico_sync/sem.obj
+home/uzygncr/pico/pico-sdk/src/common/pico_sync/sem.o: home/uzygncr/pico/pico-sdk/src/common/pico_sync/sem.c.o
+.PHONY : home/uzygncr/pico/pico-sdk/src/common/pico_sync/sem.o
 
 # target to build an object file
-home/uzygncr/pico/pico-sdk/src/common/pico_sync/sem.c.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/test.dir/build.make CMakeFiles/test.dir/home/uzygncr/pico/pico-sdk/src/common/pico_sync/sem.c.obj
-.PHONY : home/uzygncr/pico/pico-sdk/src/common/pico_sync/sem.c.obj
+home/uzygncr/pico/pico-sdk/src/common/pico_sync/sem.c.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/test.dir/build.make CMakeFiles/test.dir/home/uzygncr/pico/pico-sdk/src/common/pico_sync/sem.c.o
+.PHONY : home/uzygncr/pico/pico-sdk/src/common/pico_sync/sem.c.o
 
 home/uzygncr/pico/pico-sdk/src/common/pico_sync/sem.i: home/uzygncr/pico/pico-sdk/src/common/pico_sync/sem.c.i
 .PHONY : home/uzygncr/pico/pico-sdk/src/common/pico_sync/sem.i
@@ -2450,13 +2437,13 @@ home/uzygncr/pico/pico-sdk/src/common/pico_sync/sem.c.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/test.dir/build.make CMakeFiles/test.dir/home/uzygncr/pico/pico-sdk/src/common/pico_sync/sem.c.s
 .PHONY : home/uzygncr/pico/pico-sdk/src/common/pico_sync/sem.c.s
 
-home/uzygncr/pico/pico-sdk/src/common/pico_time/time.obj: home/uzygncr/pico/pico-sdk/src/common/pico_time/time.c.obj
-.PHONY : home/uzygncr/pico/pico-sdk/src/common/pico_time/time.obj
+home/uzygncr/pico/pico-sdk/src/common/pico_time/time.o: home/uzygncr/pico/pico-sdk/src/common/pico_time/time.c.o
+.PHONY : home/uzygncr/pico/pico-sdk/src/common/pico_time/time.o
 
 # target to build an object file
-home/uzygncr/pico/pico-sdk/src/common/pico_time/time.c.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/test.dir/build.make CMakeFiles/test.dir/home/uzygncr/pico/pico-sdk/src/common/pico_time/time.c.obj
-.PHONY : home/uzygncr/pico/pico-sdk/src/common/pico_time/time.c.obj
+home/uzygncr/pico/pico-sdk/src/common/pico_time/time.c.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/test.dir/build.make CMakeFiles/test.dir/home/uzygncr/pico/pico-sdk/src/common/pico_time/time.c.o
+.PHONY : home/uzygncr/pico/pico-sdk/src/common/pico_time/time.c.o
 
 home/uzygncr/pico/pico-sdk/src/common/pico_time/time.i: home/uzygncr/pico/pico-sdk/src/common/pico_time/time.c.i
 .PHONY : home/uzygncr/pico/pico-sdk/src/common/pico_time/time.i
@@ -2474,13 +2461,13 @@ home/uzygncr/pico/pico-sdk/src/common/pico_time/time.c.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/test.dir/build.make CMakeFiles/test.dir/home/uzygncr/pico/pico-sdk/src/common/pico_time/time.c.s
 .PHONY : home/uzygncr/pico/pico-sdk/src/common/pico_time/time.c.s
 
-home/uzygncr/pico/pico-sdk/src/common/pico_time/timeout_helper.obj: home/uzygncr/pico/pico-sdk/src/common/pico_time/timeout_helper.c.obj
-.PHONY : home/uzygncr/pico/pico-sdk/src/common/pico_time/timeout_helper.obj
+home/uzygncr/pico/pico-sdk/src/common/pico_time/timeout_helper.o: home/uzygncr/pico/pico-sdk/src/common/pico_time/timeout_helper.c.o
+.PHONY : home/uzygncr/pico/pico-sdk/src/common/pico_time/timeout_helper.o
 
 # target to build an object file
-home/uzygncr/pico/pico-sdk/src/common/pico_time/timeout_helper.c.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/test.dir/build.make CMakeFiles/test.dir/home/uzygncr/pico/pico-sdk/src/common/pico_time/timeout_helper.c.obj
-.PHONY : home/uzygncr/pico/pico-sdk/src/common/pico_time/timeout_helper.c.obj
+home/uzygncr/pico/pico-sdk/src/common/pico_time/timeout_helper.c.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/test.dir/build.make CMakeFiles/test.dir/home/uzygncr/pico/pico-sdk/src/common/pico_time/timeout_helper.c.o
+.PHONY : home/uzygncr/pico/pico-sdk/src/common/pico_time/timeout_helper.c.o
 
 home/uzygncr/pico/pico-sdk/src/common/pico_time/timeout_helper.i: home/uzygncr/pico/pico-sdk/src/common/pico_time/timeout_helper.c.i
 .PHONY : home/uzygncr/pico/pico-sdk/src/common/pico_time/timeout_helper.i
@@ -2498,13 +2485,13 @@ home/uzygncr/pico/pico-sdk/src/common/pico_time/timeout_helper.c.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/test.dir/build.make CMakeFiles/test.dir/home/uzygncr/pico/pico-sdk/src/common/pico_time/timeout_helper.c.s
 .PHONY : home/uzygncr/pico/pico-sdk/src/common/pico_time/timeout_helper.c.s
 
-home/uzygncr/pico/pico-sdk/src/common/pico_util/datetime.obj: home/uzygncr/pico/pico-sdk/src/common/pico_util/datetime.c.obj
-.PHONY : home/uzygncr/pico/pico-sdk/src/common/pico_util/datetime.obj
+home/uzygncr/pico/pico-sdk/src/common/pico_util/datetime.o: home/uzygncr/pico/pico-sdk/src/common/pico_util/datetime.c.o
+.PHONY : home/uzygncr/pico/pico-sdk/src/common/pico_util/datetime.o
 
 # target to build an object file
-home/uzygncr/pico/pico-sdk/src/common/pico_util/datetime.c.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/test.dir/build.make CMakeFiles/test.dir/home/uzygncr/pico/pico-sdk/src/common/pico_util/datetime.c.obj
-.PHONY : home/uzygncr/pico/pico-sdk/src/common/pico_util/datetime.c.obj
+home/uzygncr/pico/pico-sdk/src/common/pico_util/datetime.c.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/test.dir/build.make CMakeFiles/test.dir/home/uzygncr/pico/pico-sdk/src/common/pico_util/datetime.c.o
+.PHONY : home/uzygncr/pico/pico-sdk/src/common/pico_util/datetime.c.o
 
 home/uzygncr/pico/pico-sdk/src/common/pico_util/datetime.i: home/uzygncr/pico/pico-sdk/src/common/pico_util/datetime.c.i
 .PHONY : home/uzygncr/pico/pico-sdk/src/common/pico_util/datetime.i
@@ -2522,13 +2509,13 @@ home/uzygncr/pico/pico-sdk/src/common/pico_util/datetime.c.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/test.dir/build.make CMakeFiles/test.dir/home/uzygncr/pico/pico-sdk/src/common/pico_util/datetime.c.s
 .PHONY : home/uzygncr/pico/pico-sdk/src/common/pico_util/datetime.c.s
 
-home/uzygncr/pico/pico-sdk/src/common/pico_util/pheap.obj: home/uzygncr/pico/pico-sdk/src/common/pico_util/pheap.c.obj
-.PHONY : home/uzygncr/pico/pico-sdk/src/common/pico_util/pheap.obj
+home/uzygncr/pico/pico-sdk/src/common/pico_util/pheap.o: home/uzygncr/pico/pico-sdk/src/common/pico_util/pheap.c.o
+.PHONY : home/uzygncr/pico/pico-sdk/src/common/pico_util/pheap.o
 
 # target to build an object file
-home/uzygncr/pico/pico-sdk/src/common/pico_util/pheap.c.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/test.dir/build.make CMakeFiles/test.dir/home/uzygncr/pico/pico-sdk/src/common/pico_util/pheap.c.obj
-.PHONY : home/uzygncr/pico/pico-sdk/src/common/pico_util/pheap.c.obj
+home/uzygncr/pico/pico-sdk/src/common/pico_util/pheap.c.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/test.dir/build.make CMakeFiles/test.dir/home/uzygncr/pico/pico-sdk/src/common/pico_util/pheap.c.o
+.PHONY : home/uzygncr/pico/pico-sdk/src/common/pico_util/pheap.c.o
 
 home/uzygncr/pico/pico-sdk/src/common/pico_util/pheap.i: home/uzygncr/pico/pico-sdk/src/common/pico_util/pheap.c.i
 .PHONY : home/uzygncr/pico/pico-sdk/src/common/pico_util/pheap.i
@@ -2546,13 +2533,13 @@ home/uzygncr/pico/pico-sdk/src/common/pico_util/pheap.c.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/test.dir/build.make CMakeFiles/test.dir/home/uzygncr/pico/pico-sdk/src/common/pico_util/pheap.c.s
 .PHONY : home/uzygncr/pico/pico-sdk/src/common/pico_util/pheap.c.s
 
-home/uzygncr/pico/pico-sdk/src/common/pico_util/queue.obj: home/uzygncr/pico/pico-sdk/src/common/pico_util/queue.c.obj
-.PHONY : home/uzygncr/pico/pico-sdk/src/common/pico_util/queue.obj
+home/uzygncr/pico/pico-sdk/src/common/pico_util/queue.o: home/uzygncr/pico/pico-sdk/src/common/pico_util/queue.c.o
+.PHONY : home/uzygncr/pico/pico-sdk/src/common/pico_util/queue.o
 
 # target to build an object file
-home/uzygncr/pico/pico-sdk/src/common/pico_util/queue.c.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/test.dir/build.make CMakeFiles/test.dir/home/uzygncr/pico/pico-sdk/src/common/pico_util/queue.c.obj
-.PHONY : home/uzygncr/pico/pico-sdk/src/common/pico_util/queue.c.obj
+home/uzygncr/pico/pico-sdk/src/common/pico_util/queue.c.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/test.dir/build.make CMakeFiles/test.dir/home/uzygncr/pico/pico-sdk/src/common/pico_util/queue.c.o
+.PHONY : home/uzygncr/pico/pico-sdk/src/common/pico_util/queue.c.o
 
 home/uzygncr/pico/pico-sdk/src/common/pico_util/queue.i: home/uzygncr/pico/pico-sdk/src/common/pico_util/queue.c.i
 .PHONY : home/uzygncr/pico/pico-sdk/src/common/pico_util/queue.i
@@ -2570,13 +2557,13 @@ home/uzygncr/pico/pico-sdk/src/common/pico_util/queue.c.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/test.dir/build.make CMakeFiles/test.dir/home/uzygncr/pico/pico-sdk/src/common/pico_util/queue.c.s
 .PHONY : home/uzygncr/pico/pico-sdk/src/common/pico_util/queue.c.s
 
-home/uzygncr/pico/pico-sdk/src/rp2040/pico_platform/platform.obj: home/uzygncr/pico/pico-sdk/src/rp2040/pico_platform/platform.c.obj
-.PHONY : home/uzygncr/pico/pico-sdk/src/rp2040/pico_platform/platform.obj
+home/uzygncr/pico/pico-sdk/src/rp2040/pico_platform/platform.o: home/uzygncr/pico/pico-sdk/src/rp2040/pico_platform/platform.c.o
+.PHONY : home/uzygncr/pico/pico-sdk/src/rp2040/pico_platform/platform.o
 
 # target to build an object file
-home/uzygncr/pico/pico-sdk/src/rp2040/pico_platform/platform.c.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/test.dir/build.make CMakeFiles/test.dir/home/uzygncr/pico/pico-sdk/src/rp2040/pico_platform/platform.c.obj
-.PHONY : home/uzygncr/pico/pico-sdk/src/rp2040/pico_platform/platform.c.obj
+home/uzygncr/pico/pico-sdk/src/rp2040/pico_platform/platform.c.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/test.dir/build.make CMakeFiles/test.dir/home/uzygncr/pico/pico-sdk/src/rp2040/pico_platform/platform.c.o
+.PHONY : home/uzygncr/pico/pico-sdk/src/rp2040/pico_platform/platform.c.o
 
 home/uzygncr/pico/pico-sdk/src/rp2040/pico_platform/platform.i: home/uzygncr/pico/pico-sdk/src/rp2040/pico_platform/platform.c.i
 .PHONY : home/uzygncr/pico/pico-sdk/src/rp2040/pico_platform/platform.i
@@ -2594,13 +2581,13 @@ home/uzygncr/pico/pico-sdk/src/rp2040/pico_platform/platform.c.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/test.dir/build.make CMakeFiles/test.dir/home/uzygncr/pico/pico-sdk/src/rp2040/pico_platform/platform.c.s
 .PHONY : home/uzygncr/pico/pico-sdk/src/rp2040/pico_platform/platform.c.s
 
-home/uzygncr/pico/pico-sdk/src/rp2_common/hardware_boot_lock/boot_lock.obj: home/uzygncr/pico/pico-sdk/src/rp2_common/hardware_boot_lock/boot_lock.c.obj
-.PHONY : home/uzygncr/pico/pico-sdk/src/rp2_common/hardware_boot_lock/boot_lock.obj
+home/uzygncr/pico/pico-sdk/src/rp2_common/hardware_boot_lock/boot_lock.o: home/uzygncr/pico/pico-sdk/src/rp2_common/hardware_boot_lock/boot_lock.c.o
+.PHONY : home/uzygncr/pico/pico-sdk/src/rp2_common/hardware_boot_lock/boot_lock.o
 
 # target to build an object file
-home/uzygncr/pico/pico-sdk/src/rp2_common/hardware_boot_lock/boot_lock.c.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/test.dir/build.make CMakeFiles/test.dir/home/uzygncr/pico/pico-sdk/src/rp2_common/hardware_boot_lock/boot_lock.c.obj
-.PHONY : home/uzygncr/pico/pico-sdk/src/rp2_common/hardware_boot_lock/boot_lock.c.obj
+home/uzygncr/pico/pico-sdk/src/rp2_common/hardware_boot_lock/boot_lock.c.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/test.dir/build.make CMakeFiles/test.dir/home/uzygncr/pico/pico-sdk/src/rp2_common/hardware_boot_lock/boot_lock.c.o
+.PHONY : home/uzygncr/pico/pico-sdk/src/rp2_common/hardware_boot_lock/boot_lock.c.o
 
 home/uzygncr/pico/pico-sdk/src/rp2_common/hardware_boot_lock/boot_lock.i: home/uzygncr/pico/pico-sdk/src/rp2_common/hardware_boot_lock/boot_lock.c.i
 .PHONY : home/uzygncr/pico/pico-sdk/src/rp2_common/hardware_boot_lock/boot_lock.i
@@ -2618,13 +2605,13 @@ home/uzygncr/pico/pico-sdk/src/rp2_common/hardware_boot_lock/boot_lock.c.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/test.dir/build.make CMakeFiles/test.dir/home/uzygncr/pico/pico-sdk/src/rp2_common/hardware_boot_lock/boot_lock.c.s
 .PHONY : home/uzygncr/pico/pico-sdk/src/rp2_common/hardware_boot_lock/boot_lock.c.s
 
-home/uzygncr/pico/pico-sdk/src/rp2_common/hardware_clocks/clocks.obj: home/uzygncr/pico/pico-sdk/src/rp2_common/hardware_clocks/clocks.c.obj
-.PHONY : home/uzygncr/pico/pico-sdk/src/rp2_common/hardware_clocks/clocks.obj
+home/uzygncr/pico/pico-sdk/src/rp2_common/hardware_clocks/clocks.o: home/uzygncr/pico/pico-sdk/src/rp2_common/hardware_clocks/clocks.c.o
+.PHONY : home/uzygncr/pico/pico-sdk/src/rp2_common/hardware_clocks/clocks.o
 
 # target to build an object file
-home/uzygncr/pico/pico-sdk/src/rp2_common/hardware_clocks/clocks.c.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/test.dir/build.make CMakeFiles/test.dir/home/uzygncr/pico/pico-sdk/src/rp2_common/hardware_clocks/clocks.c.obj
-.PHONY : home/uzygncr/pico/pico-sdk/src/rp2_common/hardware_clocks/clocks.c.obj
+home/uzygncr/pico/pico-sdk/src/rp2_common/hardware_clocks/clocks.c.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/test.dir/build.make CMakeFiles/test.dir/home/uzygncr/pico/pico-sdk/src/rp2_common/hardware_clocks/clocks.c.o
+.PHONY : home/uzygncr/pico/pico-sdk/src/rp2_common/hardware_clocks/clocks.c.o
 
 home/uzygncr/pico/pico-sdk/src/rp2_common/hardware_clocks/clocks.i: home/uzygncr/pico/pico-sdk/src/rp2_common/hardware_clocks/clocks.c.i
 .PHONY : home/uzygncr/pico/pico-sdk/src/rp2_common/hardware_clocks/clocks.i
@@ -2642,21 +2629,21 @@ home/uzygncr/pico/pico-sdk/src/rp2_common/hardware_clocks/clocks.c.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/test.dir/build.make CMakeFiles/test.dir/home/uzygncr/pico/pico-sdk/src/rp2_common/hardware_clocks/clocks.c.s
 .PHONY : home/uzygncr/pico/pico-sdk/src/rp2_common/hardware_clocks/clocks.c.s
 
-home/uzygncr/pico/pico-sdk/src/rp2_common/hardware_divider/divider.obj: home/uzygncr/pico/pico-sdk/src/rp2_common/hardware_divider/divider.S.obj
-.PHONY : home/uzygncr/pico/pico-sdk/src/rp2_common/hardware_divider/divider.obj
+home/uzygncr/pico/pico-sdk/src/rp2_common/hardware_divider/divider.o: home/uzygncr/pico/pico-sdk/src/rp2_common/hardware_divider/divider.S.o
+.PHONY : home/uzygncr/pico/pico-sdk/src/rp2_common/hardware_divider/divider.o
 
 # target to build an object file
-home/uzygncr/pico/pico-sdk/src/rp2_common/hardware_divider/divider.S.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/test.dir/build.make CMakeFiles/test.dir/home/uzygncr/pico/pico-sdk/src/rp2_common/hardware_divider/divider.S.obj
-.PHONY : home/uzygncr/pico/pico-sdk/src/rp2_common/hardware_divider/divider.S.obj
+home/uzygncr/pico/pico-sdk/src/rp2_common/hardware_divider/divider.S.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/test.dir/build.make CMakeFiles/test.dir/home/uzygncr/pico/pico-sdk/src/rp2_common/hardware_divider/divider.S.o
+.PHONY : home/uzygncr/pico/pico-sdk/src/rp2_common/hardware_divider/divider.S.o
 
-home/uzygncr/pico/pico-sdk/src/rp2_common/hardware_dma/dma.obj: home/uzygncr/pico/pico-sdk/src/rp2_common/hardware_dma/dma.c.obj
-.PHONY : home/uzygncr/pico/pico-sdk/src/rp2_common/hardware_dma/dma.obj
+home/uzygncr/pico/pico-sdk/src/rp2_common/hardware_dma/dma.o: home/uzygncr/pico/pico-sdk/src/rp2_common/hardware_dma/dma.c.o
+.PHONY : home/uzygncr/pico/pico-sdk/src/rp2_common/hardware_dma/dma.o
 
 # target to build an object file
-home/uzygncr/pico/pico-sdk/src/rp2_common/hardware_dma/dma.c.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/test.dir/build.make CMakeFiles/test.dir/home/uzygncr/pico/pico-sdk/src/rp2_common/hardware_dma/dma.c.obj
-.PHONY : home/uzygncr/pico/pico-sdk/src/rp2_common/hardware_dma/dma.c.obj
+home/uzygncr/pico/pico-sdk/src/rp2_common/hardware_dma/dma.c.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/test.dir/build.make CMakeFiles/test.dir/home/uzygncr/pico/pico-sdk/src/rp2_common/hardware_dma/dma.c.o
+.PHONY : home/uzygncr/pico/pico-sdk/src/rp2_common/hardware_dma/dma.c.o
 
 home/uzygncr/pico/pico-sdk/src/rp2_common/hardware_dma/dma.i: home/uzygncr/pico/pico-sdk/src/rp2_common/hardware_dma/dma.c.i
 .PHONY : home/uzygncr/pico/pico-sdk/src/rp2_common/hardware_dma/dma.i
@@ -2674,13 +2661,13 @@ home/uzygncr/pico/pico-sdk/src/rp2_common/hardware_dma/dma.c.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/test.dir/build.make CMakeFiles/test.dir/home/uzygncr/pico/pico-sdk/src/rp2_common/hardware_dma/dma.c.s
 .PHONY : home/uzygncr/pico/pico-sdk/src/rp2_common/hardware_dma/dma.c.s
 
-home/uzygncr/pico/pico-sdk/src/rp2_common/hardware_exception/exception.obj: home/uzygncr/pico/pico-sdk/src/rp2_common/hardware_exception/exception.c.obj
-.PHONY : home/uzygncr/pico/pico-sdk/src/rp2_common/hardware_exception/exception.obj
+home/uzygncr/pico/pico-sdk/src/rp2_common/hardware_exception/exception.o: home/uzygncr/pico/pico-sdk/src/rp2_common/hardware_exception/exception.c.o
+.PHONY : home/uzygncr/pico/pico-sdk/src/rp2_common/hardware_exception/exception.o
 
 # target to build an object file
-home/uzygncr/pico/pico-sdk/src/rp2_common/hardware_exception/exception.c.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/test.dir/build.make CMakeFiles/test.dir/home/uzygncr/pico/pico-sdk/src/rp2_common/hardware_exception/exception.c.obj
-.PHONY : home/uzygncr/pico/pico-sdk/src/rp2_common/hardware_exception/exception.c.obj
+home/uzygncr/pico/pico-sdk/src/rp2_common/hardware_exception/exception.c.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/test.dir/build.make CMakeFiles/test.dir/home/uzygncr/pico/pico-sdk/src/rp2_common/hardware_exception/exception.c.o
+.PHONY : home/uzygncr/pico/pico-sdk/src/rp2_common/hardware_exception/exception.c.o
 
 home/uzygncr/pico/pico-sdk/src/rp2_common/hardware_exception/exception.i: home/uzygncr/pico/pico-sdk/src/rp2_common/hardware_exception/exception.c.i
 .PHONY : home/uzygncr/pico/pico-sdk/src/rp2_common/hardware_exception/exception.i
@@ -2698,13 +2685,13 @@ home/uzygncr/pico/pico-sdk/src/rp2_common/hardware_exception/exception.c.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/test.dir/build.make CMakeFiles/test.dir/home/uzygncr/pico/pico-sdk/src/rp2_common/hardware_exception/exception.c.s
 .PHONY : home/uzygncr/pico/pico-sdk/src/rp2_common/hardware_exception/exception.c.s
 
-home/uzygncr/pico/pico-sdk/src/rp2_common/hardware_flash/flash.obj: home/uzygncr/pico/pico-sdk/src/rp2_common/hardware_flash/flash.c.obj
-.PHONY : home/uzygncr/pico/pico-sdk/src/rp2_common/hardware_flash/flash.obj
+home/uzygncr/pico/pico-sdk/src/rp2_common/hardware_flash/flash.o: home/uzygncr/pico/pico-sdk/src/rp2_common/hardware_flash/flash.c.o
+.PHONY : home/uzygncr/pico/pico-sdk/src/rp2_common/hardware_flash/flash.o
 
 # target to build an object file
-home/uzygncr/pico/pico-sdk/src/rp2_common/hardware_flash/flash.c.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/test.dir/build.make CMakeFiles/test.dir/home/uzygncr/pico/pico-sdk/src/rp2_common/hardware_flash/flash.c.obj
-.PHONY : home/uzygncr/pico/pico-sdk/src/rp2_common/hardware_flash/flash.c.obj
+home/uzygncr/pico/pico-sdk/src/rp2_common/hardware_flash/flash.c.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/test.dir/build.make CMakeFiles/test.dir/home/uzygncr/pico/pico-sdk/src/rp2_common/hardware_flash/flash.c.o
+.PHONY : home/uzygncr/pico/pico-sdk/src/rp2_common/hardware_flash/flash.c.o
 
 home/uzygncr/pico/pico-sdk/src/rp2_common/hardware_flash/flash.i: home/uzygncr/pico/pico-sdk/src/rp2_common/hardware_flash/flash.c.i
 .PHONY : home/uzygncr/pico/pico-sdk/src/rp2_common/hardware_flash/flash.i
@@ -2722,13 +2709,13 @@ home/uzygncr/pico/pico-sdk/src/rp2_common/hardware_flash/flash.c.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/test.dir/build.make CMakeFiles/test.dir/home/uzygncr/pico/pico-sdk/src/rp2_common/hardware_flash/flash.c.s
 .PHONY : home/uzygncr/pico/pico-sdk/src/rp2_common/hardware_flash/flash.c.s
 
-home/uzygncr/pico/pico-sdk/src/rp2_common/hardware_gpio/gpio.obj: home/uzygncr/pico/pico-sdk/src/rp2_common/hardware_gpio/gpio.c.obj
-.PHONY : home/uzygncr/pico/pico-sdk/src/rp2_common/hardware_gpio/gpio.obj
+home/uzygncr/pico/pico-sdk/src/rp2_common/hardware_gpio/gpio.o: home/uzygncr/pico/pico-sdk/src/rp2_common/hardware_gpio/gpio.c.o
+.PHONY : home/uzygncr/pico/pico-sdk/src/rp2_common/hardware_gpio/gpio.o
 
 # target to build an object file
-home/uzygncr/pico/pico-sdk/src/rp2_common/hardware_gpio/gpio.c.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/test.dir/build.make CMakeFiles/test.dir/home/uzygncr/pico/pico-sdk/src/rp2_common/hardware_gpio/gpio.c.obj
-.PHONY : home/uzygncr/pico/pico-sdk/src/rp2_common/hardware_gpio/gpio.c.obj
+home/uzygncr/pico/pico-sdk/src/rp2_common/hardware_gpio/gpio.c.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/test.dir/build.make CMakeFiles/test.dir/home/uzygncr/pico/pico-sdk/src/rp2_common/hardware_gpio/gpio.c.o
+.PHONY : home/uzygncr/pico/pico-sdk/src/rp2_common/hardware_gpio/gpio.c.o
 
 home/uzygncr/pico/pico-sdk/src/rp2_common/hardware_gpio/gpio.i: home/uzygncr/pico/pico-sdk/src/rp2_common/hardware_gpio/gpio.c.i
 .PHONY : home/uzygncr/pico/pico-sdk/src/rp2_common/hardware_gpio/gpio.i
@@ -2746,13 +2733,13 @@ home/uzygncr/pico/pico-sdk/src/rp2_common/hardware_gpio/gpio.c.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/test.dir/build.make CMakeFiles/test.dir/home/uzygncr/pico/pico-sdk/src/rp2_common/hardware_gpio/gpio.c.s
 .PHONY : home/uzygncr/pico/pico-sdk/src/rp2_common/hardware_gpio/gpio.c.s
 
-home/uzygncr/pico/pico-sdk/src/rp2_common/hardware_irq/irq.obj: home/uzygncr/pico/pico-sdk/src/rp2_common/hardware_irq/irq.c.obj
-.PHONY : home/uzygncr/pico/pico-sdk/src/rp2_common/hardware_irq/irq.obj
+home/uzygncr/pico/pico-sdk/src/rp2_common/hardware_irq/irq.o: home/uzygncr/pico/pico-sdk/src/rp2_common/hardware_irq/irq.c.o
+.PHONY : home/uzygncr/pico/pico-sdk/src/rp2_common/hardware_irq/irq.o
 
 # target to build an object file
-home/uzygncr/pico/pico-sdk/src/rp2_common/hardware_irq/irq.c.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/test.dir/build.make CMakeFiles/test.dir/home/uzygncr/pico/pico-sdk/src/rp2_common/hardware_irq/irq.c.obj
-.PHONY : home/uzygncr/pico/pico-sdk/src/rp2_common/hardware_irq/irq.c.obj
+home/uzygncr/pico/pico-sdk/src/rp2_common/hardware_irq/irq.c.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/test.dir/build.make CMakeFiles/test.dir/home/uzygncr/pico/pico-sdk/src/rp2_common/hardware_irq/irq.c.o
+.PHONY : home/uzygncr/pico/pico-sdk/src/rp2_common/hardware_irq/irq.c.o
 
 home/uzygncr/pico/pico-sdk/src/rp2_common/hardware_irq/irq.i: home/uzygncr/pico/pico-sdk/src/rp2_common/hardware_irq/irq.c.i
 .PHONY : home/uzygncr/pico/pico-sdk/src/rp2_common/hardware_irq/irq.i
@@ -2770,21 +2757,21 @@ home/uzygncr/pico/pico-sdk/src/rp2_common/hardware_irq/irq.c.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/test.dir/build.make CMakeFiles/test.dir/home/uzygncr/pico/pico-sdk/src/rp2_common/hardware_irq/irq.c.s
 .PHONY : home/uzygncr/pico/pico-sdk/src/rp2_common/hardware_irq/irq.c.s
 
-home/uzygncr/pico/pico-sdk/src/rp2_common/hardware_irq/irq_handler_chain.obj: home/uzygncr/pico/pico-sdk/src/rp2_common/hardware_irq/irq_handler_chain.S.obj
-.PHONY : home/uzygncr/pico/pico-sdk/src/rp2_common/hardware_irq/irq_handler_chain.obj
+home/uzygncr/pico/pico-sdk/src/rp2_common/hardware_irq/irq_handler_chain.o: home/uzygncr/pico/pico-sdk/src/rp2_common/hardware_irq/irq_handler_chain.S.o
+.PHONY : home/uzygncr/pico/pico-sdk/src/rp2_common/hardware_irq/irq_handler_chain.o
 
 # target to build an object file
-home/uzygncr/pico/pico-sdk/src/rp2_common/hardware_irq/irq_handler_chain.S.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/test.dir/build.make CMakeFiles/test.dir/home/uzygncr/pico/pico-sdk/src/rp2_common/hardware_irq/irq_handler_chain.S.obj
-.PHONY : home/uzygncr/pico/pico-sdk/src/rp2_common/hardware_irq/irq_handler_chain.S.obj
+home/uzygncr/pico/pico-sdk/src/rp2_common/hardware_irq/irq_handler_chain.S.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/test.dir/build.make CMakeFiles/test.dir/home/uzygncr/pico/pico-sdk/src/rp2_common/hardware_irq/irq_handler_chain.S.o
+.PHONY : home/uzygncr/pico/pico-sdk/src/rp2_common/hardware_irq/irq_handler_chain.S.o
 
-home/uzygncr/pico/pico-sdk/src/rp2_common/hardware_pio/pio.obj: home/uzygncr/pico/pico-sdk/src/rp2_common/hardware_pio/pio.c.obj
-.PHONY : home/uzygncr/pico/pico-sdk/src/rp2_common/hardware_pio/pio.obj
+home/uzygncr/pico/pico-sdk/src/rp2_common/hardware_pio/pio.o: home/uzygncr/pico/pico-sdk/src/rp2_common/hardware_pio/pio.c.o
+.PHONY : home/uzygncr/pico/pico-sdk/src/rp2_common/hardware_pio/pio.o
 
 # target to build an object file
-home/uzygncr/pico/pico-sdk/src/rp2_common/hardware_pio/pio.c.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/test.dir/build.make CMakeFiles/test.dir/home/uzygncr/pico/pico-sdk/src/rp2_common/hardware_pio/pio.c.obj
-.PHONY : home/uzygncr/pico/pico-sdk/src/rp2_common/hardware_pio/pio.c.obj
+home/uzygncr/pico/pico-sdk/src/rp2_common/hardware_pio/pio.c.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/test.dir/build.make CMakeFiles/test.dir/home/uzygncr/pico/pico-sdk/src/rp2_common/hardware_pio/pio.c.o
+.PHONY : home/uzygncr/pico/pico-sdk/src/rp2_common/hardware_pio/pio.c.o
 
 home/uzygncr/pico/pico-sdk/src/rp2_common/hardware_pio/pio.i: home/uzygncr/pico/pico-sdk/src/rp2_common/hardware_pio/pio.c.i
 .PHONY : home/uzygncr/pico/pico-sdk/src/rp2_common/hardware_pio/pio.i
@@ -2802,13 +2789,13 @@ home/uzygncr/pico/pico-sdk/src/rp2_common/hardware_pio/pio.c.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/test.dir/build.make CMakeFiles/test.dir/home/uzygncr/pico/pico-sdk/src/rp2_common/hardware_pio/pio.c.s
 .PHONY : home/uzygncr/pico/pico-sdk/src/rp2_common/hardware_pio/pio.c.s
 
-home/uzygncr/pico/pico-sdk/src/rp2_common/hardware_pll/pll.obj: home/uzygncr/pico/pico-sdk/src/rp2_common/hardware_pll/pll.c.obj
-.PHONY : home/uzygncr/pico/pico-sdk/src/rp2_common/hardware_pll/pll.obj
+home/uzygncr/pico/pico-sdk/src/rp2_common/hardware_pll/pll.o: home/uzygncr/pico/pico-sdk/src/rp2_common/hardware_pll/pll.c.o
+.PHONY : home/uzygncr/pico/pico-sdk/src/rp2_common/hardware_pll/pll.o
 
 # target to build an object file
-home/uzygncr/pico/pico-sdk/src/rp2_common/hardware_pll/pll.c.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/test.dir/build.make CMakeFiles/test.dir/home/uzygncr/pico/pico-sdk/src/rp2_common/hardware_pll/pll.c.obj
-.PHONY : home/uzygncr/pico/pico-sdk/src/rp2_common/hardware_pll/pll.c.obj
+home/uzygncr/pico/pico-sdk/src/rp2_common/hardware_pll/pll.c.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/test.dir/build.make CMakeFiles/test.dir/home/uzygncr/pico/pico-sdk/src/rp2_common/hardware_pll/pll.c.o
+.PHONY : home/uzygncr/pico/pico-sdk/src/rp2_common/hardware_pll/pll.c.o
 
 home/uzygncr/pico/pico-sdk/src/rp2_common/hardware_pll/pll.i: home/uzygncr/pico/pico-sdk/src/rp2_common/hardware_pll/pll.c.i
 .PHONY : home/uzygncr/pico/pico-sdk/src/rp2_common/hardware_pll/pll.i
@@ -2826,13 +2813,13 @@ home/uzygncr/pico/pico-sdk/src/rp2_common/hardware_pll/pll.c.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/test.dir/build.make CMakeFiles/test.dir/home/uzygncr/pico/pico-sdk/src/rp2_common/hardware_pll/pll.c.s
 .PHONY : home/uzygncr/pico/pico-sdk/src/rp2_common/hardware_pll/pll.c.s
 
-home/uzygncr/pico/pico-sdk/src/rp2_common/hardware_sync/sync.obj: home/uzygncr/pico/pico-sdk/src/rp2_common/hardware_sync/sync.c.obj
-.PHONY : home/uzygncr/pico/pico-sdk/src/rp2_common/hardware_sync/sync.obj
+home/uzygncr/pico/pico-sdk/src/rp2_common/hardware_sync/sync.o: home/uzygncr/pico/pico-sdk/src/rp2_common/hardware_sync/sync.c.o
+.PHONY : home/uzygncr/pico/pico-sdk/src/rp2_common/hardware_sync/sync.o
 
 # target to build an object file
-home/uzygncr/pico/pico-sdk/src/rp2_common/hardware_sync/sync.c.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/test.dir/build.make CMakeFiles/test.dir/home/uzygncr/pico/pico-sdk/src/rp2_common/hardware_sync/sync.c.obj
-.PHONY : home/uzygncr/pico/pico-sdk/src/rp2_common/hardware_sync/sync.c.obj
+home/uzygncr/pico/pico-sdk/src/rp2_common/hardware_sync/sync.c.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/test.dir/build.make CMakeFiles/test.dir/home/uzygncr/pico/pico-sdk/src/rp2_common/hardware_sync/sync.c.o
+.PHONY : home/uzygncr/pico/pico-sdk/src/rp2_common/hardware_sync/sync.c.o
 
 home/uzygncr/pico/pico-sdk/src/rp2_common/hardware_sync/sync.i: home/uzygncr/pico/pico-sdk/src/rp2_common/hardware_sync/sync.c.i
 .PHONY : home/uzygncr/pico/pico-sdk/src/rp2_common/hardware_sync/sync.i
@@ -2850,13 +2837,13 @@ home/uzygncr/pico/pico-sdk/src/rp2_common/hardware_sync/sync.c.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/test.dir/build.make CMakeFiles/test.dir/home/uzygncr/pico/pico-sdk/src/rp2_common/hardware_sync/sync.c.s
 .PHONY : home/uzygncr/pico/pico-sdk/src/rp2_common/hardware_sync/sync.c.s
 
-home/uzygncr/pico/pico-sdk/src/rp2_common/hardware_sync_spin_lock/sync_spin_lock.obj: home/uzygncr/pico/pico-sdk/src/rp2_common/hardware_sync_spin_lock/sync_spin_lock.c.obj
-.PHONY : home/uzygncr/pico/pico-sdk/src/rp2_common/hardware_sync_spin_lock/sync_spin_lock.obj
+home/uzygncr/pico/pico-sdk/src/rp2_common/hardware_sync_spin_lock/sync_spin_lock.o: home/uzygncr/pico/pico-sdk/src/rp2_common/hardware_sync_spin_lock/sync_spin_lock.c.o
+.PHONY : home/uzygncr/pico/pico-sdk/src/rp2_common/hardware_sync_spin_lock/sync_spin_lock.o
 
 # target to build an object file
-home/uzygncr/pico/pico-sdk/src/rp2_common/hardware_sync_spin_lock/sync_spin_lock.c.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/test.dir/build.make CMakeFiles/test.dir/home/uzygncr/pico/pico-sdk/src/rp2_common/hardware_sync_spin_lock/sync_spin_lock.c.obj
-.PHONY : home/uzygncr/pico/pico-sdk/src/rp2_common/hardware_sync_spin_lock/sync_spin_lock.c.obj
+home/uzygncr/pico/pico-sdk/src/rp2_common/hardware_sync_spin_lock/sync_spin_lock.c.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/test.dir/build.make CMakeFiles/test.dir/home/uzygncr/pico/pico-sdk/src/rp2_common/hardware_sync_spin_lock/sync_spin_lock.c.o
+.PHONY : home/uzygncr/pico/pico-sdk/src/rp2_common/hardware_sync_spin_lock/sync_spin_lock.c.o
 
 home/uzygncr/pico/pico-sdk/src/rp2_common/hardware_sync_spin_lock/sync_spin_lock.i: home/uzygncr/pico/pico-sdk/src/rp2_common/hardware_sync_spin_lock/sync_spin_lock.c.i
 .PHONY : home/uzygncr/pico/pico-sdk/src/rp2_common/hardware_sync_spin_lock/sync_spin_lock.i
@@ -2874,13 +2861,13 @@ home/uzygncr/pico/pico-sdk/src/rp2_common/hardware_sync_spin_lock/sync_spin_lock
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/test.dir/build.make CMakeFiles/test.dir/home/uzygncr/pico/pico-sdk/src/rp2_common/hardware_sync_spin_lock/sync_spin_lock.c.s
 .PHONY : home/uzygncr/pico/pico-sdk/src/rp2_common/hardware_sync_spin_lock/sync_spin_lock.c.s
 
-home/uzygncr/pico/pico-sdk/src/rp2_common/hardware_ticks/ticks.obj: home/uzygncr/pico/pico-sdk/src/rp2_common/hardware_ticks/ticks.c.obj
-.PHONY : home/uzygncr/pico/pico-sdk/src/rp2_common/hardware_ticks/ticks.obj
+home/uzygncr/pico/pico-sdk/src/rp2_common/hardware_ticks/ticks.o: home/uzygncr/pico/pico-sdk/src/rp2_common/hardware_ticks/ticks.c.o
+.PHONY : home/uzygncr/pico/pico-sdk/src/rp2_common/hardware_ticks/ticks.o
 
 # target to build an object file
-home/uzygncr/pico/pico-sdk/src/rp2_common/hardware_ticks/ticks.c.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/test.dir/build.make CMakeFiles/test.dir/home/uzygncr/pico/pico-sdk/src/rp2_common/hardware_ticks/ticks.c.obj
-.PHONY : home/uzygncr/pico/pico-sdk/src/rp2_common/hardware_ticks/ticks.c.obj
+home/uzygncr/pico/pico-sdk/src/rp2_common/hardware_ticks/ticks.c.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/test.dir/build.make CMakeFiles/test.dir/home/uzygncr/pico/pico-sdk/src/rp2_common/hardware_ticks/ticks.c.o
+.PHONY : home/uzygncr/pico/pico-sdk/src/rp2_common/hardware_ticks/ticks.c.o
 
 home/uzygncr/pico/pico-sdk/src/rp2_common/hardware_ticks/ticks.i: home/uzygncr/pico/pico-sdk/src/rp2_common/hardware_ticks/ticks.c.i
 .PHONY : home/uzygncr/pico/pico-sdk/src/rp2_common/hardware_ticks/ticks.i
@@ -2898,13 +2885,13 @@ home/uzygncr/pico/pico-sdk/src/rp2_common/hardware_ticks/ticks.c.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/test.dir/build.make CMakeFiles/test.dir/home/uzygncr/pico/pico-sdk/src/rp2_common/hardware_ticks/ticks.c.s
 .PHONY : home/uzygncr/pico/pico-sdk/src/rp2_common/hardware_ticks/ticks.c.s
 
-home/uzygncr/pico/pico-sdk/src/rp2_common/hardware_timer/timer.obj: home/uzygncr/pico/pico-sdk/src/rp2_common/hardware_timer/timer.c.obj
-.PHONY : home/uzygncr/pico/pico-sdk/src/rp2_common/hardware_timer/timer.obj
+home/uzygncr/pico/pico-sdk/src/rp2_common/hardware_timer/timer.o: home/uzygncr/pico/pico-sdk/src/rp2_common/hardware_timer/timer.c.o
+.PHONY : home/uzygncr/pico/pico-sdk/src/rp2_common/hardware_timer/timer.o
 
 # target to build an object file
-home/uzygncr/pico/pico-sdk/src/rp2_common/hardware_timer/timer.c.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/test.dir/build.make CMakeFiles/test.dir/home/uzygncr/pico/pico-sdk/src/rp2_common/hardware_timer/timer.c.obj
-.PHONY : home/uzygncr/pico/pico-sdk/src/rp2_common/hardware_timer/timer.c.obj
+home/uzygncr/pico/pico-sdk/src/rp2_common/hardware_timer/timer.c.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/test.dir/build.make CMakeFiles/test.dir/home/uzygncr/pico/pico-sdk/src/rp2_common/hardware_timer/timer.c.o
+.PHONY : home/uzygncr/pico/pico-sdk/src/rp2_common/hardware_timer/timer.c.o
 
 home/uzygncr/pico/pico-sdk/src/rp2_common/hardware_timer/timer.i: home/uzygncr/pico/pico-sdk/src/rp2_common/hardware_timer/timer.c.i
 .PHONY : home/uzygncr/pico/pico-sdk/src/rp2_common/hardware_timer/timer.i
@@ -2922,13 +2909,13 @@ home/uzygncr/pico/pico-sdk/src/rp2_common/hardware_timer/timer.c.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/test.dir/build.make CMakeFiles/test.dir/home/uzygncr/pico/pico-sdk/src/rp2_common/hardware_timer/timer.c.s
 .PHONY : home/uzygncr/pico/pico-sdk/src/rp2_common/hardware_timer/timer.c.s
 
-home/uzygncr/pico/pico-sdk/src/rp2_common/hardware_uart/uart.obj: home/uzygncr/pico/pico-sdk/src/rp2_common/hardware_uart/uart.c.obj
-.PHONY : home/uzygncr/pico/pico-sdk/src/rp2_common/hardware_uart/uart.obj
+home/uzygncr/pico/pico-sdk/src/rp2_common/hardware_uart/uart.o: home/uzygncr/pico/pico-sdk/src/rp2_common/hardware_uart/uart.c.o
+.PHONY : home/uzygncr/pico/pico-sdk/src/rp2_common/hardware_uart/uart.o
 
 # target to build an object file
-home/uzygncr/pico/pico-sdk/src/rp2_common/hardware_uart/uart.c.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/test.dir/build.make CMakeFiles/test.dir/home/uzygncr/pico/pico-sdk/src/rp2_common/hardware_uart/uart.c.obj
-.PHONY : home/uzygncr/pico/pico-sdk/src/rp2_common/hardware_uart/uart.c.obj
+home/uzygncr/pico/pico-sdk/src/rp2_common/hardware_uart/uart.c.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/test.dir/build.make CMakeFiles/test.dir/home/uzygncr/pico/pico-sdk/src/rp2_common/hardware_uart/uart.c.o
+.PHONY : home/uzygncr/pico/pico-sdk/src/rp2_common/hardware_uart/uart.c.o
 
 home/uzygncr/pico/pico-sdk/src/rp2_common/hardware_uart/uart.i: home/uzygncr/pico/pico-sdk/src/rp2_common/hardware_uart/uart.c.i
 .PHONY : home/uzygncr/pico/pico-sdk/src/rp2_common/hardware_uart/uart.i
@@ -2946,13 +2933,13 @@ home/uzygncr/pico/pico-sdk/src/rp2_common/hardware_uart/uart.c.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/test.dir/build.make CMakeFiles/test.dir/home/uzygncr/pico/pico-sdk/src/rp2_common/hardware_uart/uart.c.s
 .PHONY : home/uzygncr/pico/pico-sdk/src/rp2_common/hardware_uart/uart.c.s
 
-home/uzygncr/pico/pico-sdk/src/rp2_common/hardware_vreg/vreg.obj: home/uzygncr/pico/pico-sdk/src/rp2_common/hardware_vreg/vreg.c.obj
-.PHONY : home/uzygncr/pico/pico-sdk/src/rp2_common/hardware_vreg/vreg.obj
+home/uzygncr/pico/pico-sdk/src/rp2_common/hardware_vreg/vreg.o: home/uzygncr/pico/pico-sdk/src/rp2_common/hardware_vreg/vreg.c.o
+.PHONY : home/uzygncr/pico/pico-sdk/src/rp2_common/hardware_vreg/vreg.o
 
 # target to build an object file
-home/uzygncr/pico/pico-sdk/src/rp2_common/hardware_vreg/vreg.c.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/test.dir/build.make CMakeFiles/test.dir/home/uzygncr/pico/pico-sdk/src/rp2_common/hardware_vreg/vreg.c.obj
-.PHONY : home/uzygncr/pico/pico-sdk/src/rp2_common/hardware_vreg/vreg.c.obj
+home/uzygncr/pico/pico-sdk/src/rp2_common/hardware_vreg/vreg.c.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/test.dir/build.make CMakeFiles/test.dir/home/uzygncr/pico/pico-sdk/src/rp2_common/hardware_vreg/vreg.c.o
+.PHONY : home/uzygncr/pico/pico-sdk/src/rp2_common/hardware_vreg/vreg.c.o
 
 home/uzygncr/pico/pico-sdk/src/rp2_common/hardware_vreg/vreg.i: home/uzygncr/pico/pico-sdk/src/rp2_common/hardware_vreg/vreg.c.i
 .PHONY : home/uzygncr/pico/pico-sdk/src/rp2_common/hardware_vreg/vreg.i
@@ -2970,13 +2957,13 @@ home/uzygncr/pico/pico-sdk/src/rp2_common/hardware_vreg/vreg.c.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/test.dir/build.make CMakeFiles/test.dir/home/uzygncr/pico/pico-sdk/src/rp2_common/hardware_vreg/vreg.c.s
 .PHONY : home/uzygncr/pico/pico-sdk/src/rp2_common/hardware_vreg/vreg.c.s
 
-home/uzygncr/pico/pico-sdk/src/rp2_common/hardware_watchdog/watchdog.obj: home/uzygncr/pico/pico-sdk/src/rp2_common/hardware_watchdog/watchdog.c.obj
-.PHONY : home/uzygncr/pico/pico-sdk/src/rp2_common/hardware_watchdog/watchdog.obj
+home/uzygncr/pico/pico-sdk/src/rp2_common/hardware_watchdog/watchdog.o: home/uzygncr/pico/pico-sdk/src/rp2_common/hardware_watchdog/watchdog.c.o
+.PHONY : home/uzygncr/pico/pico-sdk/src/rp2_common/hardware_watchdog/watchdog.o
 
 # target to build an object file
-home/uzygncr/pico/pico-sdk/src/rp2_common/hardware_watchdog/watchdog.c.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/test.dir/build.make CMakeFiles/test.dir/home/uzygncr/pico/pico-sdk/src/rp2_common/hardware_watchdog/watchdog.c.obj
-.PHONY : home/uzygncr/pico/pico-sdk/src/rp2_common/hardware_watchdog/watchdog.c.obj
+home/uzygncr/pico/pico-sdk/src/rp2_common/hardware_watchdog/watchdog.c.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/test.dir/build.make CMakeFiles/test.dir/home/uzygncr/pico/pico-sdk/src/rp2_common/hardware_watchdog/watchdog.c.o
+.PHONY : home/uzygncr/pico/pico-sdk/src/rp2_common/hardware_watchdog/watchdog.c.o
 
 home/uzygncr/pico/pico-sdk/src/rp2_common/hardware_watchdog/watchdog.i: home/uzygncr/pico/pico-sdk/src/rp2_common/hardware_watchdog/watchdog.c.i
 .PHONY : home/uzygncr/pico/pico-sdk/src/rp2_common/hardware_watchdog/watchdog.i
@@ -2994,13 +2981,37 @@ home/uzygncr/pico/pico-sdk/src/rp2_common/hardware_watchdog/watchdog.c.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/test.dir/build.make CMakeFiles/test.dir/home/uzygncr/pico/pico-sdk/src/rp2_common/hardware_watchdog/watchdog.c.s
 .PHONY : home/uzygncr/pico/pico-sdk/src/rp2_common/hardware_watchdog/watchdog.c.s
 
-home/uzygncr/pico/pico-sdk/src/rp2_common/hardware_xosc/xosc.obj: home/uzygncr/pico/pico-sdk/src/rp2_common/hardware_xosc/xosc.c.obj
-.PHONY : home/uzygncr/pico/pico-sdk/src/rp2_common/hardware_xosc/xosc.obj
+home/uzygncr/pico/pico-sdk/src/rp2_common/hardware_xip_cache/xip_cache.o: home/uzygncr/pico/pico-sdk/src/rp2_common/hardware_xip_cache/xip_cache.c.o
+.PHONY : home/uzygncr/pico/pico-sdk/src/rp2_common/hardware_xip_cache/xip_cache.o
 
 # target to build an object file
-home/uzygncr/pico/pico-sdk/src/rp2_common/hardware_xosc/xosc.c.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/test.dir/build.make CMakeFiles/test.dir/home/uzygncr/pico/pico-sdk/src/rp2_common/hardware_xosc/xosc.c.obj
-.PHONY : home/uzygncr/pico/pico-sdk/src/rp2_common/hardware_xosc/xosc.c.obj
+home/uzygncr/pico/pico-sdk/src/rp2_common/hardware_xip_cache/xip_cache.c.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/test.dir/build.make CMakeFiles/test.dir/home/uzygncr/pico/pico-sdk/src/rp2_common/hardware_xip_cache/xip_cache.c.o
+.PHONY : home/uzygncr/pico/pico-sdk/src/rp2_common/hardware_xip_cache/xip_cache.c.o
+
+home/uzygncr/pico/pico-sdk/src/rp2_common/hardware_xip_cache/xip_cache.i: home/uzygncr/pico/pico-sdk/src/rp2_common/hardware_xip_cache/xip_cache.c.i
+.PHONY : home/uzygncr/pico/pico-sdk/src/rp2_common/hardware_xip_cache/xip_cache.i
+
+# target to preprocess a source file
+home/uzygncr/pico/pico-sdk/src/rp2_common/hardware_xip_cache/xip_cache.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/test.dir/build.make CMakeFiles/test.dir/home/uzygncr/pico/pico-sdk/src/rp2_common/hardware_xip_cache/xip_cache.c.i
+.PHONY : home/uzygncr/pico/pico-sdk/src/rp2_common/hardware_xip_cache/xip_cache.c.i
+
+home/uzygncr/pico/pico-sdk/src/rp2_common/hardware_xip_cache/xip_cache.s: home/uzygncr/pico/pico-sdk/src/rp2_common/hardware_xip_cache/xip_cache.c.s
+.PHONY : home/uzygncr/pico/pico-sdk/src/rp2_common/hardware_xip_cache/xip_cache.s
+
+# target to generate assembly for a file
+home/uzygncr/pico/pico-sdk/src/rp2_common/hardware_xip_cache/xip_cache.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/test.dir/build.make CMakeFiles/test.dir/home/uzygncr/pico/pico-sdk/src/rp2_common/hardware_xip_cache/xip_cache.c.s
+.PHONY : home/uzygncr/pico/pico-sdk/src/rp2_common/hardware_xip_cache/xip_cache.c.s
+
+home/uzygncr/pico/pico-sdk/src/rp2_common/hardware_xosc/xosc.o: home/uzygncr/pico/pico-sdk/src/rp2_common/hardware_xosc/xosc.c.o
+.PHONY : home/uzygncr/pico/pico-sdk/src/rp2_common/hardware_xosc/xosc.o
+
+# target to build an object file
+home/uzygncr/pico/pico-sdk/src/rp2_common/hardware_xosc/xosc.c.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/test.dir/build.make CMakeFiles/test.dir/home/uzygncr/pico/pico-sdk/src/rp2_common/hardware_xosc/xosc.c.o
+.PHONY : home/uzygncr/pico/pico-sdk/src/rp2_common/hardware_xosc/xosc.c.o
 
 home/uzygncr/pico/pico-sdk/src/rp2_common/hardware_xosc/xosc.i: home/uzygncr/pico/pico-sdk/src/rp2_common/hardware_xosc/xosc.c.i
 .PHONY : home/uzygncr/pico/pico-sdk/src/rp2_common/hardware_xosc/xosc.i
@@ -3018,13 +3029,13 @@ home/uzygncr/pico/pico-sdk/src/rp2_common/hardware_xosc/xosc.c.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/test.dir/build.make CMakeFiles/test.dir/home/uzygncr/pico/pico-sdk/src/rp2_common/hardware_xosc/xosc.c.s
 .PHONY : home/uzygncr/pico/pico-sdk/src/rp2_common/hardware_xosc/xosc.c.s
 
-home/uzygncr/pico/pico-sdk/src/rp2_common/pico_async_context/async_context_base.obj: home/uzygncr/pico/pico-sdk/src/rp2_common/pico_async_context/async_context_base.c.obj
-.PHONY : home/uzygncr/pico/pico-sdk/src/rp2_common/pico_async_context/async_context_base.obj
+home/uzygncr/pico/pico-sdk/src/rp2_common/pico_async_context/async_context_base.o: home/uzygncr/pico/pico-sdk/src/rp2_common/pico_async_context/async_context_base.c.o
+.PHONY : home/uzygncr/pico/pico-sdk/src/rp2_common/pico_async_context/async_context_base.o
 
 # target to build an object file
-home/uzygncr/pico/pico-sdk/src/rp2_common/pico_async_context/async_context_base.c.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/test.dir/build.make CMakeFiles/test.dir/home/uzygncr/pico/pico-sdk/src/rp2_common/pico_async_context/async_context_base.c.obj
-.PHONY : home/uzygncr/pico/pico-sdk/src/rp2_common/pico_async_context/async_context_base.c.obj
+home/uzygncr/pico/pico-sdk/src/rp2_common/pico_async_context/async_context_base.c.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/test.dir/build.make CMakeFiles/test.dir/home/uzygncr/pico/pico-sdk/src/rp2_common/pico_async_context/async_context_base.c.o
+.PHONY : home/uzygncr/pico/pico-sdk/src/rp2_common/pico_async_context/async_context_base.c.o
 
 home/uzygncr/pico/pico-sdk/src/rp2_common/pico_async_context/async_context_base.i: home/uzygncr/pico/pico-sdk/src/rp2_common/pico_async_context/async_context_base.c.i
 .PHONY : home/uzygncr/pico/pico-sdk/src/rp2_common/pico_async_context/async_context_base.i
@@ -3042,13 +3053,13 @@ home/uzygncr/pico/pico-sdk/src/rp2_common/pico_async_context/async_context_base.
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/test.dir/build.make CMakeFiles/test.dir/home/uzygncr/pico/pico-sdk/src/rp2_common/pico_async_context/async_context_base.c.s
 .PHONY : home/uzygncr/pico/pico-sdk/src/rp2_common/pico_async_context/async_context_base.c.s
 
-home/uzygncr/pico/pico-sdk/src/rp2_common/pico_async_context/async_context_threadsafe_background.obj: home/uzygncr/pico/pico-sdk/src/rp2_common/pico_async_context/async_context_threadsafe_background.c.obj
-.PHONY : home/uzygncr/pico/pico-sdk/src/rp2_common/pico_async_context/async_context_threadsafe_background.obj
+home/uzygncr/pico/pico-sdk/src/rp2_common/pico_async_context/async_context_threadsafe_background.o: home/uzygncr/pico/pico-sdk/src/rp2_common/pico_async_context/async_context_threadsafe_background.c.o
+.PHONY : home/uzygncr/pico/pico-sdk/src/rp2_common/pico_async_context/async_context_threadsafe_background.o
 
 # target to build an object file
-home/uzygncr/pico/pico-sdk/src/rp2_common/pico_async_context/async_context_threadsafe_background.c.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/test.dir/build.make CMakeFiles/test.dir/home/uzygncr/pico/pico-sdk/src/rp2_common/pico_async_context/async_context_threadsafe_background.c.obj
-.PHONY : home/uzygncr/pico/pico-sdk/src/rp2_common/pico_async_context/async_context_threadsafe_background.c.obj
+home/uzygncr/pico/pico-sdk/src/rp2_common/pico_async_context/async_context_threadsafe_background.c.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/test.dir/build.make CMakeFiles/test.dir/home/uzygncr/pico/pico-sdk/src/rp2_common/pico_async_context/async_context_threadsafe_background.c.o
+.PHONY : home/uzygncr/pico/pico-sdk/src/rp2_common/pico_async_context/async_context_threadsafe_background.c.o
 
 home/uzygncr/pico/pico-sdk/src/rp2_common/pico_async_context/async_context_threadsafe_background.i: home/uzygncr/pico/pico-sdk/src/rp2_common/pico_async_context/async_context_threadsafe_background.c.i
 .PHONY : home/uzygncr/pico/pico-sdk/src/rp2_common/pico_async_context/async_context_threadsafe_background.i
@@ -3066,13 +3077,13 @@ home/uzygncr/pico/pico-sdk/src/rp2_common/pico_async_context/async_context_threa
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/test.dir/build.make CMakeFiles/test.dir/home/uzygncr/pico/pico-sdk/src/rp2_common/pico_async_context/async_context_threadsafe_background.c.s
 .PHONY : home/uzygncr/pico/pico-sdk/src/rp2_common/pico_async_context/async_context_threadsafe_background.c.s
 
-home/uzygncr/pico/pico-sdk/src/rp2_common/pico_atomic/atomic.obj: home/uzygncr/pico/pico-sdk/src/rp2_common/pico_atomic/atomic.c.obj
-.PHONY : home/uzygncr/pico/pico-sdk/src/rp2_common/pico_atomic/atomic.obj
+home/uzygncr/pico/pico-sdk/src/rp2_common/pico_atomic/atomic.o: home/uzygncr/pico/pico-sdk/src/rp2_common/pico_atomic/atomic.c.o
+.PHONY : home/uzygncr/pico/pico-sdk/src/rp2_common/pico_atomic/atomic.o
 
 # target to build an object file
-home/uzygncr/pico/pico-sdk/src/rp2_common/pico_atomic/atomic.c.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/test.dir/build.make CMakeFiles/test.dir/home/uzygncr/pico/pico-sdk/src/rp2_common/pico_atomic/atomic.c.obj
-.PHONY : home/uzygncr/pico/pico-sdk/src/rp2_common/pico_atomic/atomic.c.obj
+home/uzygncr/pico/pico-sdk/src/rp2_common/pico_atomic/atomic.c.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/test.dir/build.make CMakeFiles/test.dir/home/uzygncr/pico/pico-sdk/src/rp2_common/pico_atomic/atomic.c.o
+.PHONY : home/uzygncr/pico/pico-sdk/src/rp2_common/pico_atomic/atomic.c.o
 
 home/uzygncr/pico/pico-sdk/src/rp2_common/pico_atomic/atomic.i: home/uzygncr/pico/pico-sdk/src/rp2_common/pico_atomic/atomic.c.i
 .PHONY : home/uzygncr/pico/pico-sdk/src/rp2_common/pico_atomic/atomic.i
@@ -3090,21 +3101,21 @@ home/uzygncr/pico/pico-sdk/src/rp2_common/pico_atomic/atomic.c.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/test.dir/build.make CMakeFiles/test.dir/home/uzygncr/pico/pico-sdk/src/rp2_common/pico_atomic/atomic.c.s
 .PHONY : home/uzygncr/pico/pico-sdk/src/rp2_common/pico_atomic/atomic.c.s
 
-home/uzygncr/pico/pico-sdk/src/rp2_common/pico_bit_ops/bit_ops_aeabi.obj: home/uzygncr/pico/pico-sdk/src/rp2_common/pico_bit_ops/bit_ops_aeabi.S.obj
-.PHONY : home/uzygncr/pico/pico-sdk/src/rp2_common/pico_bit_ops/bit_ops_aeabi.obj
+home/uzygncr/pico/pico-sdk/src/rp2_common/pico_bit_ops/bit_ops_aeabi.o: home/uzygncr/pico/pico-sdk/src/rp2_common/pico_bit_ops/bit_ops_aeabi.S.o
+.PHONY : home/uzygncr/pico/pico-sdk/src/rp2_common/pico_bit_ops/bit_ops_aeabi.o
 
 # target to build an object file
-home/uzygncr/pico/pico-sdk/src/rp2_common/pico_bit_ops/bit_ops_aeabi.S.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/test.dir/build.make CMakeFiles/test.dir/home/uzygncr/pico/pico-sdk/src/rp2_common/pico_bit_ops/bit_ops_aeabi.S.obj
-.PHONY : home/uzygncr/pico/pico-sdk/src/rp2_common/pico_bit_ops/bit_ops_aeabi.S.obj
+home/uzygncr/pico/pico-sdk/src/rp2_common/pico_bit_ops/bit_ops_aeabi.S.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/test.dir/build.make CMakeFiles/test.dir/home/uzygncr/pico/pico-sdk/src/rp2_common/pico_bit_ops/bit_ops_aeabi.S.o
+.PHONY : home/uzygncr/pico/pico-sdk/src/rp2_common/pico_bit_ops/bit_ops_aeabi.S.o
 
-home/uzygncr/pico/pico-sdk/src/rp2_common/pico_bootrom/bootrom.obj: home/uzygncr/pico/pico-sdk/src/rp2_common/pico_bootrom/bootrom.c.obj
-.PHONY : home/uzygncr/pico/pico-sdk/src/rp2_common/pico_bootrom/bootrom.obj
+home/uzygncr/pico/pico-sdk/src/rp2_common/pico_bootrom/bootrom.o: home/uzygncr/pico/pico-sdk/src/rp2_common/pico_bootrom/bootrom.c.o
+.PHONY : home/uzygncr/pico/pico-sdk/src/rp2_common/pico_bootrom/bootrom.o
 
 # target to build an object file
-home/uzygncr/pico/pico-sdk/src/rp2_common/pico_bootrom/bootrom.c.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/test.dir/build.make CMakeFiles/test.dir/home/uzygncr/pico/pico-sdk/src/rp2_common/pico_bootrom/bootrom.c.obj
-.PHONY : home/uzygncr/pico/pico-sdk/src/rp2_common/pico_bootrom/bootrom.c.obj
+home/uzygncr/pico/pico-sdk/src/rp2_common/pico_bootrom/bootrom.c.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/test.dir/build.make CMakeFiles/test.dir/home/uzygncr/pico/pico-sdk/src/rp2_common/pico_bootrom/bootrom.c.o
+.PHONY : home/uzygncr/pico/pico-sdk/src/rp2_common/pico_bootrom/bootrom.c.o
 
 home/uzygncr/pico/pico-sdk/src/rp2_common/pico_bootrom/bootrom.i: home/uzygncr/pico/pico-sdk/src/rp2_common/pico_bootrom/bootrom.c.i
 .PHONY : home/uzygncr/pico/pico-sdk/src/rp2_common/pico_bootrom/bootrom.i
@@ -3122,13 +3133,13 @@ home/uzygncr/pico/pico-sdk/src/rp2_common/pico_bootrom/bootrom.c.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/test.dir/build.make CMakeFiles/test.dir/home/uzygncr/pico/pico-sdk/src/rp2_common/pico_bootrom/bootrom.c.s
 .PHONY : home/uzygncr/pico/pico-sdk/src/rp2_common/pico_bootrom/bootrom.c.s
 
-home/uzygncr/pico/pico-sdk/src/rp2_common/pico_bootrom/bootrom_lock.obj: home/uzygncr/pico/pico-sdk/src/rp2_common/pico_bootrom/bootrom_lock.c.obj
-.PHONY : home/uzygncr/pico/pico-sdk/src/rp2_common/pico_bootrom/bootrom_lock.obj
+home/uzygncr/pico/pico-sdk/src/rp2_common/pico_bootrom/bootrom_lock.o: home/uzygncr/pico/pico-sdk/src/rp2_common/pico_bootrom/bootrom_lock.c.o
+.PHONY : home/uzygncr/pico/pico-sdk/src/rp2_common/pico_bootrom/bootrom_lock.o
 
 # target to build an object file
-home/uzygncr/pico/pico-sdk/src/rp2_common/pico_bootrom/bootrom_lock.c.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/test.dir/build.make CMakeFiles/test.dir/home/uzygncr/pico/pico-sdk/src/rp2_common/pico_bootrom/bootrom_lock.c.obj
-.PHONY : home/uzygncr/pico/pico-sdk/src/rp2_common/pico_bootrom/bootrom_lock.c.obj
+home/uzygncr/pico/pico-sdk/src/rp2_common/pico_bootrom/bootrom_lock.c.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/test.dir/build.make CMakeFiles/test.dir/home/uzygncr/pico/pico-sdk/src/rp2_common/pico_bootrom/bootrom_lock.c.o
+.PHONY : home/uzygncr/pico/pico-sdk/src/rp2_common/pico_bootrom/bootrom_lock.c.o
 
 home/uzygncr/pico/pico-sdk/src/rp2_common/pico_bootrom/bootrom_lock.i: home/uzygncr/pico/pico-sdk/src/rp2_common/pico_bootrom/bootrom_lock.c.i
 .PHONY : home/uzygncr/pico/pico-sdk/src/rp2_common/pico_bootrom/bootrom_lock.i
@@ -3146,13 +3157,13 @@ home/uzygncr/pico/pico-sdk/src/rp2_common/pico_bootrom/bootrom_lock.c.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/test.dir/build.make CMakeFiles/test.dir/home/uzygncr/pico/pico-sdk/src/rp2_common/pico_bootrom/bootrom_lock.c.s
 .PHONY : home/uzygncr/pico/pico-sdk/src/rp2_common/pico_bootrom/bootrom_lock.c.s
 
-home/uzygncr/pico/pico-sdk/src/rp2_common/pico_clib_interface/newlib_interface.obj: home/uzygncr/pico/pico-sdk/src/rp2_common/pico_clib_interface/newlib_interface.c.obj
-.PHONY : home/uzygncr/pico/pico-sdk/src/rp2_common/pico_clib_interface/newlib_interface.obj
+home/uzygncr/pico/pico-sdk/src/rp2_common/pico_clib_interface/newlib_interface.o: home/uzygncr/pico/pico-sdk/src/rp2_common/pico_clib_interface/newlib_interface.c.o
+.PHONY : home/uzygncr/pico/pico-sdk/src/rp2_common/pico_clib_interface/newlib_interface.o
 
 # target to build an object file
-home/uzygncr/pico/pico-sdk/src/rp2_common/pico_clib_interface/newlib_interface.c.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/test.dir/build.make CMakeFiles/test.dir/home/uzygncr/pico/pico-sdk/src/rp2_common/pico_clib_interface/newlib_interface.c.obj
-.PHONY : home/uzygncr/pico/pico-sdk/src/rp2_common/pico_clib_interface/newlib_interface.c.obj
+home/uzygncr/pico/pico-sdk/src/rp2_common/pico_clib_interface/newlib_interface.c.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/test.dir/build.make CMakeFiles/test.dir/home/uzygncr/pico/pico-sdk/src/rp2_common/pico_clib_interface/newlib_interface.c.o
+.PHONY : home/uzygncr/pico/pico-sdk/src/rp2_common/pico_clib_interface/newlib_interface.c.o
 
 home/uzygncr/pico/pico-sdk/src/rp2_common/pico_clib_interface/newlib_interface.i: home/uzygncr/pico/pico-sdk/src/rp2_common/pico_clib_interface/newlib_interface.c.i
 .PHONY : home/uzygncr/pico/pico-sdk/src/rp2_common/pico_clib_interface/newlib_interface.i
@@ -3170,21 +3181,21 @@ home/uzygncr/pico/pico-sdk/src/rp2_common/pico_clib_interface/newlib_interface.c
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/test.dir/build.make CMakeFiles/test.dir/home/uzygncr/pico/pico-sdk/src/rp2_common/pico_clib_interface/newlib_interface.c.s
 .PHONY : home/uzygncr/pico/pico-sdk/src/rp2_common/pico_clib_interface/newlib_interface.c.s
 
-home/uzygncr/pico/pico-sdk/src/rp2_common/pico_crt0/crt0.obj: home/uzygncr/pico/pico-sdk/src/rp2_common/pico_crt0/crt0.S.obj
-.PHONY : home/uzygncr/pico/pico-sdk/src/rp2_common/pico_crt0/crt0.obj
+home/uzygncr/pico/pico-sdk/src/rp2_common/pico_crt0/crt0.o: home/uzygncr/pico/pico-sdk/src/rp2_common/pico_crt0/crt0.S.o
+.PHONY : home/uzygncr/pico/pico-sdk/src/rp2_common/pico_crt0/crt0.o
 
 # target to build an object file
-home/uzygncr/pico/pico-sdk/src/rp2_common/pico_crt0/crt0.S.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/test.dir/build.make CMakeFiles/test.dir/home/uzygncr/pico/pico-sdk/src/rp2_common/pico_crt0/crt0.S.obj
-.PHONY : home/uzygncr/pico/pico-sdk/src/rp2_common/pico_crt0/crt0.S.obj
+home/uzygncr/pico/pico-sdk/src/rp2_common/pico_crt0/crt0.S.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/test.dir/build.make CMakeFiles/test.dir/home/uzygncr/pico/pico-sdk/src/rp2_common/pico_crt0/crt0.S.o
+.PHONY : home/uzygncr/pico/pico-sdk/src/rp2_common/pico_crt0/crt0.S.o
 
-home/uzygncr/pico/pico-sdk/src/rp2_common/pico_cxx_options/new_delete.obj: home/uzygncr/pico/pico-sdk/src/rp2_common/pico_cxx_options/new_delete.cpp.obj
-.PHONY : home/uzygncr/pico/pico-sdk/src/rp2_common/pico_cxx_options/new_delete.obj
+home/uzygncr/pico/pico-sdk/src/rp2_common/pico_cxx_options/new_delete.o: home/uzygncr/pico/pico-sdk/src/rp2_common/pico_cxx_options/new_delete.cpp.o
+.PHONY : home/uzygncr/pico/pico-sdk/src/rp2_common/pico_cxx_options/new_delete.o
 
 # target to build an object file
-home/uzygncr/pico/pico-sdk/src/rp2_common/pico_cxx_options/new_delete.cpp.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/test.dir/build.make CMakeFiles/test.dir/home/uzygncr/pico/pico-sdk/src/rp2_common/pico_cxx_options/new_delete.cpp.obj
-.PHONY : home/uzygncr/pico/pico-sdk/src/rp2_common/pico_cxx_options/new_delete.cpp.obj
+home/uzygncr/pico/pico-sdk/src/rp2_common/pico_cxx_options/new_delete.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/test.dir/build.make CMakeFiles/test.dir/home/uzygncr/pico/pico-sdk/src/rp2_common/pico_cxx_options/new_delete.cpp.o
+.PHONY : home/uzygncr/pico/pico-sdk/src/rp2_common/pico_cxx_options/new_delete.cpp.o
 
 home/uzygncr/pico/pico-sdk/src/rp2_common/pico_cxx_options/new_delete.i: home/uzygncr/pico/pico-sdk/src/rp2_common/pico_cxx_options/new_delete.cpp.i
 .PHONY : home/uzygncr/pico/pico-sdk/src/rp2_common/pico_cxx_options/new_delete.i
@@ -3202,13 +3213,13 @@ home/uzygncr/pico/pico-sdk/src/rp2_common/pico_cxx_options/new_delete.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/test.dir/build.make CMakeFiles/test.dir/home/uzygncr/pico/pico-sdk/src/rp2_common/pico_cxx_options/new_delete.cpp.s
 .PHONY : home/uzygncr/pico/pico-sdk/src/rp2_common/pico_cxx_options/new_delete.cpp.s
 
-home/uzygncr/pico/pico-sdk/src/rp2_common/pico_cyw43_arch/cyw43_arch.obj: home/uzygncr/pico/pico-sdk/src/rp2_common/pico_cyw43_arch/cyw43_arch.c.obj
-.PHONY : home/uzygncr/pico/pico-sdk/src/rp2_common/pico_cyw43_arch/cyw43_arch.obj
+home/uzygncr/pico/pico-sdk/src/rp2_common/pico_cyw43_arch/cyw43_arch.o: home/uzygncr/pico/pico-sdk/src/rp2_common/pico_cyw43_arch/cyw43_arch.c.o
+.PHONY : home/uzygncr/pico/pico-sdk/src/rp2_common/pico_cyw43_arch/cyw43_arch.o
 
 # target to build an object file
-home/uzygncr/pico/pico-sdk/src/rp2_common/pico_cyw43_arch/cyw43_arch.c.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/test.dir/build.make CMakeFiles/test.dir/home/uzygncr/pico/pico-sdk/src/rp2_common/pico_cyw43_arch/cyw43_arch.c.obj
-.PHONY : home/uzygncr/pico/pico-sdk/src/rp2_common/pico_cyw43_arch/cyw43_arch.c.obj
+home/uzygncr/pico/pico-sdk/src/rp2_common/pico_cyw43_arch/cyw43_arch.c.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/test.dir/build.make CMakeFiles/test.dir/home/uzygncr/pico/pico-sdk/src/rp2_common/pico_cyw43_arch/cyw43_arch.c.o
+.PHONY : home/uzygncr/pico/pico-sdk/src/rp2_common/pico_cyw43_arch/cyw43_arch.c.o
 
 home/uzygncr/pico/pico-sdk/src/rp2_common/pico_cyw43_arch/cyw43_arch.i: home/uzygncr/pico/pico-sdk/src/rp2_common/pico_cyw43_arch/cyw43_arch.c.i
 .PHONY : home/uzygncr/pico/pico-sdk/src/rp2_common/pico_cyw43_arch/cyw43_arch.i
@@ -3226,13 +3237,13 @@ home/uzygncr/pico/pico-sdk/src/rp2_common/pico_cyw43_arch/cyw43_arch.c.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/test.dir/build.make CMakeFiles/test.dir/home/uzygncr/pico/pico-sdk/src/rp2_common/pico_cyw43_arch/cyw43_arch.c.s
 .PHONY : home/uzygncr/pico/pico-sdk/src/rp2_common/pico_cyw43_arch/cyw43_arch.c.s
 
-home/uzygncr/pico/pico-sdk/src/rp2_common/pico_cyw43_arch/cyw43_arch_freertos.obj: home/uzygncr/pico/pico-sdk/src/rp2_common/pico_cyw43_arch/cyw43_arch_freertos.c.obj
-.PHONY : home/uzygncr/pico/pico-sdk/src/rp2_common/pico_cyw43_arch/cyw43_arch_freertos.obj
+home/uzygncr/pico/pico-sdk/src/rp2_common/pico_cyw43_arch/cyw43_arch_freertos.o: home/uzygncr/pico/pico-sdk/src/rp2_common/pico_cyw43_arch/cyw43_arch_freertos.c.o
+.PHONY : home/uzygncr/pico/pico-sdk/src/rp2_common/pico_cyw43_arch/cyw43_arch_freertos.o
 
 # target to build an object file
-home/uzygncr/pico/pico-sdk/src/rp2_common/pico_cyw43_arch/cyw43_arch_freertos.c.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/test.dir/build.make CMakeFiles/test.dir/home/uzygncr/pico/pico-sdk/src/rp2_common/pico_cyw43_arch/cyw43_arch_freertos.c.obj
-.PHONY : home/uzygncr/pico/pico-sdk/src/rp2_common/pico_cyw43_arch/cyw43_arch_freertos.c.obj
+home/uzygncr/pico/pico-sdk/src/rp2_common/pico_cyw43_arch/cyw43_arch_freertos.c.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/test.dir/build.make CMakeFiles/test.dir/home/uzygncr/pico/pico-sdk/src/rp2_common/pico_cyw43_arch/cyw43_arch_freertos.c.o
+.PHONY : home/uzygncr/pico/pico-sdk/src/rp2_common/pico_cyw43_arch/cyw43_arch_freertos.c.o
 
 home/uzygncr/pico/pico-sdk/src/rp2_common/pico_cyw43_arch/cyw43_arch_freertos.i: home/uzygncr/pico/pico-sdk/src/rp2_common/pico_cyw43_arch/cyw43_arch_freertos.c.i
 .PHONY : home/uzygncr/pico/pico-sdk/src/rp2_common/pico_cyw43_arch/cyw43_arch_freertos.i
@@ -3250,13 +3261,13 @@ home/uzygncr/pico/pico-sdk/src/rp2_common/pico_cyw43_arch/cyw43_arch_freertos.c.
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/test.dir/build.make CMakeFiles/test.dir/home/uzygncr/pico/pico-sdk/src/rp2_common/pico_cyw43_arch/cyw43_arch_freertos.c.s
 .PHONY : home/uzygncr/pico/pico-sdk/src/rp2_common/pico_cyw43_arch/cyw43_arch_freertos.c.s
 
-home/uzygncr/pico/pico-sdk/src/rp2_common/pico_cyw43_arch/cyw43_arch_poll.obj: home/uzygncr/pico/pico-sdk/src/rp2_common/pico_cyw43_arch/cyw43_arch_poll.c.obj
-.PHONY : home/uzygncr/pico/pico-sdk/src/rp2_common/pico_cyw43_arch/cyw43_arch_poll.obj
+home/uzygncr/pico/pico-sdk/src/rp2_common/pico_cyw43_arch/cyw43_arch_poll.o: home/uzygncr/pico/pico-sdk/src/rp2_common/pico_cyw43_arch/cyw43_arch_poll.c.o
+.PHONY : home/uzygncr/pico/pico-sdk/src/rp2_common/pico_cyw43_arch/cyw43_arch_poll.o
 
 # target to build an object file
-home/uzygncr/pico/pico-sdk/src/rp2_common/pico_cyw43_arch/cyw43_arch_poll.c.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/test.dir/build.make CMakeFiles/test.dir/home/uzygncr/pico/pico-sdk/src/rp2_common/pico_cyw43_arch/cyw43_arch_poll.c.obj
-.PHONY : home/uzygncr/pico/pico-sdk/src/rp2_common/pico_cyw43_arch/cyw43_arch_poll.c.obj
+home/uzygncr/pico/pico-sdk/src/rp2_common/pico_cyw43_arch/cyw43_arch_poll.c.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/test.dir/build.make CMakeFiles/test.dir/home/uzygncr/pico/pico-sdk/src/rp2_common/pico_cyw43_arch/cyw43_arch_poll.c.o
+.PHONY : home/uzygncr/pico/pico-sdk/src/rp2_common/pico_cyw43_arch/cyw43_arch_poll.c.o
 
 home/uzygncr/pico/pico-sdk/src/rp2_common/pico_cyw43_arch/cyw43_arch_poll.i: home/uzygncr/pico/pico-sdk/src/rp2_common/pico_cyw43_arch/cyw43_arch_poll.c.i
 .PHONY : home/uzygncr/pico/pico-sdk/src/rp2_common/pico_cyw43_arch/cyw43_arch_poll.i
@@ -3274,13 +3285,13 @@ home/uzygncr/pico/pico-sdk/src/rp2_common/pico_cyw43_arch/cyw43_arch_poll.c.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/test.dir/build.make CMakeFiles/test.dir/home/uzygncr/pico/pico-sdk/src/rp2_common/pico_cyw43_arch/cyw43_arch_poll.c.s
 .PHONY : home/uzygncr/pico/pico-sdk/src/rp2_common/pico_cyw43_arch/cyw43_arch_poll.c.s
 
-home/uzygncr/pico/pico-sdk/src/rp2_common/pico_cyw43_arch/cyw43_arch_threadsafe_background.obj: home/uzygncr/pico/pico-sdk/src/rp2_common/pico_cyw43_arch/cyw43_arch_threadsafe_background.c.obj
-.PHONY : home/uzygncr/pico/pico-sdk/src/rp2_common/pico_cyw43_arch/cyw43_arch_threadsafe_background.obj
+home/uzygncr/pico/pico-sdk/src/rp2_common/pico_cyw43_arch/cyw43_arch_threadsafe_background.o: home/uzygncr/pico/pico-sdk/src/rp2_common/pico_cyw43_arch/cyw43_arch_threadsafe_background.c.o
+.PHONY : home/uzygncr/pico/pico-sdk/src/rp2_common/pico_cyw43_arch/cyw43_arch_threadsafe_background.o
 
 # target to build an object file
-home/uzygncr/pico/pico-sdk/src/rp2_common/pico_cyw43_arch/cyw43_arch_threadsafe_background.c.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/test.dir/build.make CMakeFiles/test.dir/home/uzygncr/pico/pico-sdk/src/rp2_common/pico_cyw43_arch/cyw43_arch_threadsafe_background.c.obj
-.PHONY : home/uzygncr/pico/pico-sdk/src/rp2_common/pico_cyw43_arch/cyw43_arch_threadsafe_background.c.obj
+home/uzygncr/pico/pico-sdk/src/rp2_common/pico_cyw43_arch/cyw43_arch_threadsafe_background.c.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/test.dir/build.make CMakeFiles/test.dir/home/uzygncr/pico/pico-sdk/src/rp2_common/pico_cyw43_arch/cyw43_arch_threadsafe_background.c.o
+.PHONY : home/uzygncr/pico/pico-sdk/src/rp2_common/pico_cyw43_arch/cyw43_arch_threadsafe_background.c.o
 
 home/uzygncr/pico/pico-sdk/src/rp2_common/pico_cyw43_arch/cyw43_arch_threadsafe_background.i: home/uzygncr/pico/pico-sdk/src/rp2_common/pico_cyw43_arch/cyw43_arch_threadsafe_background.c.i
 .PHONY : home/uzygncr/pico/pico-sdk/src/rp2_common/pico_cyw43_arch/cyw43_arch_threadsafe_background.i
@@ -3298,13 +3309,13 @@ home/uzygncr/pico/pico-sdk/src/rp2_common/pico_cyw43_arch/cyw43_arch_threadsafe_
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/test.dir/build.make CMakeFiles/test.dir/home/uzygncr/pico/pico-sdk/src/rp2_common/pico_cyw43_arch/cyw43_arch_threadsafe_background.c.s
 .PHONY : home/uzygncr/pico/pico-sdk/src/rp2_common/pico_cyw43_arch/cyw43_arch_threadsafe_background.c.s
 
-home/uzygncr/pico/pico-sdk/src/rp2_common/pico_cyw43_driver/cybt_shared_bus/cybt_shared_bus.obj: home/uzygncr/pico/pico-sdk/src/rp2_common/pico_cyw43_driver/cybt_shared_bus/cybt_shared_bus.c.obj
-.PHONY : home/uzygncr/pico/pico-sdk/src/rp2_common/pico_cyw43_driver/cybt_shared_bus/cybt_shared_bus.obj
+home/uzygncr/pico/pico-sdk/src/rp2_common/pico_cyw43_driver/cybt_shared_bus/cybt_shared_bus.o: home/uzygncr/pico/pico-sdk/src/rp2_common/pico_cyw43_driver/cybt_shared_bus/cybt_shared_bus.c.o
+.PHONY : home/uzygncr/pico/pico-sdk/src/rp2_common/pico_cyw43_driver/cybt_shared_bus/cybt_shared_bus.o
 
 # target to build an object file
-home/uzygncr/pico/pico-sdk/src/rp2_common/pico_cyw43_driver/cybt_shared_bus/cybt_shared_bus.c.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/test.dir/build.make CMakeFiles/test.dir/home/uzygncr/pico/pico-sdk/src/rp2_common/pico_cyw43_driver/cybt_shared_bus/cybt_shared_bus.c.obj
-.PHONY : home/uzygncr/pico/pico-sdk/src/rp2_common/pico_cyw43_driver/cybt_shared_bus/cybt_shared_bus.c.obj
+home/uzygncr/pico/pico-sdk/src/rp2_common/pico_cyw43_driver/cybt_shared_bus/cybt_shared_bus.c.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/test.dir/build.make CMakeFiles/test.dir/home/uzygncr/pico/pico-sdk/src/rp2_common/pico_cyw43_driver/cybt_shared_bus/cybt_shared_bus.c.o
+.PHONY : home/uzygncr/pico/pico-sdk/src/rp2_common/pico_cyw43_driver/cybt_shared_bus/cybt_shared_bus.c.o
 
 home/uzygncr/pico/pico-sdk/src/rp2_common/pico_cyw43_driver/cybt_shared_bus/cybt_shared_bus.i: home/uzygncr/pico/pico-sdk/src/rp2_common/pico_cyw43_driver/cybt_shared_bus/cybt_shared_bus.c.i
 .PHONY : home/uzygncr/pico/pico-sdk/src/rp2_common/pico_cyw43_driver/cybt_shared_bus/cybt_shared_bus.i
@@ -3322,13 +3333,13 @@ home/uzygncr/pico/pico-sdk/src/rp2_common/pico_cyw43_driver/cybt_shared_bus/cybt
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/test.dir/build.make CMakeFiles/test.dir/home/uzygncr/pico/pico-sdk/src/rp2_common/pico_cyw43_driver/cybt_shared_bus/cybt_shared_bus.c.s
 .PHONY : home/uzygncr/pico/pico-sdk/src/rp2_common/pico_cyw43_driver/cybt_shared_bus/cybt_shared_bus.c.s
 
-home/uzygncr/pico/pico-sdk/src/rp2_common/pico_cyw43_driver/cybt_shared_bus/cybt_shared_bus_driver.obj: home/uzygncr/pico/pico-sdk/src/rp2_common/pico_cyw43_driver/cybt_shared_bus/cybt_shared_bus_driver.c.obj
-.PHONY : home/uzygncr/pico/pico-sdk/src/rp2_common/pico_cyw43_driver/cybt_shared_bus/cybt_shared_bus_driver.obj
+home/uzygncr/pico/pico-sdk/src/rp2_common/pico_cyw43_driver/cybt_shared_bus/cybt_shared_bus_driver.o: home/uzygncr/pico/pico-sdk/src/rp2_common/pico_cyw43_driver/cybt_shared_bus/cybt_shared_bus_driver.c.o
+.PHONY : home/uzygncr/pico/pico-sdk/src/rp2_common/pico_cyw43_driver/cybt_shared_bus/cybt_shared_bus_driver.o
 
 # target to build an object file
-home/uzygncr/pico/pico-sdk/src/rp2_common/pico_cyw43_driver/cybt_shared_bus/cybt_shared_bus_driver.c.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/test.dir/build.make CMakeFiles/test.dir/home/uzygncr/pico/pico-sdk/src/rp2_common/pico_cyw43_driver/cybt_shared_bus/cybt_shared_bus_driver.c.obj
-.PHONY : home/uzygncr/pico/pico-sdk/src/rp2_common/pico_cyw43_driver/cybt_shared_bus/cybt_shared_bus_driver.c.obj
+home/uzygncr/pico/pico-sdk/src/rp2_common/pico_cyw43_driver/cybt_shared_bus/cybt_shared_bus_driver.c.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/test.dir/build.make CMakeFiles/test.dir/home/uzygncr/pico/pico-sdk/src/rp2_common/pico_cyw43_driver/cybt_shared_bus/cybt_shared_bus_driver.c.o
+.PHONY : home/uzygncr/pico/pico-sdk/src/rp2_common/pico_cyw43_driver/cybt_shared_bus/cybt_shared_bus_driver.c.o
 
 home/uzygncr/pico/pico-sdk/src/rp2_common/pico_cyw43_driver/cybt_shared_bus/cybt_shared_bus_driver.i: home/uzygncr/pico/pico-sdk/src/rp2_common/pico_cyw43_driver/cybt_shared_bus/cybt_shared_bus_driver.c.i
 .PHONY : home/uzygncr/pico/pico-sdk/src/rp2_common/pico_cyw43_driver/cybt_shared_bus/cybt_shared_bus_driver.i
@@ -3346,13 +3357,13 @@ home/uzygncr/pico/pico-sdk/src/rp2_common/pico_cyw43_driver/cybt_shared_bus/cybt
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/test.dir/build.make CMakeFiles/test.dir/home/uzygncr/pico/pico-sdk/src/rp2_common/pico_cyw43_driver/cybt_shared_bus/cybt_shared_bus_driver.c.s
 .PHONY : home/uzygncr/pico/pico-sdk/src/rp2_common/pico_cyw43_driver/cybt_shared_bus/cybt_shared_bus_driver.c.s
 
-home/uzygncr/pico/pico-sdk/src/rp2_common/pico_cyw43_driver/cyw43_bus_pio_spi.obj: home/uzygncr/pico/pico-sdk/src/rp2_common/pico_cyw43_driver/cyw43_bus_pio_spi.c.obj
-.PHONY : home/uzygncr/pico/pico-sdk/src/rp2_common/pico_cyw43_driver/cyw43_bus_pio_spi.obj
+home/uzygncr/pico/pico-sdk/src/rp2_common/pico_cyw43_driver/cyw43_bus_pio_spi.o: home/uzygncr/pico/pico-sdk/src/rp2_common/pico_cyw43_driver/cyw43_bus_pio_spi.c.o
+.PHONY : home/uzygncr/pico/pico-sdk/src/rp2_common/pico_cyw43_driver/cyw43_bus_pio_spi.o
 
 # target to build an object file
-home/uzygncr/pico/pico-sdk/src/rp2_common/pico_cyw43_driver/cyw43_bus_pio_spi.c.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/test.dir/build.make CMakeFiles/test.dir/home/uzygncr/pico/pico-sdk/src/rp2_common/pico_cyw43_driver/cyw43_bus_pio_spi.c.obj
-.PHONY : home/uzygncr/pico/pico-sdk/src/rp2_common/pico_cyw43_driver/cyw43_bus_pio_spi.c.obj
+home/uzygncr/pico/pico-sdk/src/rp2_common/pico_cyw43_driver/cyw43_bus_pio_spi.c.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/test.dir/build.make CMakeFiles/test.dir/home/uzygncr/pico/pico-sdk/src/rp2_common/pico_cyw43_driver/cyw43_bus_pio_spi.c.o
+.PHONY : home/uzygncr/pico/pico-sdk/src/rp2_common/pico_cyw43_driver/cyw43_bus_pio_spi.c.o
 
 home/uzygncr/pico/pico-sdk/src/rp2_common/pico_cyw43_driver/cyw43_bus_pio_spi.i: home/uzygncr/pico/pico-sdk/src/rp2_common/pico_cyw43_driver/cyw43_bus_pio_spi.c.i
 .PHONY : home/uzygncr/pico/pico-sdk/src/rp2_common/pico_cyw43_driver/cyw43_bus_pio_spi.i
@@ -3370,13 +3381,13 @@ home/uzygncr/pico/pico-sdk/src/rp2_common/pico_cyw43_driver/cyw43_bus_pio_spi.c.
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/test.dir/build.make CMakeFiles/test.dir/home/uzygncr/pico/pico-sdk/src/rp2_common/pico_cyw43_driver/cyw43_bus_pio_spi.c.s
 .PHONY : home/uzygncr/pico/pico-sdk/src/rp2_common/pico_cyw43_driver/cyw43_bus_pio_spi.c.s
 
-home/uzygncr/pico/pico-sdk/src/rp2_common/pico_cyw43_driver/cyw43_driver.obj: home/uzygncr/pico/pico-sdk/src/rp2_common/pico_cyw43_driver/cyw43_driver.c.obj
-.PHONY : home/uzygncr/pico/pico-sdk/src/rp2_common/pico_cyw43_driver/cyw43_driver.obj
+home/uzygncr/pico/pico-sdk/src/rp2_common/pico_cyw43_driver/cyw43_driver.o: home/uzygncr/pico/pico-sdk/src/rp2_common/pico_cyw43_driver/cyw43_driver.c.o
+.PHONY : home/uzygncr/pico/pico-sdk/src/rp2_common/pico_cyw43_driver/cyw43_driver.o
 
 # target to build an object file
-home/uzygncr/pico/pico-sdk/src/rp2_common/pico_cyw43_driver/cyw43_driver.c.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/test.dir/build.make CMakeFiles/test.dir/home/uzygncr/pico/pico-sdk/src/rp2_common/pico_cyw43_driver/cyw43_driver.c.obj
-.PHONY : home/uzygncr/pico/pico-sdk/src/rp2_common/pico_cyw43_driver/cyw43_driver.c.obj
+home/uzygncr/pico/pico-sdk/src/rp2_common/pico_cyw43_driver/cyw43_driver.c.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/test.dir/build.make CMakeFiles/test.dir/home/uzygncr/pico/pico-sdk/src/rp2_common/pico_cyw43_driver/cyw43_driver.c.o
+.PHONY : home/uzygncr/pico/pico-sdk/src/rp2_common/pico_cyw43_driver/cyw43_driver.c.o
 
 home/uzygncr/pico/pico-sdk/src/rp2_common/pico_cyw43_driver/cyw43_driver.i: home/uzygncr/pico/pico-sdk/src/rp2_common/pico_cyw43_driver/cyw43_driver.c.i
 .PHONY : home/uzygncr/pico/pico-sdk/src/rp2_common/pico_cyw43_driver/cyw43_driver.i
@@ -3394,29 +3405,29 @@ home/uzygncr/pico/pico-sdk/src/rp2_common/pico_cyw43_driver/cyw43_driver.c.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/test.dir/build.make CMakeFiles/test.dir/home/uzygncr/pico/pico-sdk/src/rp2_common/pico_cyw43_driver/cyw43_driver.c.s
 .PHONY : home/uzygncr/pico/pico-sdk/src/rp2_common/pico_cyw43_driver/cyw43_driver.c.s
 
-home/uzygncr/pico/pico-sdk/src/rp2_common/pico_divider/divider_hardware.obj: home/uzygncr/pico/pico-sdk/src/rp2_common/pico_divider/divider_hardware.S.obj
-.PHONY : home/uzygncr/pico/pico-sdk/src/rp2_common/pico_divider/divider_hardware.obj
+home/uzygncr/pico/pico-sdk/src/rp2_common/pico_divider/divider_hardware.o: home/uzygncr/pico/pico-sdk/src/rp2_common/pico_divider/divider_hardware.S.o
+.PHONY : home/uzygncr/pico/pico-sdk/src/rp2_common/pico_divider/divider_hardware.o
 
 # target to build an object file
-home/uzygncr/pico/pico-sdk/src/rp2_common/pico_divider/divider_hardware.S.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/test.dir/build.make CMakeFiles/test.dir/home/uzygncr/pico/pico-sdk/src/rp2_common/pico_divider/divider_hardware.S.obj
-.PHONY : home/uzygncr/pico/pico-sdk/src/rp2_common/pico_divider/divider_hardware.S.obj
+home/uzygncr/pico/pico-sdk/src/rp2_common/pico_divider/divider_hardware.S.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/test.dir/build.make CMakeFiles/test.dir/home/uzygncr/pico/pico-sdk/src/rp2_common/pico_divider/divider_hardware.S.o
+.PHONY : home/uzygncr/pico/pico-sdk/src/rp2_common/pico_divider/divider_hardware.S.o
 
-home/uzygncr/pico/pico-sdk/src/rp2_common/pico_double/double_aeabi_rp2040.obj: home/uzygncr/pico/pico-sdk/src/rp2_common/pico_double/double_aeabi_rp2040.S.obj
-.PHONY : home/uzygncr/pico/pico-sdk/src/rp2_common/pico_double/double_aeabi_rp2040.obj
-
-# target to build an object file
-home/uzygncr/pico/pico-sdk/src/rp2_common/pico_double/double_aeabi_rp2040.S.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/test.dir/build.make CMakeFiles/test.dir/home/uzygncr/pico/pico-sdk/src/rp2_common/pico_double/double_aeabi_rp2040.S.obj
-.PHONY : home/uzygncr/pico/pico-sdk/src/rp2_common/pico_double/double_aeabi_rp2040.S.obj
-
-home/uzygncr/pico/pico-sdk/src/rp2_common/pico_double/double_init_rom_rp2040.obj: home/uzygncr/pico/pico-sdk/src/rp2_common/pico_double/double_init_rom_rp2040.c.obj
-.PHONY : home/uzygncr/pico/pico-sdk/src/rp2_common/pico_double/double_init_rom_rp2040.obj
+home/uzygncr/pico/pico-sdk/src/rp2_common/pico_double/double_aeabi_rp2040.o: home/uzygncr/pico/pico-sdk/src/rp2_common/pico_double/double_aeabi_rp2040.S.o
+.PHONY : home/uzygncr/pico/pico-sdk/src/rp2_common/pico_double/double_aeabi_rp2040.o
 
 # target to build an object file
-home/uzygncr/pico/pico-sdk/src/rp2_common/pico_double/double_init_rom_rp2040.c.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/test.dir/build.make CMakeFiles/test.dir/home/uzygncr/pico/pico-sdk/src/rp2_common/pico_double/double_init_rom_rp2040.c.obj
-.PHONY : home/uzygncr/pico/pico-sdk/src/rp2_common/pico_double/double_init_rom_rp2040.c.obj
+home/uzygncr/pico/pico-sdk/src/rp2_common/pico_double/double_aeabi_rp2040.S.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/test.dir/build.make CMakeFiles/test.dir/home/uzygncr/pico/pico-sdk/src/rp2_common/pico_double/double_aeabi_rp2040.S.o
+.PHONY : home/uzygncr/pico/pico-sdk/src/rp2_common/pico_double/double_aeabi_rp2040.S.o
+
+home/uzygncr/pico/pico-sdk/src/rp2_common/pico_double/double_init_rom_rp2040.o: home/uzygncr/pico/pico-sdk/src/rp2_common/pico_double/double_init_rom_rp2040.c.o
+.PHONY : home/uzygncr/pico/pico-sdk/src/rp2_common/pico_double/double_init_rom_rp2040.o
+
+# target to build an object file
+home/uzygncr/pico/pico-sdk/src/rp2_common/pico_double/double_init_rom_rp2040.c.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/test.dir/build.make CMakeFiles/test.dir/home/uzygncr/pico/pico-sdk/src/rp2_common/pico_double/double_init_rom_rp2040.c.o
+.PHONY : home/uzygncr/pico/pico-sdk/src/rp2_common/pico_double/double_init_rom_rp2040.c.o
 
 home/uzygncr/pico/pico-sdk/src/rp2_common/pico_double/double_init_rom_rp2040.i: home/uzygncr/pico/pico-sdk/src/rp2_common/pico_double/double_init_rom_rp2040.c.i
 .PHONY : home/uzygncr/pico/pico-sdk/src/rp2_common/pico_double/double_init_rom_rp2040.i
@@ -3434,13 +3445,13 @@ home/uzygncr/pico/pico-sdk/src/rp2_common/pico_double/double_init_rom_rp2040.c.s
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/test.dir/build.make CMakeFiles/test.dir/home/uzygncr/pico/pico-sdk/src/rp2_common/pico_double/double_init_rom_rp2040.c.s
 .PHONY : home/uzygncr/pico/pico-sdk/src/rp2_common/pico_double/double_init_rom_rp2040.c.s
 
-home/uzygncr/pico/pico-sdk/src/rp2_common/pico_double/double_math.obj: home/uzygncr/pico/pico-sdk/src/rp2_common/pico_double/double_math.c.obj
-.PHONY : home/uzygncr/pico/pico-sdk/src/rp2_common/pico_double/double_math.obj
+home/uzygncr/pico/pico-sdk/src/rp2_common/pico_double/double_math.o: home/uzygncr/pico/pico-sdk/src/rp2_common/pico_double/double_math.c.o
+.PHONY : home/uzygncr/pico/pico-sdk/src/rp2_common/pico_double/double_math.o
 
 # target to build an object file
-home/uzygncr/pico/pico-sdk/src/rp2_common/pico_double/double_math.c.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/test.dir/build.make CMakeFiles/test.dir/home/uzygncr/pico/pico-sdk/src/rp2_common/pico_double/double_math.c.obj
-.PHONY : home/uzygncr/pico/pico-sdk/src/rp2_common/pico_double/double_math.c.obj
+home/uzygncr/pico/pico-sdk/src/rp2_common/pico_double/double_math.c.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/test.dir/build.make CMakeFiles/test.dir/home/uzygncr/pico/pico-sdk/src/rp2_common/pico_double/double_math.c.o
+.PHONY : home/uzygncr/pico/pico-sdk/src/rp2_common/pico_double/double_math.c.o
 
 home/uzygncr/pico/pico-sdk/src/rp2_common/pico_double/double_math.i: home/uzygncr/pico/pico-sdk/src/rp2_common/pico_double/double_math.c.i
 .PHONY : home/uzygncr/pico/pico-sdk/src/rp2_common/pico_double/double_math.i
@@ -3458,29 +3469,53 @@ home/uzygncr/pico/pico-sdk/src/rp2_common/pico_double/double_math.c.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/test.dir/build.make CMakeFiles/test.dir/home/uzygncr/pico/pico-sdk/src/rp2_common/pico_double/double_math.c.s
 .PHONY : home/uzygncr/pico/pico-sdk/src/rp2_common/pico_double/double_math.c.s
 
-home/uzygncr/pico/pico-sdk/src/rp2_common/pico_double/double_v1_rom_shim_rp2040.obj: home/uzygncr/pico/pico-sdk/src/rp2_common/pico_double/double_v1_rom_shim_rp2040.S.obj
-.PHONY : home/uzygncr/pico/pico-sdk/src/rp2_common/pico_double/double_v1_rom_shim_rp2040.obj
+home/uzygncr/pico/pico-sdk/src/rp2_common/pico_double/double_v1_rom_shim_rp2040.o: home/uzygncr/pico/pico-sdk/src/rp2_common/pico_double/double_v1_rom_shim_rp2040.S.o
+.PHONY : home/uzygncr/pico/pico-sdk/src/rp2_common/pico_double/double_v1_rom_shim_rp2040.o
 
 # target to build an object file
-home/uzygncr/pico/pico-sdk/src/rp2_common/pico_double/double_v1_rom_shim_rp2040.S.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/test.dir/build.make CMakeFiles/test.dir/home/uzygncr/pico/pico-sdk/src/rp2_common/pico_double/double_v1_rom_shim_rp2040.S.obj
-.PHONY : home/uzygncr/pico/pico-sdk/src/rp2_common/pico_double/double_v1_rom_shim_rp2040.S.obj
+home/uzygncr/pico/pico-sdk/src/rp2_common/pico_double/double_v1_rom_shim_rp2040.S.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/test.dir/build.make CMakeFiles/test.dir/home/uzygncr/pico/pico-sdk/src/rp2_common/pico_double/double_v1_rom_shim_rp2040.S.o
+.PHONY : home/uzygncr/pico/pico-sdk/src/rp2_common/pico_double/double_v1_rom_shim_rp2040.S.o
 
-home/uzygncr/pico/pico-sdk/src/rp2_common/pico_float/float_aeabi_rp2040.obj: home/uzygncr/pico/pico-sdk/src/rp2_common/pico_float/float_aeabi_rp2040.S.obj
-.PHONY : home/uzygncr/pico/pico-sdk/src/rp2_common/pico_float/float_aeabi_rp2040.obj
-
-# target to build an object file
-home/uzygncr/pico/pico-sdk/src/rp2_common/pico_float/float_aeabi_rp2040.S.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/test.dir/build.make CMakeFiles/test.dir/home/uzygncr/pico/pico-sdk/src/rp2_common/pico_float/float_aeabi_rp2040.S.obj
-.PHONY : home/uzygncr/pico/pico-sdk/src/rp2_common/pico_float/float_aeabi_rp2040.S.obj
-
-home/uzygncr/pico/pico-sdk/src/rp2_common/pico_float/float_init_rom_rp2040.obj: home/uzygncr/pico/pico-sdk/src/rp2_common/pico_float/float_init_rom_rp2040.c.obj
-.PHONY : home/uzygncr/pico/pico-sdk/src/rp2_common/pico_float/float_init_rom_rp2040.obj
+home/uzygncr/pico/pico-sdk/src/rp2_common/pico_flash/flash.o: home/uzygncr/pico/pico-sdk/src/rp2_common/pico_flash/flash.c.o
+.PHONY : home/uzygncr/pico/pico-sdk/src/rp2_common/pico_flash/flash.o
 
 # target to build an object file
-home/uzygncr/pico/pico-sdk/src/rp2_common/pico_float/float_init_rom_rp2040.c.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/test.dir/build.make CMakeFiles/test.dir/home/uzygncr/pico/pico-sdk/src/rp2_common/pico_float/float_init_rom_rp2040.c.obj
-.PHONY : home/uzygncr/pico/pico-sdk/src/rp2_common/pico_float/float_init_rom_rp2040.c.obj
+home/uzygncr/pico/pico-sdk/src/rp2_common/pico_flash/flash.c.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/test.dir/build.make CMakeFiles/test.dir/home/uzygncr/pico/pico-sdk/src/rp2_common/pico_flash/flash.c.o
+.PHONY : home/uzygncr/pico/pico-sdk/src/rp2_common/pico_flash/flash.c.o
+
+home/uzygncr/pico/pico-sdk/src/rp2_common/pico_flash/flash.i: home/uzygncr/pico/pico-sdk/src/rp2_common/pico_flash/flash.c.i
+.PHONY : home/uzygncr/pico/pico-sdk/src/rp2_common/pico_flash/flash.i
+
+# target to preprocess a source file
+home/uzygncr/pico/pico-sdk/src/rp2_common/pico_flash/flash.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/test.dir/build.make CMakeFiles/test.dir/home/uzygncr/pico/pico-sdk/src/rp2_common/pico_flash/flash.c.i
+.PHONY : home/uzygncr/pico/pico-sdk/src/rp2_common/pico_flash/flash.c.i
+
+home/uzygncr/pico/pico-sdk/src/rp2_common/pico_flash/flash.s: home/uzygncr/pico/pico-sdk/src/rp2_common/pico_flash/flash.c.s
+.PHONY : home/uzygncr/pico/pico-sdk/src/rp2_common/pico_flash/flash.s
+
+# target to generate assembly for a file
+home/uzygncr/pico/pico-sdk/src/rp2_common/pico_flash/flash.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/test.dir/build.make CMakeFiles/test.dir/home/uzygncr/pico/pico-sdk/src/rp2_common/pico_flash/flash.c.s
+.PHONY : home/uzygncr/pico/pico-sdk/src/rp2_common/pico_flash/flash.c.s
+
+home/uzygncr/pico/pico-sdk/src/rp2_common/pico_float/float_aeabi_rp2040.o: home/uzygncr/pico/pico-sdk/src/rp2_common/pico_float/float_aeabi_rp2040.S.o
+.PHONY : home/uzygncr/pico/pico-sdk/src/rp2_common/pico_float/float_aeabi_rp2040.o
+
+# target to build an object file
+home/uzygncr/pico/pico-sdk/src/rp2_common/pico_float/float_aeabi_rp2040.S.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/test.dir/build.make CMakeFiles/test.dir/home/uzygncr/pico/pico-sdk/src/rp2_common/pico_float/float_aeabi_rp2040.S.o
+.PHONY : home/uzygncr/pico/pico-sdk/src/rp2_common/pico_float/float_aeabi_rp2040.S.o
+
+home/uzygncr/pico/pico-sdk/src/rp2_common/pico_float/float_init_rom_rp2040.o: home/uzygncr/pico/pico-sdk/src/rp2_common/pico_float/float_init_rom_rp2040.c.o
+.PHONY : home/uzygncr/pico/pico-sdk/src/rp2_common/pico_float/float_init_rom_rp2040.o
+
+# target to build an object file
+home/uzygncr/pico/pico-sdk/src/rp2_common/pico_float/float_init_rom_rp2040.c.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/test.dir/build.make CMakeFiles/test.dir/home/uzygncr/pico/pico-sdk/src/rp2_common/pico_float/float_init_rom_rp2040.c.o
+.PHONY : home/uzygncr/pico/pico-sdk/src/rp2_common/pico_float/float_init_rom_rp2040.c.o
 
 home/uzygncr/pico/pico-sdk/src/rp2_common/pico_float/float_init_rom_rp2040.i: home/uzygncr/pico/pico-sdk/src/rp2_common/pico_float/float_init_rom_rp2040.c.i
 .PHONY : home/uzygncr/pico/pico-sdk/src/rp2_common/pico_float/float_init_rom_rp2040.i
@@ -3498,13 +3533,13 @@ home/uzygncr/pico/pico-sdk/src/rp2_common/pico_float/float_init_rom_rp2040.c.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/test.dir/build.make CMakeFiles/test.dir/home/uzygncr/pico/pico-sdk/src/rp2_common/pico_float/float_init_rom_rp2040.c.s
 .PHONY : home/uzygncr/pico/pico-sdk/src/rp2_common/pico_float/float_init_rom_rp2040.c.s
 
-home/uzygncr/pico/pico-sdk/src/rp2_common/pico_float/float_math.obj: home/uzygncr/pico/pico-sdk/src/rp2_common/pico_float/float_math.c.obj
-.PHONY : home/uzygncr/pico/pico-sdk/src/rp2_common/pico_float/float_math.obj
+home/uzygncr/pico/pico-sdk/src/rp2_common/pico_float/float_math.o: home/uzygncr/pico/pico-sdk/src/rp2_common/pico_float/float_math.c.o
+.PHONY : home/uzygncr/pico/pico-sdk/src/rp2_common/pico_float/float_math.o
 
 # target to build an object file
-home/uzygncr/pico/pico-sdk/src/rp2_common/pico_float/float_math.c.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/test.dir/build.make CMakeFiles/test.dir/home/uzygncr/pico/pico-sdk/src/rp2_common/pico_float/float_math.c.obj
-.PHONY : home/uzygncr/pico/pico-sdk/src/rp2_common/pico_float/float_math.c.obj
+home/uzygncr/pico/pico-sdk/src/rp2_common/pico_float/float_math.c.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/test.dir/build.make CMakeFiles/test.dir/home/uzygncr/pico/pico-sdk/src/rp2_common/pico_float/float_math.c.o
+.PHONY : home/uzygncr/pico/pico-sdk/src/rp2_common/pico_float/float_math.c.o
 
 home/uzygncr/pico/pico-sdk/src/rp2_common/pico_float/float_math.i: home/uzygncr/pico/pico-sdk/src/rp2_common/pico_float/float_math.c.i
 .PHONY : home/uzygncr/pico/pico-sdk/src/rp2_common/pico_float/float_math.i
@@ -3522,29 +3557,29 @@ home/uzygncr/pico/pico-sdk/src/rp2_common/pico_float/float_math.c.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/test.dir/build.make CMakeFiles/test.dir/home/uzygncr/pico/pico-sdk/src/rp2_common/pico_float/float_math.c.s
 .PHONY : home/uzygncr/pico/pico-sdk/src/rp2_common/pico_float/float_math.c.s
 
-home/uzygncr/pico/pico-sdk/src/rp2_common/pico_float/float_v1_rom_shim_rp2040.obj: home/uzygncr/pico/pico-sdk/src/rp2_common/pico_float/float_v1_rom_shim_rp2040.S.obj
-.PHONY : home/uzygncr/pico/pico-sdk/src/rp2_common/pico_float/float_v1_rom_shim_rp2040.obj
+home/uzygncr/pico/pico-sdk/src/rp2_common/pico_float/float_v1_rom_shim_rp2040.o: home/uzygncr/pico/pico-sdk/src/rp2_common/pico_float/float_v1_rom_shim_rp2040.S.o
+.PHONY : home/uzygncr/pico/pico-sdk/src/rp2_common/pico_float/float_v1_rom_shim_rp2040.o
 
 # target to build an object file
-home/uzygncr/pico/pico-sdk/src/rp2_common/pico_float/float_v1_rom_shim_rp2040.S.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/test.dir/build.make CMakeFiles/test.dir/home/uzygncr/pico/pico-sdk/src/rp2_common/pico_float/float_v1_rom_shim_rp2040.S.obj
-.PHONY : home/uzygncr/pico/pico-sdk/src/rp2_common/pico_float/float_v1_rom_shim_rp2040.S.obj
+home/uzygncr/pico/pico-sdk/src/rp2_common/pico_float/float_v1_rom_shim_rp2040.S.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/test.dir/build.make CMakeFiles/test.dir/home/uzygncr/pico/pico-sdk/src/rp2_common/pico_float/float_v1_rom_shim_rp2040.S.o
+.PHONY : home/uzygncr/pico/pico-sdk/src/rp2_common/pico_float/float_v1_rom_shim_rp2040.S.o
 
-home/uzygncr/pico/pico-sdk/src/rp2_common/pico_int64_ops/pico_int64_ops_aeabi.obj: home/uzygncr/pico/pico-sdk/src/rp2_common/pico_int64_ops/pico_int64_ops_aeabi.S.obj
-.PHONY : home/uzygncr/pico/pico-sdk/src/rp2_common/pico_int64_ops/pico_int64_ops_aeabi.obj
-
-# target to build an object file
-home/uzygncr/pico/pico-sdk/src/rp2_common/pico_int64_ops/pico_int64_ops_aeabi.S.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/test.dir/build.make CMakeFiles/test.dir/home/uzygncr/pico/pico-sdk/src/rp2_common/pico_int64_ops/pico_int64_ops_aeabi.S.obj
-.PHONY : home/uzygncr/pico/pico-sdk/src/rp2_common/pico_int64_ops/pico_int64_ops_aeabi.S.obj
-
-home/uzygncr/pico/pico-sdk/src/rp2_common/pico_lwip/lwip_nosys.obj: home/uzygncr/pico/pico-sdk/src/rp2_common/pico_lwip/lwip_nosys.c.obj
-.PHONY : home/uzygncr/pico/pico-sdk/src/rp2_common/pico_lwip/lwip_nosys.obj
+home/uzygncr/pico/pico-sdk/src/rp2_common/pico_int64_ops/pico_int64_ops_aeabi.o: home/uzygncr/pico/pico-sdk/src/rp2_common/pico_int64_ops/pico_int64_ops_aeabi.S.o
+.PHONY : home/uzygncr/pico/pico-sdk/src/rp2_common/pico_int64_ops/pico_int64_ops_aeabi.o
 
 # target to build an object file
-home/uzygncr/pico/pico-sdk/src/rp2_common/pico_lwip/lwip_nosys.c.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/test.dir/build.make CMakeFiles/test.dir/home/uzygncr/pico/pico-sdk/src/rp2_common/pico_lwip/lwip_nosys.c.obj
-.PHONY : home/uzygncr/pico/pico-sdk/src/rp2_common/pico_lwip/lwip_nosys.c.obj
+home/uzygncr/pico/pico-sdk/src/rp2_common/pico_int64_ops/pico_int64_ops_aeabi.S.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/test.dir/build.make CMakeFiles/test.dir/home/uzygncr/pico/pico-sdk/src/rp2_common/pico_int64_ops/pico_int64_ops_aeabi.S.o
+.PHONY : home/uzygncr/pico/pico-sdk/src/rp2_common/pico_int64_ops/pico_int64_ops_aeabi.S.o
+
+home/uzygncr/pico/pico-sdk/src/rp2_common/pico_lwip/lwip_nosys.o: home/uzygncr/pico/pico-sdk/src/rp2_common/pico_lwip/lwip_nosys.c.o
+.PHONY : home/uzygncr/pico/pico-sdk/src/rp2_common/pico_lwip/lwip_nosys.o
+
+# target to build an object file
+home/uzygncr/pico/pico-sdk/src/rp2_common/pico_lwip/lwip_nosys.c.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/test.dir/build.make CMakeFiles/test.dir/home/uzygncr/pico/pico-sdk/src/rp2_common/pico_lwip/lwip_nosys.c.o
+.PHONY : home/uzygncr/pico/pico-sdk/src/rp2_common/pico_lwip/lwip_nosys.c.o
 
 home/uzygncr/pico/pico-sdk/src/rp2_common/pico_lwip/lwip_nosys.i: home/uzygncr/pico/pico-sdk/src/rp2_common/pico_lwip/lwip_nosys.c.i
 .PHONY : home/uzygncr/pico/pico-sdk/src/rp2_common/pico_lwip/lwip_nosys.i
@@ -3562,13 +3597,13 @@ home/uzygncr/pico/pico-sdk/src/rp2_common/pico_lwip/lwip_nosys.c.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/test.dir/build.make CMakeFiles/test.dir/home/uzygncr/pico/pico-sdk/src/rp2_common/pico_lwip/lwip_nosys.c.s
 .PHONY : home/uzygncr/pico/pico-sdk/src/rp2_common/pico_lwip/lwip_nosys.c.s
 
-home/uzygncr/pico/pico-sdk/src/rp2_common/pico_malloc/malloc.obj: home/uzygncr/pico/pico-sdk/src/rp2_common/pico_malloc/malloc.c.obj
-.PHONY : home/uzygncr/pico/pico-sdk/src/rp2_common/pico_malloc/malloc.obj
+home/uzygncr/pico/pico-sdk/src/rp2_common/pico_malloc/malloc.o: home/uzygncr/pico/pico-sdk/src/rp2_common/pico_malloc/malloc.c.o
+.PHONY : home/uzygncr/pico/pico-sdk/src/rp2_common/pico_malloc/malloc.o
 
 # target to build an object file
-home/uzygncr/pico/pico-sdk/src/rp2_common/pico_malloc/malloc.c.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/test.dir/build.make CMakeFiles/test.dir/home/uzygncr/pico/pico-sdk/src/rp2_common/pico_malloc/malloc.c.obj
-.PHONY : home/uzygncr/pico/pico-sdk/src/rp2_common/pico_malloc/malloc.c.obj
+home/uzygncr/pico/pico-sdk/src/rp2_common/pico_malloc/malloc.c.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/test.dir/build.make CMakeFiles/test.dir/home/uzygncr/pico/pico-sdk/src/rp2_common/pico_malloc/malloc.c.o
+.PHONY : home/uzygncr/pico/pico-sdk/src/rp2_common/pico_malloc/malloc.c.o
 
 home/uzygncr/pico/pico-sdk/src/rp2_common/pico_malloc/malloc.i: home/uzygncr/pico/pico-sdk/src/rp2_common/pico_malloc/malloc.c.i
 .PHONY : home/uzygncr/pico/pico-sdk/src/rp2_common/pico_malloc/malloc.i
@@ -3586,21 +3621,21 @@ home/uzygncr/pico/pico-sdk/src/rp2_common/pico_malloc/malloc.c.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/test.dir/build.make CMakeFiles/test.dir/home/uzygncr/pico/pico-sdk/src/rp2_common/pico_malloc/malloc.c.s
 .PHONY : home/uzygncr/pico/pico-sdk/src/rp2_common/pico_malloc/malloc.c.s
 
-home/uzygncr/pico/pico-sdk/src/rp2_common/pico_mem_ops/mem_ops_aeabi.obj: home/uzygncr/pico/pico-sdk/src/rp2_common/pico_mem_ops/mem_ops_aeabi.S.obj
-.PHONY : home/uzygncr/pico/pico-sdk/src/rp2_common/pico_mem_ops/mem_ops_aeabi.obj
+home/uzygncr/pico/pico-sdk/src/rp2_common/pico_mem_ops/mem_ops_aeabi.o: home/uzygncr/pico/pico-sdk/src/rp2_common/pico_mem_ops/mem_ops_aeabi.S.o
+.PHONY : home/uzygncr/pico/pico-sdk/src/rp2_common/pico_mem_ops/mem_ops_aeabi.o
 
 # target to build an object file
-home/uzygncr/pico/pico-sdk/src/rp2_common/pico_mem_ops/mem_ops_aeabi.S.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/test.dir/build.make CMakeFiles/test.dir/home/uzygncr/pico/pico-sdk/src/rp2_common/pico_mem_ops/mem_ops_aeabi.S.obj
-.PHONY : home/uzygncr/pico/pico-sdk/src/rp2_common/pico_mem_ops/mem_ops_aeabi.S.obj
+home/uzygncr/pico/pico-sdk/src/rp2_common/pico_mem_ops/mem_ops_aeabi.S.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/test.dir/build.make CMakeFiles/test.dir/home/uzygncr/pico/pico-sdk/src/rp2_common/pico_mem_ops/mem_ops_aeabi.S.o
+.PHONY : home/uzygncr/pico/pico-sdk/src/rp2_common/pico_mem_ops/mem_ops_aeabi.S.o
 
-home/uzygncr/pico/pico-sdk/src/rp2_common/pico_platform_panic/panic.obj: home/uzygncr/pico/pico-sdk/src/rp2_common/pico_platform_panic/panic.c.obj
-.PHONY : home/uzygncr/pico/pico-sdk/src/rp2_common/pico_platform_panic/panic.obj
+home/uzygncr/pico/pico-sdk/src/rp2_common/pico_platform_panic/panic.o: home/uzygncr/pico/pico-sdk/src/rp2_common/pico_platform_panic/panic.c.o
+.PHONY : home/uzygncr/pico/pico-sdk/src/rp2_common/pico_platform_panic/panic.o
 
 # target to build an object file
-home/uzygncr/pico/pico-sdk/src/rp2_common/pico_platform_panic/panic.c.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/test.dir/build.make CMakeFiles/test.dir/home/uzygncr/pico/pico-sdk/src/rp2_common/pico_platform_panic/panic.c.obj
-.PHONY : home/uzygncr/pico/pico-sdk/src/rp2_common/pico_platform_panic/panic.c.obj
+home/uzygncr/pico/pico-sdk/src/rp2_common/pico_platform_panic/panic.c.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/test.dir/build.make CMakeFiles/test.dir/home/uzygncr/pico/pico-sdk/src/rp2_common/pico_platform_panic/panic.c.o
+.PHONY : home/uzygncr/pico/pico-sdk/src/rp2_common/pico_platform_panic/panic.c.o
 
 home/uzygncr/pico/pico-sdk/src/rp2_common/pico_platform_panic/panic.i: home/uzygncr/pico/pico-sdk/src/rp2_common/pico_platform_panic/panic.c.i
 .PHONY : home/uzygncr/pico/pico-sdk/src/rp2_common/pico_platform_panic/panic.i
@@ -3618,13 +3653,13 @@ home/uzygncr/pico/pico-sdk/src/rp2_common/pico_platform_panic/panic.c.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/test.dir/build.make CMakeFiles/test.dir/home/uzygncr/pico/pico-sdk/src/rp2_common/pico_platform_panic/panic.c.s
 .PHONY : home/uzygncr/pico/pico-sdk/src/rp2_common/pico_platform_panic/panic.c.s
 
-home/uzygncr/pico/pico-sdk/src/rp2_common/pico_printf/printf.obj: home/uzygncr/pico/pico-sdk/src/rp2_common/pico_printf/printf.c.obj
-.PHONY : home/uzygncr/pico/pico-sdk/src/rp2_common/pico_printf/printf.obj
+home/uzygncr/pico/pico-sdk/src/rp2_common/pico_printf/printf.o: home/uzygncr/pico/pico-sdk/src/rp2_common/pico_printf/printf.c.o
+.PHONY : home/uzygncr/pico/pico-sdk/src/rp2_common/pico_printf/printf.o
 
 # target to build an object file
-home/uzygncr/pico/pico-sdk/src/rp2_common/pico_printf/printf.c.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/test.dir/build.make CMakeFiles/test.dir/home/uzygncr/pico/pico-sdk/src/rp2_common/pico_printf/printf.c.obj
-.PHONY : home/uzygncr/pico/pico-sdk/src/rp2_common/pico_printf/printf.c.obj
+home/uzygncr/pico/pico-sdk/src/rp2_common/pico_printf/printf.c.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/test.dir/build.make CMakeFiles/test.dir/home/uzygncr/pico/pico-sdk/src/rp2_common/pico_printf/printf.c.o
+.PHONY : home/uzygncr/pico/pico-sdk/src/rp2_common/pico_printf/printf.c.o
 
 home/uzygncr/pico/pico-sdk/src/rp2_common/pico_printf/printf.i: home/uzygncr/pico/pico-sdk/src/rp2_common/pico_printf/printf.c.i
 .PHONY : home/uzygncr/pico/pico-sdk/src/rp2_common/pico_printf/printf.i
@@ -3642,13 +3677,13 @@ home/uzygncr/pico/pico-sdk/src/rp2_common/pico_printf/printf.c.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/test.dir/build.make CMakeFiles/test.dir/home/uzygncr/pico/pico-sdk/src/rp2_common/pico_printf/printf.c.s
 .PHONY : home/uzygncr/pico/pico-sdk/src/rp2_common/pico_printf/printf.c.s
 
-home/uzygncr/pico/pico-sdk/src/rp2_common/pico_rand/rand.obj: home/uzygncr/pico/pico-sdk/src/rp2_common/pico_rand/rand.c.obj
-.PHONY : home/uzygncr/pico/pico-sdk/src/rp2_common/pico_rand/rand.obj
+home/uzygncr/pico/pico-sdk/src/rp2_common/pico_rand/rand.o: home/uzygncr/pico/pico-sdk/src/rp2_common/pico_rand/rand.c.o
+.PHONY : home/uzygncr/pico/pico-sdk/src/rp2_common/pico_rand/rand.o
 
 # target to build an object file
-home/uzygncr/pico/pico-sdk/src/rp2_common/pico_rand/rand.c.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/test.dir/build.make CMakeFiles/test.dir/home/uzygncr/pico/pico-sdk/src/rp2_common/pico_rand/rand.c.obj
-.PHONY : home/uzygncr/pico/pico-sdk/src/rp2_common/pico_rand/rand.c.obj
+home/uzygncr/pico/pico-sdk/src/rp2_common/pico_rand/rand.c.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/test.dir/build.make CMakeFiles/test.dir/home/uzygncr/pico/pico-sdk/src/rp2_common/pico_rand/rand.c.o
+.PHONY : home/uzygncr/pico/pico-sdk/src/rp2_common/pico_rand/rand.c.o
 
 home/uzygncr/pico/pico-sdk/src/rp2_common/pico_rand/rand.i: home/uzygncr/pico/pico-sdk/src/rp2_common/pico_rand/rand.c.i
 .PHONY : home/uzygncr/pico/pico-sdk/src/rp2_common/pico_rand/rand.i
@@ -3666,13 +3701,13 @@ home/uzygncr/pico/pico-sdk/src/rp2_common/pico_rand/rand.c.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/test.dir/build.make CMakeFiles/test.dir/home/uzygncr/pico/pico-sdk/src/rp2_common/pico_rand/rand.c.s
 .PHONY : home/uzygncr/pico/pico-sdk/src/rp2_common/pico_rand/rand.c.s
 
-home/uzygncr/pico/pico-sdk/src/rp2_common/pico_runtime/runtime.obj: home/uzygncr/pico/pico-sdk/src/rp2_common/pico_runtime/runtime.c.obj
-.PHONY : home/uzygncr/pico/pico-sdk/src/rp2_common/pico_runtime/runtime.obj
+home/uzygncr/pico/pico-sdk/src/rp2_common/pico_runtime/runtime.o: home/uzygncr/pico/pico-sdk/src/rp2_common/pico_runtime/runtime.c.o
+.PHONY : home/uzygncr/pico/pico-sdk/src/rp2_common/pico_runtime/runtime.o
 
 # target to build an object file
-home/uzygncr/pico/pico-sdk/src/rp2_common/pico_runtime/runtime.c.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/test.dir/build.make CMakeFiles/test.dir/home/uzygncr/pico/pico-sdk/src/rp2_common/pico_runtime/runtime.c.obj
-.PHONY : home/uzygncr/pico/pico-sdk/src/rp2_common/pico_runtime/runtime.c.obj
+home/uzygncr/pico/pico-sdk/src/rp2_common/pico_runtime/runtime.c.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/test.dir/build.make CMakeFiles/test.dir/home/uzygncr/pico/pico-sdk/src/rp2_common/pico_runtime/runtime.c.o
+.PHONY : home/uzygncr/pico/pico-sdk/src/rp2_common/pico_runtime/runtime.c.o
 
 home/uzygncr/pico/pico-sdk/src/rp2_common/pico_runtime/runtime.i: home/uzygncr/pico/pico-sdk/src/rp2_common/pico_runtime/runtime.c.i
 .PHONY : home/uzygncr/pico/pico-sdk/src/rp2_common/pico_runtime/runtime.i
@@ -3690,13 +3725,13 @@ home/uzygncr/pico/pico-sdk/src/rp2_common/pico_runtime/runtime.c.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/test.dir/build.make CMakeFiles/test.dir/home/uzygncr/pico/pico-sdk/src/rp2_common/pico_runtime/runtime.c.s
 .PHONY : home/uzygncr/pico/pico-sdk/src/rp2_common/pico_runtime/runtime.c.s
 
-home/uzygncr/pico/pico-sdk/src/rp2_common/pico_runtime_init/runtime_init.obj: home/uzygncr/pico/pico-sdk/src/rp2_common/pico_runtime_init/runtime_init.c.obj
-.PHONY : home/uzygncr/pico/pico-sdk/src/rp2_common/pico_runtime_init/runtime_init.obj
+home/uzygncr/pico/pico-sdk/src/rp2_common/pico_runtime_init/runtime_init.o: home/uzygncr/pico/pico-sdk/src/rp2_common/pico_runtime_init/runtime_init.c.o
+.PHONY : home/uzygncr/pico/pico-sdk/src/rp2_common/pico_runtime_init/runtime_init.o
 
 # target to build an object file
-home/uzygncr/pico/pico-sdk/src/rp2_common/pico_runtime_init/runtime_init.c.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/test.dir/build.make CMakeFiles/test.dir/home/uzygncr/pico/pico-sdk/src/rp2_common/pico_runtime_init/runtime_init.c.obj
-.PHONY : home/uzygncr/pico/pico-sdk/src/rp2_common/pico_runtime_init/runtime_init.c.obj
+home/uzygncr/pico/pico-sdk/src/rp2_common/pico_runtime_init/runtime_init.c.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/test.dir/build.make CMakeFiles/test.dir/home/uzygncr/pico/pico-sdk/src/rp2_common/pico_runtime_init/runtime_init.c.o
+.PHONY : home/uzygncr/pico/pico-sdk/src/rp2_common/pico_runtime_init/runtime_init.c.o
 
 home/uzygncr/pico/pico-sdk/src/rp2_common/pico_runtime_init/runtime_init.i: home/uzygncr/pico/pico-sdk/src/rp2_common/pico_runtime_init/runtime_init.c.i
 .PHONY : home/uzygncr/pico/pico-sdk/src/rp2_common/pico_runtime_init/runtime_init.i
@@ -3714,13 +3749,13 @@ home/uzygncr/pico/pico-sdk/src/rp2_common/pico_runtime_init/runtime_init.c.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/test.dir/build.make CMakeFiles/test.dir/home/uzygncr/pico/pico-sdk/src/rp2_common/pico_runtime_init/runtime_init.c.s
 .PHONY : home/uzygncr/pico/pico-sdk/src/rp2_common/pico_runtime_init/runtime_init.c.s
 
-home/uzygncr/pico/pico-sdk/src/rp2_common/pico_runtime_init/runtime_init_clocks.obj: home/uzygncr/pico/pico-sdk/src/rp2_common/pico_runtime_init/runtime_init_clocks.c.obj
-.PHONY : home/uzygncr/pico/pico-sdk/src/rp2_common/pico_runtime_init/runtime_init_clocks.obj
+home/uzygncr/pico/pico-sdk/src/rp2_common/pico_runtime_init/runtime_init_clocks.o: home/uzygncr/pico/pico-sdk/src/rp2_common/pico_runtime_init/runtime_init_clocks.c.o
+.PHONY : home/uzygncr/pico/pico-sdk/src/rp2_common/pico_runtime_init/runtime_init_clocks.o
 
 # target to build an object file
-home/uzygncr/pico/pico-sdk/src/rp2_common/pico_runtime_init/runtime_init_clocks.c.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/test.dir/build.make CMakeFiles/test.dir/home/uzygncr/pico/pico-sdk/src/rp2_common/pico_runtime_init/runtime_init_clocks.c.obj
-.PHONY : home/uzygncr/pico/pico-sdk/src/rp2_common/pico_runtime_init/runtime_init_clocks.c.obj
+home/uzygncr/pico/pico-sdk/src/rp2_common/pico_runtime_init/runtime_init_clocks.c.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/test.dir/build.make CMakeFiles/test.dir/home/uzygncr/pico/pico-sdk/src/rp2_common/pico_runtime_init/runtime_init_clocks.c.o
+.PHONY : home/uzygncr/pico/pico-sdk/src/rp2_common/pico_runtime_init/runtime_init_clocks.c.o
 
 home/uzygncr/pico/pico-sdk/src/rp2_common/pico_runtime_init/runtime_init_clocks.i: home/uzygncr/pico/pico-sdk/src/rp2_common/pico_runtime_init/runtime_init_clocks.c.i
 .PHONY : home/uzygncr/pico/pico-sdk/src/rp2_common/pico_runtime_init/runtime_init_clocks.i
@@ -3738,13 +3773,13 @@ home/uzygncr/pico/pico-sdk/src/rp2_common/pico_runtime_init/runtime_init_clocks.
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/test.dir/build.make CMakeFiles/test.dir/home/uzygncr/pico/pico-sdk/src/rp2_common/pico_runtime_init/runtime_init_clocks.c.s
 .PHONY : home/uzygncr/pico/pico-sdk/src/rp2_common/pico_runtime_init/runtime_init_clocks.c.s
 
-home/uzygncr/pico/pico-sdk/src/rp2_common/pico_runtime_init/runtime_init_stack_guard.obj: home/uzygncr/pico/pico-sdk/src/rp2_common/pico_runtime_init/runtime_init_stack_guard.c.obj
-.PHONY : home/uzygncr/pico/pico-sdk/src/rp2_common/pico_runtime_init/runtime_init_stack_guard.obj
+home/uzygncr/pico/pico-sdk/src/rp2_common/pico_runtime_init/runtime_init_stack_guard.o: home/uzygncr/pico/pico-sdk/src/rp2_common/pico_runtime_init/runtime_init_stack_guard.c.o
+.PHONY : home/uzygncr/pico/pico-sdk/src/rp2_common/pico_runtime_init/runtime_init_stack_guard.o
 
 # target to build an object file
-home/uzygncr/pico/pico-sdk/src/rp2_common/pico_runtime_init/runtime_init_stack_guard.c.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/test.dir/build.make CMakeFiles/test.dir/home/uzygncr/pico/pico-sdk/src/rp2_common/pico_runtime_init/runtime_init_stack_guard.c.obj
-.PHONY : home/uzygncr/pico/pico-sdk/src/rp2_common/pico_runtime_init/runtime_init_stack_guard.c.obj
+home/uzygncr/pico/pico-sdk/src/rp2_common/pico_runtime_init/runtime_init_stack_guard.c.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/test.dir/build.make CMakeFiles/test.dir/home/uzygncr/pico/pico-sdk/src/rp2_common/pico_runtime_init/runtime_init_stack_guard.c.o
+.PHONY : home/uzygncr/pico/pico-sdk/src/rp2_common/pico_runtime_init/runtime_init_stack_guard.c.o
 
 home/uzygncr/pico/pico-sdk/src/rp2_common/pico_runtime_init/runtime_init_stack_guard.i: home/uzygncr/pico/pico-sdk/src/rp2_common/pico_runtime_init/runtime_init_stack_guard.c.i
 .PHONY : home/uzygncr/pico/pico-sdk/src/rp2_common/pico_runtime_init/runtime_init_stack_guard.i
@@ -3762,13 +3797,13 @@ home/uzygncr/pico/pico-sdk/src/rp2_common/pico_runtime_init/runtime_init_stack_g
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/test.dir/build.make CMakeFiles/test.dir/home/uzygncr/pico/pico-sdk/src/rp2_common/pico_runtime_init/runtime_init_stack_guard.c.s
 .PHONY : home/uzygncr/pico/pico-sdk/src/rp2_common/pico_runtime_init/runtime_init_stack_guard.c.s
 
-home/uzygncr/pico/pico-sdk/src/rp2_common/pico_standard_binary_info/standard_binary_info.obj: home/uzygncr/pico/pico-sdk/src/rp2_common/pico_standard_binary_info/standard_binary_info.c.obj
-.PHONY : home/uzygncr/pico/pico-sdk/src/rp2_common/pico_standard_binary_info/standard_binary_info.obj
+home/uzygncr/pico/pico-sdk/src/rp2_common/pico_standard_binary_info/standard_binary_info.o: home/uzygncr/pico/pico-sdk/src/rp2_common/pico_standard_binary_info/standard_binary_info.c.o
+.PHONY : home/uzygncr/pico/pico-sdk/src/rp2_common/pico_standard_binary_info/standard_binary_info.o
 
 # target to build an object file
-home/uzygncr/pico/pico-sdk/src/rp2_common/pico_standard_binary_info/standard_binary_info.c.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/test.dir/build.make CMakeFiles/test.dir/home/uzygncr/pico/pico-sdk/src/rp2_common/pico_standard_binary_info/standard_binary_info.c.obj
-.PHONY : home/uzygncr/pico/pico-sdk/src/rp2_common/pico_standard_binary_info/standard_binary_info.c.obj
+home/uzygncr/pico/pico-sdk/src/rp2_common/pico_standard_binary_info/standard_binary_info.c.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/test.dir/build.make CMakeFiles/test.dir/home/uzygncr/pico/pico-sdk/src/rp2_common/pico_standard_binary_info/standard_binary_info.c.o
+.PHONY : home/uzygncr/pico/pico-sdk/src/rp2_common/pico_standard_binary_info/standard_binary_info.c.o
 
 home/uzygncr/pico/pico-sdk/src/rp2_common/pico_standard_binary_info/standard_binary_info.i: home/uzygncr/pico/pico-sdk/src/rp2_common/pico_standard_binary_info/standard_binary_info.c.i
 .PHONY : home/uzygncr/pico/pico-sdk/src/rp2_common/pico_standard_binary_info/standard_binary_info.i
@@ -3786,13 +3821,13 @@ home/uzygncr/pico/pico-sdk/src/rp2_common/pico_standard_binary_info/standard_bin
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/test.dir/build.make CMakeFiles/test.dir/home/uzygncr/pico/pico-sdk/src/rp2_common/pico_standard_binary_info/standard_binary_info.c.s
 .PHONY : home/uzygncr/pico/pico-sdk/src/rp2_common/pico_standard_binary_info/standard_binary_info.c.s
 
-home/uzygncr/pico/pico-sdk/src/rp2_common/pico_stdio/stdio.obj: home/uzygncr/pico/pico-sdk/src/rp2_common/pico_stdio/stdio.c.obj
-.PHONY : home/uzygncr/pico/pico-sdk/src/rp2_common/pico_stdio/stdio.obj
+home/uzygncr/pico/pico-sdk/src/rp2_common/pico_stdio/stdio.o: home/uzygncr/pico/pico-sdk/src/rp2_common/pico_stdio/stdio.c.o
+.PHONY : home/uzygncr/pico/pico-sdk/src/rp2_common/pico_stdio/stdio.o
 
 # target to build an object file
-home/uzygncr/pico/pico-sdk/src/rp2_common/pico_stdio/stdio.c.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/test.dir/build.make CMakeFiles/test.dir/home/uzygncr/pico/pico-sdk/src/rp2_common/pico_stdio/stdio.c.obj
-.PHONY : home/uzygncr/pico/pico-sdk/src/rp2_common/pico_stdio/stdio.c.obj
+home/uzygncr/pico/pico-sdk/src/rp2_common/pico_stdio/stdio.c.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/test.dir/build.make CMakeFiles/test.dir/home/uzygncr/pico/pico-sdk/src/rp2_common/pico_stdio/stdio.c.o
+.PHONY : home/uzygncr/pico/pico-sdk/src/rp2_common/pico_stdio/stdio.c.o
 
 home/uzygncr/pico/pico-sdk/src/rp2_common/pico_stdio/stdio.i: home/uzygncr/pico/pico-sdk/src/rp2_common/pico_stdio/stdio.c.i
 .PHONY : home/uzygncr/pico/pico-sdk/src/rp2_common/pico_stdio/stdio.i
@@ -3810,13 +3845,13 @@ home/uzygncr/pico/pico-sdk/src/rp2_common/pico_stdio/stdio.c.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/test.dir/build.make CMakeFiles/test.dir/home/uzygncr/pico/pico-sdk/src/rp2_common/pico_stdio/stdio.c.s
 .PHONY : home/uzygncr/pico/pico-sdk/src/rp2_common/pico_stdio/stdio.c.s
 
-home/uzygncr/pico/pico-sdk/src/rp2_common/pico_stdio_uart/stdio_uart.obj: home/uzygncr/pico/pico-sdk/src/rp2_common/pico_stdio_uart/stdio_uart.c.obj
-.PHONY : home/uzygncr/pico/pico-sdk/src/rp2_common/pico_stdio_uart/stdio_uart.obj
+home/uzygncr/pico/pico-sdk/src/rp2_common/pico_stdio_uart/stdio_uart.o: home/uzygncr/pico/pico-sdk/src/rp2_common/pico_stdio_uart/stdio_uart.c.o
+.PHONY : home/uzygncr/pico/pico-sdk/src/rp2_common/pico_stdio_uart/stdio_uart.o
 
 # target to build an object file
-home/uzygncr/pico/pico-sdk/src/rp2_common/pico_stdio_uart/stdio_uart.c.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/test.dir/build.make CMakeFiles/test.dir/home/uzygncr/pico/pico-sdk/src/rp2_common/pico_stdio_uart/stdio_uart.c.obj
-.PHONY : home/uzygncr/pico/pico-sdk/src/rp2_common/pico_stdio_uart/stdio_uart.c.obj
+home/uzygncr/pico/pico-sdk/src/rp2_common/pico_stdio_uart/stdio_uart.c.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/test.dir/build.make CMakeFiles/test.dir/home/uzygncr/pico/pico-sdk/src/rp2_common/pico_stdio_uart/stdio_uart.c.o
+.PHONY : home/uzygncr/pico/pico-sdk/src/rp2_common/pico_stdio_uart/stdio_uart.c.o
 
 home/uzygncr/pico/pico-sdk/src/rp2_common/pico_stdio_uart/stdio_uart.i: home/uzygncr/pico/pico-sdk/src/rp2_common/pico_stdio_uart/stdio_uart.c.i
 .PHONY : home/uzygncr/pico/pico-sdk/src/rp2_common/pico_stdio_uart/stdio_uart.i
@@ -3834,13 +3869,13 @@ home/uzygncr/pico/pico-sdk/src/rp2_common/pico_stdio_uart/stdio_uart.c.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/test.dir/build.make CMakeFiles/test.dir/home/uzygncr/pico/pico-sdk/src/rp2_common/pico_stdio_uart/stdio_uart.c.s
 .PHONY : home/uzygncr/pico/pico-sdk/src/rp2_common/pico_stdio_uart/stdio_uart.c.s
 
-home/uzygncr/pico/pico-sdk/src/rp2_common/pico_stdlib/stdlib.obj: home/uzygncr/pico/pico-sdk/src/rp2_common/pico_stdlib/stdlib.c.obj
-.PHONY : home/uzygncr/pico/pico-sdk/src/rp2_common/pico_stdlib/stdlib.obj
+home/uzygncr/pico/pico-sdk/src/rp2_common/pico_stdlib/stdlib.o: home/uzygncr/pico/pico-sdk/src/rp2_common/pico_stdlib/stdlib.c.o
+.PHONY : home/uzygncr/pico/pico-sdk/src/rp2_common/pico_stdlib/stdlib.o
 
 # target to build an object file
-home/uzygncr/pico/pico-sdk/src/rp2_common/pico_stdlib/stdlib.c.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/test.dir/build.make CMakeFiles/test.dir/home/uzygncr/pico/pico-sdk/src/rp2_common/pico_stdlib/stdlib.c.obj
-.PHONY : home/uzygncr/pico/pico-sdk/src/rp2_common/pico_stdlib/stdlib.c.obj
+home/uzygncr/pico/pico-sdk/src/rp2_common/pico_stdlib/stdlib.c.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/test.dir/build.make CMakeFiles/test.dir/home/uzygncr/pico/pico-sdk/src/rp2_common/pico_stdlib/stdlib.c.o
+.PHONY : home/uzygncr/pico/pico-sdk/src/rp2_common/pico_stdlib/stdlib.c.o
 
 home/uzygncr/pico/pico-sdk/src/rp2_common/pico_stdlib/stdlib.i: home/uzygncr/pico/pico-sdk/src/rp2_common/pico_stdlib/stdlib.c.i
 .PHONY : home/uzygncr/pico/pico-sdk/src/rp2_common/pico_stdlib/stdlib.i
@@ -3858,13 +3893,13 @@ home/uzygncr/pico/pico-sdk/src/rp2_common/pico_stdlib/stdlib.c.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/test.dir/build.make CMakeFiles/test.dir/home/uzygncr/pico/pico-sdk/src/rp2_common/pico_stdlib/stdlib.c.s
 .PHONY : home/uzygncr/pico/pico-sdk/src/rp2_common/pico_stdlib/stdlib.c.s
 
-home/uzygncr/pico/pico-sdk/src/rp2_common/pico_unique_id/unique_id.obj: home/uzygncr/pico/pico-sdk/src/rp2_common/pico_unique_id/unique_id.c.obj
-.PHONY : home/uzygncr/pico/pico-sdk/src/rp2_common/pico_unique_id/unique_id.obj
+home/uzygncr/pico/pico-sdk/src/rp2_common/pico_unique_id/unique_id.o: home/uzygncr/pico/pico-sdk/src/rp2_common/pico_unique_id/unique_id.c.o
+.PHONY : home/uzygncr/pico/pico-sdk/src/rp2_common/pico_unique_id/unique_id.o
 
 # target to build an object file
-home/uzygncr/pico/pico-sdk/src/rp2_common/pico_unique_id/unique_id.c.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/test.dir/build.make CMakeFiles/test.dir/home/uzygncr/pico/pico-sdk/src/rp2_common/pico_unique_id/unique_id.c.obj
-.PHONY : home/uzygncr/pico/pico-sdk/src/rp2_common/pico_unique_id/unique_id.c.obj
+home/uzygncr/pico/pico-sdk/src/rp2_common/pico_unique_id/unique_id.c.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/test.dir/build.make CMakeFiles/test.dir/home/uzygncr/pico/pico-sdk/src/rp2_common/pico_unique_id/unique_id.c.o
+.PHONY : home/uzygncr/pico/pico-sdk/src/rp2_common/pico_unique_id/unique_id.c.o
 
 home/uzygncr/pico/pico-sdk/src/rp2_common/pico_unique_id/unique_id.i: home/uzygncr/pico/pico-sdk/src/rp2_common/pico_unique_id/unique_id.c.i
 .PHONY : home/uzygncr/pico/pico-sdk/src/rp2_common/pico_unique_id/unique_id.i
@@ -3882,13 +3917,13 @@ home/uzygncr/pico/pico-sdk/src/rp2_common/pico_unique_id/unique_id.c.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/test.dir/build.make CMakeFiles/test.dir/home/uzygncr/pico/pico-sdk/src/rp2_common/pico_unique_id/unique_id.c.s
 .PHONY : home/uzygncr/pico/pico-sdk/src/rp2_common/pico_unique_id/unique_id.c.s
 
-w_blink.obj: w_blink.c.obj
-.PHONY : w_blink.obj
+w_blink.o: w_blink.c.o
+.PHONY : w_blink.o
 
 # target to build an object file
-w_blink.c.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/test.dir/build.make CMakeFiles/test.dir/w_blink.c.obj
-.PHONY : w_blink.c.obj
+w_blink.c.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/test.dir/build.make CMakeFiles/test.dir/w_blink.c.o
+.PHONY : w_blink.c.o
 
 w_blink.i: w_blink.c.i
 .PHONY : w_blink.i
@@ -3915,473 +3950,478 @@ help:
 	@echo "... edit_cache"
 	@echo "... rebuild_cache"
 	@echo "... bs2_default_bin"
-	@echo "... bs2_default_padded_checksummed_asm"
 	@echo "... cyw43_driver_picow_cyw43_bus_pio_spi_pio_h"
-	@echo "... pioasmBuild"
 	@echo "... bs2_default"
+	@echo "... bs2_default_library"
 	@echo "... test"
-	@echo "... home/uzygncr/pico/pico-sdk/lib/cyw43-driver/src/cyw43_ctrl.obj"
+	@echo "... home/uzygncr/pico/pico-sdk/lib/cyw43-driver/src/cyw43_ctrl.o"
 	@echo "... home/uzygncr/pico/pico-sdk/lib/cyw43-driver/src/cyw43_ctrl.i"
 	@echo "... home/uzygncr/pico/pico-sdk/lib/cyw43-driver/src/cyw43_ctrl.s"
-	@echo "... home/uzygncr/pico/pico-sdk/lib/cyw43-driver/src/cyw43_ll.obj"
+	@echo "... home/uzygncr/pico/pico-sdk/lib/cyw43-driver/src/cyw43_ll.o"
 	@echo "... home/uzygncr/pico/pico-sdk/lib/cyw43-driver/src/cyw43_ll.i"
 	@echo "... home/uzygncr/pico/pico-sdk/lib/cyw43-driver/src/cyw43_ll.s"
-	@echo "... home/uzygncr/pico/pico-sdk/lib/cyw43-driver/src/cyw43_lwip.obj"
+	@echo "... home/uzygncr/pico/pico-sdk/lib/cyw43-driver/src/cyw43_lwip.o"
 	@echo "... home/uzygncr/pico/pico-sdk/lib/cyw43-driver/src/cyw43_lwip.i"
 	@echo "... home/uzygncr/pico/pico-sdk/lib/cyw43-driver/src/cyw43_lwip.s"
-	@echo "... home/uzygncr/pico/pico-sdk/lib/cyw43-driver/src/cyw43_stats.obj"
+	@echo "... home/uzygncr/pico/pico-sdk/lib/cyw43-driver/src/cyw43_stats.o"
 	@echo "... home/uzygncr/pico/pico-sdk/lib/cyw43-driver/src/cyw43_stats.i"
 	@echo "... home/uzygncr/pico/pico-sdk/lib/cyw43-driver/src/cyw43_stats.s"
-	@echo "... home/uzygncr/pico/pico-sdk/lib/lwip/src/api/api_lib.obj"
+	@echo "... home/uzygncr/pico/pico-sdk/lib/lwip/src/api/api_lib.o"
 	@echo "... home/uzygncr/pico/pico-sdk/lib/lwip/src/api/api_lib.i"
 	@echo "... home/uzygncr/pico/pico-sdk/lib/lwip/src/api/api_lib.s"
-	@echo "... home/uzygncr/pico/pico-sdk/lib/lwip/src/api/api_msg.obj"
+	@echo "... home/uzygncr/pico/pico-sdk/lib/lwip/src/api/api_msg.o"
 	@echo "... home/uzygncr/pico/pico-sdk/lib/lwip/src/api/api_msg.i"
 	@echo "... home/uzygncr/pico/pico-sdk/lib/lwip/src/api/api_msg.s"
-	@echo "... home/uzygncr/pico/pico-sdk/lib/lwip/src/api/err.obj"
+	@echo "... home/uzygncr/pico/pico-sdk/lib/lwip/src/api/err.o"
 	@echo "... home/uzygncr/pico/pico-sdk/lib/lwip/src/api/err.i"
 	@echo "... home/uzygncr/pico/pico-sdk/lib/lwip/src/api/err.s"
-	@echo "... home/uzygncr/pico/pico-sdk/lib/lwip/src/api/if_api.obj"
+	@echo "... home/uzygncr/pico/pico-sdk/lib/lwip/src/api/if_api.o"
 	@echo "... home/uzygncr/pico/pico-sdk/lib/lwip/src/api/if_api.i"
 	@echo "... home/uzygncr/pico/pico-sdk/lib/lwip/src/api/if_api.s"
-	@echo "... home/uzygncr/pico/pico-sdk/lib/lwip/src/api/netbuf.obj"
+	@echo "... home/uzygncr/pico/pico-sdk/lib/lwip/src/api/netbuf.o"
 	@echo "... home/uzygncr/pico/pico-sdk/lib/lwip/src/api/netbuf.i"
 	@echo "... home/uzygncr/pico/pico-sdk/lib/lwip/src/api/netbuf.s"
-	@echo "... home/uzygncr/pico/pico-sdk/lib/lwip/src/api/netdb.obj"
+	@echo "... home/uzygncr/pico/pico-sdk/lib/lwip/src/api/netdb.o"
 	@echo "... home/uzygncr/pico/pico-sdk/lib/lwip/src/api/netdb.i"
 	@echo "... home/uzygncr/pico/pico-sdk/lib/lwip/src/api/netdb.s"
-	@echo "... home/uzygncr/pico/pico-sdk/lib/lwip/src/api/netifapi.obj"
+	@echo "... home/uzygncr/pico/pico-sdk/lib/lwip/src/api/netifapi.o"
 	@echo "... home/uzygncr/pico/pico-sdk/lib/lwip/src/api/netifapi.i"
 	@echo "... home/uzygncr/pico/pico-sdk/lib/lwip/src/api/netifapi.s"
-	@echo "... home/uzygncr/pico/pico-sdk/lib/lwip/src/api/sockets.obj"
+	@echo "... home/uzygncr/pico/pico-sdk/lib/lwip/src/api/sockets.o"
 	@echo "... home/uzygncr/pico/pico-sdk/lib/lwip/src/api/sockets.i"
 	@echo "... home/uzygncr/pico/pico-sdk/lib/lwip/src/api/sockets.s"
-	@echo "... home/uzygncr/pico/pico-sdk/lib/lwip/src/api/tcpip.obj"
+	@echo "... home/uzygncr/pico/pico-sdk/lib/lwip/src/api/tcpip.o"
 	@echo "... home/uzygncr/pico/pico-sdk/lib/lwip/src/api/tcpip.i"
 	@echo "... home/uzygncr/pico/pico-sdk/lib/lwip/src/api/tcpip.s"
-	@echo "... home/uzygncr/pico/pico-sdk/lib/lwip/src/core/altcp.obj"
+	@echo "... home/uzygncr/pico/pico-sdk/lib/lwip/src/core/altcp.o"
 	@echo "... home/uzygncr/pico/pico-sdk/lib/lwip/src/core/altcp.i"
 	@echo "... home/uzygncr/pico/pico-sdk/lib/lwip/src/core/altcp.s"
-	@echo "... home/uzygncr/pico/pico-sdk/lib/lwip/src/core/altcp_alloc.obj"
+	@echo "... home/uzygncr/pico/pico-sdk/lib/lwip/src/core/altcp_alloc.o"
 	@echo "... home/uzygncr/pico/pico-sdk/lib/lwip/src/core/altcp_alloc.i"
 	@echo "... home/uzygncr/pico/pico-sdk/lib/lwip/src/core/altcp_alloc.s"
-	@echo "... home/uzygncr/pico/pico-sdk/lib/lwip/src/core/altcp_tcp.obj"
+	@echo "... home/uzygncr/pico/pico-sdk/lib/lwip/src/core/altcp_tcp.o"
 	@echo "... home/uzygncr/pico/pico-sdk/lib/lwip/src/core/altcp_tcp.i"
 	@echo "... home/uzygncr/pico/pico-sdk/lib/lwip/src/core/altcp_tcp.s"
-	@echo "... home/uzygncr/pico/pico-sdk/lib/lwip/src/core/def.obj"
+	@echo "... home/uzygncr/pico/pico-sdk/lib/lwip/src/core/def.o"
 	@echo "... home/uzygncr/pico/pico-sdk/lib/lwip/src/core/def.i"
 	@echo "... home/uzygncr/pico/pico-sdk/lib/lwip/src/core/def.s"
-	@echo "... home/uzygncr/pico/pico-sdk/lib/lwip/src/core/dns.obj"
+	@echo "... home/uzygncr/pico/pico-sdk/lib/lwip/src/core/dns.o"
 	@echo "... home/uzygncr/pico/pico-sdk/lib/lwip/src/core/dns.i"
 	@echo "... home/uzygncr/pico/pico-sdk/lib/lwip/src/core/dns.s"
-	@echo "... home/uzygncr/pico/pico-sdk/lib/lwip/src/core/inet_chksum.obj"
+	@echo "... home/uzygncr/pico/pico-sdk/lib/lwip/src/core/inet_chksum.o"
 	@echo "... home/uzygncr/pico/pico-sdk/lib/lwip/src/core/inet_chksum.i"
 	@echo "... home/uzygncr/pico/pico-sdk/lib/lwip/src/core/inet_chksum.s"
-	@echo "... home/uzygncr/pico/pico-sdk/lib/lwip/src/core/init.obj"
+	@echo "... home/uzygncr/pico/pico-sdk/lib/lwip/src/core/init.o"
 	@echo "... home/uzygncr/pico/pico-sdk/lib/lwip/src/core/init.i"
 	@echo "... home/uzygncr/pico/pico-sdk/lib/lwip/src/core/init.s"
-	@echo "... home/uzygncr/pico/pico-sdk/lib/lwip/src/core/ip.obj"
+	@echo "... home/uzygncr/pico/pico-sdk/lib/lwip/src/core/ip.o"
 	@echo "... home/uzygncr/pico/pico-sdk/lib/lwip/src/core/ip.i"
 	@echo "... home/uzygncr/pico/pico-sdk/lib/lwip/src/core/ip.s"
-	@echo "... home/uzygncr/pico/pico-sdk/lib/lwip/src/core/ipv4/acd.obj"
+	@echo "... home/uzygncr/pico/pico-sdk/lib/lwip/src/core/ipv4/acd.o"
 	@echo "... home/uzygncr/pico/pico-sdk/lib/lwip/src/core/ipv4/acd.i"
 	@echo "... home/uzygncr/pico/pico-sdk/lib/lwip/src/core/ipv4/acd.s"
-	@echo "... home/uzygncr/pico/pico-sdk/lib/lwip/src/core/ipv4/autoip.obj"
+	@echo "... home/uzygncr/pico/pico-sdk/lib/lwip/src/core/ipv4/autoip.o"
 	@echo "... home/uzygncr/pico/pico-sdk/lib/lwip/src/core/ipv4/autoip.i"
 	@echo "... home/uzygncr/pico/pico-sdk/lib/lwip/src/core/ipv4/autoip.s"
-	@echo "... home/uzygncr/pico/pico-sdk/lib/lwip/src/core/ipv4/dhcp.obj"
+	@echo "... home/uzygncr/pico/pico-sdk/lib/lwip/src/core/ipv4/dhcp.o"
 	@echo "... home/uzygncr/pico/pico-sdk/lib/lwip/src/core/ipv4/dhcp.i"
 	@echo "... home/uzygncr/pico/pico-sdk/lib/lwip/src/core/ipv4/dhcp.s"
-	@echo "... home/uzygncr/pico/pico-sdk/lib/lwip/src/core/ipv4/etharp.obj"
+	@echo "... home/uzygncr/pico/pico-sdk/lib/lwip/src/core/ipv4/etharp.o"
 	@echo "... home/uzygncr/pico/pico-sdk/lib/lwip/src/core/ipv4/etharp.i"
 	@echo "... home/uzygncr/pico/pico-sdk/lib/lwip/src/core/ipv4/etharp.s"
-	@echo "... home/uzygncr/pico/pico-sdk/lib/lwip/src/core/ipv4/icmp.obj"
+	@echo "... home/uzygncr/pico/pico-sdk/lib/lwip/src/core/ipv4/icmp.o"
 	@echo "... home/uzygncr/pico/pico-sdk/lib/lwip/src/core/ipv4/icmp.i"
 	@echo "... home/uzygncr/pico/pico-sdk/lib/lwip/src/core/ipv4/icmp.s"
-	@echo "... home/uzygncr/pico/pico-sdk/lib/lwip/src/core/ipv4/igmp.obj"
+	@echo "... home/uzygncr/pico/pico-sdk/lib/lwip/src/core/ipv4/igmp.o"
 	@echo "... home/uzygncr/pico/pico-sdk/lib/lwip/src/core/ipv4/igmp.i"
 	@echo "... home/uzygncr/pico/pico-sdk/lib/lwip/src/core/ipv4/igmp.s"
-	@echo "... home/uzygncr/pico/pico-sdk/lib/lwip/src/core/ipv4/ip4.obj"
+	@echo "... home/uzygncr/pico/pico-sdk/lib/lwip/src/core/ipv4/ip4.o"
 	@echo "... home/uzygncr/pico/pico-sdk/lib/lwip/src/core/ipv4/ip4.i"
 	@echo "... home/uzygncr/pico/pico-sdk/lib/lwip/src/core/ipv4/ip4.s"
-	@echo "... home/uzygncr/pico/pico-sdk/lib/lwip/src/core/ipv4/ip4_addr.obj"
+	@echo "... home/uzygncr/pico/pico-sdk/lib/lwip/src/core/ipv4/ip4_addr.o"
 	@echo "... home/uzygncr/pico/pico-sdk/lib/lwip/src/core/ipv4/ip4_addr.i"
 	@echo "... home/uzygncr/pico/pico-sdk/lib/lwip/src/core/ipv4/ip4_addr.s"
-	@echo "... home/uzygncr/pico/pico-sdk/lib/lwip/src/core/ipv4/ip4_frag.obj"
+	@echo "... home/uzygncr/pico/pico-sdk/lib/lwip/src/core/ipv4/ip4_frag.o"
 	@echo "... home/uzygncr/pico/pico-sdk/lib/lwip/src/core/ipv4/ip4_frag.i"
 	@echo "... home/uzygncr/pico/pico-sdk/lib/lwip/src/core/ipv4/ip4_frag.s"
-	@echo "... home/uzygncr/pico/pico-sdk/lib/lwip/src/core/ipv6/dhcp6.obj"
+	@echo "... home/uzygncr/pico/pico-sdk/lib/lwip/src/core/ipv6/dhcp6.o"
 	@echo "... home/uzygncr/pico/pico-sdk/lib/lwip/src/core/ipv6/dhcp6.i"
 	@echo "... home/uzygncr/pico/pico-sdk/lib/lwip/src/core/ipv6/dhcp6.s"
-	@echo "... home/uzygncr/pico/pico-sdk/lib/lwip/src/core/ipv6/ethip6.obj"
+	@echo "... home/uzygncr/pico/pico-sdk/lib/lwip/src/core/ipv6/ethip6.o"
 	@echo "... home/uzygncr/pico/pico-sdk/lib/lwip/src/core/ipv6/ethip6.i"
 	@echo "... home/uzygncr/pico/pico-sdk/lib/lwip/src/core/ipv6/ethip6.s"
-	@echo "... home/uzygncr/pico/pico-sdk/lib/lwip/src/core/ipv6/icmp6.obj"
+	@echo "... home/uzygncr/pico/pico-sdk/lib/lwip/src/core/ipv6/icmp6.o"
 	@echo "... home/uzygncr/pico/pico-sdk/lib/lwip/src/core/ipv6/icmp6.i"
 	@echo "... home/uzygncr/pico/pico-sdk/lib/lwip/src/core/ipv6/icmp6.s"
-	@echo "... home/uzygncr/pico/pico-sdk/lib/lwip/src/core/ipv6/inet6.obj"
+	@echo "... home/uzygncr/pico/pico-sdk/lib/lwip/src/core/ipv6/inet6.o"
 	@echo "... home/uzygncr/pico/pico-sdk/lib/lwip/src/core/ipv6/inet6.i"
 	@echo "... home/uzygncr/pico/pico-sdk/lib/lwip/src/core/ipv6/inet6.s"
-	@echo "... home/uzygncr/pico/pico-sdk/lib/lwip/src/core/ipv6/ip6.obj"
+	@echo "... home/uzygncr/pico/pico-sdk/lib/lwip/src/core/ipv6/ip6.o"
 	@echo "... home/uzygncr/pico/pico-sdk/lib/lwip/src/core/ipv6/ip6.i"
 	@echo "... home/uzygncr/pico/pico-sdk/lib/lwip/src/core/ipv6/ip6.s"
-	@echo "... home/uzygncr/pico/pico-sdk/lib/lwip/src/core/ipv6/ip6_addr.obj"
+	@echo "... home/uzygncr/pico/pico-sdk/lib/lwip/src/core/ipv6/ip6_addr.o"
 	@echo "... home/uzygncr/pico/pico-sdk/lib/lwip/src/core/ipv6/ip6_addr.i"
 	@echo "... home/uzygncr/pico/pico-sdk/lib/lwip/src/core/ipv6/ip6_addr.s"
-	@echo "... home/uzygncr/pico/pico-sdk/lib/lwip/src/core/ipv6/ip6_frag.obj"
+	@echo "... home/uzygncr/pico/pico-sdk/lib/lwip/src/core/ipv6/ip6_frag.o"
 	@echo "... home/uzygncr/pico/pico-sdk/lib/lwip/src/core/ipv6/ip6_frag.i"
 	@echo "... home/uzygncr/pico/pico-sdk/lib/lwip/src/core/ipv6/ip6_frag.s"
-	@echo "... home/uzygncr/pico/pico-sdk/lib/lwip/src/core/ipv6/mld6.obj"
+	@echo "... home/uzygncr/pico/pico-sdk/lib/lwip/src/core/ipv6/mld6.o"
 	@echo "... home/uzygncr/pico/pico-sdk/lib/lwip/src/core/ipv6/mld6.i"
 	@echo "... home/uzygncr/pico/pico-sdk/lib/lwip/src/core/ipv6/mld6.s"
-	@echo "... home/uzygncr/pico/pico-sdk/lib/lwip/src/core/ipv6/nd6.obj"
+	@echo "... home/uzygncr/pico/pico-sdk/lib/lwip/src/core/ipv6/nd6.o"
 	@echo "... home/uzygncr/pico/pico-sdk/lib/lwip/src/core/ipv6/nd6.i"
 	@echo "... home/uzygncr/pico/pico-sdk/lib/lwip/src/core/ipv6/nd6.s"
-	@echo "... home/uzygncr/pico/pico-sdk/lib/lwip/src/core/mem.obj"
+	@echo "... home/uzygncr/pico/pico-sdk/lib/lwip/src/core/mem.o"
 	@echo "... home/uzygncr/pico/pico-sdk/lib/lwip/src/core/mem.i"
 	@echo "... home/uzygncr/pico/pico-sdk/lib/lwip/src/core/mem.s"
-	@echo "... home/uzygncr/pico/pico-sdk/lib/lwip/src/core/memp.obj"
+	@echo "... home/uzygncr/pico/pico-sdk/lib/lwip/src/core/memp.o"
 	@echo "... home/uzygncr/pico/pico-sdk/lib/lwip/src/core/memp.i"
 	@echo "... home/uzygncr/pico/pico-sdk/lib/lwip/src/core/memp.s"
-	@echo "... home/uzygncr/pico/pico-sdk/lib/lwip/src/core/netif.obj"
+	@echo "... home/uzygncr/pico/pico-sdk/lib/lwip/src/core/netif.o"
 	@echo "... home/uzygncr/pico/pico-sdk/lib/lwip/src/core/netif.i"
 	@echo "... home/uzygncr/pico/pico-sdk/lib/lwip/src/core/netif.s"
-	@echo "... home/uzygncr/pico/pico-sdk/lib/lwip/src/core/pbuf.obj"
+	@echo "... home/uzygncr/pico/pico-sdk/lib/lwip/src/core/pbuf.o"
 	@echo "... home/uzygncr/pico/pico-sdk/lib/lwip/src/core/pbuf.i"
 	@echo "... home/uzygncr/pico/pico-sdk/lib/lwip/src/core/pbuf.s"
-	@echo "... home/uzygncr/pico/pico-sdk/lib/lwip/src/core/raw.obj"
+	@echo "... home/uzygncr/pico/pico-sdk/lib/lwip/src/core/raw.o"
 	@echo "... home/uzygncr/pico/pico-sdk/lib/lwip/src/core/raw.i"
 	@echo "... home/uzygncr/pico/pico-sdk/lib/lwip/src/core/raw.s"
-	@echo "... home/uzygncr/pico/pico-sdk/lib/lwip/src/core/stats.obj"
+	@echo "... home/uzygncr/pico/pico-sdk/lib/lwip/src/core/stats.o"
 	@echo "... home/uzygncr/pico/pico-sdk/lib/lwip/src/core/stats.i"
 	@echo "... home/uzygncr/pico/pico-sdk/lib/lwip/src/core/stats.s"
-	@echo "... home/uzygncr/pico/pico-sdk/lib/lwip/src/core/sys.obj"
+	@echo "... home/uzygncr/pico/pico-sdk/lib/lwip/src/core/sys.o"
 	@echo "... home/uzygncr/pico/pico-sdk/lib/lwip/src/core/sys.i"
 	@echo "... home/uzygncr/pico/pico-sdk/lib/lwip/src/core/sys.s"
-	@echo "... home/uzygncr/pico/pico-sdk/lib/lwip/src/core/tcp.obj"
+	@echo "... home/uzygncr/pico/pico-sdk/lib/lwip/src/core/tcp.o"
 	@echo "... home/uzygncr/pico/pico-sdk/lib/lwip/src/core/tcp.i"
 	@echo "... home/uzygncr/pico/pico-sdk/lib/lwip/src/core/tcp.s"
-	@echo "... home/uzygncr/pico/pico-sdk/lib/lwip/src/core/tcp_in.obj"
+	@echo "... home/uzygncr/pico/pico-sdk/lib/lwip/src/core/tcp_in.o"
 	@echo "... home/uzygncr/pico/pico-sdk/lib/lwip/src/core/tcp_in.i"
 	@echo "... home/uzygncr/pico/pico-sdk/lib/lwip/src/core/tcp_in.s"
-	@echo "... home/uzygncr/pico/pico-sdk/lib/lwip/src/core/tcp_out.obj"
+	@echo "... home/uzygncr/pico/pico-sdk/lib/lwip/src/core/tcp_out.o"
 	@echo "... home/uzygncr/pico/pico-sdk/lib/lwip/src/core/tcp_out.i"
 	@echo "... home/uzygncr/pico/pico-sdk/lib/lwip/src/core/tcp_out.s"
-	@echo "... home/uzygncr/pico/pico-sdk/lib/lwip/src/core/timeouts.obj"
+	@echo "... home/uzygncr/pico/pico-sdk/lib/lwip/src/core/timeouts.o"
 	@echo "... home/uzygncr/pico/pico-sdk/lib/lwip/src/core/timeouts.i"
 	@echo "... home/uzygncr/pico/pico-sdk/lib/lwip/src/core/timeouts.s"
-	@echo "... home/uzygncr/pico/pico-sdk/lib/lwip/src/core/udp.obj"
+	@echo "... home/uzygncr/pico/pico-sdk/lib/lwip/src/core/udp.o"
 	@echo "... home/uzygncr/pico/pico-sdk/lib/lwip/src/core/udp.i"
 	@echo "... home/uzygncr/pico/pico-sdk/lib/lwip/src/core/udp.s"
-	@echo "... home/uzygncr/pico/pico-sdk/lib/lwip/src/netif/bridgeif.obj"
+	@echo "... home/uzygncr/pico/pico-sdk/lib/lwip/src/netif/bridgeif.o"
 	@echo "... home/uzygncr/pico/pico-sdk/lib/lwip/src/netif/bridgeif.i"
 	@echo "... home/uzygncr/pico/pico-sdk/lib/lwip/src/netif/bridgeif.s"
-	@echo "... home/uzygncr/pico/pico-sdk/lib/lwip/src/netif/bridgeif_fdb.obj"
+	@echo "... home/uzygncr/pico/pico-sdk/lib/lwip/src/netif/bridgeif_fdb.o"
 	@echo "... home/uzygncr/pico/pico-sdk/lib/lwip/src/netif/bridgeif_fdb.i"
 	@echo "... home/uzygncr/pico/pico-sdk/lib/lwip/src/netif/bridgeif_fdb.s"
-	@echo "... home/uzygncr/pico/pico-sdk/lib/lwip/src/netif/ethernet.obj"
+	@echo "... home/uzygncr/pico/pico-sdk/lib/lwip/src/netif/ethernet.o"
 	@echo "... home/uzygncr/pico/pico-sdk/lib/lwip/src/netif/ethernet.i"
 	@echo "... home/uzygncr/pico/pico-sdk/lib/lwip/src/netif/ethernet.s"
-	@echo "... home/uzygncr/pico/pico-sdk/lib/lwip/src/netif/lowpan6.obj"
+	@echo "... home/uzygncr/pico/pico-sdk/lib/lwip/src/netif/lowpan6.o"
 	@echo "... home/uzygncr/pico/pico-sdk/lib/lwip/src/netif/lowpan6.i"
 	@echo "... home/uzygncr/pico/pico-sdk/lib/lwip/src/netif/lowpan6.s"
-	@echo "... home/uzygncr/pico/pico-sdk/lib/lwip/src/netif/lowpan6_ble.obj"
+	@echo "... home/uzygncr/pico/pico-sdk/lib/lwip/src/netif/lowpan6_ble.o"
 	@echo "... home/uzygncr/pico/pico-sdk/lib/lwip/src/netif/lowpan6_ble.i"
 	@echo "... home/uzygncr/pico/pico-sdk/lib/lwip/src/netif/lowpan6_ble.s"
-	@echo "... home/uzygncr/pico/pico-sdk/lib/lwip/src/netif/lowpan6_common.obj"
+	@echo "... home/uzygncr/pico/pico-sdk/lib/lwip/src/netif/lowpan6_common.o"
 	@echo "... home/uzygncr/pico/pico-sdk/lib/lwip/src/netif/lowpan6_common.i"
 	@echo "... home/uzygncr/pico/pico-sdk/lib/lwip/src/netif/lowpan6_common.s"
-	@echo "... home/uzygncr/pico/pico-sdk/lib/lwip/src/netif/ppp/auth.obj"
+	@echo "... home/uzygncr/pico/pico-sdk/lib/lwip/src/netif/ppp/auth.o"
 	@echo "... home/uzygncr/pico/pico-sdk/lib/lwip/src/netif/ppp/auth.i"
 	@echo "... home/uzygncr/pico/pico-sdk/lib/lwip/src/netif/ppp/auth.s"
-	@echo "... home/uzygncr/pico/pico-sdk/lib/lwip/src/netif/ppp/ccp.obj"
+	@echo "... home/uzygncr/pico/pico-sdk/lib/lwip/src/netif/ppp/ccp.o"
 	@echo "... home/uzygncr/pico/pico-sdk/lib/lwip/src/netif/ppp/ccp.i"
 	@echo "... home/uzygncr/pico/pico-sdk/lib/lwip/src/netif/ppp/ccp.s"
-	@echo "... home/uzygncr/pico/pico-sdk/lib/lwip/src/netif/ppp/chap-md5.obj"
+	@echo "... home/uzygncr/pico/pico-sdk/lib/lwip/src/netif/ppp/chap-md5.o"
 	@echo "... home/uzygncr/pico/pico-sdk/lib/lwip/src/netif/ppp/chap-md5.i"
 	@echo "... home/uzygncr/pico/pico-sdk/lib/lwip/src/netif/ppp/chap-md5.s"
-	@echo "... home/uzygncr/pico/pico-sdk/lib/lwip/src/netif/ppp/chap-new.obj"
+	@echo "... home/uzygncr/pico/pico-sdk/lib/lwip/src/netif/ppp/chap-new.o"
 	@echo "... home/uzygncr/pico/pico-sdk/lib/lwip/src/netif/ppp/chap-new.i"
 	@echo "... home/uzygncr/pico/pico-sdk/lib/lwip/src/netif/ppp/chap-new.s"
-	@echo "... home/uzygncr/pico/pico-sdk/lib/lwip/src/netif/ppp/chap_ms.obj"
+	@echo "... home/uzygncr/pico/pico-sdk/lib/lwip/src/netif/ppp/chap_ms.o"
 	@echo "... home/uzygncr/pico/pico-sdk/lib/lwip/src/netif/ppp/chap_ms.i"
 	@echo "... home/uzygncr/pico/pico-sdk/lib/lwip/src/netif/ppp/chap_ms.s"
-	@echo "... home/uzygncr/pico/pico-sdk/lib/lwip/src/netif/ppp/demand.obj"
+	@echo "... home/uzygncr/pico/pico-sdk/lib/lwip/src/netif/ppp/demand.o"
 	@echo "... home/uzygncr/pico/pico-sdk/lib/lwip/src/netif/ppp/demand.i"
 	@echo "... home/uzygncr/pico/pico-sdk/lib/lwip/src/netif/ppp/demand.s"
-	@echo "... home/uzygncr/pico/pico-sdk/lib/lwip/src/netif/ppp/eap.obj"
+	@echo "... home/uzygncr/pico/pico-sdk/lib/lwip/src/netif/ppp/eap.o"
 	@echo "... home/uzygncr/pico/pico-sdk/lib/lwip/src/netif/ppp/eap.i"
 	@echo "... home/uzygncr/pico/pico-sdk/lib/lwip/src/netif/ppp/eap.s"
-	@echo "... home/uzygncr/pico/pico-sdk/lib/lwip/src/netif/ppp/ecp.obj"
+	@echo "... home/uzygncr/pico/pico-sdk/lib/lwip/src/netif/ppp/ecp.o"
 	@echo "... home/uzygncr/pico/pico-sdk/lib/lwip/src/netif/ppp/ecp.i"
 	@echo "... home/uzygncr/pico/pico-sdk/lib/lwip/src/netif/ppp/ecp.s"
-	@echo "... home/uzygncr/pico/pico-sdk/lib/lwip/src/netif/ppp/eui64.obj"
+	@echo "... home/uzygncr/pico/pico-sdk/lib/lwip/src/netif/ppp/eui64.o"
 	@echo "... home/uzygncr/pico/pico-sdk/lib/lwip/src/netif/ppp/eui64.i"
 	@echo "... home/uzygncr/pico/pico-sdk/lib/lwip/src/netif/ppp/eui64.s"
-	@echo "... home/uzygncr/pico/pico-sdk/lib/lwip/src/netif/ppp/fsm.obj"
+	@echo "... home/uzygncr/pico/pico-sdk/lib/lwip/src/netif/ppp/fsm.o"
 	@echo "... home/uzygncr/pico/pico-sdk/lib/lwip/src/netif/ppp/fsm.i"
 	@echo "... home/uzygncr/pico/pico-sdk/lib/lwip/src/netif/ppp/fsm.s"
-	@echo "... home/uzygncr/pico/pico-sdk/lib/lwip/src/netif/ppp/ipcp.obj"
+	@echo "... home/uzygncr/pico/pico-sdk/lib/lwip/src/netif/ppp/ipcp.o"
 	@echo "... home/uzygncr/pico/pico-sdk/lib/lwip/src/netif/ppp/ipcp.i"
 	@echo "... home/uzygncr/pico/pico-sdk/lib/lwip/src/netif/ppp/ipcp.s"
-	@echo "... home/uzygncr/pico/pico-sdk/lib/lwip/src/netif/ppp/ipv6cp.obj"
+	@echo "... home/uzygncr/pico/pico-sdk/lib/lwip/src/netif/ppp/ipv6cp.o"
 	@echo "... home/uzygncr/pico/pico-sdk/lib/lwip/src/netif/ppp/ipv6cp.i"
 	@echo "... home/uzygncr/pico/pico-sdk/lib/lwip/src/netif/ppp/ipv6cp.s"
-	@echo "... home/uzygncr/pico/pico-sdk/lib/lwip/src/netif/ppp/lcp.obj"
+	@echo "... home/uzygncr/pico/pico-sdk/lib/lwip/src/netif/ppp/lcp.o"
 	@echo "... home/uzygncr/pico/pico-sdk/lib/lwip/src/netif/ppp/lcp.i"
 	@echo "... home/uzygncr/pico/pico-sdk/lib/lwip/src/netif/ppp/lcp.s"
-	@echo "... home/uzygncr/pico/pico-sdk/lib/lwip/src/netif/ppp/magic.obj"
+	@echo "... home/uzygncr/pico/pico-sdk/lib/lwip/src/netif/ppp/magic.o"
 	@echo "... home/uzygncr/pico/pico-sdk/lib/lwip/src/netif/ppp/magic.i"
 	@echo "... home/uzygncr/pico/pico-sdk/lib/lwip/src/netif/ppp/magic.s"
-	@echo "... home/uzygncr/pico/pico-sdk/lib/lwip/src/netif/ppp/mppe.obj"
+	@echo "... home/uzygncr/pico/pico-sdk/lib/lwip/src/netif/ppp/mppe.o"
 	@echo "... home/uzygncr/pico/pico-sdk/lib/lwip/src/netif/ppp/mppe.i"
 	@echo "... home/uzygncr/pico/pico-sdk/lib/lwip/src/netif/ppp/mppe.s"
-	@echo "... home/uzygncr/pico/pico-sdk/lib/lwip/src/netif/ppp/multilink.obj"
+	@echo "... home/uzygncr/pico/pico-sdk/lib/lwip/src/netif/ppp/multilink.o"
 	@echo "... home/uzygncr/pico/pico-sdk/lib/lwip/src/netif/ppp/multilink.i"
 	@echo "... home/uzygncr/pico/pico-sdk/lib/lwip/src/netif/ppp/multilink.s"
-	@echo "... home/uzygncr/pico/pico-sdk/lib/lwip/src/netif/ppp/polarssl/arc4.obj"
+	@echo "... home/uzygncr/pico/pico-sdk/lib/lwip/src/netif/ppp/polarssl/arc4.o"
 	@echo "... home/uzygncr/pico/pico-sdk/lib/lwip/src/netif/ppp/polarssl/arc4.i"
 	@echo "... home/uzygncr/pico/pico-sdk/lib/lwip/src/netif/ppp/polarssl/arc4.s"
-	@echo "... home/uzygncr/pico/pico-sdk/lib/lwip/src/netif/ppp/polarssl/des.obj"
+	@echo "... home/uzygncr/pico/pico-sdk/lib/lwip/src/netif/ppp/polarssl/des.o"
 	@echo "... home/uzygncr/pico/pico-sdk/lib/lwip/src/netif/ppp/polarssl/des.i"
 	@echo "... home/uzygncr/pico/pico-sdk/lib/lwip/src/netif/ppp/polarssl/des.s"
-	@echo "... home/uzygncr/pico/pico-sdk/lib/lwip/src/netif/ppp/polarssl/md4.obj"
+	@echo "... home/uzygncr/pico/pico-sdk/lib/lwip/src/netif/ppp/polarssl/md4.o"
 	@echo "... home/uzygncr/pico/pico-sdk/lib/lwip/src/netif/ppp/polarssl/md4.i"
 	@echo "... home/uzygncr/pico/pico-sdk/lib/lwip/src/netif/ppp/polarssl/md4.s"
-	@echo "... home/uzygncr/pico/pico-sdk/lib/lwip/src/netif/ppp/polarssl/md5.obj"
+	@echo "... home/uzygncr/pico/pico-sdk/lib/lwip/src/netif/ppp/polarssl/md5.o"
 	@echo "... home/uzygncr/pico/pico-sdk/lib/lwip/src/netif/ppp/polarssl/md5.i"
 	@echo "... home/uzygncr/pico/pico-sdk/lib/lwip/src/netif/ppp/polarssl/md5.s"
-	@echo "... home/uzygncr/pico/pico-sdk/lib/lwip/src/netif/ppp/polarssl/sha1.obj"
+	@echo "... home/uzygncr/pico/pico-sdk/lib/lwip/src/netif/ppp/polarssl/sha1.o"
 	@echo "... home/uzygncr/pico/pico-sdk/lib/lwip/src/netif/ppp/polarssl/sha1.i"
 	@echo "... home/uzygncr/pico/pico-sdk/lib/lwip/src/netif/ppp/polarssl/sha1.s"
-	@echo "... home/uzygncr/pico/pico-sdk/lib/lwip/src/netif/ppp/ppp.obj"
+	@echo "... home/uzygncr/pico/pico-sdk/lib/lwip/src/netif/ppp/ppp.o"
 	@echo "... home/uzygncr/pico/pico-sdk/lib/lwip/src/netif/ppp/ppp.i"
 	@echo "... home/uzygncr/pico/pico-sdk/lib/lwip/src/netif/ppp/ppp.s"
-	@echo "... home/uzygncr/pico/pico-sdk/lib/lwip/src/netif/ppp/pppapi.obj"
+	@echo "... home/uzygncr/pico/pico-sdk/lib/lwip/src/netif/ppp/pppapi.o"
 	@echo "... home/uzygncr/pico/pico-sdk/lib/lwip/src/netif/ppp/pppapi.i"
 	@echo "... home/uzygncr/pico/pico-sdk/lib/lwip/src/netif/ppp/pppapi.s"
-	@echo "... home/uzygncr/pico/pico-sdk/lib/lwip/src/netif/ppp/pppcrypt.obj"
+	@echo "... home/uzygncr/pico/pico-sdk/lib/lwip/src/netif/ppp/pppcrypt.o"
 	@echo "... home/uzygncr/pico/pico-sdk/lib/lwip/src/netif/ppp/pppcrypt.i"
 	@echo "... home/uzygncr/pico/pico-sdk/lib/lwip/src/netif/ppp/pppcrypt.s"
-	@echo "... home/uzygncr/pico/pico-sdk/lib/lwip/src/netif/ppp/pppoe.obj"
+	@echo "... home/uzygncr/pico/pico-sdk/lib/lwip/src/netif/ppp/pppoe.o"
 	@echo "... home/uzygncr/pico/pico-sdk/lib/lwip/src/netif/ppp/pppoe.i"
 	@echo "... home/uzygncr/pico/pico-sdk/lib/lwip/src/netif/ppp/pppoe.s"
-	@echo "... home/uzygncr/pico/pico-sdk/lib/lwip/src/netif/ppp/pppol2tp.obj"
+	@echo "... home/uzygncr/pico/pico-sdk/lib/lwip/src/netif/ppp/pppol2tp.o"
 	@echo "... home/uzygncr/pico/pico-sdk/lib/lwip/src/netif/ppp/pppol2tp.i"
 	@echo "... home/uzygncr/pico/pico-sdk/lib/lwip/src/netif/ppp/pppol2tp.s"
-	@echo "... home/uzygncr/pico/pico-sdk/lib/lwip/src/netif/ppp/pppos.obj"
+	@echo "... home/uzygncr/pico/pico-sdk/lib/lwip/src/netif/ppp/pppos.o"
 	@echo "... home/uzygncr/pico/pico-sdk/lib/lwip/src/netif/ppp/pppos.i"
 	@echo "... home/uzygncr/pico/pico-sdk/lib/lwip/src/netif/ppp/pppos.s"
-	@echo "... home/uzygncr/pico/pico-sdk/lib/lwip/src/netif/ppp/upap.obj"
+	@echo "... home/uzygncr/pico/pico-sdk/lib/lwip/src/netif/ppp/upap.o"
 	@echo "... home/uzygncr/pico/pico-sdk/lib/lwip/src/netif/ppp/upap.i"
 	@echo "... home/uzygncr/pico/pico-sdk/lib/lwip/src/netif/ppp/upap.s"
-	@echo "... home/uzygncr/pico/pico-sdk/lib/lwip/src/netif/ppp/utils.obj"
+	@echo "... home/uzygncr/pico/pico-sdk/lib/lwip/src/netif/ppp/utils.o"
 	@echo "... home/uzygncr/pico/pico-sdk/lib/lwip/src/netif/ppp/utils.i"
 	@echo "... home/uzygncr/pico/pico-sdk/lib/lwip/src/netif/ppp/utils.s"
-	@echo "... home/uzygncr/pico/pico-sdk/lib/lwip/src/netif/ppp/vj.obj"
+	@echo "... home/uzygncr/pico/pico-sdk/lib/lwip/src/netif/ppp/vj.o"
 	@echo "... home/uzygncr/pico/pico-sdk/lib/lwip/src/netif/ppp/vj.i"
 	@echo "... home/uzygncr/pico/pico-sdk/lib/lwip/src/netif/ppp/vj.s"
-	@echo "... home/uzygncr/pico/pico-sdk/lib/lwip/src/netif/slipif.obj"
+	@echo "... home/uzygncr/pico/pico-sdk/lib/lwip/src/netif/slipif.o"
 	@echo "... home/uzygncr/pico/pico-sdk/lib/lwip/src/netif/slipif.i"
 	@echo "... home/uzygncr/pico/pico-sdk/lib/lwip/src/netif/slipif.s"
-	@echo "... home/uzygncr/pico/pico-sdk/lib/lwip/src/netif/zepif.obj"
+	@echo "... home/uzygncr/pico/pico-sdk/lib/lwip/src/netif/zepif.o"
 	@echo "... home/uzygncr/pico/pico-sdk/lib/lwip/src/netif/zepif.i"
 	@echo "... home/uzygncr/pico/pico-sdk/lib/lwip/src/netif/zepif.s"
-	@echo "... home/uzygncr/pico/pico-sdk/src/common/hardware_claim/claim.obj"
+	@echo "... home/uzygncr/pico/pico-sdk/src/common/hardware_claim/claim.o"
 	@echo "... home/uzygncr/pico/pico-sdk/src/common/hardware_claim/claim.i"
 	@echo "... home/uzygncr/pico/pico-sdk/src/common/hardware_claim/claim.s"
-	@echo "... home/uzygncr/pico/pico-sdk/src/common/pico_sync/critical_section.obj"
+	@echo "... home/uzygncr/pico/pico-sdk/src/common/pico_sync/critical_section.o"
 	@echo "... home/uzygncr/pico/pico-sdk/src/common/pico_sync/critical_section.i"
 	@echo "... home/uzygncr/pico/pico-sdk/src/common/pico_sync/critical_section.s"
-	@echo "... home/uzygncr/pico/pico-sdk/src/common/pico_sync/lock_core.obj"
+	@echo "... home/uzygncr/pico/pico-sdk/src/common/pico_sync/lock_core.o"
 	@echo "... home/uzygncr/pico/pico-sdk/src/common/pico_sync/lock_core.i"
 	@echo "... home/uzygncr/pico/pico-sdk/src/common/pico_sync/lock_core.s"
-	@echo "... home/uzygncr/pico/pico-sdk/src/common/pico_sync/mutex.obj"
+	@echo "... home/uzygncr/pico/pico-sdk/src/common/pico_sync/mutex.o"
 	@echo "... home/uzygncr/pico/pico-sdk/src/common/pico_sync/mutex.i"
 	@echo "... home/uzygncr/pico/pico-sdk/src/common/pico_sync/mutex.s"
-	@echo "... home/uzygncr/pico/pico-sdk/src/common/pico_sync/sem.obj"
+	@echo "... home/uzygncr/pico/pico-sdk/src/common/pico_sync/sem.o"
 	@echo "... home/uzygncr/pico/pico-sdk/src/common/pico_sync/sem.i"
 	@echo "... home/uzygncr/pico/pico-sdk/src/common/pico_sync/sem.s"
-	@echo "... home/uzygncr/pico/pico-sdk/src/common/pico_time/time.obj"
+	@echo "... home/uzygncr/pico/pico-sdk/src/common/pico_time/time.o"
 	@echo "... home/uzygncr/pico/pico-sdk/src/common/pico_time/time.i"
 	@echo "... home/uzygncr/pico/pico-sdk/src/common/pico_time/time.s"
-	@echo "... home/uzygncr/pico/pico-sdk/src/common/pico_time/timeout_helper.obj"
+	@echo "... home/uzygncr/pico/pico-sdk/src/common/pico_time/timeout_helper.o"
 	@echo "... home/uzygncr/pico/pico-sdk/src/common/pico_time/timeout_helper.i"
 	@echo "... home/uzygncr/pico/pico-sdk/src/common/pico_time/timeout_helper.s"
-	@echo "... home/uzygncr/pico/pico-sdk/src/common/pico_util/datetime.obj"
+	@echo "... home/uzygncr/pico/pico-sdk/src/common/pico_util/datetime.o"
 	@echo "... home/uzygncr/pico/pico-sdk/src/common/pico_util/datetime.i"
 	@echo "... home/uzygncr/pico/pico-sdk/src/common/pico_util/datetime.s"
-	@echo "... home/uzygncr/pico/pico-sdk/src/common/pico_util/pheap.obj"
+	@echo "... home/uzygncr/pico/pico-sdk/src/common/pico_util/pheap.o"
 	@echo "... home/uzygncr/pico/pico-sdk/src/common/pico_util/pheap.i"
 	@echo "... home/uzygncr/pico/pico-sdk/src/common/pico_util/pheap.s"
-	@echo "... home/uzygncr/pico/pico-sdk/src/common/pico_util/queue.obj"
+	@echo "... home/uzygncr/pico/pico-sdk/src/common/pico_util/queue.o"
 	@echo "... home/uzygncr/pico/pico-sdk/src/common/pico_util/queue.i"
 	@echo "... home/uzygncr/pico/pico-sdk/src/common/pico_util/queue.s"
-	@echo "... home/uzygncr/pico/pico-sdk/src/rp2040/pico_platform/platform.obj"
+	@echo "... home/uzygncr/pico/pico-sdk/src/rp2040/pico_platform/platform.o"
 	@echo "... home/uzygncr/pico/pico-sdk/src/rp2040/pico_platform/platform.i"
 	@echo "... home/uzygncr/pico/pico-sdk/src/rp2040/pico_platform/platform.s"
-	@echo "... home/uzygncr/pico/pico-sdk/src/rp2_common/hardware_boot_lock/boot_lock.obj"
+	@echo "... home/uzygncr/pico/pico-sdk/src/rp2_common/hardware_boot_lock/boot_lock.o"
 	@echo "... home/uzygncr/pico/pico-sdk/src/rp2_common/hardware_boot_lock/boot_lock.i"
 	@echo "... home/uzygncr/pico/pico-sdk/src/rp2_common/hardware_boot_lock/boot_lock.s"
-	@echo "... home/uzygncr/pico/pico-sdk/src/rp2_common/hardware_clocks/clocks.obj"
+	@echo "... home/uzygncr/pico/pico-sdk/src/rp2_common/hardware_clocks/clocks.o"
 	@echo "... home/uzygncr/pico/pico-sdk/src/rp2_common/hardware_clocks/clocks.i"
 	@echo "... home/uzygncr/pico/pico-sdk/src/rp2_common/hardware_clocks/clocks.s"
-	@echo "... home/uzygncr/pico/pico-sdk/src/rp2_common/hardware_divider/divider.obj"
-	@echo "... home/uzygncr/pico/pico-sdk/src/rp2_common/hardware_dma/dma.obj"
+	@echo "... home/uzygncr/pico/pico-sdk/src/rp2_common/hardware_divider/divider.o"
+	@echo "... home/uzygncr/pico/pico-sdk/src/rp2_common/hardware_dma/dma.o"
 	@echo "... home/uzygncr/pico/pico-sdk/src/rp2_common/hardware_dma/dma.i"
 	@echo "... home/uzygncr/pico/pico-sdk/src/rp2_common/hardware_dma/dma.s"
-	@echo "... home/uzygncr/pico/pico-sdk/src/rp2_common/hardware_exception/exception.obj"
+	@echo "... home/uzygncr/pico/pico-sdk/src/rp2_common/hardware_exception/exception.o"
 	@echo "... home/uzygncr/pico/pico-sdk/src/rp2_common/hardware_exception/exception.i"
 	@echo "... home/uzygncr/pico/pico-sdk/src/rp2_common/hardware_exception/exception.s"
-	@echo "... home/uzygncr/pico/pico-sdk/src/rp2_common/hardware_flash/flash.obj"
+	@echo "... home/uzygncr/pico/pico-sdk/src/rp2_common/hardware_flash/flash.o"
 	@echo "... home/uzygncr/pico/pico-sdk/src/rp2_common/hardware_flash/flash.i"
 	@echo "... home/uzygncr/pico/pico-sdk/src/rp2_common/hardware_flash/flash.s"
-	@echo "... home/uzygncr/pico/pico-sdk/src/rp2_common/hardware_gpio/gpio.obj"
+	@echo "... home/uzygncr/pico/pico-sdk/src/rp2_common/hardware_gpio/gpio.o"
 	@echo "... home/uzygncr/pico/pico-sdk/src/rp2_common/hardware_gpio/gpio.i"
 	@echo "... home/uzygncr/pico/pico-sdk/src/rp2_common/hardware_gpio/gpio.s"
-	@echo "... home/uzygncr/pico/pico-sdk/src/rp2_common/hardware_irq/irq.obj"
+	@echo "... home/uzygncr/pico/pico-sdk/src/rp2_common/hardware_irq/irq.o"
 	@echo "... home/uzygncr/pico/pico-sdk/src/rp2_common/hardware_irq/irq.i"
 	@echo "... home/uzygncr/pico/pico-sdk/src/rp2_common/hardware_irq/irq.s"
-	@echo "... home/uzygncr/pico/pico-sdk/src/rp2_common/hardware_irq/irq_handler_chain.obj"
-	@echo "... home/uzygncr/pico/pico-sdk/src/rp2_common/hardware_pio/pio.obj"
+	@echo "... home/uzygncr/pico/pico-sdk/src/rp2_common/hardware_irq/irq_handler_chain.o"
+	@echo "... home/uzygncr/pico/pico-sdk/src/rp2_common/hardware_pio/pio.o"
 	@echo "... home/uzygncr/pico/pico-sdk/src/rp2_common/hardware_pio/pio.i"
 	@echo "... home/uzygncr/pico/pico-sdk/src/rp2_common/hardware_pio/pio.s"
-	@echo "... home/uzygncr/pico/pico-sdk/src/rp2_common/hardware_pll/pll.obj"
+	@echo "... home/uzygncr/pico/pico-sdk/src/rp2_common/hardware_pll/pll.o"
 	@echo "... home/uzygncr/pico/pico-sdk/src/rp2_common/hardware_pll/pll.i"
 	@echo "... home/uzygncr/pico/pico-sdk/src/rp2_common/hardware_pll/pll.s"
-	@echo "... home/uzygncr/pico/pico-sdk/src/rp2_common/hardware_sync/sync.obj"
+	@echo "... home/uzygncr/pico/pico-sdk/src/rp2_common/hardware_sync/sync.o"
 	@echo "... home/uzygncr/pico/pico-sdk/src/rp2_common/hardware_sync/sync.i"
 	@echo "... home/uzygncr/pico/pico-sdk/src/rp2_common/hardware_sync/sync.s"
-	@echo "... home/uzygncr/pico/pico-sdk/src/rp2_common/hardware_sync_spin_lock/sync_spin_lock.obj"
+	@echo "... home/uzygncr/pico/pico-sdk/src/rp2_common/hardware_sync_spin_lock/sync_spin_lock.o"
 	@echo "... home/uzygncr/pico/pico-sdk/src/rp2_common/hardware_sync_spin_lock/sync_spin_lock.i"
 	@echo "... home/uzygncr/pico/pico-sdk/src/rp2_common/hardware_sync_spin_lock/sync_spin_lock.s"
-	@echo "... home/uzygncr/pico/pico-sdk/src/rp2_common/hardware_ticks/ticks.obj"
+	@echo "... home/uzygncr/pico/pico-sdk/src/rp2_common/hardware_ticks/ticks.o"
 	@echo "... home/uzygncr/pico/pico-sdk/src/rp2_common/hardware_ticks/ticks.i"
 	@echo "... home/uzygncr/pico/pico-sdk/src/rp2_common/hardware_ticks/ticks.s"
-	@echo "... home/uzygncr/pico/pico-sdk/src/rp2_common/hardware_timer/timer.obj"
+	@echo "... home/uzygncr/pico/pico-sdk/src/rp2_common/hardware_timer/timer.o"
 	@echo "... home/uzygncr/pico/pico-sdk/src/rp2_common/hardware_timer/timer.i"
 	@echo "... home/uzygncr/pico/pico-sdk/src/rp2_common/hardware_timer/timer.s"
-	@echo "... home/uzygncr/pico/pico-sdk/src/rp2_common/hardware_uart/uart.obj"
+	@echo "... home/uzygncr/pico/pico-sdk/src/rp2_common/hardware_uart/uart.o"
 	@echo "... home/uzygncr/pico/pico-sdk/src/rp2_common/hardware_uart/uart.i"
 	@echo "... home/uzygncr/pico/pico-sdk/src/rp2_common/hardware_uart/uart.s"
-	@echo "... home/uzygncr/pico/pico-sdk/src/rp2_common/hardware_vreg/vreg.obj"
+	@echo "... home/uzygncr/pico/pico-sdk/src/rp2_common/hardware_vreg/vreg.o"
 	@echo "... home/uzygncr/pico/pico-sdk/src/rp2_common/hardware_vreg/vreg.i"
 	@echo "... home/uzygncr/pico/pico-sdk/src/rp2_common/hardware_vreg/vreg.s"
-	@echo "... home/uzygncr/pico/pico-sdk/src/rp2_common/hardware_watchdog/watchdog.obj"
+	@echo "... home/uzygncr/pico/pico-sdk/src/rp2_common/hardware_watchdog/watchdog.o"
 	@echo "... home/uzygncr/pico/pico-sdk/src/rp2_common/hardware_watchdog/watchdog.i"
 	@echo "... home/uzygncr/pico/pico-sdk/src/rp2_common/hardware_watchdog/watchdog.s"
-	@echo "... home/uzygncr/pico/pico-sdk/src/rp2_common/hardware_xosc/xosc.obj"
+	@echo "... home/uzygncr/pico/pico-sdk/src/rp2_common/hardware_xip_cache/xip_cache.o"
+	@echo "... home/uzygncr/pico/pico-sdk/src/rp2_common/hardware_xip_cache/xip_cache.i"
+	@echo "... home/uzygncr/pico/pico-sdk/src/rp2_common/hardware_xip_cache/xip_cache.s"
+	@echo "... home/uzygncr/pico/pico-sdk/src/rp2_common/hardware_xosc/xosc.o"
 	@echo "... home/uzygncr/pico/pico-sdk/src/rp2_common/hardware_xosc/xosc.i"
 	@echo "... home/uzygncr/pico/pico-sdk/src/rp2_common/hardware_xosc/xosc.s"
-	@echo "... home/uzygncr/pico/pico-sdk/src/rp2_common/pico_async_context/async_context_base.obj"
+	@echo "... home/uzygncr/pico/pico-sdk/src/rp2_common/pico_async_context/async_context_base.o"
 	@echo "... home/uzygncr/pico/pico-sdk/src/rp2_common/pico_async_context/async_context_base.i"
 	@echo "... home/uzygncr/pico/pico-sdk/src/rp2_common/pico_async_context/async_context_base.s"
-	@echo "... home/uzygncr/pico/pico-sdk/src/rp2_common/pico_async_context/async_context_threadsafe_background.obj"
+	@echo "... home/uzygncr/pico/pico-sdk/src/rp2_common/pico_async_context/async_context_threadsafe_background.o"
 	@echo "... home/uzygncr/pico/pico-sdk/src/rp2_common/pico_async_context/async_context_threadsafe_background.i"
 	@echo "... home/uzygncr/pico/pico-sdk/src/rp2_common/pico_async_context/async_context_threadsafe_background.s"
-	@echo "... home/uzygncr/pico/pico-sdk/src/rp2_common/pico_atomic/atomic.obj"
+	@echo "... home/uzygncr/pico/pico-sdk/src/rp2_common/pico_atomic/atomic.o"
 	@echo "... home/uzygncr/pico/pico-sdk/src/rp2_common/pico_atomic/atomic.i"
 	@echo "... home/uzygncr/pico/pico-sdk/src/rp2_common/pico_atomic/atomic.s"
-	@echo "... home/uzygncr/pico/pico-sdk/src/rp2_common/pico_bit_ops/bit_ops_aeabi.obj"
-	@echo "... home/uzygncr/pico/pico-sdk/src/rp2_common/pico_bootrom/bootrom.obj"
+	@echo "... home/uzygncr/pico/pico-sdk/src/rp2_common/pico_bit_ops/bit_ops_aeabi.o"
+	@echo "... home/uzygncr/pico/pico-sdk/src/rp2_common/pico_bootrom/bootrom.o"
 	@echo "... home/uzygncr/pico/pico-sdk/src/rp2_common/pico_bootrom/bootrom.i"
 	@echo "... home/uzygncr/pico/pico-sdk/src/rp2_common/pico_bootrom/bootrom.s"
-	@echo "... home/uzygncr/pico/pico-sdk/src/rp2_common/pico_bootrom/bootrom_lock.obj"
+	@echo "... home/uzygncr/pico/pico-sdk/src/rp2_common/pico_bootrom/bootrom_lock.o"
 	@echo "... home/uzygncr/pico/pico-sdk/src/rp2_common/pico_bootrom/bootrom_lock.i"
 	@echo "... home/uzygncr/pico/pico-sdk/src/rp2_common/pico_bootrom/bootrom_lock.s"
-	@echo "... home/uzygncr/pico/pico-sdk/src/rp2_common/pico_clib_interface/newlib_interface.obj"
+	@echo "... home/uzygncr/pico/pico-sdk/src/rp2_common/pico_clib_interface/newlib_interface.o"
 	@echo "... home/uzygncr/pico/pico-sdk/src/rp2_common/pico_clib_interface/newlib_interface.i"
 	@echo "... home/uzygncr/pico/pico-sdk/src/rp2_common/pico_clib_interface/newlib_interface.s"
-	@echo "... home/uzygncr/pico/pico-sdk/src/rp2_common/pico_crt0/crt0.obj"
-	@echo "... home/uzygncr/pico/pico-sdk/src/rp2_common/pico_cxx_options/new_delete.obj"
+	@echo "... home/uzygncr/pico/pico-sdk/src/rp2_common/pico_crt0/crt0.o"
+	@echo "... home/uzygncr/pico/pico-sdk/src/rp2_common/pico_cxx_options/new_delete.o"
 	@echo "... home/uzygncr/pico/pico-sdk/src/rp2_common/pico_cxx_options/new_delete.i"
 	@echo "... home/uzygncr/pico/pico-sdk/src/rp2_common/pico_cxx_options/new_delete.s"
-	@echo "... home/uzygncr/pico/pico-sdk/src/rp2_common/pico_cyw43_arch/cyw43_arch.obj"
+	@echo "... home/uzygncr/pico/pico-sdk/src/rp2_common/pico_cyw43_arch/cyw43_arch.o"
 	@echo "... home/uzygncr/pico/pico-sdk/src/rp2_common/pico_cyw43_arch/cyw43_arch.i"
 	@echo "... home/uzygncr/pico/pico-sdk/src/rp2_common/pico_cyw43_arch/cyw43_arch.s"
-	@echo "... home/uzygncr/pico/pico-sdk/src/rp2_common/pico_cyw43_arch/cyw43_arch_freertos.obj"
+	@echo "... home/uzygncr/pico/pico-sdk/src/rp2_common/pico_cyw43_arch/cyw43_arch_freertos.o"
 	@echo "... home/uzygncr/pico/pico-sdk/src/rp2_common/pico_cyw43_arch/cyw43_arch_freertos.i"
 	@echo "... home/uzygncr/pico/pico-sdk/src/rp2_common/pico_cyw43_arch/cyw43_arch_freertos.s"
-	@echo "... home/uzygncr/pico/pico-sdk/src/rp2_common/pico_cyw43_arch/cyw43_arch_poll.obj"
+	@echo "... home/uzygncr/pico/pico-sdk/src/rp2_common/pico_cyw43_arch/cyw43_arch_poll.o"
 	@echo "... home/uzygncr/pico/pico-sdk/src/rp2_common/pico_cyw43_arch/cyw43_arch_poll.i"
 	@echo "... home/uzygncr/pico/pico-sdk/src/rp2_common/pico_cyw43_arch/cyw43_arch_poll.s"
-	@echo "... home/uzygncr/pico/pico-sdk/src/rp2_common/pico_cyw43_arch/cyw43_arch_threadsafe_background.obj"
+	@echo "... home/uzygncr/pico/pico-sdk/src/rp2_common/pico_cyw43_arch/cyw43_arch_threadsafe_background.o"
 	@echo "... home/uzygncr/pico/pico-sdk/src/rp2_common/pico_cyw43_arch/cyw43_arch_threadsafe_background.i"
 	@echo "... home/uzygncr/pico/pico-sdk/src/rp2_common/pico_cyw43_arch/cyw43_arch_threadsafe_background.s"
-	@echo "... home/uzygncr/pico/pico-sdk/src/rp2_common/pico_cyw43_driver/cybt_shared_bus/cybt_shared_bus.obj"
+	@echo "... home/uzygncr/pico/pico-sdk/src/rp2_common/pico_cyw43_driver/cybt_shared_bus/cybt_shared_bus.o"
 	@echo "... home/uzygncr/pico/pico-sdk/src/rp2_common/pico_cyw43_driver/cybt_shared_bus/cybt_shared_bus.i"
 	@echo "... home/uzygncr/pico/pico-sdk/src/rp2_common/pico_cyw43_driver/cybt_shared_bus/cybt_shared_bus.s"
-	@echo "... home/uzygncr/pico/pico-sdk/src/rp2_common/pico_cyw43_driver/cybt_shared_bus/cybt_shared_bus_driver.obj"
+	@echo "... home/uzygncr/pico/pico-sdk/src/rp2_common/pico_cyw43_driver/cybt_shared_bus/cybt_shared_bus_driver.o"
 	@echo "... home/uzygncr/pico/pico-sdk/src/rp2_common/pico_cyw43_driver/cybt_shared_bus/cybt_shared_bus_driver.i"
 	@echo "... home/uzygncr/pico/pico-sdk/src/rp2_common/pico_cyw43_driver/cybt_shared_bus/cybt_shared_bus_driver.s"
-	@echo "... home/uzygncr/pico/pico-sdk/src/rp2_common/pico_cyw43_driver/cyw43_bus_pio_spi.obj"
+	@echo "... home/uzygncr/pico/pico-sdk/src/rp2_common/pico_cyw43_driver/cyw43_bus_pio_spi.o"
 	@echo "... home/uzygncr/pico/pico-sdk/src/rp2_common/pico_cyw43_driver/cyw43_bus_pio_spi.i"
 	@echo "... home/uzygncr/pico/pico-sdk/src/rp2_common/pico_cyw43_driver/cyw43_bus_pio_spi.s"
-	@echo "... home/uzygncr/pico/pico-sdk/src/rp2_common/pico_cyw43_driver/cyw43_driver.obj"
+	@echo "... home/uzygncr/pico/pico-sdk/src/rp2_common/pico_cyw43_driver/cyw43_driver.o"
 	@echo "... home/uzygncr/pico/pico-sdk/src/rp2_common/pico_cyw43_driver/cyw43_driver.i"
 	@echo "... home/uzygncr/pico/pico-sdk/src/rp2_common/pico_cyw43_driver/cyw43_driver.s"
-	@echo "... home/uzygncr/pico/pico-sdk/src/rp2_common/pico_divider/divider_hardware.obj"
-	@echo "... home/uzygncr/pico/pico-sdk/src/rp2_common/pico_double/double_aeabi_rp2040.obj"
-	@echo "... home/uzygncr/pico/pico-sdk/src/rp2_common/pico_double/double_init_rom_rp2040.obj"
+	@echo "... home/uzygncr/pico/pico-sdk/src/rp2_common/pico_divider/divider_hardware.o"
+	@echo "... home/uzygncr/pico/pico-sdk/src/rp2_common/pico_double/double_aeabi_rp2040.o"
+	@echo "... home/uzygncr/pico/pico-sdk/src/rp2_common/pico_double/double_init_rom_rp2040.o"
 	@echo "... home/uzygncr/pico/pico-sdk/src/rp2_common/pico_double/double_init_rom_rp2040.i"
 	@echo "... home/uzygncr/pico/pico-sdk/src/rp2_common/pico_double/double_init_rom_rp2040.s"
-	@echo "... home/uzygncr/pico/pico-sdk/src/rp2_common/pico_double/double_math.obj"
+	@echo "... home/uzygncr/pico/pico-sdk/src/rp2_common/pico_double/double_math.o"
 	@echo "... home/uzygncr/pico/pico-sdk/src/rp2_common/pico_double/double_math.i"
 	@echo "... home/uzygncr/pico/pico-sdk/src/rp2_common/pico_double/double_math.s"
-	@echo "... home/uzygncr/pico/pico-sdk/src/rp2_common/pico_double/double_v1_rom_shim_rp2040.obj"
-	@echo "... home/uzygncr/pico/pico-sdk/src/rp2_common/pico_float/float_aeabi_rp2040.obj"
-	@echo "... home/uzygncr/pico/pico-sdk/src/rp2_common/pico_float/float_init_rom_rp2040.obj"
+	@echo "... home/uzygncr/pico/pico-sdk/src/rp2_common/pico_double/double_v1_rom_shim_rp2040.o"
+	@echo "... home/uzygncr/pico/pico-sdk/src/rp2_common/pico_flash/flash.o"
+	@echo "... home/uzygncr/pico/pico-sdk/src/rp2_common/pico_flash/flash.i"
+	@echo "... home/uzygncr/pico/pico-sdk/src/rp2_common/pico_flash/flash.s"
+	@echo "... home/uzygncr/pico/pico-sdk/src/rp2_common/pico_float/float_aeabi_rp2040.o"
+	@echo "... home/uzygncr/pico/pico-sdk/src/rp2_common/pico_float/float_init_rom_rp2040.o"
 	@echo "... home/uzygncr/pico/pico-sdk/src/rp2_common/pico_float/float_init_rom_rp2040.i"
 	@echo "... home/uzygncr/pico/pico-sdk/src/rp2_common/pico_float/float_init_rom_rp2040.s"
-	@echo "... home/uzygncr/pico/pico-sdk/src/rp2_common/pico_float/float_math.obj"
+	@echo "... home/uzygncr/pico/pico-sdk/src/rp2_common/pico_float/float_math.o"
 	@echo "... home/uzygncr/pico/pico-sdk/src/rp2_common/pico_float/float_math.i"
 	@echo "... home/uzygncr/pico/pico-sdk/src/rp2_common/pico_float/float_math.s"
-	@echo "... home/uzygncr/pico/pico-sdk/src/rp2_common/pico_float/float_v1_rom_shim_rp2040.obj"
-	@echo "... home/uzygncr/pico/pico-sdk/src/rp2_common/pico_int64_ops/pico_int64_ops_aeabi.obj"
-	@echo "... home/uzygncr/pico/pico-sdk/src/rp2_common/pico_lwip/lwip_nosys.obj"
+	@echo "... home/uzygncr/pico/pico-sdk/src/rp2_common/pico_float/float_v1_rom_shim_rp2040.o"
+	@echo "... home/uzygncr/pico/pico-sdk/src/rp2_common/pico_int64_ops/pico_int64_ops_aeabi.o"
+	@echo "... home/uzygncr/pico/pico-sdk/src/rp2_common/pico_lwip/lwip_nosys.o"
 	@echo "... home/uzygncr/pico/pico-sdk/src/rp2_common/pico_lwip/lwip_nosys.i"
 	@echo "... home/uzygncr/pico/pico-sdk/src/rp2_common/pico_lwip/lwip_nosys.s"
-	@echo "... home/uzygncr/pico/pico-sdk/src/rp2_common/pico_malloc/malloc.obj"
+	@echo "... home/uzygncr/pico/pico-sdk/src/rp2_common/pico_malloc/malloc.o"
 	@echo "... home/uzygncr/pico/pico-sdk/src/rp2_common/pico_malloc/malloc.i"
 	@echo "... home/uzygncr/pico/pico-sdk/src/rp2_common/pico_malloc/malloc.s"
-	@echo "... home/uzygncr/pico/pico-sdk/src/rp2_common/pico_mem_ops/mem_ops_aeabi.obj"
-	@echo "... home/uzygncr/pico/pico-sdk/src/rp2_common/pico_platform_panic/panic.obj"
+	@echo "... home/uzygncr/pico/pico-sdk/src/rp2_common/pico_mem_ops/mem_ops_aeabi.o"
+	@echo "... home/uzygncr/pico/pico-sdk/src/rp2_common/pico_platform_panic/panic.o"
 	@echo "... home/uzygncr/pico/pico-sdk/src/rp2_common/pico_platform_panic/panic.i"
 	@echo "... home/uzygncr/pico/pico-sdk/src/rp2_common/pico_platform_panic/panic.s"
-	@echo "... home/uzygncr/pico/pico-sdk/src/rp2_common/pico_printf/printf.obj"
+	@echo "... home/uzygncr/pico/pico-sdk/src/rp2_common/pico_printf/printf.o"
 	@echo "... home/uzygncr/pico/pico-sdk/src/rp2_common/pico_printf/printf.i"
 	@echo "... home/uzygncr/pico/pico-sdk/src/rp2_common/pico_printf/printf.s"
-	@echo "... home/uzygncr/pico/pico-sdk/src/rp2_common/pico_rand/rand.obj"
+	@echo "... home/uzygncr/pico/pico-sdk/src/rp2_common/pico_rand/rand.o"
 	@echo "... home/uzygncr/pico/pico-sdk/src/rp2_common/pico_rand/rand.i"
 	@echo "... home/uzygncr/pico/pico-sdk/src/rp2_common/pico_rand/rand.s"
-	@echo "... home/uzygncr/pico/pico-sdk/src/rp2_common/pico_runtime/runtime.obj"
+	@echo "... home/uzygncr/pico/pico-sdk/src/rp2_common/pico_runtime/runtime.o"
 	@echo "... home/uzygncr/pico/pico-sdk/src/rp2_common/pico_runtime/runtime.i"
 	@echo "... home/uzygncr/pico/pico-sdk/src/rp2_common/pico_runtime/runtime.s"
-	@echo "... home/uzygncr/pico/pico-sdk/src/rp2_common/pico_runtime_init/runtime_init.obj"
+	@echo "... home/uzygncr/pico/pico-sdk/src/rp2_common/pico_runtime_init/runtime_init.o"
 	@echo "... home/uzygncr/pico/pico-sdk/src/rp2_common/pico_runtime_init/runtime_init.i"
 	@echo "... home/uzygncr/pico/pico-sdk/src/rp2_common/pico_runtime_init/runtime_init.s"
-	@echo "... home/uzygncr/pico/pico-sdk/src/rp2_common/pico_runtime_init/runtime_init_clocks.obj"
+	@echo "... home/uzygncr/pico/pico-sdk/src/rp2_common/pico_runtime_init/runtime_init_clocks.o"
 	@echo "... home/uzygncr/pico/pico-sdk/src/rp2_common/pico_runtime_init/runtime_init_clocks.i"
 	@echo "... home/uzygncr/pico/pico-sdk/src/rp2_common/pico_runtime_init/runtime_init_clocks.s"
-	@echo "... home/uzygncr/pico/pico-sdk/src/rp2_common/pico_runtime_init/runtime_init_stack_guard.obj"
+	@echo "... home/uzygncr/pico/pico-sdk/src/rp2_common/pico_runtime_init/runtime_init_stack_guard.o"
 	@echo "... home/uzygncr/pico/pico-sdk/src/rp2_common/pico_runtime_init/runtime_init_stack_guard.i"
 	@echo "... home/uzygncr/pico/pico-sdk/src/rp2_common/pico_runtime_init/runtime_init_stack_guard.s"
-	@echo "... home/uzygncr/pico/pico-sdk/src/rp2_common/pico_standard_binary_info/standard_binary_info.obj"
+	@echo "... home/uzygncr/pico/pico-sdk/src/rp2_common/pico_standard_binary_info/standard_binary_info.o"
 	@echo "... home/uzygncr/pico/pico-sdk/src/rp2_common/pico_standard_binary_info/standard_binary_info.i"
 	@echo "... home/uzygncr/pico/pico-sdk/src/rp2_common/pico_standard_binary_info/standard_binary_info.s"
-	@echo "... home/uzygncr/pico/pico-sdk/src/rp2_common/pico_stdio/stdio.obj"
+	@echo "... home/uzygncr/pico/pico-sdk/src/rp2_common/pico_stdio/stdio.o"
 	@echo "... home/uzygncr/pico/pico-sdk/src/rp2_common/pico_stdio/stdio.i"
 	@echo "... home/uzygncr/pico/pico-sdk/src/rp2_common/pico_stdio/stdio.s"
-	@echo "... home/uzygncr/pico/pico-sdk/src/rp2_common/pico_stdio_uart/stdio_uart.obj"
+	@echo "... home/uzygncr/pico/pico-sdk/src/rp2_common/pico_stdio_uart/stdio_uart.o"
 	@echo "... home/uzygncr/pico/pico-sdk/src/rp2_common/pico_stdio_uart/stdio_uart.i"
 	@echo "... home/uzygncr/pico/pico-sdk/src/rp2_common/pico_stdio_uart/stdio_uart.s"
-	@echo "... home/uzygncr/pico/pico-sdk/src/rp2_common/pico_stdlib/stdlib.obj"
+	@echo "... home/uzygncr/pico/pico-sdk/src/rp2_common/pico_stdlib/stdlib.o"
 	@echo "... home/uzygncr/pico/pico-sdk/src/rp2_common/pico_stdlib/stdlib.i"
 	@echo "... home/uzygncr/pico/pico-sdk/src/rp2_common/pico_stdlib/stdlib.s"
-	@echo "... home/uzygncr/pico/pico-sdk/src/rp2_common/pico_unique_id/unique_id.obj"
+	@echo "... home/uzygncr/pico/pico-sdk/src/rp2_common/pico_unique_id/unique_id.o"
 	@echo "... home/uzygncr/pico/pico-sdk/src/rp2_common/pico_unique_id/unique_id.i"
 	@echo "... home/uzygncr/pico/pico-sdk/src/rp2_common/pico_unique_id/unique_id.s"
-	@echo "... w_blink.obj"
+	@echo "... w_blink.o"
 	@echo "... w_blink.i"
 	@echo "... w_blink.s"
 .PHONY : help

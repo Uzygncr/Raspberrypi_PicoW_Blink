@@ -2,7 +2,7 @@
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
-  set(CMAKE_INSTALL_PREFIX "/home/uzygncr/pico/pico-projects/w_blink/build/pioasm-install")
+  set(CMAKE_INSTALL_PREFIX "/home/uzygncr/pico/pico-projects/Raspberrypi_PicoW_Blink/build/pioasm-install")
 endif()
 string(REGEX REPLACE "/$" "" CMAKE_INSTALL_PREFIX "${CMAKE_INSTALL_PREFIX}")
 
@@ -49,7 +49,7 @@ if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_
          FILE "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/pioasm/pioasm"
          RPATH "")
   endif()
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/pioasm" TYPE EXECUTABLE MESSAGE_NEVER FILES "/home/uzygncr/pico/pico-projects/w_blink/build/pioasm/pioasm")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/pioasm" TYPE EXECUTABLE MESSAGE_NEVER FILES "/home/uzygncr/pico/pico-projects/Raspberrypi_PicoW_Blink/build/pioasm/pioasm")
   if(EXISTS "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/pioasm/pioasm" AND
      NOT IS_SYMLINK "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/pioasm/pioasm")
     if(CMAKE_INSTALL_DO_STRIP)
@@ -62,7 +62,7 @@ if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_
   if(EXISTS "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/pioasm/pioasmTargets.cmake")
     file(DIFFERENT EXPORT_FILE_CHANGED FILES
          "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/pioasm/pioasmTargets.cmake"
-         "/home/uzygncr/pico/pico-projects/w_blink/build/pioasm/CMakeFiles/Export/pioasm/pioasmTargets.cmake")
+         "/home/uzygncr/pico/pico-projects/Raspberrypi_PicoW_Blink/build/pioasm/CMakeFiles/Export/pioasm/pioasmTargets.cmake")
     if(EXPORT_FILE_CHANGED)
       file(GLOB OLD_CONFIG_FILES "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/pioasm/pioasmTargets-*.cmake")
       if(OLD_CONFIG_FILES)
@@ -71,16 +71,16 @@ if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_
       endif()
     endif()
   endif()
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/pioasm" TYPE FILE MESSAGE_NEVER FILES "/home/uzygncr/pico/pico-projects/w_blink/build/pioasm/CMakeFiles/Export/pioasm/pioasmTargets.cmake")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/pioasm" TYPE FILE MESSAGE_NEVER FILES "/home/uzygncr/pico/pico-projects/Raspberrypi_PicoW_Blink/build/pioasm/CMakeFiles/Export/pioasm/pioasmTargets.cmake")
   if("${CMAKE_INSTALL_CONFIG_NAME}" MATCHES "^([Rr][Ee][Ll][Ee][Aa][Ss][Ee])$")
-    file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/pioasm" TYPE FILE MESSAGE_NEVER FILES "/home/uzygncr/pico/pico-projects/w_blink/build/pioasm/CMakeFiles/Export/pioasm/pioasmTargets-release.cmake")
+    file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/pioasm" TYPE FILE MESSAGE_NEVER FILES "/home/uzygncr/pico/pico-projects/Raspberrypi_PicoW_Blink/build/pioasm/CMakeFiles/Export/pioasm/pioasmTargets-release.cmake")
   endif()
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
   file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/pioasm" TYPE FILE MESSAGE_NEVER FILES
-    "/home/uzygncr/pico/pico-projects/w_blink/build/pioasm/pioasmConfig.cmake"
-    "/home/uzygncr/pico/pico-projects/w_blink/build/pioasm/pioasmConfigVersion.cmake"
+    "/home/uzygncr/pico/pico-projects/Raspberrypi_PicoW_Blink/build/pioasm/pioasmConfig.cmake"
+    "/home/uzygncr/pico/pico-projects/Raspberrypi_PicoW_Blink/build/pioasm/pioasmConfigVersion.cmake"
     )
 endif()
 
@@ -92,5 +92,5 @@ endif()
 
 string(REPLACE ";" "\n" CMAKE_INSTALL_MANIFEST_CONTENT
        "${CMAKE_INSTALL_MANIFEST_FILES}")
-file(WRITE "/home/uzygncr/pico/pico-projects/w_blink/build/pioasm/${CMAKE_INSTALL_MANIFEST}"
+file(WRITE "/home/uzygncr/pico/pico-projects/Raspberrypi_PicoW_Blink/build/pioasm/${CMAKE_INSTALL_MANIFEST}"
      "${CMAKE_INSTALL_MANIFEST_CONTENT}")
