@@ -1,7 +1,0 @@
-/home/uzygncr/pico/pico-projects/Raspberrypi_PicoW_Blink/build/pioasm/CMakeFiles/pioasm.dir
-/home/uzygncr/pico/pico-projects/Raspberrypi_PicoW_Blink/build/pioasm/CMakeFiles/edit_cache.dir
-/home/uzygncr/pico/pico-projects/Raspberrypi_PicoW_Blink/build/pioasm/CMakeFiles/rebuild_cache.dir
-/home/uzygncr/pico/pico-projects/Raspberrypi_PicoW_Blink/build/pioasm/CMakeFiles/list_install_components.dir
-/home/uzygncr/pico/pico-projects/Raspberrypi_PicoW_Blink/build/pioasm/CMakeFiles/install.dir
-/home/uzygncr/pico/pico-projects/Raspberrypi_PicoW_Blink/build/pioasm/CMakeFiles/install/local.dir
-/home/uzygncr/pico/pico-projects/Raspberrypi_PicoW_Blink/build/pioasm/CMakeFiles/install/strip.dir
